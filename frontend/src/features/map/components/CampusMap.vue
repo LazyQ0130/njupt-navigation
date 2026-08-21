@@ -7,11 +7,12 @@ import { useMapBootstrapStore } from '@/stores/mapBootstrap'
 import { createCampusMap } from '../createCampusMap'
 import { normalizeMapData } from '../mapDataMapper'
 import { deriveMapUiState, geolocationErrorMessage } from '../mapUiState'
-import type { CampusMapController, NormalizedFeatureCollection } from '../types'
+import type { CampusMapController, NormalizedFeatureCollection, SelectedPlace } from '../types'
 import MapControls from './MapControls.vue'
 import MapSearchPlaceholder from './MapSearchPlaceholder.vue'
 import MapStatusOverlay from './MapStatusOverlay.vue'
 import MapToast from './MapToast.vue'
+import PlacePeek from './PlacePeek.vue'
 import QuickActions from './QuickActions.vue'
 
 const bootstrap = useMapBootstrapStore()
@@ -21,7 +22,7 @@ const data = shallowRef<NormalizedFeatureCollection>({ type: 'FeatureCollection'
 const loading = ref(true)
 const error = ref('')
 const locating = ref(false)
-const selectedBuilding = ref('')
+const selectedPlace = ref<SelectedPlace>()
 const toastMessage = ref('')
 const toastActionLabel = ref('')
 const toastSecondaryLabel = ref('')
@@ -35,7 +36,7 @@ const uiState = computed(() => deriveMapUiState(loading.value, error.value, data
 async function loadMap(): Promise<void> {
   loading.value = true
   error.value = ''
-  selectedBuilding.value = ''
+  selectedPlace.value = undefined
   controller?.destroy()
   controller = undefined
   try {
@@ -59,7 +60,7 @@ async function loadMap(): Promise<void> {
       campus: campus.value,
       data: data.value,
       callbacks: {
-        onBuildingSelect: (name) => { selectedBuilding.value = name },
+        onBuildingSelect: (place) => { selectedPlace.value = place },
         onError: (message) => showToast(`地图资源提示：${message}`),
         onReady: () => { loading.value = false },
       },
@@ -103,7 +104,11 @@ function requestLocation(): void {
 
 function resetCampus(): void {
   controller?.reset()
-  selectedBuilding.value = ''
+  selectedPlace.value = undefined
+}
+
+function resetNorth(): void {
+  controller?.resetNorth()
 }
 
 function showToast(
@@ -152,29 +157,29 @@ onBeforeUnmount(() => {
     <div ref="mapHost" class="map-canvas" />
 
     <header class="map-header">
-      <div class="brand-row">
-        <div class="brand-mark" aria-hidden="true">邮</div>
-        <div>
-          <p>NJUPT SMART CAMPUS</p>
-          <h1>{{ campus?.name ?? '南邮仙林智慧校园' }}</h1>
-        </div>
-        <span class="demo-badge">合成演示数据</span>
-      </div>
-      <MapSearchPlaceholder @activate="showToast('地点搜索将在 Phase 2 开放，本阶段专注地图浏览。')" />
-      <QuickActions @choose="(label) => showToast(`${label}分类筛选将在后续阶段开放。`)" />
+      <h1 class="sr-only">{{ campus?.name ?? '南邮仙林智慧校园' }}</h1>
+      <MapSearchPlaceholder @activate="showToast('搜索将在 Phase 2 开放')" />
     </header>
 
-    <aside class="map-controls">
-      <MapControls :locating="locating" :disabled="uiState !== 'ready'" @locate="requestLocation" @reset="resetCampus" />
+    <nav class="quick-actions" aria-label="校园地图快捷入口">
+      <QuickActions @choose="(label) => showToast(`${label}将在 Phase 2 开放`)" />
+    </nav>
+
+    <aside class="map-controls" :class="{ 'has-place': selectedPlace }">
+      <MapControls
+        :locating="locating"
+        :disabled="uiState !== 'ready'"
+        @locate="requestLocation"
+        @compass="resetNorth"
+        @reset="resetCampus"
+      />
     </aside>
 
-    <div v-if="selectedBuilding" class="building-card" role="status">
-      <span>已选择建筑</span>
-      <strong>{{ selectedBuilding }}</strong>
-      <button type="button" aria-label="关闭建筑信息" @click="selectedBuilding = ''">×</button>
+    <div v-if="selectedPlace" class="place-slot">
+      <PlacePeek :place="selectedPlace" @close="selectedPlace = undefined" />
     </div>
 
-    <div class="toast-slot">
+    <div class="toast-slot" :class="{ 'has-place': selectedPlace }">
       <MapToast
         :message="toastMessage"
         :action-label="toastActionLabel"
@@ -194,24 +199,22 @@ onBeforeUnmount(() => {
 </template>
 
 <style scoped>
-.map-page { position: relative; width: 100%; height: 100dvh; min-height: 520px; overflow: hidden; background: #e9eee7; }
+.map-page { position: relative; width: 100%; height: 100dvh; min-height: 520px; overflow: hidden; background: #f3f1ec; }
 .map-canvas { position: absolute; inset: 0; }
-.map-header { position: absolute; z-index: 10; top: 0; left: 0; display: grid; gap: 11px; padding: max(14px, env(safe-area-inset-top)) 16px 0 max(16px, env(safe-area-inset-left)); pointer-events: none; }
+.map-header { position: absolute; z-index: 10; top: 0; left: 0; padding: max(12px, env(safe-area-inset-top)) 12px 0 max(12px, env(safe-area-inset-left)); pointer-events: none; }
 .map-header > * { pointer-events: auto; }
-.brand-row { display: flex; width: min(560px, calc(100vw - 32px)); align-items: center; gap: 10px; }
-.brand-mark { display: grid; width: 38px; height: 38px; flex: 0 0 auto; place-items: center; border-radius: 12px; background: #264f40; color: white; box-shadow: 0 8px 20px rgb(33 68 54 / 20%); font-family: serif; font-weight: 800; }
-.brand-row p { margin: 0; color: #50665c; font-size: 9px; font-weight: 800; letter-spacing: .14em; }
-.brand-row h1 { margin: 2px 0 0; color: #1c342a; font-size: 15px; line-height: 1.2; }
-.demo-badge { margin-left: auto; border: 1px solid rgb(255 255 255 / 70%); border-radius: 999px; background: rgb(255 255 255 / 82%); padding: 6px 9px; color: #8a5d24; font-size: 10px; font-weight: 750; backdrop-filter: blur(10px); }
-.map-controls { position: absolute; z-index: 11; right: max(12px, env(safe-area-inset-right)); bottom: max(90px, calc(env(safe-area-inset-bottom) + 70px)); }
-.building-card { position: absolute; z-index: 11; left: max(16px, env(safe-area-inset-left)); bottom: max(22px, calc(env(safe-area-inset-bottom) + 14px)); display: grid; min-width: min(300px, calc(100vw - 90px)); border: 1px solid rgb(255 255 255 / 75%); border-radius: 17px; background: rgb(255 255 255 / 93%); padding: 12px 42px 12px 15px; box-shadow: 0 12px 30px rgb(28 55 43 / 18%); backdrop-filter: blur(12px); }
-.building-card span { color: #738178; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; }
-.building-card strong { margin-top: 2px; color: #263b31; font-size: 15px; }
-.building-card button { position: absolute; top: 8px; right: 8px; width: 30px; height: 30px; border: 0; background: transparent; color: #687970; font-size: 20px; }
-.toast-slot { position: absolute; z-index: 20; bottom: max(20px, calc(env(safe-area-inset-bottom) + 14px)); left: 50%; transform: translateX(-50%); }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0, 0, 0, 0); clip-path: inset(50%); white-space: nowrap; }
+.quick-actions { position: absolute; z-index: 12; bottom: max(10px, env(safe-area-inset-bottom)); left: 50%; transform: translateX(-50%); }
+.map-controls { position: absolute; z-index: 11; right: max(12px, env(safe-area-inset-right)); bottom: max(86px, calc(env(safe-area-inset-bottom) + 78px)); transition: bottom var(--ui-motion); }
+.map-controls.has-place { bottom: max(196px, calc(env(safe-area-inset-bottom) + 188px)); }
+.place-slot { position: absolute; z-index: 13; right: 12px; bottom: max(112px, calc(env(safe-area-inset-bottom) + 104px)); left: 12px; display: flex; justify-content: center; pointer-events: none; }
+.place-slot > * { pointer-events: auto; }
+.toast-slot { position: absolute; z-index: 20; top: max(74px, calc(env(safe-area-inset-top) + 66px)); left: 50%; transform: translateX(-50%); }
 @media (min-width: 768px) {
-  .map-header { padding: 22px 0 0 24px; }
-  .map-controls { right: 22px; bottom: 108px; }
-  .brand-row h1 { font-size: 17px; }
+  .map-header { padding: 24px 0 0 24px; }
+  .quick-actions { bottom: 18px; }
+  .map-controls, .map-controls.has-place { top: 24px; right: 24px; bottom: auto; }
+  .place-slot { right: auto; bottom: 24px; left: 24px; justify-content: flex-start; }
+  .toast-slot, .toast-slot.has-place { top: 86px; bottom: auto; }
 }
 </style>

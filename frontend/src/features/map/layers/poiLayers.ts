@@ -1,15 +1,16 @@
 import type { LayerSpecification } from 'maplibre-gl'
+import { MAP_PALETTE } from '../mapPalette'
 
 export const poiLayers: LayerSpecification[] = [
   {
     id: 'poi-dots',
     type: 'circle',
     source: 'campus-features',
-    minzoom: 15.5,
+    minzoom: 16,
     filter: ['==', ['get', 'featureType'], 'POI'],
     paint: {
-      'circle-radius': ['interpolate', ['linear'], ['zoom'], 15, 3.5, 18, 6],
-      'circle-color': '#e85d3f',
+      'circle-radius': ['interpolate', ['linear'], ['zoom'], 16, 3.5, 18, 5.5],
+      'circle-color': MAP_PALETTE.poi,
       'circle-stroke-color': '#ffffff',
       'circle-stroke-width': 2,
     },
@@ -18,20 +19,20 @@ export const poiLayers: LayerSpecification[] = [
     id: 'poi-labels',
     type: 'symbol',
     source: 'campus-features',
-    minzoom: 16.2,
+    minzoom: 16.8,
     filter: ['==', ['get', 'featureType'], 'POI'],
     layout: {
       'text-field': ['get', 'name'],
       'text-font': ['Noto Sans Regular'],
-      'text-size': 11,
+      'text-size': ['interpolate', ['linear'], ['zoom'], 16.8, 10, 19, 11.5],
       'text-offset': [0, 1.15],
       'text-anchor': 'top',
       'text-allow-overlap': false,
-      'symbol-sort-key': ['coalesce', ['to-number', ['get', 'priority']], 0],
+      'symbol-sort-key': ['-', 100, ['coalesce', ['to-number', ['get', 'priority']], 0]],
     },
     paint: {
-      'text-color': '#344155',
-      'text-halo-color': '#ffffff',
+      'text-color': MAP_PALETTE.labelMuted,
+      'text-halo-color': MAP_PALETTE.labelHalo,
       'text-halo-width': 1.4,
     },
   },

@@ -24,6 +24,7 @@ describe('map config', () => {
   it('uses a key-free canvas style with explicit attribution', () => {
     expect(MAP_STYLE.sources).toEqual({})
     expect(MAP_STYLE.layers[0]?.type).toBe('background')
-    expect(CAMPUS_ATTRIBUTION).toContain('synthetic demo data')
+    expect(CAMPUS_ATTRIBUTION).toContain('演示地图')
+    expect(CAMPUS_ATTRIBUTION).toContain('非真实校园数据')
   })
 })

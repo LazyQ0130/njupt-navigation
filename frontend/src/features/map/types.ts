@@ -19,16 +19,22 @@ export type NormalizedCampusFeature = Feature<Geometry, CampusFeatureProperties>
 export type NormalizedFeatureCollection = FeatureCollection<Geometry, CampusFeatureProperties>
 export type CampusBoundaryFeature = Feature<Polygon | MultiPolygon, CampusFeatureProperties>
 
+export interface SelectedPlace {
+  name: string
+  category: string
+}
+
 export interface CampusMapController {
   destroy: () => void
   reset: () => void
+  resetNorth: () => void
   resize: () => void
   isInsideCampus: (longitude: number, latitude: number) => boolean
   showLocation: (longitude: number, latitude: number, allowOutside: boolean) => void
 }
 
 export interface CampusMapCallbacks {
-  onBuildingSelect: (name: string) => void
+  onBuildingSelect: (place: SelectedPlace) => void
   onError: (message: string) => void
   onReady: () => void
 }

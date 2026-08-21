@@ -1,12 +1,13 @@
 import type { MapOptions, StyleSpecification } from 'maplibre-gl'
 import type { CampusSummary } from '@/api/map'
+import { MAP_PALETTE } from './mapPalette'
 
 export const CAMPUS_SOURCE_ID = 'campus-features'
 export const USER_LOCATION_SOURCE_ID = 'user-location'
 export const BUILDING_EXTRUSION_LAYER_ID = 'building-extrusion'
 
 export const CAMPUS_ATTRIBUTION =
-  'Phase 1 synthetic demo data · Map rendering by MapLibre'
+  '演示地图（非真实校园数据） · MapLibre'
 
 export const MAP_STYLE: StyleSpecification = {
   version: 8,
@@ -18,7 +19,7 @@ export const MAP_STYLE: StyleSpecification = {
       id: 'canvas-background',
       type: 'background',
       paint: {
-        'background-color': '#edf1ea',
+        'background-color': MAP_PALETTE.background,
       },
     },
   ],

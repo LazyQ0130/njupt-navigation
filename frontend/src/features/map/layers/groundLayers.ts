@@ -1,4 +1,5 @@
 import type { LayerSpecification } from 'maplibre-gl'
+import { MAP_PALETTE } from '../mapPalette'
 
 export const groundLayers: LayerSpecification[] = [
   {
@@ -6,7 +7,7 @@ export const groundLayers: LayerSpecification[] = [
     type: 'fill',
     source: 'campus-features',
     filter: ['==', ['get', 'featureType'], 'CAMPUS_BOUNDARY'],
-    paint: { 'fill-color': '#e8ede4', 'fill-opacity': 0.88 },
+    paint: { 'fill-color': MAP_PALETTE.campus, 'fill-opacity': 0.96 },
   },
   {
     id: 'ground-surfaces',
@@ -15,12 +16,16 @@ export const groundLayers: LayerSpecification[] = [
     filter: ['in', ['get', 'featureType'], ['literal', ['GREEN', 'WATER', 'SPORT', 'PLAZA']]],
     paint: {
       'fill-color': [
-        'coalesce',
-        ['get', 'color'],
-        ['match', ['get', 'featureType'], 'WATER', '#9ccbe0', 'SPORT', '#a8c9a8', '#bfd7b7'],
+        'match',
+        ['get', 'featureType'],
+        'GREEN', MAP_PALETTE.green,
+        'WATER', MAP_PALETTE.water,
+        'SPORT', MAP_PALETTE.sport,
+        'PLAZA', MAP_PALETTE.plaza,
+        MAP_PALETTE.campus,
       ],
-      'fill-opacity': 0.9,
-      'fill-outline-color': 'rgba(71, 95, 75, 0.18)',
+      'fill-opacity': 0.88,
+      'fill-outline-color': 'rgba(82, 101, 117, 0.16)',
     },
   },
   {
@@ -28,6 +33,6 @@ export const groundLayers: LayerSpecification[] = [
     type: 'line',
     source: 'campus-features',
     filter: ['==', ['get', 'featureType'], 'CAMPUS_BOUNDARY'],
-    paint: { 'line-color': '#365a4a', 'line-width': 2, 'line-opacity': 0.7 },
+    paint: { 'line-color': MAP_PALETTE.boundary, 'line-width': 1.25, 'line-opacity': 0.58 },
   },
 ]

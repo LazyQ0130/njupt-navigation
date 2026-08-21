@@ -1,12 +1,14 @@
 <script setup lang="ts">
+import { Search } from '@lucide/vue'
+
 defineEmits<{ activate: [] }>()
 </script>
 
 <template>
   <button class="search-shell" type="button" aria-label="搜索地点，Phase 2 开放" @click="$emit('activate')">
-    <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m21 21-4.3-4.3m2.3-5.2a7.5 7.5 0 1 1-15 0 7.5 7.5 0 0 1 15 0Z" /></svg>
-    <span>搜索教学楼、食堂、服务点</span>
-    <kbd>即将开放</kbd>
+    <span class="brand-cue" aria-hidden="true">南邮</span>
+    <Search :size="20" :stroke-width="2" aria-hidden="true" />
+    <span class="placeholder">搜索教学楼、食堂、宿舍…</span>
   </button>
 </template>
 
@@ -14,21 +16,21 @@ defineEmits<{ activate: [] }>()
 .search-shell {
   display: flex;
   width: min(560px, calc(100vw - 32px));
-  min-height: 52px;
+  height: 50px;
   align-items: center;
-  gap: 12px;
-  padding: 0 16px;
-  border: 1px solid rgb(255 255 255 / 75%);
-  border-radius: 18px;
-  background: rgb(255 255 255 / 92%);
-  box-shadow: 0 12px 32px rgb(30 58 45 / 16%);
-  color: #667085;
+  gap: 10px;
+  padding: 0 14px;
+  border: 1px solid var(--ui-border);
+  border-radius: var(--ui-radius);
+  background: var(--ui-surface);
+  box-shadow: var(--ui-shadow);
+  color: var(--ui-text-secondary);
   text-align: left;
-  backdrop-filter: blur(14px);
+  transition: box-shadow var(--ui-motion), transform var(--ui-motion);
 }
-.search-shell:focus-visible { outline: 3px solid rgb(7 94 168 / 30%); outline-offset: 3px; }
-svg { width: 21px; fill: none; stroke: #214d3f; stroke-linecap: round; stroke-width: 2; }
-span { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-kbd { border-radius: 999px; background: #edf5ef; padding: 5px 8px; color: #3f6b56; font: 600 10px/1 system-ui; }
-@media (max-width: 480px) { kbd { display: none; } }
+.search-shell:hover { box-shadow: var(--ui-shadow-raised); }
+.search-shell:active { transform: translateY(1px); }
+.brand-cue { flex: 0 0 auto; border-right: 1px solid var(--ui-border); padding-right: 10px; color: var(--ui-primary); font-size: 12px; font-weight: 800; letter-spacing: .04em; }
+svg { flex: 0 0 auto; color: var(--ui-primary); }
+.placeholder { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 14px; }
 </style>

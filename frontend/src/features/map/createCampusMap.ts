@@ -4,12 +4,12 @@ import {
   AttributionControl,
   GeoJSONSource,
   Map,
-  NavigationControl,
   type MapLayerMouseEvent,
   type LngLatBoundsLike,
 } from 'maplibre-gl'
 import type { Feature, Point } from 'geojson'
 import { campusLabelLayers, campusVisualLayers } from './layers'
+import { MAP_PALETTE } from './mapPalette'
 import {
   BUILDING_EXTRUSION_LAYER_ID,
   CAMPUS_ATTRIBUTION,
@@ -29,7 +29,6 @@ export function createCampusMap(input: CampusMapInput): CampusMapController {
   let selectedBuildingId: string | number | undefined
   let destroyed = false
 
-  map.addControl(new NavigationControl({ showZoom: false, showCompass: true, visualizePitch: true }), 'top-right')
   map.addControl(new AttributionControl({ compact: true, customAttribution: CAMPUS_ATTRIBUTION }), 'bottom-right')
 
   map.once('load', () => {
@@ -40,13 +39,13 @@ export function createCampusMap(input: CampusMapInput): CampusMapController {
     })
     campusVisualLayers.forEach((layer) => map.addLayer(layer))
     addUserLocationLayer(map)
-    configureBuildingInteraction(map, (id, name) => {
+    configureBuildingInteraction(map, (id, name, category) => {
       if (selectedBuildingId !== undefined) {
         map.setFeatureState({ source: CAMPUS_SOURCE_ID, id: selectedBuildingId }, { selected: false })
       }
       selectedBuildingId = id
       map.setFeatureState({ source: CAMPUS_SOURCE_ID, id }, { selected: true })
-      callbacks.onBuildingSelect(name)
+      callbacks.onBuildingSelect({ name, category })
     })
     const canvas = map.getCanvas()
     canvas.setAttribute('role', 'img')
@@ -84,6 +83,9 @@ export function createCampusMap(input: CampusMapInput): CampusMapController {
         essential: true,
       })
     },
+    resetNorth() {
+      map.easeTo({ bearing: 0, pitch: campus.camera.pitch, duration: 200 })
+    },
     isInsideCampus(longitude, latitude) {
       const boundary = data.features.find(
         (feature) => feature.properties.featureType === 'CAMPUS_BOUNDARY',
@@ -113,7 +115,7 @@ function addUserLocationLayer(map: Map): void {
     source: USER_LOCATION_SOURCE_ID,
     paint: {
       'circle-radius': 13,
-      'circle-color': '#177ddc',
+      'circle-color': MAP_PALETTE.location,
       'circle-opacity': 0.18,
     },
   })
@@ -123,7 +125,7 @@ function addUserLocationLayer(map: Map): void {
     source: USER_LOCATION_SOURCE_ID,
     paint: {
       'circle-radius': 6,
-      'circle-color': '#177ddc',
+      'circle-color': MAP_PALETTE.location,
       'circle-stroke-color': '#ffffff',
       'circle-stroke-width': 2.5,
     },
@@ -132,7 +134,7 @@ function addUserLocationLayer(map: Map): void {
 
 function configureBuildingInteraction(
   map: Map,
-  onSelect: (id: string | number, name: string) => void,
+  onSelect: (id: string | number, name: string, category: string) => void,
 ): void {
   map.on('mouseenter', BUILDING_EXTRUSION_LAYER_ID, () => {
     map.getCanvas().style.cursor = 'pointer'
@@ -143,7 +145,11 @@ function configureBuildingInteraction(
   map.on('click', BUILDING_EXTRUSION_LAYER_ID, (event: MapLayerMouseEvent) => {
     const feature = event.features?.[0]
     if (!feature || feature.id === undefined) return
-    onSelect(feature.id, String(feature.properties?.name ?? '未命名建筑'))
+    onSelect(
+      feature.id,
+      String(feature.properties?.name ?? '未命名建筑'),
+      String(feature.properties?.category ?? 'BUILDING'),
+    )
   })
 }
 
