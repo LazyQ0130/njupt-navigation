@@ -66,7 +66,8 @@ class MapFeatureServiceTest {
         Building building = new Building();
         building.updateFromImport(
                 mock(Campus.class), "demo-building", "演示楼", List.of(), "TEACHING",
-                geometryFactory.createMultiPolygon(new Polygon[]{polygon}), 24, 0, "#8CA8C8", true
+                geometryFactory.createMultiPolygon(new Polygon[]{polygon}), 24.0, 0, "#8CA8C8",
+                "OSM_HEIGHT", "OPENSTREETMAP", "SOURCE_VERIFIED", "osm-test", null, true
         );
         when(buildingRepository.findAllByCampusCodeAndEnabledTrueOrderByNameAsc(CAMPUS_CODE))
                 .thenReturn(List.of(building));

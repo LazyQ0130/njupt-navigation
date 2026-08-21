@@ -1,0 +1,61 @@
+{
+  "datasetId": "njupt-xianlin-real-v1",
+  "sources": [
+    {
+      "source_name": "OpenStreetMap Xianlin campus extract",
+      "source_url": "https://www.openstreetmap.org/way/89910254",
+      "source_type": "OSM Overpass extract",
+      "license": "ODbL 1.0",
+      "required_attribution": "© OpenStreetMap contributors",
+      "retrieved_at": "2026-08-22",
+      "coordinate_system": "WGS84 / EPSG:4326",
+      "precision": "community mapped; varies by object",
+      "verification_status": "SOURCE_VERIFIED",
+      "notes": "Geometry source for the v1 dataset; not field verified. Raw Overpass response is retained with the dataset."
+    },
+    {
+      "source_name": "NJUPT official campus map page",
+      "source_url": "https://www.njupt.edu.cn/17230/list.htm",
+      "source_type": "official reference page",
+      "license": "Copyright retained by NJUPT; reference only",
+      "retrieved_at": "2026-08-22",
+      "coordinate_system": "not applicable",
+      "precision": "visual reference only",
+      "verification_status": "RAW",
+      "notes": "No image or PDF from this page is redistributed in the repository."
+    },
+    {
+      "source_name": "NJUPT official contact and address page",
+      "source_url": "https://www.njupt.edu.cn/15/list.htm",
+      "source_type": "official public web page",
+      "license": "Copyright retained by NJUPT; factual reference only",
+      "retrieved_at": "2026-08-22",
+      "coordinate_system": "not applicable",
+      "precision": "campus postal address",
+      "verification_status": "SOURCE_VERIFIED",
+      "notes": "Confirms Xianlin campus at 9 Wenyuan Road, Nanjing."
+    },
+    {
+      "source_name": "NJUPT anniversary run route",
+      "source_url": "https://xqp.njupt.edu.cn/hdgk/list.htm",
+      "source_type": "official public web page",
+      "license": "Copyright retained by NJUPT; factual reference only",
+      "retrieved_at": "2026-08-22",
+      "coordinate_system": "not applicable",
+      "precision": "named route landmarks only",
+      "verification_status": "SOURCE_VERIFIED",
+      "notes": "Confirms names including library, Dingxin Avenue, south/north gates, canteens, activity centre, gymnasium, discipline building, administration building and round building; does not verify geometry."
+    },
+    {
+      "source_name": "NJUPT graduate examination notice",
+      "source_url": "https://yzb.njupt.edu.cn/2020/1218/c12466a178675/page.htm",
+      "source_type": "official public web page",
+      "license": "Copyright retained by NJUPT; factual reference only",
+      "retrieved_at": "2026-08-22",
+      "coordinate_system": "not applicable",
+      "precision": "building-name reference",
+      "verification_status": "SOURCE_VERIFIED",
+      "notes": "Confirms 教2 and 教3 as Xianlin teaching buildings; attachment is not redistributed."
+    }
+  ]
+}

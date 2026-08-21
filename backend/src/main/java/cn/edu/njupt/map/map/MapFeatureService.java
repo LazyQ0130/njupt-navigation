@@ -20,7 +20,7 @@ import org.springframework.transaction.annotation.Transactional;
 @Service
 public class MapFeatureService {
 
-    private static final String SCHEMA_VERSION = "2026-08-phase1";
+    private static final String SCHEMA_VERSION = "2026-08-phase1.5";
 
     private final ObjectMapper objectMapper;
     private final CampusRepository campusRepository;
@@ -64,6 +64,8 @@ public class MapFeatureService {
                 properties -> {
                     putIfPresent(properties, "color", item.getColor());
                     properties.put("priority", item.getPriority());
+                    sourceMetadata(properties, item.getDataSource(), item.getVerificationStatus(),
+                            item.getSourceId(), item.getSourceUpdatedAt());
                 }
         );
     }
@@ -73,10 +75,15 @@ public class MapFeatureService {
                 item.getExternalId(), item.getName(), "BUILDING", item.getGeometry(),
                 properties -> {
                     properties.put("category", item.getCategory());
-                    properties.put("height", item.getHeight());
+                    if (item.getHeight() != null) {
+                        properties.put("height", item.getHeight());
+                    }
                     properties.put("minHeight", item.getMinHeight());
+                    properties.put("heightSource", item.getHeightSource());
                     putIfPresent(properties, "color", item.getColor());
                     properties.put("priority", buildingPriority(item.getCategory()));
+                    sourceMetadata(properties, item.getDataSource(), item.getVerificationStatus(),
+                            item.getSourceId(), item.getSourceUpdatedAt());
                 }
         );
     }
@@ -87,6 +94,8 @@ public class MapFeatureService {
                 properties -> {
                     properties.put("category", item.getCategory());
                     properties.put("priority", 40);
+                    sourceMetadata(properties, item.getDataSource(), item.getVerificationStatus(),
+                            item.getSourceId(), item.getSourceUpdatedAt());
                 }
         );
     }
@@ -127,6 +136,16 @@ public class MapFeatureService {
     private void putIfPresent(ObjectNode node, String field, String value) {
         if (value != null && !value.isBlank()) {
             node.put(field, value);
+        }
+    }
+
+    private void sourceMetadata(ObjectNode node, String dataSource, String verificationStatus,
+                                String sourceId, java.time.Instant sourceUpdatedAt) {
+        node.put("dataSource", dataSource);
+        node.put("verificationStatus", verificationStatus);
+        putIfPresent(node, "sourceId", sourceId);
+        if (sourceUpdatedAt != null) {
+            node.put("sourceUpdatedAt", sourceUpdatedAt.toString());
         }
     }
 }

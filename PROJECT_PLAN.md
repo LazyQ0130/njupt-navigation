@@ -97,6 +97,10 @@ Monorepo、Vue/Spring Boot、PostGIS、Flyway、核心 schema、GeoJSON 导入�
 
 MapLibre 相机、建筑挤出、基础地表图层、POI、定位/指南针/复位和移动端性能基线。
 
+### Phase 1.5：Real GIS Dataset
+
+在 Phase 2 前建立数据质量门：OSM/官方参考来源登记、分层 GeoJSON、稳定 ID、人工覆盖、Geometry/范围/重复/路网校验、PostGIS 幂等 upsert 和人工审核清单。自动 OSM 数据不能高于 SOURCE_VERIFIED；未现场确认的名称、入口和通行属性继续保持待审核。
+
 ### Phase 2：POI 搜索
 
 中文名称/别名/关键词搜索、分类、建议、FlyTo、高亮与 Bottom Sheet。

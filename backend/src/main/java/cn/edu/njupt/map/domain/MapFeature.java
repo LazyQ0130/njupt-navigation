@@ -42,6 +42,18 @@ public class MapFeature {
     @Column(nullable = false)
     private int priority;
 
+    @Column(name = "data_source", nullable = false, length = 40)
+    private String dataSource;
+
+    @Column(name = "verification_status", nullable = false, length = 40)
+    private String verificationStatus;
+
+    @Column(name = "source_id", length = 128)
+    private String sourceId;
+
+    @Column(name = "source_updated_at")
+    private Instant sourceUpdatedAt;
+
     @Column(nullable = false)
     private boolean enabled;
 
@@ -55,7 +67,9 @@ public class MapFeature {
     }
 
     public void updateFromImport(Campus campus, String externalId, String name, String featureType,
-                                 Geometry geometry, String color, int priority, boolean enabled) {
+                                 Geometry geometry, String color, int priority, String dataSource,
+                                 String verificationStatus, String sourceId, Instant sourceUpdatedAt,
+                                 boolean enabled) {
         this.campus = campus;
         this.externalId = externalId;
         this.name = name;
@@ -63,6 +77,10 @@ public class MapFeature {
         this.geometry = geometry;
         this.color = color;
         this.priority = priority;
+        this.dataSource = dataSource;
+        this.verificationStatus = verificationStatus;
+        this.sourceId = sourceId;
+        this.sourceUpdatedAt = sourceUpdatedAt;
         this.enabled = enabled;
         this.updatedAt = Instant.now();
     }
@@ -93,5 +111,21 @@ public class MapFeature {
 
     public int getPriority() {
         return priority;
+    }
+
+    public String getDataSource() {
+        return dataSource;
+    }
+
+    public String getVerificationStatus() {
+        return verificationStatus;
+    }
+
+    public String getSourceId() {
+        return sourceId;
+    }
+
+    public Instant getSourceUpdatedAt() {
+        return sourceUpdatedAt;
     }
 }

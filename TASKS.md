@@ -31,6 +31,20 @@
 - [x] 合成数据全栈验收与来源声明
 - [ ] 真实仙林校区边界、建筑、道路和 POI 的授权采集与现场核验
 
+## Phase 1.5 — 真实仙林 GIS 数据质量门
+
+- [x] OSM Overpass 获取脚本、缓存与 ODbL attribution
+- [x] 南邮官方公开参考来源登记（不分发图片/PDF）
+- [x] 分层真实 GeoJSON、稳定 ID 和 manual override 目录
+- [x] Geometry、坐标、校界、重复、路网连接和穿建筑校验
+- [x] V3 来源/核验元数据与未知高度 NULL 语义
+- [x] Building/POI/MapFeature/Entrance 幂等导入链路
+- [x] Demo/Real 来源级切换与 production Demo 启动保护
+- [x] Validation report 与人工审核 checklist
+- [ ] 校界、名称、食堂/宿舍/校门和道路人工叠图核验
+- [ ] 主要建筑入口与通行属性现场核验
+- [ ] 将确认对象提升为 MANUALLY_REVIEWED / FIELD_VERIFIED
+
 ## Phase 2 — POI 搜索
 
 - [ ] 中文名称/别名/关键词模糊搜索

@@ -1,0 +1,8484 @@
+{
+  "type": "FeatureCollection",
+  "name": "njupt-xianlin-real-v1-roads",
+  "metadata": {
+    "datasetId": "njupt-xianlin-real-v1",
+    "layer": "roads",
+    "dataSource": "OPENSTREETMAP",
+    "sourceId": "osm-xianlin-2026-08-22",
+    "license": "ODbL-1.0",
+    "requiredAttribution": "© OpenStreetMap contributors",
+    "retrievedAt": "2026-08-22",
+    "coordinateSystem": "EPSG:4326",
+    "verificationStatus": "SOURCE_VERIFIED"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "osm:way:118942534",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:118942534",
+        "name": "学海路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 118942534,
+        "priority": 45,
+        "osmHighway": "secondary"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.92286083875152,
+            32.106548570877955
+          ],
+          [
+            118.9228596,
+            32.1066207
+          ],
+          [
+            118.9229745,
+            32.1102776
+          ],
+          [
+            118.9230198,
+            32.1120112
+          ],
+          [
+            118.9230247,
+            32.112206
+          ],
+          [
+            118.9229963,
+            32.1126816
+          ],
+          [
+            118.9229323,
+            32.1132235
+          ],
+          [
+            118.9228044,
+            32.1136569
+          ],
+          [
+            118.9226627,
+            32.1139545
+          ],
+          [
+            118.9224632,
+            32.1143733
+          ],
+          [
+            118.9219586,
+            32.1151921
+          ],
+          [
+            118.9213331,
+            32.1162456
+          ],
+          [
+            118.9206365,
+            32.1174196
+          ],
+          [
+            118.9191511,
+            32.1199102
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:140811047",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:140811047",
+        "name": "文澜路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 140811047,
+        "priority": 45,
+        "osmHighway": "secondary"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.91907891546246,
+            32.11987162237178
+          ],
+          [
+            118.9191511,
+            32.1199102
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:140811049",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:140811049",
+        "name": "文苑路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 140811049,
+        "priority": 45,
+        "osmHighway": "secondary"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.92293776724382,
+            32.10651606162628
+          ],
+          [
+            118.9262503,
+            32.1075391
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:423022850",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:423022850",
+        "name": "文苑路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 423022850,
+        "priority": 45,
+        "osmHighway": "secondary"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9261944,
+            32.1076403
+          ],
+          [
+            118.9228596,
+            32.1066207
+          ],
+          [
+            118.92278502739191,
+            32.106599633791426
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:89911411",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:89911411",
+        "name": "学典路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 89911411,
+        "priority": 45,
+        "osmHighway": "tertiary"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.92626325503242,
+            32.10731417677269
+          ],
+          [
+            118.9262503,
+            32.1075391
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223699461",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:223699461",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 223699461,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9264098,
+            32.1087341
+          ],
+          [
+            118.9261931,
+            32.1087293
+          ],
+          [
+            118.9251193,
+            32.1087217
+          ],
+          [
+            118.9241405,
+            32.1087235
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223699462",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:223699462",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 223699462,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9261931,
+            32.1087293
+          ],
+          [
+            118.9261944,
+            32.1076403
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223699463",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:223699463",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 223699463,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9241405,
+            32.1087235
+          ],
+          [
+            118.9241141,
+            32.1088098
+          ],
+          [
+            118.9240443,
+            32.1088689
+          ],
+          [
+            118.9239384,
+            32.1088914
+          ],
+          [
+            118.9238539,
+            32.1088689
+          ],
+          [
+            118.9237842,
+            32.1088098
+          ],
+          [
+            118.9237586,
+            32.1087292
+          ],
+          [
+            118.9237842,
+            32.1086485
+          ],
+          [
+            118.9238539,
+            32.1085895
+          ],
+          [
+            118.9239491,
+            32.1085678
+          ],
+          [
+            118.9240443,
+            32.1085895
+          ],
+          [
+            118.9241141,
+            32.1086485
+          ],
+          [
+            118.9241405,
+            32.1087235
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223699471",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:223699471",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 223699471,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9239491,
+            32.1085678
+          ],
+          [
+            118.9239596,
+            32.1081068
+          ],
+          [
+            118.9242046,
+            32.1081053
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223699475",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:223699475",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 223699475,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9270168,
+            32.1088246
+          ],
+          [
+            118.9267796,
+            32.1087718
+          ],
+          [
+            118.9265918,
+            32.1087419
+          ],
+          [
+            118.9264098,
+            32.1087341
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223699476",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:223699476",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 223699476,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9237586,
+            32.1087292
+          ],
+          [
+            118.9235874,
+            32.1087295
+          ],
+          [
+            118.9235403,
+            32.1087303
+          ],
+          [
+            118.9231056,
+            32.1087255
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223859831",
+      "properties": {
+        "featureType": "ROAD_PEDESTRIAN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:223859831",
+        "name": "未命名步道",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 223859831,
+        "priority": 20,
+        "osmHighway": "pedestrian"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9251193,
+            32.1087217
+          ],
+          [
+            118.9251184,
+            32.1086798
+          ],
+          [
+            118.925113,
+            32.1086298
+          ],
+          [
+            118.925113,
+            32.1085526
+          ],
+          [
+            118.9251238,
+            32.1084844
+          ],
+          [
+            118.9251667,
+            32.1084299
+          ],
+          [
+            118.925215,
+            32.1083663
+          ],
+          [
+            118.9252579,
+            32.1083163
+          ],
+          [
+            118.9252847,
+            32.1082481
+          ],
+          [
+            118.925274,
+            32.1081754
+          ],
+          [
+            118.9252579,
+            32.1081072
+          ],
+          [
+            118.9252311,
+            32.1080573
+          ],
+          [
+            118.9251774,
+            32.1079891
+          ],
+          [
+            118.9251023,
+            32.1079346
+          ],
+          [
+            118.9250165,
+            32.1079028
+          ],
+          [
+            118.924936,
+            32.1078664
+          ],
+          [
+            118.924818,
+            32.1078301
+          ],
+          [
+            118.9247107,
+            32.1077937
+          ],
+          [
+            118.9246195,
+            32.1077619
+          ],
+          [
+            118.9245069,
+            32.1077528
+          ],
+          [
+            118.9244157,
+            32.1077483
+          ],
+          [
+            118.9242923,
+            32.1077574
+          ],
+          [
+            118.9241904,
+            32.1077574
+          ],
+          [
+            118.9240562,
+            32.1077528
+          ],
+          [
+            118.9239382,
+            32.1077437
+          ],
+          [
+            118.9238202,
+            32.1077346
+          ],
+          [
+            118.9237129,
+            32.1077346
+          ],
+          [
+            118.9236056,
+            32.1077528
+          ],
+          [
+            118.9235651,
+            32.1077864
+          ],
+          [
+            118.9235574,
+            32.1078301
+          ],
+          [
+            118.9235453,
+            32.1082385
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:224952400",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:224952400",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 224952400,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9235453,
+            32.1082385
+          ],
+          [
+            118.9235035,
+            32.1081938
+          ],
+          [
+            118.9234033,
+            32.1081705
+          ],
+          [
+            118.9233306,
+            32.1081493
+          ],
+          [
+            118.9233005,
+            32.108092
+          ],
+          [
+            118.923303,
+            32.1079943
+          ],
+          [
+            118.9233306,
+            32.107937
+          ],
+          [
+            118.9234008,
+            32.1079051
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:224952411",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:224952411",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 224952411,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9235874,
+            32.1087295
+          ],
+          [
+            118.9235937,
+            32.1084146
+          ],
+          [
+            118.9236188,
+            32.1083552
+          ],
+          [
+            118.9236539,
+            32.108317
+          ],
+          [
+            118.9236965,
+            32.1083
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:224954177",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:224954177",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 224954177,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9251238,
+            32.1091887
+          ],
+          [
+            118.9253865,
+            32.1091887
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:224996916",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:224996916",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 224996916,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9235403,
+            32.1087303
+          ],
+          [
+            118.9235453,
+            32.1082385
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:226966740",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:226966740",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 226966740,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9279528,
+            32.1092151
+          ],
+          [
+            118.9276867,
+            32.1090713
+          ],
+          [
+            118.9275629,
+            32.1090125
+          ],
+          [
+            118.9274151,
+            32.1089505
+          ],
+          [
+            118.9272736,
+            32.1089005
+          ],
+          [
+            118.9270168,
+            32.1088246
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:673044223",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:673044223",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 673044223,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9262503,
+            32.1075391
+          ],
+          [
+            118.9264155,
+            32.1077114
+          ],
+          [
+            118.9264098,
+            32.1087341
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:964850651",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:964850651",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 964850651,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9261944,
+            32.1076403
+          ],
+          [
+            118.9262503,
+            32.1075391
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:964850648",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:964850648",
+        "name": "仙境路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 964850648,
+        "priority": 45,
+        "osmHighway": "secondary"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9308481,
+            32.109291
+          ],
+          [
+            118.93087915119112,
+            32.109244144019655
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:155412175",
+      "properties": {
+        "featureType": "ROAD_PEDESTRIAN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:155412175",
+        "name": "未命名步道",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 155412175,
+        "priority": 20,
+        "osmHighway": "pedestrian"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9264098,
+            32.1087341
+          ],
+          [
+            118.9264061,
+            32.1112016
+          ],
+          [
+            118.926404,
+            32.1126329
+          ],
+          [
+            118.9263992,
+            32.1132011
+          ],
+          [
+            118.9263976,
+            32.1133921
+          ],
+          [
+            118.9264032,
+            32.1146336
+          ],
+          [
+            118.9261859,
+            32.11463
+          ],
+          [
+            118.9261874,
+            32.1133921
+          ],
+          [
+            118.9261868,
+            32.1127734
+          ],
+          [
+            118.9261881,
+            32.111937
+          ],
+          [
+            118.9261895,
+            32.1112609
+          ],
+          [
+            118.9261893,
+            32.1111282
+          ],
+          [
+            118.926191,
+            32.1104967
+          ],
+          [
+            118.9261909,
+            32.1096049
+          ],
+          [
+            118.9261916,
+            32.1095229
+          ],
+          [
+            118.9261919,
+            32.1094951
+          ],
+          [
+            118.9261931,
+            32.1087293
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223699453",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:223699453",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 223699453,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9239147,
+            32.1188124
+          ],
+          [
+            118.9235192,
+            32.1185634
+          ],
+          [
+            118.9232497,
+            32.1183438
+          ],
+          [
+            118.9231844,
+            32.1182836
+          ],
+          [
+            118.9230558,
+            32.1181652
+          ],
+          [
+            118.9229534,
+            32.1180273
+          ],
+          [
+            118.9228896,
+            32.1179414
+          ],
+          [
+            118.9227149,
+            32.1176779
+          ],
+          [
+            118.9226971,
+            32.1176438
+          ],
+          [
+            118.92257,
+            32.1174
+          ],
+          [
+            118.9224549,
+            32.1170516
+          ],
+          [
+            118.92245,
+            32.1170331
+          ],
+          [
+            118.922392,
+            32.1168134
+          ],
+          [
+            118.9223778,
+            32.1166877
+          ],
+          [
+            118.9223659,
+            32.1165824
+          ],
+          [
+            118.9223739,
+            32.1162413
+          ],
+          [
+            118.9224102,
+            32.1160392
+          ],
+          [
+            118.9224847,
+            32.1157955
+          ],
+          [
+            118.9225858,
+            32.1155874
+          ],
+          [
+            118.9227522,
+            32.115336
+          ],
+          [
+            118.9227734,
+            32.1153133
+          ],
+          [
+            118.922949,
+            32.1151246
+          ],
+          [
+            118.9231261,
+            32.1149284
+          ],
+          [
+            118.9232832,
+            32.1147287
+          ],
+          [
+            118.9235085,
+            32.1143879
+          ],
+          [
+            118.9236881,
+            32.1139736
+          ],
+          [
+            118.9229273,
+            32.1139711
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223699455",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:223699455",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 223699455,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9284984,
+            32.109741
+          ],
+          [
+            118.9282481,
+            32.1101616
+          ],
+          [
+            118.9281077,
+            32.1104381
+          ],
+          [
+            118.9279876,
+            32.1107153
+          ],
+          [
+            118.9278615,
+            32.1110582
+          ],
+          [
+            118.9278487,
+            32.1110956
+          ],
+          [
+            118.9277708,
+            32.1113238
+          ],
+          [
+            118.9277049,
+            32.1115829
+          ],
+          [
+            118.9276449,
+            32.1118585
+          ],
+          [
+            118.9275994,
+            32.112171
+          ],
+          [
+            118.9275733,
+            32.112437
+          ],
+          [
+            118.927565,
+            32.1127903
+          ],
+          [
+            118.927569,
+            32.1134046
+          ],
+          [
+            118.9275945,
+            32.1138744
+          ],
+          [
+            118.9276471,
+            32.1143275
+          ],
+          [
+            118.9276848,
+            32.1145194
+          ],
+          [
+            118.9277991,
+            32.1148563
+          ],
+          [
+            118.9280297,
+            32.1153516
+          ],
+          [
+            118.9281867,
+            32.1157714
+          ],
+          [
+            118.9282163,
+            32.1159063
+          ],
+          [
+            118.9282485,
+            32.1161544
+          ],
+          [
+            118.9282617,
+            32.1163899
+          ],
+          [
+            118.9282506,
+            32.1166869
+          ],
+          [
+            118.9282016,
+            32.1171694
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223699457",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:223699457",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 223699457,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9236881,
+            32.1139736
+          ],
+          [
+            118.9237913,
+            32.1136773
+          ],
+          [
+            118.9238688,
+            32.1134123
+          ],
+          [
+            118.9239225,
+            32.1130993
+          ],
+          [
+            118.9239374,
+            32.1127838
+          ],
+          [
+            118.923931,
+            32.1119289
+          ],
+          [
+            118.9239331,
+            32.1112558
+          ],
+          [
+            118.9239352,
+            32.1111311
+          ],
+          [
+            118.9239327,
+            32.1104701
+          ],
+          [
+            118.923936,
+            32.1095991
+          ],
+          [
+            118.9239336,
+            32.1094815
+          ],
+          [
+            118.9239384,
+            32.1088914
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223859804",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:223859804",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 223859804,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.927569,
+            32.1134046
+          ],
+          [
+            118.9285302,
+            32.1134077
+          ],
+          [
+            118.9291527,
+            32.1134073
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223859805",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:223859805",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 223859805,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9278615,
+            32.1110582
+          ],
+          [
+            118.9290031,
+            32.1110282
+          ],
+          [
+            118.9290664,
+            32.1110349
+          ],
+          [
+            118.9291042,
+            32.1110471
+          ],
+          [
+            118.9291524,
+            32.1110653
+          ],
+          [
+            118.9292104,
+            32.1111021
+          ],
+          [
+            118.9292402,
+            32.1111528
+          ],
+          [
+            118.9292536,
+            32.1112111
+          ],
+          [
+            118.9292544,
+            32.1112743
+          ],
+          [
+            118.9292436,
+            32.111347
+          ],
+          [
+            118.9292307,
+            32.1114839
+          ],
+          [
+            118.9291795,
+            32.1117933
+          ],
+          [
+            118.9291139,
+            32.1121736
+          ],
+          [
+            118.9291011,
+            32.1123752
+          ],
+          [
+            118.9290934,
+            32.1125408
+          ],
+          [
+            118.9290934,
+            32.1127192
+          ],
+          [
+            118.9290988,
+            32.1129237
+          ],
+          [
+            118.9291184,
+            32.1131611
+          ],
+          [
+            118.9291527,
+            32.1134073
+          ],
+          [
+            118.9292055,
+            32.1136851
+          ],
+          [
+            118.9292472,
+            32.1138596
+          ],
+          [
+            118.929283,
+            32.1140085
+          ],
+          [
+            118.9293485,
+            32.1142379
+          ],
+          [
+            118.929402,
+            32.1144118
+          ],
+          [
+            118.9294273,
+            32.1145076
+          ],
+          [
+            118.9298086,
+            32.1157268
+          ],
+          [
+            118.9297924,
+            32.1157643
+          ],
+          [
+            118.9297521,
+            32.1157724
+          ],
+          [
+            118.9294733,
+            32.115775
+          ],
+          [
+            118.9281867,
+            32.1157714
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223859841",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:223859841",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 223859841,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9276848,
+            32.1145194
+          ],
+          [
+            118.9285415,
+            32.1145181
+          ],
+          [
+            118.9294273,
+            32.1145076
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223859849",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:223859849",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 223859849,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9275994,
+            32.112171
+          ],
+          [
+            118.9291139,
+            32.1121736
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:224953924",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:224953924",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 224953924,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9251193,
+            32.1087217
+          ],
+          [
+            118.9251238,
+            32.1091887
+          ],
+          [
+            118.9251203,
+            32.1094816
+          ],
+          [
+            118.925119,
+            32.1095951
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225092939",
+      "properties": {
+        "featureType": "ROAD_PEDESTRIAN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:225092939",
+        "name": "未命名步道",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 225092939,
+        "priority": 20,
+        "osmHighway": "pedestrian"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9294782,
+            32.1179474
+          ],
+          [
+            118.9294779,
+            32.1177956
+          ],
+          [
+            118.9294733,
+            32.115775
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:226967003",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:226967003",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 226967003,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9287475,
+            32.1096845
+          ],
+          [
+            118.9286807,
+            32.109741
+          ],
+          [
+            118.9285896,
+            32.1097617
+          ],
+          [
+            118.9284984,
+            32.109741
+          ],
+          [
+            118.9284317,
+            32.1096845
+          ],
+          [
+            118.9284072,
+            32.1096073
+          ],
+          [
+            118.9284317,
+            32.10953
+          ],
+          [
+            118.9284486,
+            32.1095157
+          ],
+          [
+            118.9279528,
+            32.1092151
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:876594630",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:876594630",
+        "name": "仙境路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 876594630,
+        "priority": 45,
+        "osmHighway": "secondary"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9306999,
+            32.1095147
+          ],
+          [
+            118.9308481,
+            32.109291
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:876594631",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:876594631",
+        "name": "仙境路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 876594631,
+        "priority": 45,
+        "osmHighway": "secondary"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9302574,
+            32.1161567
+          ],
+          [
+            118.9301755,
+            32.1158635
+          ],
+          [
+            118.9298743,
+            32.114847
+          ],
+          [
+            118.9295217,
+            32.1137375
+          ],
+          [
+            118.9294516,
+            32.1134428
+          ],
+          [
+            118.9293979,
+            32.1130967
+          ],
+          [
+            118.9293816,
+            32.112717
+          ],
+          [
+            118.9293839,
+            32.1124638
+          ],
+          [
+            118.9294003,
+            32.1122027
+          ],
+          [
+            118.9294341,
+            32.1119614
+          ],
+          [
+            118.9294913,
+            32.1117202
+          ],
+          [
+            118.9296314,
+            32.111289
+          ],
+          [
+            118.9298299,
+            32.1108915
+          ],
+          [
+            118.9301311,
+            32.1103733
+          ],
+          [
+            118.9306999,
+            32.1095147
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:876594633",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:876594633",
+        "name": "仙境路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 876594633,
+        "priority": 45,
+        "osmHighway": "secondary"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.93085470606033,
+            32.10958913445024
+          ],
+          [
+            118.9302648,
+            32.1104823
+          ],
+          [
+            118.9300837,
+            32.110827
+          ],
+          [
+            118.9299173,
+            32.1111396
+          ],
+          [
+            118.929786,
+            32.1115287
+          ],
+          [
+            118.9297053,
+            32.1117946
+          ],
+          [
+            118.9296418,
+            32.1120797
+          ],
+          [
+            118.9296056,
+            32.1125286
+          ],
+          [
+            118.9296169,
+            32.1131058
+          ],
+          [
+            118.9296423,
+            32.1134063
+          ],
+          [
+            118.929677,
+            32.1136634
+          ],
+          [
+            118.9299026,
+            32.1144049
+          ],
+          [
+            118.930448,
+            32.1161231
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:964850650",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:964850650",
+        "name": "文苑路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 964850650,
+        "priority": 45,
+        "osmHighway": "secondary"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9307723824136,
+            32.10903609096693
+          ],
+          [
+            118.9264155,
+            32.1077114
+          ],
+          [
+            118.9262778,
+            32.1076677
+          ],
+          [
+            118.9261944,
+            32.1076403
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:964850652",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:964850652",
+        "name": "文苑路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 964850652,
+        "priority": 45,
+        "osmHighway": "secondary"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9262503,
+            32.1075391
+          ],
+          [
+            118.93002250769976,
+            32.108647541983785
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:1173059695",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:1173059695",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 1173059695,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9231261,
+            32.1149284
+          ],
+          [
+            118.9232698,
+            32.1149991
+          ],
+          [
+            118.9237575,
+            32.1152393
+          ],
+          [
+            118.9244656,
+            32.1152357
+          ],
+          [
+            118.9245175,
+            32.1152743
+          ],
+          [
+            118.9245536,
+            32.1153011
+          ],
+          [
+            118.9245536,
+            32.1156458
+          ],
+          [
+            118.9245536,
+            32.1161444
+          ],
+          [
+            118.9245536,
+            32.1162171
+          ],
+          [
+            118.9243718,
+            32.1164915
+          ],
+          [
+            118.9242748,
+            32.116638
+          ],
+          [
+            118.9241299,
+            32.1168566
+          ],
+          [
+            118.9240442,
+            32.1169859
+          ],
+          [
+            118.9237371,
+            32.1174494
+          ],
+          [
+            118.9233463,
+            32.1180393
+          ],
+          [
+            118.9231844,
+            32.1182836
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:1173059696",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:1173059696",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 1173059696,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9232698,
+            32.1149991
+          ],
+          [
+            118.9229852,
+            32.1154222
+          ],
+          [
+            118.9227755,
+            32.1157338
+          ],
+          [
+            118.9226823,
+            32.1158722
+          ],
+          [
+            118.9225151,
+            32.1161208
+          ],
+          [
+            118.9226074,
+            32.1162934
+          ],
+          [
+            118.9228832,
+            32.1164263
+          ],
+          [
+            118.9234008,
+            32.1166758
+          ],
+          [
+            118.9240442,
+            32.1169859
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:1173059698",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:1173059698",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 1173059698,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9229852,
+            32.1154222
+          ],
+          [
+            118.9236363,
+            32.115722
+          ],
+          [
+            118.9239306,
+            32.1158575
+          ],
+          [
+            118.9241324,
+            32.1159504
+          ],
+          [
+            118.9245536,
+            32.1161444
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:1173059699",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:1173059699",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 1173059699,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9239306,
+            32.1158575
+          ],
+          [
+            118.9237204,
+            32.1161822
+          ],
+          [
+            118.923627,
+            32.1163265
+          ],
+          [
+            118.9234008,
+            32.1166758
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:1173059700",
+      "properties": {
+        "featureType": "ROAD_PEDESTRIAN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:1173059700",
+        "name": "未命名步道",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 1173059700,
+        "priority": 20,
+        "osmHighway": "path"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9227755,
+            32.1157338
+          ],
+          [
+            118.9229762,
+            32.115829
+          ],
+          [
+            118.9230753,
+            32.1158761
+          ],
+          [
+            118.923438,
+            32.1160482
+          ],
+          [
+            118.9237204,
+            32.1161822
+          ],
+          [
+            118.9240067,
+            32.1163181
+          ],
+          [
+            118.9243718,
+            32.1164915
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:1173059701",
+      "properties": {
+        "featureType": "ROAD_PEDESTRIAN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:1173059701",
+        "name": "未命名步道",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 1173059701,
+        "priority": 20,
+        "osmHighway": "path"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9226823,
+            32.1158722
+          ],
+          [
+            118.922885,
+            32.1159697
+          ],
+          [
+            118.9230935,
+            32.11607
+          ],
+          [
+            118.923627,
+            32.1163265
+          ],
+          [
+            118.9240131,
+            32.1165121
+          ],
+          [
+            118.9242748,
+            32.116638
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:1173059702",
+      "properties": {
+        "featureType": "ROAD_PEDESTRIAN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:1173059702",
+        "name": "未命名步道",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 1173059702,
+        "priority": 20,
+        "osmHighway": "path"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9229762,
+            32.115829
+          ],
+          [
+            118.922885,
+            32.1159697
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:1173059703",
+      "properties": {
+        "featureType": "ROAD_PEDESTRIAN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:1173059703",
+        "name": "未命名步道",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 1173059703,
+        "priority": 20,
+        "osmHighway": "path"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9230753,
+            32.1158761
+          ],
+          [
+            118.9230935,
+            32.11607
+          ],
+          [
+            118.923438,
+            32.1160482
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:1173059722",
+      "properties": {
+        "featureType": "ROAD_PEDESTRIAN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:1173059722",
+        "name": "未命名步道",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 1173059722,
+        "priority": 20,
+        "osmHighway": "path"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9243053,
+            32.1156498
+          ],
+          [
+            118.9241324,
+            32.1159504
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:155412163",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:155412163",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 155412163,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9238688,
+            32.1134123
+          ],
+          [
+            118.9261874,
+            32.1133921
+          ],
+          [
+            118.9263976,
+            32.1133921
+          ],
+          [
+            118.927569,
+            32.1134046
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:155414099",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:155414099",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 155414099,
+        "priority": 45,
+        "osmHighway": "tertiary"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.92277282073022,
+            32.1120123462528
+          ],
+          [
+            118.9230198,
+            32.1120112
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223699458",
+      "properties": {
+        "featureType": "ROAD_PEDESTRIAN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:223699458",
+        "name": "未命名步道",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 223699458,
+        "priority": 20,
+        "osmHighway": "path"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9265741,
+            32.1150395
+          ],
+          [
+            118.9263994,
+            32.1150423
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223699464",
+      "properties": {
+        "featureType": "ROAD_PEDESTRIAN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:223699464",
+        "name": "未命名步道",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 223699464,
+        "priority": 20,
+        "osmHighway": "steps"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9262423,
+            32.1148873
+          ],
+          [
+            118.9262459,
+            32.1146797
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223699466",
+      "properties": {
+        "featureType": "ROAD_PEDESTRIAN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:223699466",
+        "name": "未命名步道",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 223699466,
+        "priority": 20,
+        "osmHighway": "steps"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9263323,
+            32.1148875
+          ],
+          [
+            118.9263366,
+            32.1146792
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223699467",
+      "properties": {
+        "featureType": "ROAD_PEDESTRIAN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:223699467",
+        "name": "未命名步道",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 223699467,
+        "priority": 20,
+        "osmHighway": "path"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9264168,
+            32.1149873
+          ],
+          [
+            118.9263994,
+            32.1150423
+          ],
+          [
+            118.9263518,
+            32.1150826
+          ],
+          [
+            118.9262868,
+            32.1150974
+          ],
+          [
+            118.9262218,
+            32.1150826
+          ],
+          [
+            118.9261743,
+            32.1150423
+          ],
+          [
+            118.9261569,
+            32.1149873
+          ],
+          [
+            118.9261743,
+            32.1149322
+          ],
+          [
+            118.9262218,
+            32.1148919
+          ],
+          [
+            118.9262423,
+            32.1148873
+          ],
+          [
+            118.9262868,
+            32.1148772
+          ],
+          [
+            118.9263323,
+            32.1148875
+          ],
+          [
+            118.9263518,
+            32.1148919
+          ],
+          [
+            118.9263994,
+            32.1149322
+          ],
+          [
+            118.9264168,
+            32.1149873
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223859789",
+      "properties": {
+        "featureType": "ROAD_PEDESTRIAN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:223859789",
+        "name": "未命名步道",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 223859789,
+        "priority": 20,
+        "osmHighway": "pedestrian"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.926404,
+            32.1126329
+          ],
+          [
+            118.9265185,
+            32.112651
+          ],
+          [
+            118.9265829,
+            32.1126829
+          ],
+          [
+            118.9266518,
+            32.1127295
+          ],
+          [
+            118.9267286,
+            32.1127886
+          ],
+          [
+            118.9267921,
+            32.1128373
+          ],
+          [
+            118.9268297,
+            32.1128919
+          ],
+          [
+            118.9268618,
+            32.1129509
+          ],
+          [
+            118.9268833,
+            32.11301
+          ],
+          [
+            118.9269208,
+            32.11306
+          ],
+          [
+            118.9269638,
+            32.1131009
+          ],
+          [
+            118.927012,
+            32.1131236
+          ],
+          [
+            118.9270711,
+            32.1131236
+          ],
+          [
+            118.9271354,
+            32.1131054
+          ],
+          [
+            118.9272105,
+            32.1130736
+          ],
+          [
+            118.9272642,
+            32.1130327
+          ],
+          [
+            118.9272845,
+            32.1130093
+          ],
+          [
+            118.9273232,
+            32.1129646
+          ],
+          [
+            118.92735,
+            32.1129237
+          ],
+          [
+            118.9273661,
+            32.1128691
+          ],
+          [
+            118.9273715,
+            32.1128192
+          ],
+          [
+            118.9273661,
+            32.1127737
+          ],
+          [
+            118.9274197,
+            32.1127692
+          ],
+          [
+            118.9274734,
+            32.1127692
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223859803",
+      "properties": {
+        "featureType": "ROAD_PEDESTRIAN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:223859803",
+        "name": "未命名步道",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 223859803,
+        "priority": 20,
+        "osmHighway": "pedestrian"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9276848,
+            32.1145194
+          ],
+          [
+            118.9274655,
+            32.114578
+          ],
+          [
+            118.9273177,
+            32.1146085
+          ],
+          [
+            118.9268569,
+            32.1146336
+          ],
+          [
+            118.9264032,
+            32.1146336
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223859806",
+      "properties": {
+        "featureType": "ROAD_PEDESTRIAN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:223859806",
+        "name": "未命名步道",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 223859806,
+        "priority": 20,
+        "osmHighway": "pedestrian"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.927012,
+            32.1131236
+          ],
+          [
+            118.9269369,
+            32.113169
+          ],
+          [
+            118.9269101,
+            32.1132281
+          ],
+          [
+            118.9269048,
+            32.1132781
+          ],
+          [
+            118.9269011,
+            32.1132973
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223859830",
+      "properties": {
+        "featureType": "ROAD_PEDESTRIAN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:223859830",
+        "name": "未命名步道",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 223859830,
+        "priority": 20,
+        "osmHighway": "path"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9261743,
+            32.1150423
+          ],
+          [
+            118.9259916,
+            32.115036
+          ],
+          [
+            118.926043,
+            32.1150909
+          ],
+          [
+            118.9261058,
+            32.1151319
+          ],
+          [
+            118.9261851,
+            32.1151668
+          ],
+          [
+            118.926289,
+            32.1151781
+          ],
+          [
+            118.9263129,
+            32.1151756
+          ],
+          [
+            118.9263394,
+            32.1151729
+          ],
+          [
+            118.9263981,
+            32.1151615
+          ],
+          [
+            118.9264814,
+            32.1151179
+          ],
+          [
+            118.9265308,
+            32.1150787
+          ],
+          [
+            118.9265741,
+            32.1150395
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223859838",
+      "properties": {
+        "featureType": "ROAD_PEDESTRIAN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:223859838",
+        "name": "未命名步道",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 223859838,
+        "priority": 20,
+        "osmHighway": "pedestrian"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9278757,
+            32.1106791
+          ],
+          [
+            118.927806,
+            32.1106654
+          ],
+          [
+            118.9277148,
+            32.1106473
+          ],
+          [
+            118.927586,
+            32.1106427
+          ],
+          [
+            118.9274734,
+            32.1106382
+          ],
+          [
+            118.9274036,
+            32.1106245
+          ],
+          [
+            118.9273393,
+            32.1106109
+          ],
+          [
+            118.9272481,
+            32.1105791
+          ],
+          [
+            118.9271837,
+            32.1105518
+          ],
+          [
+            118.927114,
+            32.1105246
+          ],
+          [
+            118.9270389,
+            32.1104837
+          ],
+          [
+            118.9269638,
+            32.1104519
+          ],
+          [
+            118.9268779,
+            32.1104064
+          ],
+          [
+            118.9268082,
+            32.1103746
+          ],
+          [
+            118.926717,
+            32.1103428
+          ],
+          [
+            118.9266151,
+            32.1103247
+          ],
+          [
+            118.9265346,
+            32.1103201
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223859842",
+      "properties": {
+        "featureType": "ROAD_PEDESTRIAN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:223859842",
+        "name": "未命名步道",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 223859842,
+        "priority": 20,
+        "osmHighway": "track"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.927552,
+            32.1116798
+          ],
+          [
+            118.9274358,
+            32.1116696
+          ],
+          [
+            118.9273124,
+            32.1116423
+          ],
+          [
+            118.9272052,
+            32.1116151
+          ],
+          [
+            118.9271193,
+            32.1115878
+          ],
+          [
+            118.9270228,
+            32.1115606
+          ],
+          [
+            118.9269447,
+            32.1115118
+          ],
+          [
+            118.926884,
+            32.1114506
+          ],
+          [
+            118.9268522,
+            32.1114029
+          ],
+          [
+            118.9268276,
+            32.1113588
+          ],
+          [
+            118.9267915,
+            32.1112853
+          ],
+          [
+            118.9267337,
+            32.1112315
+          ],
+          [
+            118.9266756,
+            32.1112088
+          ],
+          [
+            118.9265254,
+            32.1112067
+          ],
+          [
+            118.9264061,
+            32.1112016
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223859844",
+      "properties": {
+        "featureType": "ROAD_PEDESTRIAN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:223859844",
+        "name": "未命名步道",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 223859844,
+        "priority": 20,
+        "osmHighway": "track"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9273661,
+            32.1127737
+          ],
+          [
+            118.9272764,
+            32.1127606
+          ],
+          [
+            118.9271676,
+            32.1127646
+          ],
+          [
+            118.9270501,
+            32.1127652
+          ],
+          [
+            118.9269788,
+            32.1127535
+          ],
+          [
+            118.926886,
+            32.112754
+          ],
+          [
+            118.926791,
+            32.1127479
+          ],
+          [
+            118.9266518,
+            32.1127295
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:224937776",
+      "properties": {
+        "featureType": "ROAD_PEDESTRIAN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:224937776",
+        "name": "未命名步道",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 224937776,
+        "priority": 20,
+        "osmHighway": "track"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9274805,
+            32.1122308
+          ],
+          [
+            118.9273948,
+            32.1122308
+          ],
+          [
+            118.9273208,
+            32.1122044
+          ],
+          [
+            118.9272585,
+            32.1121582
+          ],
+          [
+            118.9272001,
+            32.1121285
+          ],
+          [
+            118.9271183,
+            32.112112
+          ],
+          [
+            118.9270482,
+            32.1121087
+          ],
+          [
+            118.9270005,
+            32.1121052
+          ],
+          [
+            118.9269168,
+            32.1120948
+          ],
+          [
+            118.9268503,
+            32.1120781
+          ],
+          [
+            118.9268946,
+            32.1119948
+          ],
+          [
+            118.9269562,
+            32.1119093
+          ],
+          [
+            118.926986,
+            32.1118558
+          ],
+          [
+            118.9269981,
+            32.1117883
+          ],
+          [
+            118.9270053,
+            32.1116718
+          ],
+          [
+            118.927015,
+            32.1115879
+          ],
+          [
+            118.9270228,
+            32.1115606
+          ],
+          [
+            118.9270689,
+            32.1114649
+          ],
+          [
+            118.9270842,
+            32.1113797
+          ],
+          [
+            118.9270849,
+            32.1113
+          ],
+          [
+            118.9270568,
+            32.1111939
+          ],
+          [
+            118.9270659,
+            32.1111139
+          ],
+          [
+            118.9270842,
+            32.1110235
+          ],
+          [
+            118.9270903,
+            32.1109771
+          ],
+          [
+            118.9271238,
+            32.1109177
+          ],
+          [
+            118.9271847,
+            32.1108351
+          ],
+          [
+            118.9272457,
+            32.110768
+          ],
+          [
+            118.9272975,
+            32.1106829
+          ],
+          [
+            118.9273393,
+            32.1106109
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:224937848",
+      "properties": {
+        "featureType": "ROAD_PEDESTRIAN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:224937848",
+        "name": "未命名步道",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 224937848,
+        "priority": 20,
+        "osmHighway": "track"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9270849,
+            32.1113
+          ],
+          [
+            118.927165,
+            32.1112936
+          ],
+          [
+            118.927246,
+            32.1112747
+          ],
+          [
+            118.9273084,
+            32.1112424
+          ],
+          [
+            118.9274304,
+            32.111181
+          ],
+          [
+            118.927522,
+            32.1111487
+          ],
+          [
+            118.9276364,
+            32.111097
+          ],
+          [
+            118.9277165,
+            32.1110776
+          ],
+          [
+            118.9278487,
+            32.1110956
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:224953943",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:224953943",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 224953943,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.923936,
+            32.1095991
+          ],
+          [
+            118.9249634,
+            32.1095963
+          ],
+          [
+            118.925119,
+            32.1095951
+          ],
+          [
+            118.9252734,
+            32.1095977
+          ],
+          [
+            118.9261909,
+            32.1096049
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:224953960",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:224953960",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 224953960,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9239336,
+            32.1094815
+          ],
+          [
+            118.9249631,
+            32.1094814
+          ],
+          [
+            118.9251203,
+            32.1094816
+          ],
+          [
+            118.9252746,
+            32.1094835
+          ],
+          [
+            118.9254133,
+            32.1094816
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:224954286",
+      "properties": {
+        "featureType": "ROAD_PEDESTRIAN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:224954286",
+        "name": "未命名步道",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 224954286,
+        "priority": 20,
+        "osmHighway": "pedestrian"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9239327,
+            32.1104701
+          ],
+          [
+            118.926191,
+            32.1104967
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:224954305",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:224954305",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 224954305,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9239331,
+            32.1112558
+          ],
+          [
+            118.9261895,
+            32.1112609
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:224954306",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:224954306",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 224954306,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9239352,
+            32.1111311
+          ],
+          [
+            118.9261893,
+            32.1111282
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:224954736",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:224954736",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 224954736,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9239374,
+            32.1127838
+          ],
+          [
+            118.9245305,
+            32.1127817
+          ],
+          [
+            118.9255117,
+            32.1127768
+          ],
+          [
+            118.9261868,
+            32.1127734
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:224995051",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:224995051",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 224995051,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.923931,
+            32.1119289
+          ],
+          [
+            118.9244581,
+            32.1119294
+          ],
+          [
+            118.924504,
+            32.1119392
+          ],
+          [
+            118.9245367,
+            32.1119668
+          ],
+          [
+            118.9245747,
+            32.1119806
+          ],
+          [
+            118.9249311,
+            32.1119839
+          ],
+          [
+            118.9249524,
+            32.111995
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:224995052",
+      "properties": {
+        "featureType": "ROAD_PEDESTRIAN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:224995052",
+        "name": "未命名步道",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 224995052,
+        "priority": 20,
+        "osmHighway": "pedestrian"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9244581,
+            32.1119294
+          ],
+          [
+            118.9250374,
+            32.1119319
+          ],
+          [
+            118.9251921,
+            32.1119326
+          ],
+          [
+            118.9254993,
+            32.111934
+          ],
+          [
+            118.9261881,
+            32.111937
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:224995721",
+      "properties": {
+        "featureType": "ROAD_PEDESTRIAN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:224995721",
+        "name": "未命名步道",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 224995721,
+        "priority": 20,
+        "osmHighway": "pedestrian"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9247927,
+            32.1121615
+          ],
+          [
+            118.9247725,
+            32.1121488
+          ],
+          [
+            118.9247408,
+            32.1121216
+          ],
+          [
+            118.9247136,
+            32.1121043
+          ],
+          [
+            118.9246813,
+            32.1120813
+          ],
+          [
+            118.9246287,
+            32.1120454
+          ],
+          [
+            118.9246033,
+            32.1120224
+          ],
+          [
+            118.924599,
+            32.1120018
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:224995747",
+      "properties": {
+        "featureType": "ROAD_PEDESTRIAN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:224995747",
+        "name": "未命名步道",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 224995747,
+        "priority": 20,
+        "osmHighway": "pedestrian"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9241445,
+            32.112204
+          ],
+          [
+            118.9241412,
+            32.1121626
+          ],
+          [
+            118.9241278,
+            32.1121198
+          ],
+          [
+            118.9241261,
+            32.1120756
+          ],
+          [
+            118.9241345,
+            32.1120414
+          ],
+          [
+            118.9241278,
+            32.1119972
+          ],
+          [
+            118.9241294,
+            32.1119518
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:224996490",
+      "properties": {
+        "featureType": "ROAD_PEDESTRIAN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:224996490",
+        "name": "未命名步道",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 224996490,
+        "priority": 20,
+        "osmHighway": "pedestrian"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9255117,
+            32.1127768
+          ],
+          [
+            118.9255026,
+            32.1121603
+          ],
+          [
+            118.9254993,
+            32.111934
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:224996491",
+      "properties": {
+        "featureType": "ROAD_PEDESTRIAN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:224996491",
+        "name": "未命名步道",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 224996491,
+        "priority": 20,
+        "osmHighway": "pedestrian"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9247941,
+            32.1122041
+          ],
+          [
+            118.9247927,
+            32.1121615
+          ],
+          [
+            118.9250404,
+            32.1121611
+          ],
+          [
+            118.9251937,
+            32.1121609
+          ],
+          [
+            118.9255026,
+            32.1121603
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:224996492",
+      "properties": {
+        "featureType": "ROAD_PEDESTRIAN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:224996492",
+        "name": "未命名步道",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 224996492,
+        "priority": 20,
+        "osmHighway": "pedestrian"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9250404,
+            32.1121611
+          ],
+          [
+            118.9250374,
+            32.1119319
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:224996493",
+      "properties": {
+        "featureType": "ROAD_PEDESTRIAN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:224996493",
+        "name": "未命名步道",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 224996493,
+        "priority": 20,
+        "osmHighway": "pedestrian"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9251937,
+            32.1121609
+          ],
+          [
+            118.9251921,
+            32.1119326
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:224996566",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:224996566",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 224996566,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9245305,
+            32.1127817
+          ],
+          [
+            118.9245819,
+            32.1127671
+          ],
+          [
+            118.9246094,
+            32.1127485
+          ],
+          [
+            118.924648,
+            32.1127391
+          ],
+          [
+            118.924892,
+            32.1127407
+          ],
+          [
+            118.9249268,
+            32.112736
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225009121",
+      "properties": {
+        "featureType": "ROAD_PEDESTRIAN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:225009121",
+        "name": "未命名步道",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 225009121,
+        "priority": 20,
+        "osmHighway": "pedestrian"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9266364,
+            32.1132927
+          ],
+          [
+            118.9265188,
+            32.1132076
+          ],
+          [
+            118.9263992,
+            32.1132011
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225093475",
+      "properties": {
+        "featureType": "ROAD_PEDESTRIAN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:225093475",
+        "name": "未命名步道",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 225093475,
+        "priority": 20,
+        "osmHighway": "track"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9268503,
+            32.1120781
+          ],
+          [
+            118.9268159,
+            32.1121303
+          ],
+          [
+            118.9267716,
+            32.1121761
+          ],
+          [
+            118.9266953,
+            32.1122032
+          ],
+          [
+            118.926614,
+            32.112222
+          ],
+          [
+            118.9265248,
+            32.1122262
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225093538",
+      "properties": {
+        "featureType": "ROAD_PEDESTRIAN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:225093538",
+        "name": "未命名步道",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 225093538,
+        "priority": 20,
+        "osmHighway": "track"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9270849,
+            32.1113
+          ],
+          [
+            118.9269938,
+            32.1113025
+          ],
+          [
+            118.9269346,
+            32.1113123
+          ],
+          [
+            118.9268681,
+            32.1113355
+          ],
+          [
+            118.9268276,
+            32.1113588
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225520900",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:225520900",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 225520900,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9229273,
+            32.1139711
+          ],
+          [
+            118.9226627,
+            32.1139545
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225520901",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:225520901",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 225520901,
+        "priority": 45,
+        "osmHighway": "tertiary"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9226627,
+            32.1139545
+          ],
+          [
+            118.92249931116821,
+            32.1138935295352
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:970894655",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:970894655",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 970894655,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9259981,
+            32.1094871
+          ],
+          [
+            118.9261919,
+            32.1094951
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:970894656",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:970894656",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 970894656,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9254133,
+            32.1094816
+          ],
+          [
+            118.9259981,
+            32.1094871
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:1173059705",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:1173059705",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 1173059705,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9229852,
+            32.1154222
+          ],
+          [
+            118.9229276,
+            32.1154464
+          ],
+          [
+            118.9228446,
+            32.1154059
+          ],
+          [
+            118.9228482,
+            32.1153516
+          ],
+          [
+            118.9229068,
+            32.1153157
+          ],
+          [
+            118.9229808,
+            32.1153524
+          ],
+          [
+            118.9229852,
+            32.1154222
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:1173059706",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:1173059706",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 1173059706,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9228482,
+            32.1153516
+          ],
+          [
+            118.9227734,
+            32.1153133
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:1173059719",
+      "properties": {
+        "featureType": "ROAD_PEDESTRIAN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:1173059719",
+        "name": "未命名步道",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 1173059719,
+        "priority": 20,
+        "osmHighway": "path"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9259916,
+            32.115036
+          ],
+          [
+            118.9259274,
+            32.1150598
+          ],
+          [
+            118.9252515,
+            32.1150598
+          ],
+          [
+            118.9250691,
+            32.1150744
+          ],
+          [
+            118.9248803,
+            32.1151071
+          ],
+          [
+            118.9247044,
+            32.1151634
+          ],
+          [
+            118.9245751,
+            32.1152309
+          ],
+          [
+            118.9245175,
+            32.1152743
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:1173059721",
+      "properties": {
+        "featureType": "ROAD_PEDESTRIAN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:1173059721",
+        "name": "未命名步道",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 1173059721,
+        "priority": 20,
+        "osmHighway": "path"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9245536,
+            32.1156458
+          ],
+          [
+            118.9243053,
+            32.1156498
+          ],
+          [
+            118.9236776,
+            32.1156598
+          ],
+          [
+            118.9236363,
+            32.115722
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:1443621025",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:1443621025",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 1443621025,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9239352,
+            32.1111311
+          ],
+          [
+            118.9231875,
+            32.1111046
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:155412170",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:155412170",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 155412170,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9284486,
+            32.1095157
+          ],
+          [
+            118.9284984,
+            32.1094735
+          ],
+          [
+            118.9285896,
+            32.1094528
+          ],
+          [
+            118.9286807,
+            32.1094735
+          ],
+          [
+            118.9287475,
+            32.10953
+          ],
+          [
+            118.9287719,
+            32.1096073
+          ],
+          [
+            118.9287475,
+            32.1096845
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:155412172",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:155412172",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 155412172,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9287475,
+            32.1096845
+          ],
+          [
+            118.9295711,
+            32.110077
+          ],
+          [
+            118.9299125,
+            32.1102504
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:188621612",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:188621612",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 188621612,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              118.9302648,
+              32.1104823
+            ],
+            [
+              118.93029099038974,
+              32.110493962460204
+            ]
+          ],
+          [
+            [
+              118.92995197713688,
+              32.11112996319034
+            ],
+            [
+              118.9299173,
+              32.1111396
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223859799",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:223859799",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 223859799,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9282481,
+            32.1101616
+          ],
+          [
+            118.9288199,
+            32.110152
+          ],
+          [
+            118.9288789,
+            32.110152
+          ],
+          [
+            118.9289271,
+            32.1101656
+          ],
+          [
+            118.9289754,
+            32.1102111
+          ],
+          [
+            118.9289915,
+            32.1102701
+          ],
+          [
+            118.9290031,
+            32.1110282
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223859845",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:223859845",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 223859845,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9285415,
+            32.1145181
+          ],
+          [
+            118.9285302,
+            32.1134077
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:224939806",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:224939806",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 224939806,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9295711,
+            32.110077
+          ],
+          [
+            118.9296706,
+            32.1099066
+          ],
+          [
+            118.9297028,
+            32.1098514
+          ],
+          [
+            118.9298165,
+            32.1096566
+          ],
+          [
+            118.9298717,
+            32.1095492
+          ],
+          [
+            118.9299296,
+            32.1095492
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:224939821",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:224939821",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 224939821,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9296706,
+            32.1099066
+          ],
+          [
+            118.9295352,
+            32.1098411
+          ],
+          [
+            118.9295683,
+            32.1097874
+          ],
+          [
+            118.9297028,
+            32.1098514
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:224941996",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:224941996",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 224941996,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9205904,
+            32.1193533
+          ],
+          [
+            118.9207864,
+            32.1190672
+          ],
+          [
+            118.9209555,
+            32.1188151
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:224942000",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:224942000",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 224942000,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9211234,
+            32.1196199
+          ],
+          [
+            118.9213167,
+            32.1193255
+          ],
+          [
+            118.9214836,
+            32.1190683
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:224942025",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:224942025",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 224942025,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9197839,
+            32.1194921
+          ],
+          [
+            118.9202486,
+            32.1197184
+          ],
+          [
+            118.9202605,
+            32.1197242
+          ],
+          [
+            118.9204998,
+            32.1198422
+          ],
+          [
+            118.9208199,
+            32.1200053
+          ],
+          [
+            118.9214258,
+            32.1203057
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:224942030",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:224942030",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 224942030,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9204998,
+            32.1198422
+          ],
+          [
+            118.9206318,
+            32.1196568
+          ],
+          [
+            118.9206807,
+            32.1196457
+          ],
+          [
+            118.9215757,
+            32.1200888
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:224942035",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:224942035",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 224942035,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9200755,
+            32.119962
+          ],
+          [
+            118.9202486,
+            32.1197184
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:224942039",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:224942039",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 224942039,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.920652,
+            32.1202479
+          ],
+          [
+            118.9208199,
+            32.1200053
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225267149",
+      "properties": {
+        "featureType": "ROAD_PEDESTRIAN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:225267149",
+        "name": "未命名步道",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 225267149,
+        "priority": 20,
+        "osmHighway": "track"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9204254,
+            32.1195085
+          ],
+          [
+            118.920447,
+            32.1195074
+          ],
+          [
+            118.9204736,
+            32.1195117
+          ],
+          [
+            118.9205041,
+            32.1195235
+          ],
+          [
+            118.9206428,
+            32.1195961
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225267150",
+      "properties": {
+        "featureType": "ROAD_PEDESTRIAN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:225267150",
+        "name": "未命名步道",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 225267150,
+        "priority": 20,
+        "osmHighway": "track"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9206428,
+            32.1195961
+          ],
+          [
+            118.9206652,
+            32.1195536
+          ],
+          [
+            118.9206766,
+            32.1195214
+          ],
+          [
+            118.9206917,
+            32.1194405
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225267152",
+      "properties": {
+        "featureType": "ROAD_PEDESTRIAN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:225267152",
+        "name": "未命名步道",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 225267152,
+        "priority": 20,
+        "osmHighway": "track"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9203924,
+            32.1194923
+          ],
+          [
+            118.9204,
+            32.1194666
+          ],
+          [
+            118.9204152,
+            32.119438
+          ],
+          [
+            118.9204577,
+            32.119376
+          ],
+          [
+            118.9204823,
+            32.1193379
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225268089",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:225268089",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 225268089,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9204012,
+            32.1195135
+          ],
+          [
+            118.9202605,
+            32.1197242
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:1173057040",
+      "properties": {
+        "featureType": "ROAD_PEDESTRIAN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:1173057040",
+        "name": "未命名步道",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 1173057040,
+        "priority": 20,
+        "osmHighway": "path"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9207472,
+            32.1182683
+          ],
+          [
+            118.9206946,
+            32.1180808
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:1173057041",
+      "properties": {
+        "featureType": "ROAD_PEDESTRIAN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:1173057041",
+        "name": "未命名步道",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 1173057041,
+        "priority": 20,
+        "osmHighway": "path"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9210552,
+            32.1182523
+          ],
+          [
+            118.9211374,
+            32.1183833
+          ],
+          [
+            118.9212011,
+            32.118485
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:1173057045",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:1173057045",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 1173057045,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9209443,
+            32.1186783
+          ],
+          [
+            118.9211011,
+            32.1184372
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:1173057048",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:1173057048",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 1173057048,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9211011,
+            32.1184372
+          ],
+          [
+            118.9211374,
+            32.1183833
+          ],
+          [
+            118.9211842,
+            32.1183137
+          ],
+          [
+            118.9213094,
+            32.1181277
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:1539473111",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:1539473111",
+        "name": "文澜路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 1539473111,
+        "priority": 45,
+        "osmHighway": "secondary"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9191511,
+            32.1199102
+          ],
+          [
+            118.9198836,
+            32.120294
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:140811043",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:140811043",
+        "name": "学海路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 140811043,
+        "priority": 45,
+        "osmHighway": "secondary"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9191511,
+            32.1199102
+          ],
+          [
+            118.91911776652306,
+            32.1199649165835
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223859850",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:223859850",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 223859850,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9216494,
+            32.1199979
+          ],
+          [
+            118.9215757,
+            32.1200888
+          ],
+          [
+            118.9214258,
+            32.1203057
+          ],
+          [
+            118.9212783,
+            32.1205253
+          ],
+          [
+            118.921237,
+            32.120537
+          ],
+          [
+            118.920652,
+            32.1202479
+          ],
+          [
+            118.9200755,
+            32.119962
+          ],
+          [
+            118.9196514,
+            32.1197556
+          ],
+          [
+            118.9196358,
+            32.1197196
+          ],
+          [
+            118.9196521,
+            32.1196852
+          ],
+          [
+            118.9197839,
+            32.1194921
+          ],
+          [
+            118.9198937,
+            32.1193245
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:224941984",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:224941984",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 224941984,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9201375,
+            32.1187583
+          ],
+          [
+            118.9207864,
+            32.1190672
+          ],
+          [
+            118.9213167,
+            32.1193255
+          ],
+          [
+            118.9218844,
+            32.1196019
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:224941985",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:224941985",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 224941985,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9216824,
+            32.119904
+          ],
+          [
+            118.9211234,
+            32.1196199
+          ],
+          [
+            118.9205904,
+            32.1193533
+          ],
+          [
+            118.9200266,
+            32.1190834
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225267147",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:225267147",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 225267147,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9200266,
+            32.1190834
+          ],
+          [
+            118.9199959,
+            32.1190632
+          ],
+          [
+            118.9199747,
+            32.119032
+          ],
+          [
+            118.9199936,
+            32.1189828
+          ],
+          [
+            118.9201375,
+            32.1187583
+          ],
+          [
+            118.9202985,
+            32.1185145
+          ],
+          [
+            118.9209555,
+            32.1188151
+          ],
+          [
+            118.9214836,
+            32.1190683
+          ],
+          [
+            118.9220576,
+            32.1193482
+          ],
+          [
+            118.9218844,
+            32.1196019
+          ],
+          [
+            118.9216824,
+            32.119904
+          ],
+          [
+            118.9216455,
+            32.1199594
+          ],
+          [
+            118.92164,
+            32.1199804
+          ],
+          [
+            118.9216494,
+            32.1199979
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:949265197",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:949265197",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 949265197,
+        "priority": 45,
+        "osmHighway": "tertiary"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9222218,
+            32.1216732
+          ],
+          [
+            118.92215593575833,
+            32.12177221683542
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:1173057038",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:1173057038",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 1173057038,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9202985,
+            32.1185145
+          ],
+          [
+            118.920367,
+            32.1183995
+          ],
+          [
+            118.920512,
+            32.1181561
+          ],
+          [
+            118.9205873,
+            32.1180298
+          ],
+          [
+            118.9207074,
+            32.1178281
+          ],
+          [
+            118.9207632,
+            32.1178063
+          ],
+          [
+            118.9223596,
+            32.1185805
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:1173057039",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:1173057039",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 1173057039,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.920512,
+            32.1181561
+          ],
+          [
+            118.9207472,
+            32.1182683
+          ],
+          [
+            118.9211011,
+            32.1184372
+          ],
+          [
+            118.9212011,
+            32.118485
+          ],
+          [
+            118.9216646,
+            32.1187061
+          ],
+          [
+            118.9220185,
+            32.118875
+          ],
+          [
+            118.9220979,
+            32.1187482
+          ],
+          [
+            118.9218697,
+            32.1186397
+          ],
+          [
+            118.9217506,
+            32.118583
+          ],
+          [
+            118.9215526,
+            32.1184889
+          ],
+          [
+            118.9211842,
+            32.1183137
+          ],
+          [
+            118.9210552,
+            32.1182523
+          ],
+          [
+            118.9206946,
+            32.1180808
+          ],
+          [
+            118.9205873,
+            32.1180298
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:1173057042",
+      "properties": {
+        "featureType": "ROAD_PEDESTRIAN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:1173057042",
+        "name": "未命名步道",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 1173057042,
+        "priority": 20,
+        "osmHighway": "path"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9215526,
+            32.1184889
+          ],
+          [
+            118.9216646,
+            32.1187061
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:1173057044",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:1173057044",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 1173057044,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.920367,
+            32.1183995
+          ],
+          [
+            118.9209443,
+            32.1186783
+          ],
+          [
+            118.9215076,
+            32.1189503
+          ],
+          [
+            118.9220131,
+            32.1191944
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:1173057046",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:1173057046",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 1173057046,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9215076,
+            32.1189503
+          ],
+          [
+            118.9216646,
+            32.1187061
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:1539473118",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:1539473118",
+        "name": "文澜路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 1539473118,
+        "priority": 45,
+        "osmHighway": "secondary"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              118.9222218,
+              32.1216732
+            ],
+            [
+              118.92209366567764,
+              32.12160852742022
+            ]
+          ],
+          [
+            [
+              118.92204200103099,
+              32.12158245098792
+            ],
+            [
+              118.92019456114498,
+              32.12065000212333
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:1539473123",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:1539473123",
+        "name": "文澜路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 1539473123,
+        "priority": 45,
+        "osmHighway": "secondary"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9198836,
+            32.120294
+          ],
+          [
+            118.9223005,
+            32.1215602
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223699450",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:223699450",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 223699450,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.926412,
+            32.1202279
+          ],
+          [
+            118.9263847,
+            32.1202749
+          ],
+          [
+            118.9260498,
+            32.1207924
+          ],
+          [
+            118.9259166,
+            32.1209942
+          ],
+          [
+            118.9258521,
+            32.1210906
+          ],
+          [
+            118.9256313,
+            32.1214256
+          ],
+          [
+            118.9256251,
+            32.1214348
+          ],
+          [
+            118.9254708,
+            32.1216627
+          ],
+          [
+            118.9253149,
+            32.121893
+          ],
+          [
+            118.925113,
+            32.1221912
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223699460",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:223699460",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 223699460,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9263667,
+            32.1201947
+          ],
+          [
+            118.9263362,
+            32.1201511
+          ],
+          [
+            118.9263234,
+            32.1201015
+          ],
+          [
+            118.9263299,
+            32.1200511
+          ],
+          [
+            118.9263547,
+            32.120005
+          ],
+          [
+            118.9263938,
+            32.119969
+          ],
+          [
+            118.926444,
+            32.1199449
+          ],
+          [
+            118.9265004,
+            32.1199348
+          ],
+          [
+            118.9265578,
+            32.1199398
+          ],
+          [
+            118.9266106,
+            32.1199594
+          ],
+          [
+            118.9266509,
+            32.1199886
+          ],
+          [
+            118.9266798,
+            32.1200262
+          ],
+          [
+            118.9266952,
+            32.1200692
+          ],
+          [
+            118.9266956,
+            32.1201141
+          ],
+          [
+            118.9266812,
+            32.1201573
+          ],
+          [
+            118.9266531,
+            32.1201954
+          ],
+          [
+            118.9266135,
+            32.1202252
+          ],
+          [
+            118.9265655,
+            32.1202444
+          ],
+          [
+            118.9265132,
+            32.1202515
+          ],
+          [
+            118.9264606,
+            32.1202458
+          ],
+          [
+            118.926412,
+            32.1202279
+          ],
+          [
+            118.9263667,
+            32.1201947
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223699465",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:223699465",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 223699465,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9281034,
+            32.1174596
+          ],
+          [
+            118.9279879,
+            32.1177926
+          ],
+          [
+            118.9278089,
+            32.1181219
+          ],
+          [
+            118.9277048,
+            32.1182899
+          ],
+          [
+            118.9276918,
+            32.1183108
+          ],
+          [
+            118.927576,
+            32.1184973
+          ],
+          [
+            118.9275376,
+            32.1185532
+          ],
+          [
+            118.9273967,
+            32.118758
+          ],
+          [
+            118.9272513,
+            32.1189887
+          ],
+          [
+            118.9270297,
+            32.1193283
+          ],
+          [
+            118.9267474,
+            32.1197635
+          ],
+          [
+            118.9266106,
+            32.1199594
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223699469",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:223699469",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 223699469,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9239822,
+            32.1190255
+          ],
+          [
+            118.9234013,
+            32.1199242
+          ],
+          [
+            118.9230934,
+            32.1204005
+          ],
+          [
+            118.9224973,
+            32.1212761
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223699473",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:223699473",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 223699473,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9242584,
+            32.1188904
+          ],
+          [
+            118.9242337,
+            32.1189684
+          ],
+          [
+            118.9241663,
+            32.1190255
+          ],
+          [
+            118.9240742,
+            32.1190464
+          ],
+          [
+            118.9239822,
+            32.1190255
+          ],
+          [
+            118.9239147,
+            32.1189684
+          ],
+          [
+            118.9238901,
+            32.1188904
+          ],
+          [
+            118.9239147,
+            32.1188124
+          ],
+          [
+            118.9239822,
+            32.1187554
+          ],
+          [
+            118.9240742,
+            32.1187345
+          ],
+          [
+            118.9241663,
+            32.1187554
+          ],
+          [
+            118.9242337,
+            32.1188124
+          ],
+          [
+            118.9242584,
+            32.1188904
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223699478",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:223699478",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 223699478,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9242337,
+            32.1189684
+          ],
+          [
+            118.9253918,
+            32.1195106
+          ],
+          [
+            118.9258275,
+            32.1197254
+          ],
+          [
+            118.925853,
+            32.119738
+          ],
+          [
+            118.926256,
+            32.1199367
+          ],
+          [
+            118.9263547,
+            32.120005
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223859785",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:223859785",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 223859785,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9273713,
+            32.1200648
+          ],
+          [
+            118.928011,
+            32.1190476
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223859835",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:223859835",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 223859835,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9260498,
+            32.1207924
+          ],
+          [
+            118.9274947,
+            32.1215092
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:224941251",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:224941251",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 224941251,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9258521,
+            32.1210906
+          ],
+          [
+            118.9271141,
+            32.1217011
+          ],
+          [
+            118.9273033,
+            32.1217925
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:224941275",
+      "properties": {
+        "featureType": "ROAD_PEDESTRIAN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:224941275",
+        "name": "未命名步道",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 224941275,
+        "priority": 20,
+        "osmHighway": "pedestrian"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9253918,
+            32.1195106
+          ],
+          [
+            118.9251181,
+            32.1199324
+          ],
+          [
+            118.9248936,
+            32.1202785
+          ],
+          [
+            118.9250891,
+            32.120472
+          ],
+          [
+            118.9251849,
+            32.1206646
+          ],
+          [
+            118.9252484,
+            32.1209063
+          ],
+          [
+            118.9252421,
+            32.1210941
+          ],
+          [
+            118.9252104,
+            32.1212175
+          ],
+          [
+            118.9256313,
+            32.1214256
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:224941322",
+      "properties": {
+        "featureType": "ROAD_PEDESTRIAN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:224941322",
+        "name": "未命名步道",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 224941322,
+        "priority": 20,
+        "osmHighway": "pedestrian"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9248936,
+            32.1202785
+          ],
+          [
+            118.9248049,
+            32.1202356
+          ],
+          [
+            118.9245642,
+            32.1201873
+          ],
+          [
+            118.9242601,
+            32.1201927
+          ],
+          [
+            118.9240837,
+            32.1202452
+          ],
+          [
+            118.9237687,
+            32.1203102
+          ],
+          [
+            118.9236386,
+            32.1203996
+          ],
+          [
+            118.9235505,
+            32.1204234
+          ],
+          [
+            118.9234048,
+            32.1204234
+          ],
+          [
+            118.9232971,
+            32.1204395
+          ],
+          [
+            118.9232588,
+            32.1204944
+          ],
+          [
+            118.9232148,
+            32.1205575
+          ],
+          [
+            118.9232668,
+            32.1206485
+          ],
+          [
+            118.9233392,
+            32.1207691
+          ],
+          [
+            118.9233462,
+            32.1209372
+          ],
+          [
+            118.9233228,
+            32.1212615
+          ],
+          [
+            118.9233295,
+            32.1213856
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:224941330",
+      "properties": {
+        "featureType": "ROAD_PEDESTRIAN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:224941330",
+        "name": "未命名步道",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 224941330,
+        "priority": 20,
+        "osmHighway": "pedestrian"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9232588,
+            32.1204944
+          ],
+          [
+            118.9230934,
+            32.1204005
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:224941334",
+      "properties": {
+        "featureType": "ROAD_PEDESTRIAN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:224941334",
+        "name": "未命名步道",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 224941334,
+        "priority": 20,
+        "osmHighway": "pedestrian"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9252104,
+            32.1212175
+          ],
+          [
+            118.9251396,
+            32.1213629
+          ],
+          [
+            118.9250397,
+            32.1215014
+          ],
+          [
+            118.9249079,
+            32.121636
+          ],
+          [
+            118.9247489,
+            32.1217322
+          ],
+          [
+            118.9246445,
+            32.1217745
+          ],
+          [
+            118.9245173,
+            32.1217052
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225107325",
+      "properties": {
+        "featureType": "ROAD_PEDESTRIAN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:225107325",
+        "name": "未命名步道",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 225107325,
+        "priority": 20,
+        "osmHighway": "pedestrian"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9270418,
+            32.1217718
+          ],
+          [
+            118.9271141,
+            32.1217011
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225108277",
+      "properties": {
+        "featureType": "ROAD_PEDESTRIAN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:225108277",
+        "name": "未命名步道",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 225108277,
+        "priority": 20,
+        "osmHighway": "pedestrian"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9251181,
+            32.1199324
+          ],
+          [
+            118.925418,
+            32.120078
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225109875",
+      "properties": {
+        "featureType": "ROAD_PEDESTRIAN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:225109875",
+        "name": "未命名步道",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 225109875,
+        "priority": 20,
+        "osmHighway": "pedestrian"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9256251,
+            32.1214348
+          ],
+          [
+            118.9257019,
+            32.1214726
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225109876",
+      "properties": {
+        "featureType": "ROAD_PEDESTRIAN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:225109876",
+        "name": "未命名步道",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 225109876,
+        "priority": 20,
+        "osmHighway": "pedestrian"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9254708,
+            32.1216627
+          ],
+          [
+            118.9255434,
+            32.1216981
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225109877",
+      "properties": {
+        "featureType": "ROAD_PEDESTRIAN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:225109877",
+        "name": "未命名步道",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 225109877,
+        "priority": 20,
+        "osmHighway": "pedestrian"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9253149,
+            32.121893
+          ],
+          [
+            118.9253941,
+            32.1219315
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225109878",
+      "properties": {
+        "featureType": "ROAD_PEDESTRIAN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:225109878",
+        "name": "未命名步道",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 225109878,
+        "priority": 20,
+        "osmHighway": "pedestrian"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.925696,
+            32.1199166
+          ],
+          [
+            118.9258275,
+            32.1197254
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225109879",
+      "properties": {
+        "featureType": "ROAD_PEDESTRIAN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:225109879",
+        "name": "未命名步道",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 225109879,
+        "priority": 20,
+        "osmHighway": "pedestrian"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9261251,
+            32.1201286
+          ],
+          [
+            118.926256,
+            32.1199367
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225112716",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:225112716",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 225112716,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.926201,
+            32.1185495
+          ],
+          [
+            118.9264212,
+            32.1186561
+          ],
+          [
+            118.9264522,
+            32.1186583
+          ],
+          [
+            118.9264945,
+            32.1186423
+          ],
+          [
+            118.9265327,
+            32.1186455
+          ],
+          [
+            118.927015,
+            32.1188735
+          ],
+          [
+            118.9272513,
+            32.1189887
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225112725",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:225112725",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 225112725,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9267803,
+            32.1192037
+          ],
+          [
+            118.9270297,
+            32.1193283
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225199796",
+      "properties": {
+        "featureType": "ROAD_PEDESTRIAN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:225199796",
+        "name": "未命名步道",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 225199796,
+        "priority": 20,
+        "osmHighway": "pedestrian"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9277048,
+            32.1182899
+          ],
+          [
+            118.9279008,
+            32.1183796
+          ],
+          [
+            118.9279898,
+            32.1184203
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225199797",
+      "properties": {
+        "featureType": "ROAD_PEDESTRIAN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:225199797",
+        "name": "未命名步道",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 225199797,
+        "priority": 20,
+        "osmHighway": "pedestrian"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9278494,
+            32.1186309
+          ],
+          [
+            118.9278094,
+            32.1186003
+          ],
+          [
+            118.9278017,
+            32.1185583
+          ],
+          [
+            118.927817,
+            32.1185227
+          ],
+          [
+            118.9279008,
+            32.1183796
+          ],
+          [
+            118.928023,
+            32.1182126
+          ],
+          [
+            118.9280478,
+            32.1181948
+          ],
+          [
+            118.9280916,
+            32.11819
+          ],
+          [
+            118.9281355,
+            32.1182045
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225205498",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:225205498",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 225205498,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9273154,
+            32.1184455
+          ],
+          [
+            118.9275376,
+            32.1185532
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225251712",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:225251712",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 225251712,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9263847,
+            32.1202749
+          ],
+          [
+            118.9278507,
+            32.120999
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:1173057037",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:1173057037",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 1173057037,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9229534,
+            32.1180273
+          ],
+          [
+            118.922091,
+            32.1192989
+          ],
+          [
+            118.9220576,
+            32.1193482
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:1173057043",
+      "properties": {
+        "featureType": "ROAD_PEDESTRIAN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:1173057043",
+        "name": "未命名步道",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 1173057043,
+        "priority": 20,
+        "osmHighway": "path"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9216646,
+            32.1187061
+          ],
+          [
+            118.9218697,
+            32.1186397
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:1173057047",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:1173057047",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 1173057047,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9216646,
+            32.1187061
+          ],
+          [
+            118.9217506,
+            32.118583
+          ],
+          [
+            118.9218738,
+            32.1184066
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:1173059697",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:1173059697",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 1173059697,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9234008,
+            32.1166758
+          ],
+          [
+            118.9237371,
+            32.1174494
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:1173059704",
+      "properties": {
+        "featureType": "ROAD_PEDESTRIAN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:1173059704",
+        "name": "未命名步道",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 1173059704,
+        "priority": 20,
+        "osmHighway": "path"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9240067,
+            32.1163181
+          ],
+          [
+            118.9240131,
+            32.1165121
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:1173059707",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:1173059707",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 1173059707,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.92245,
+            32.1170331
+          ],
+          [
+            118.9225427,
+            32.1170285
+          ],
+          [
+            118.9225755,
+            32.1170322
+          ],
+          [
+            118.9226384,
+            32.1170393
+          ],
+          [
+            118.9226565,
+            32.1170453
+          ],
+          [
+            118.922729,
+            32.1170695
+          ],
+          [
+            118.9227954,
+            32.1171128
+          ],
+          [
+            118.9228413,
+            32.1171527
+          ],
+          [
+            118.9228872,
+            32.1172133
+          ],
+          [
+            118.9229076,
+            32.1172716
+          ],
+          [
+            118.9229204,
+            32.1173364
+          ],
+          [
+            118.9229166,
+            32.1173948
+          ],
+          [
+            118.9228949,
+            32.1174521
+          ],
+          [
+            118.9228566,
+            32.117531
+          ],
+          [
+            118.9228222,
+            32.1175709
+          ],
+          [
+            118.9227737,
+            32.1176044
+          ],
+          [
+            118.9227316,
+            32.1176315
+          ],
+          [
+            118.9226971,
+            32.1176438
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:1173059718",
+      "properties": {
+        "featureType": "ROAD_PEDESTRIAN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:1173059718",
+        "name": "未命名步道",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 1173059718,
+        "priority": 20,
+        "osmHighway": "path"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9241299,
+            32.1168566
+          ],
+          [
+            118.924932,
+            32.1172695
+          ],
+          [
+            118.9250369,
+            32.1172964
+          ],
+          [
+            118.9251672,
+            32.1173826
+          ],
+          [
+            118.9257361,
+            32.1177681
+          ],
+          [
+            118.9258757,
+            32.1178427
+          ],
+          [
+            118.9260551,
+            32.1178827
+          ],
+          [
+            118.9262235,
+            32.1178981
+          ],
+          [
+            118.9263995,
+            32.1179406
+          ],
+          [
+            118.9264982,
+            32.1180099
+          ],
+          [
+            118.9265392,
+            32.1180847
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:1173064916",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:1173064916",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 1173064916,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.922699,
+            32.1197053
+          ],
+          [
+            118.9223468,
+            32.1202283
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:1539473117",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:1539473117",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 1539473117,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9224973,
+            32.1212761
+          ],
+          [
+            118.9223005,
+            32.1215602
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:1539473119",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:1539473119",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 1539473119,
+        "priority": 45,
+        "osmHighway": "tertiary"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9223005,
+            32.1215602
+          ],
+          [
+            118.9222218,
+            32.1216732
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223699479",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:223699479",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 223699479,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9283185,
+            32.117394
+          ],
+          [
+            118.9294782,
+            32.1179474
+          ],
+          [
+            118.9297802,
+            32.1180848
+          ],
+          [
+            118.9301059,
+            32.1182438
+          ],
+          [
+            118.9303165,
+            32.1183445
+          ],
+          [
+            118.9305582,
+            32.1184546
+          ],
+          [
+            118.9307637,
+            32.1184679
+          ],
+          [
+            118.93077210469441,
+            32.118468442968144
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225094821",
+      "properties": {
+        "featureType": "ROAD_PEDESTRIAN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:225094821",
+        "name": "未命名步道",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 225094821,
+        "priority": 20,
+        "osmHighway": "track"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9284479,
+            32.1177297
+          ],
+          [
+            118.9283897,
+            32.1175146
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225100414",
+      "properties": {
+        "featureType": "ROAD_PEDESTRIAN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:225100414",
+        "name": "未命名步道",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 225100414,
+        "priority": 20,
+        "osmHighway": "pedestrian"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9294779,
+            32.1177956
+          ],
+          [
+            118.9302925,
+            32.1177992
+          ],
+          [
+            118.9303042,
+            32.117807
+          ],
+          [
+            118.9303294,
+            32.1179068
+          ],
+          [
+            118.9303156,
+            32.1179678
+          ],
+          [
+            118.9305027,
+            32.1180662
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225100415",
+      "properties": {
+        "featureType": "ROAD_PEDESTRIAN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:225100415",
+        "name": "未命名步道",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 225100415,
+        "priority": 20,
+        "osmHighway": "pedestrian"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9303156,
+            32.1179678
+          ],
+          [
+            118.930295,
+            32.1179571
+          ],
+          [
+            118.9301059,
+            32.1182438
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225102231",
+      "properties": {
+        "featureType": "ROAD_PEDESTRIAN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:225102231",
+        "name": "未命名步道",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 225102231,
+        "priority": 20,
+        "osmHighway": "track"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9291654,
+            32.1180671
+          ],
+          [
+            118.9293117,
+            32.1179628
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225204143",
+      "properties": {
+        "featureType": "ROAD_PEDESTRIAN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:225204143",
+        "name": "未命名步道",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 225204143,
+        "priority": 20,
+        "osmHighway": "track"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9286243,
+            32.1197471
+          ],
+          [
+            118.9286197,
+            32.1196649
+          ],
+          [
+            118.9286166,
+            32.1195797
+          ],
+          [
+            118.9286024,
+            32.1195144
+          ],
+          [
+            118.9285536,
+            32.1194331
+          ],
+          [
+            118.9285232,
+            32.1194102
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:876594632",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:876594632",
+        "name": "仙境路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 876594632,
+        "priority": 45,
+        "osmHighway": "secondary"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9306051,
+            32.1195835
+          ],
+          [
+            118.9306588,
+            32.1193896
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:964850644",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:964850644",
+        "name": "羊山北路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 964850644,
+        "priority": 45,
+        "osmHighway": "tertiary"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9302574,
+            32.1161567
+          ],
+          [
+            118.930448,
+            32.1161231
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:964850645",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:964850645",
+        "name": "仙境路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 964850645,
+        "priority": 45,
+        "osmHighway": "secondary"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.930448,
+            32.1161231
+          ],
+          [
+            118.930732,
+            32.1172278
+          ],
+          [
+            118.9308243,
+            32.1176201
+          ],
+          [
+            118.9308913,
+            32.1180193
+          ],
+          [
+            118.93090283557748,
+            32.11827099531455
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:964850646",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:964850646",
+        "name": "仙境路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 964850646,
+        "priority": 45,
+        "osmHighway": "secondary"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              118.9306588,
+              32.1193896
+            ],
+            [
+              118.9307265,
+              32.1189842
+            ],
+            [
+              118.93075167057599,
+              32.11872087113013
+            ]
+          ],
+          [
+            [
+              118.93076333502843,
+              32.11848202845496
+            ],
+            [
+              118.9307637,
+              32.1184679
+            ],
+            [
+              118.9307662,
+              32.1182149
+            ],
+            [
+              118.9307359,
+              32.1179717
+            ],
+            [
+              118.9306612,
+              32.1176019
+            ],
+            [
+              118.9302574,
+              32.1161567
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:1467927210",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:1467927210",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 1467927210,
+        "priority": 45,
+        "osmHighway": "unclassified"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.92972011107965,
+            32.12170708109507
+          ],
+          [
+            118.9296666,
+            32.1216798
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:1467927211",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:1467927211",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 1467927211,
+        "priority": 45,
+        "osmHighway": "secondary"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9296666,
+            32.1216798
+          ],
+          [
+            118.9295226,
+            32.1216116
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:89910185",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:89910185",
+        "name": "仙境路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 89910185,
+        "priority": 45,
+        "osmHighway": "secondary"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.93062391680074,
+            32.120033270946784
+          ],
+          [
+            118.930505,
+            32.1202769
+          ],
+          [
+            118.9301787,
+            32.1208342
+          ],
+          [
+            118.9296666,
+            32.1216798
+          ],
+          [
+            118.9295003,
+            32.1219543
+          ],
+          [
+            118.92824862822937,
+            32.124005251080426
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:99661763",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:99661763",
+        "name": "羊山北路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 99661763,
+        "priority": 45,
+        "osmHighway": "tertiary"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.930448,
+            32.1161231
+          ],
+          [
+            118.93048532213679,
+            32.11612556923391
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:140811046",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:140811046",
+        "name": "文澜路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 140811046,
+        "priority": 45,
+        "osmHighway": "secondary"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9223005,
+            32.1215602
+          ],
+          [
+            118.9250795,
+            32.1229338
+          ],
+          [
+            118.9258245,
+            32.1232722
+          ],
+          [
+            118.92701,
+            32.1237628
+          ],
+          [
+            118.9279961,
+            32.1241079
+          ],
+          [
+            118.92807545291407,
+            32.12413563549137
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223699474",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:223699474",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 223699474,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9283432,
+            32.1173159
+          ],
+          [
+            118.9283185,
+            32.117394
+          ],
+          [
+            118.928251,
+            32.1174512
+          ],
+          [
+            118.9281587,
+            32.1174721
+          ],
+          [
+            118.9281034,
+            32.1174596
+          ],
+          [
+            118.9280665,
+            32.1174512
+          ],
+          [
+            118.927999,
+            32.117394
+          ],
+          [
+            118.9279743,
+            32.1173159
+          ],
+          [
+            118.927999,
+            32.1172378
+          ],
+          [
+            118.9280665,
+            32.1171807
+          ],
+          [
+            118.9281587,
+            32.1171597
+          ],
+          [
+            118.9282016,
+            32.1171694
+          ],
+          [
+            118.928251,
+            32.1171807
+          ],
+          [
+            118.9283185,
+            32.1172378
+          ],
+          [
+            118.9283432,
+            32.1173159
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223859808",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:223859808",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 223859808,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9267474,
+            32.1197635
+          ],
+          [
+            118.9273713,
+            32.1200648
+          ],
+          [
+            118.9281972,
+            32.1204653
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223859825",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:223859825",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 223859825,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9279879,
+            32.1177926
+          ],
+          [
+            118.9294993,
+            32.1185133
+          ],
+          [
+            118.9302146,
+            32.1188439
+          ],
+          [
+            118.9302682,
+            32.1188802
+          ],
+          [
+            118.9303004,
+            32.118912
+          ],
+          [
+            118.9303273,
+            32.118962
+          ],
+          [
+            118.9303112,
+            32.1190302
+          ],
+          [
+            118.9302897,
+            32.1191074
+          ],
+          [
+            118.9299823,
+            32.1199958
+          ],
+          [
+            118.9298986,
+            32.1201735
+          ],
+          [
+            118.9297854,
+            32.1203795
+          ],
+          [
+            118.9293419,
+            32.1211132
+          ],
+          [
+            118.9287704,
+            32.1220293
+          ],
+          [
+            118.9287123,
+            32.1220642
+          ],
+          [
+            118.9286396,
+            32.1220497
+          ],
+          [
+            118.9274947,
+            32.1215092
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223859833",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:223859833",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 223859833,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9273967,
+            32.118758
+          ],
+          [
+            118.928011,
+            32.1190476
+          ],
+          [
+            118.9288627,
+            32.1194536
+          ],
+          [
+            118.9299823,
+            32.1199958
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223859848",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:223859848",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 223859848,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9297802,
+            32.1180848
+          ],
+          [
+            118.9294993,
+            32.1185133
+          ],
+          [
+            118.9288627,
+            32.1194536
+          ],
+          [
+            118.9281972,
+            32.1204653
+          ],
+          [
+            118.9281708,
+            32.1205404
+          ],
+          [
+            118.9278507,
+            32.120999
+          ],
+          [
+            118.9274947,
+            32.1215092
+          ],
+          [
+            118.9273033,
+            32.1217925
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223859851",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:223859851",
+        "name": "未命名道路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 223859851,
+        "priority": 45,
+        "osmHighway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9281708,
+            32.1205404
+          ],
+          [
+            118.9293419,
+            32.1211132
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:489234880",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:489234880",
+        "name": "文澜路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 489234880,
+        "priority": 45,
+        "osmHighway": "secondary"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.92760501358433,
+            32.12417106901202
+          ],
+          [
+            118.9269652,
+            32.1239478
+          ],
+          [
+            118.9257466,
+            32.1234093
+          ],
+          [
+            118.9250019,
+            32.1230474
+          ],
+          [
+            118.9222218,
+            32.1216732
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:876594626",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "osm:way:876594626",
+        "name": "仙境路",
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "sourceId": "osm-xianlin-2026-08-22",
+        "sourceUpdatedAt": null,
+        "osmType": "way",
+        "osmId": 876594626,
+        "priority": 45,
+        "osmHighway": "secondary"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.92793903169226,
+            32.12418462032888
+          ],
+          [
+            118.9279961,
+            32.1241079
+          ],
+          [
+            118.9295226,
+            32.1216116
+          ],
+          [
+            118.9301218,
+            32.1206316
+          ],
+          [
+            118.9302969,
+            32.1203231
+          ],
+          [
+            118.93043,
+            32.1200561
+          ],
+          [
+            118.9305351,
+            32.1198168
+          ],
+          [
+            118.9306051,
+            32.1195835
+          ]
+        ]
+      }
+    }
+  ]
+}

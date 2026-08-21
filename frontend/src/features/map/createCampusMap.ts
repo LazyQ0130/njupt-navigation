@@ -29,7 +29,11 @@ export function createCampusMap(input: CampusMapInput): CampusMapController {
   let selectedBuildingId: string | number | undefined
   let destroyed = false
 
-  map.addControl(new AttributionControl({ compact: true, customAttribution: CAMPUS_ATTRIBUTION }), 'bottom-right')
+  const usesOsm = data.features.some((feature) => feature.properties.dataSource === 'OPENSTREETMAP')
+  const attribution = usesOsm
+    ? '<a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">© OpenStreetMap contributors</a> · MapLibre'
+    : CAMPUS_ATTRIBUTION
+  map.addControl(new AttributionControl({ compact: true, customAttribution: attribution }), 'bottom-right')
 
   map.once('load', () => {
     if (destroyed) return

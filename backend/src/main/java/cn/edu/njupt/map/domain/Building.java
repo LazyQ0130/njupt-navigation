@@ -45,13 +45,28 @@ public class Building {
     private MultiPolygon geometry;
 
     @Column(nullable = false)
-    private double height;
+    private Double height;
 
     @Column(name = "min_height", nullable = false)
     private double minHeight;
 
     @Column(nullable = false, length = 16)
     private String color;
+
+    @Column(name = "height_source", nullable = false, length = 40)
+    private String heightSource;
+
+    @Column(name = "data_source", nullable = false, length = 40)
+    private String dataSource;
+
+    @Column(name = "verification_status", nullable = false, length = 40)
+    private String verificationStatus;
+
+    @Column(name = "source_id", length = 128)
+    private String sourceId;
+
+    @Column(name = "source_updated_at")
+    private Instant sourceUpdatedAt;
 
     @Column(nullable = false)
     private boolean enabled;
@@ -66,8 +81,10 @@ public class Building {
     }
 
     public void updateFromImport(Campus campus, String externalId, String name, List<String> aliases,
-                                 String category, MultiPolygon geometry, double height, double minHeight,
-                                 String color, boolean enabled) {
+                                 String category, MultiPolygon geometry, Double height, double minHeight,
+                                 String color, String heightSource, String dataSource,
+                                 String verificationStatus, String sourceId, Instant sourceUpdatedAt,
+                                 boolean enabled) {
         this.campus = campus;
         this.externalId = externalId;
         this.name = name;
@@ -77,6 +94,11 @@ public class Building {
         this.height = height;
         this.minHeight = minHeight;
         this.color = color;
+        this.heightSource = heightSource;
+        this.dataSource = dataSource;
+        this.verificationStatus = verificationStatus;
+        this.sourceId = sourceId;
+        this.sourceUpdatedAt = sourceUpdatedAt;
         this.enabled = enabled;
         this.updatedAt = Instant.now();
     }
@@ -101,7 +123,7 @@ public class Building {
         return geometry;
     }
 
-    public double getHeight() {
+    public Double getHeight() {
         return height;
     }
 
@@ -111,5 +133,25 @@ public class Building {
 
     public String getColor() {
         return color;
+    }
+
+    public String getHeightSource() {
+        return heightSource;
+    }
+
+    public String getDataSource() {
+        return dataSource;
+    }
+
+    public String getVerificationStatus() {
+        return verificationStatus;
+    }
+
+    public String getSourceId() {
+        return sourceId;
+    }
+
+    public Instant getSourceUpdatedAt() {
+        return sourceUpdatedAt;
     }
 }

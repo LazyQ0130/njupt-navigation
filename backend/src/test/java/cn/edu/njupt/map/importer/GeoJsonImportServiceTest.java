@@ -6,9 +6,12 @@ import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
+import org.mockito.ArgumentCaptor;
 
 import cn.edu.njupt.map.domain.Campus;
+import cn.edu.njupt.map.domain.MapFeature;
 import cn.edu.njupt.map.repository.BuildingRepository;
+import cn.edu.njupt.map.repository.BuildingEntranceRepository;
 import cn.edu.njupt.map.repository.CampusRepository;
 import cn.edu.njupt.map.repository.PoiRepository;
 import cn.edu.njupt.map.repository.MapFeatureRepository;
@@ -25,6 +28,7 @@ class GeoJsonImportServiceTest {
     private BuildingRepository buildingRepository;
     private PoiRepository poiRepository;
     private MapFeatureRepository mapFeatureRepository;
+    private BuildingEntranceRepository buildingEntranceRepository;
     private GeoJsonImportService service;
 
     @BeforeEach
@@ -33,9 +37,10 @@ class GeoJsonImportServiceTest {
         buildingRepository = mock(BuildingRepository.class);
         poiRepository = mock(PoiRepository.class);
         mapFeatureRepository = mock(MapFeatureRepository.class);
+        buildingEntranceRepository = mock(BuildingEntranceRepository.class);
         service = new GeoJsonImportService(
                 new ObjectMapper(), campusRepository, buildingRepository, poiRepository,
-                mapFeatureRepository, 10
+                mapFeatureRepository, buildingEntranceRepository, 10
         );
         when(campusRepository.findByCodeAndEnabledTrue("NJUPT_XIANLIN"))
                 .thenReturn(Optional.of(mock(Campus.class)));
@@ -91,6 +96,22 @@ class GeoJsonImportServiceTest {
     }
 
     @Test
+    void rejectsSelfIntersectingGeometry() throws Exception {
+        String geoJson = """
+                {"type":"FeatureCollection","features":[{
+                "type":"Feature","properties":{"featureType":"GREEN",
+                "externalId":"invalid-bow-tie","name":"无效多边形"},
+                "geometry":{"type":"Polygon","coordinates":[[[118.92,32.11],
+                [118.93,32.12],[118.93,32.11],[118.92,32.12],[118.92,32.11]]]}}]}
+                """;
+
+        GeoJsonImportResult result = service.importFeatureCollection(stream(geoJson));
+
+        assertThat(result.failed()).isEqualTo(1);
+        assertThat(result.errors().getFirst().reason()).contains("Geometry 不合法");
+    }
+
+    @Test
     void enforcesConfiguredFeatureLimit() {
         StringBuilder features = new StringBuilder();
         for (int index = 0; index < 11; index++) {
@@ -104,6 +125,30 @@ class GeoJsonImportServiceTest {
         assertThatThrownBy(() -> service.importFeatureCollection(stream(geoJson)))
                 .isInstanceOf(IllegalArgumentException.class)
                 .hasMessageContaining("最多允许 10");
+    }
+
+    @Test
+    void importsSourceMetadataAndUsesExternalIdForIdempotentUpdate() throws Exception {
+        MapFeature existing = new MapFeature();
+        when(mapFeatureRepository.findByExternalId("osm:way:89910254"))
+                .thenReturn(Optional.of(existing));
+        String geoJson = """
+                {"type":"FeatureCollection","metadata":{"dataSource":"OPENSTREETMAP",
+                "verificationStatus":"SOURCE_VERIFIED","sourceId":"osm-test"},"features":[{
+                "type":"Feature","properties":{"featureType":"CAMPUS_BOUNDARY",
+                "externalId":"osm:way:89910254","name":"测试校界"},
+                "geometry":{"type":"Polygon","coordinates":[[[118.92,32.11],[118.93,32.11],
+                [118.93,32.12],[118.92,32.11]]]}}]}
+                """;
+
+        GeoJsonImportResult result = service.importFeatureCollection(stream(geoJson));
+
+        assertThat(result.updated()).isEqualTo(1);
+        ArgumentCaptor<MapFeature> captor = ArgumentCaptor.forClass(MapFeature.class);
+        verify(mapFeatureRepository).save(captor.capture());
+        assertThat(captor.getValue().getDataSource()).isEqualTo("OPENSTREETMAP");
+        assertThat(captor.getValue().getVerificationStatus()).isEqualTo("SOURCE_VERIFIED");
+        assertThat(captor.getValue().getSourceId()).isEqualTo("osm-test");
     }
 
     private ByteArrayInputStream stream(String text) {

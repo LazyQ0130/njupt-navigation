@@ -42,6 +42,11 @@ export interface CampusFeatureProperties {
   height?: number
   minHeight?: number
   priority?: number
+  dataSource?: string
+  verificationStatus?: string
+  sourceId?: string
+  sourceUpdatedAt?: string
+  heightSource?: string
 }
 
 export type CampusFeatureCollection = FeatureCollection<Geometry, CampusFeatureProperties> & {

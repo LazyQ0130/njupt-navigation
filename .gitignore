@@ -23,4 +23,8 @@ Thumbs.db
 # Local GIS imports and database data
 data/imports/
 postgres-data/
-
+.venv/
+scripts/gis/.venv/
+__pycache__/
+*.py[cod]
+data/raw/osm/*.tmp

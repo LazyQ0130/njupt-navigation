@@ -10,8 +10,10 @@ import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnExpression;
 import org.springframework.stereotype.Component;
+import org.springframework.context.annotation.Profile;
 
 @Component
+@Profile("!prod")
 @ConditionalOnExpression("'${app.import.bootstrap-file:}'.length() > 0")
 public class BootstrapGeoJsonImporter implements ApplicationRunner {
 

@@ -1,6 +1,6 @@
 # 南邮仙林 2.5D 智慧校园导航系统
 
-面向南京邮电大学仙林校区学生和访客的移动端优先校园地图与导航平台。本仓库当前完成 **Phase 1：2.5D 校园地图**；搜索、路由、导航及后台编辑器将在后续阶段按顺序实现。
+面向南京邮电大学仙林校区学生和访客的移动端优先校园地图与导航平台。本仓库当前进入 **Phase 1.5：真实 GIS 数据质量门**；搜索、路由、导航及后台编辑器将在后续阶段按顺序实现。
 
 ## 产品目标
 
@@ -117,14 +117,28 @@ Flyway 在后端启动时自动执行 `backend/src/main/resources/db/migration`�
 curl.exe -u "admin:change-me-now" -F "file=@data/sample-xianlin.geojson" http://localhost:8080/api/admin/imports/geojson
 ```
 
-响应包含成功数、失败数以及逐条错误原因。Docker Compose 默认通过同一服务幂等加载示例文件。生产环境使用前必须修改临时管理员密码。后续会扩展入口、可路由路网、OSM/CSV 与后台可视化导入。
+响应包含成功数、失败数以及逐条错误原因。Docker Compose 默认通过同一服务幂等加载示例文件。生产环境使用前必须修改临时管理员密码。
+
+## 真实仙林 GIS 数据
+
+`data/real/xianlin/` 保存按 campus/buildings/roads/surfaces/pois/entrances 分层的 OSM 派生 v1，原始提取保存在 `data/raw/osm/`。数据采用 ODbL 1.0，需显示 `© OpenStreetMap contributors`；南邮官方网页仅作来源登记和人工核验参考，未复制其图片或商业地图数据。
+
+```powershell
+python -m pip install -r scripts/gis/requirements.txt
+python scripts/gis/fetch_osm_xianlin.py
+python scripts/gis/xianlin_pipeline.py build
+docker compose up -d --build
+./scripts/import-real-xianlin.ps1
+```
+
+导入命令先运行 Geometry/坐标/校界/重复/道路检查，再按依赖顺序幂等 upsert，并只停用 `data_source=SYNTHETIC` 的展示对象。生产使用 `prod` profile 时，启动 Demo importer 被禁用。当前覆盖 87 建筑、38 POI、181 条道路/步道、193 个地表/运动/水体对象和 1 个校界；入口为 0。全部真实对象最高为 `SOURCE_VERIFIED`，尚无 `MANUALLY_REVIEWED` 或 `FIELD_VERIFIED` 数据。
 
 ## Phase 1 地图 API
 
 - `GET /api/map/bootstrap`：校区相机、浏览边界、统计和图层可用性。
 - `GET /api/map/features?campusCode=NJUPT_XIANLIN`：标准 GeoJSON `FeatureCollection`；每个 Feature 都包含稳定 `id` 和 `properties.featureType`。
 
-前端使用不依赖商业密钥的纯色底图样式。当前可见地图内容全部来自 PostGIS → Spring Boot → GeoJSON → MapLibre 数据链。示例名称、坐标和形状均为项目自制合成内容，不能用于真实导航；详见 `docs/DATA_SOURCES.md`。
+前端使用不依赖商业密钥的纯色底图样式。地图内容全部来自 PostGIS → Spring Boot → GeoJSON → MapLibre 数据链。运行真实导入命令后显示 OSM 派生数据并保留 OSM attribution；示例文件中的合成名称、坐标和形状仅供测试，不能用于真实导航。详见 `docs/DATA_SOURCES.md`。
 
 ## 管理员账号初始化
 
@@ -148,7 +162,8 @@ docker compose config
 ## Phase 开发进度
 
 - [x] Phase 0：工程、PostGIS 模型、迁移、示例数据、导入、Docker
-- [x] Phase 1：2.5D 校园地图（合成数据验收；真实数据仍待采集核验）
+- [x] Phase 1：2.5D 校园地图（合成数据验收）
+- [ ] Phase 1.5：真实仙林 GIS v1（自动采集/校验完成，等待人工与现场核验）
 - [ ] Phase 2：POI 搜索
 - [ ] Phase 3：校园路网与路线规划
 - [ ] Phase 4：GPS 导航
@@ -161,4 +176,4 @@ docker compose config
 
 Phase 2 将在现有地图上实现 POI 中文名称、别名与关键词搜索、分类建议、FlyTo 和结果高亮。进入任何真实导航验收前，仍需采集并人工核验真实的校园边界、建筑 Polygon、高度、入口和道路数据。
 
-许可与第三方数据来源将在真实数据引入时单独记录。禁止提交或分发未经授权的商业地图瓦片与受保护数据。
+许可、attribution 和第三方数据来源已记录于 `docs/DATA_SOURCES.md` 与真实数据 source registry。禁止提交或分发未经授权的商业地图瓦片与受保护数据。
