@@ -154,7 +154,7 @@ def collection(layer: str, features: list[dict[str, Any]]) -> dict[str, Any]:
 
 def load_manual() -> dict[str, dict[str, Any]]:
     result: dict[str, dict[str, Any]] = {}
-    for filename in ("building-names.json", "building-heights.json", "poi-overrides.json"):
+    for filename in ("building-names.json", "building-heights.json", "building-overrides.json", "poi-overrides.json"):
         path = MANUAL_DIR / filename
         if path.is_file():
             for key, value in json.loads(path.read_text(encoding="utf-8")).items():
@@ -194,6 +194,100 @@ def load_manual_entrances() -> list[dict[str, Any]]:
     return result
 
 
+def load_review_manifest() -> dict[str, dict[str, Any]]:
+    path = MANUAL_DIR / "review-manifest.json"
+    if not path.is_file():
+        return {}
+    manifest = json.loads(path.read_text(encoding="utf-8"))
+    return {item["objectId"]: item for item in manifest.get("reviews", [])}
+
+
+def apply_review(item: dict[str, Any], reviews: dict[str, dict[str, Any]]) -> dict[str, Any]:
+    external_id = item["properties"]["externalId"]
+    review = reviews.get(external_id)
+    if not review:
+        return item
+    status = review.get("status")
+    if status not in {"MANUALLY_REVIEWED", "FIELD_VERIFIED"}:
+        raise ValueError(f"Review {external_id} must be MANUALLY_REVIEWED or FIELD_VERIFIED")
+    if not review.get("reviewedAt"):
+        raise ValueError(f"Review {external_id} must include reviewedAt")
+    item["properties"].update({
+        "verificationStatus": status,
+        "verifiedAt": review["reviewedAt"],
+        "verificationNote": review.get("notes", ""),
+        "reviewedBy": review.get("reviewedBy", "manual-review"),
+    })
+    return item
+
+
+def road_access_properties(element: dict[str, Any]) -> dict[str, Any]:
+    value = tags(element)
+
+    def explicit(tag_name: str) -> bool | None:
+        tag_value = value.get(tag_name)
+        if tag_value in {"yes", "designated", "permissive"}:
+            return True
+        if tag_value in {"no", "private"}:
+            return False
+        return None
+
+    return {
+        "walkingAccess": explicit("foot"),
+        "cyclingAccess": explicit("bicycle"),
+        "vehicleAccess": explicit("motor_vehicle") if value.get("motor_vehicle") else explicit("vehicle"),
+        "accessSource": "OSM_EXPLICIT_TAGS" if any(value.get(key) for key in ("foot", "bicycle", "motor_vehicle", "vehicle")) else "UNKNOWN",
+        "covered": value.get("covered"),
+        "tunnel": value.get("tunnel"),
+        "bridge": value.get("bridge"),
+        "layer": value.get("layer"),
+    }
+
+
+def apply_road_overrides(roads: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    path = MANUAL_DIR / "road-overrides.geojson"
+    if not path.is_file():
+        return roads
+    collection_value = json.loads(path.read_text(encoding="utf-8"))
+    if collection_value.get("type") != "FeatureCollection":
+        raise ValueError("manual/road-overrides.geojson must be a FeatureCollection")
+    by_id = {item["properties"]["externalId"]: item for item in roads}
+    for override in collection_value.get("features", []):
+        properties = override.get("properties") or {}
+        operation = properties.get("operation")
+        source_id = properties.get("sourceObjectId")
+        if operation == "ADD_MANUAL_PATH":
+            external_id = properties.get("externalId")
+            if not external_id or not external_id.startswith("manual:xianlin:road:"):
+                raise ValueError("ADD_MANUAL_PATH requires manual:xianlin:road:* externalId")
+            properties.update({
+                "dataSource": "MANUAL", "sourceId": "manual-xianlin-v1",
+                "verificationStatus": properties.get("verificationStatus", "MANUALLY_REVIEWED"),
+                "featureType": properties.get("featureType", "ROAD_PEDESTRIAN"),
+            })
+            by_id[external_id] = override
+            continue
+        if source_id not in by_id:
+            raise ValueError(f"Road override cannot find sourceObjectId {source_id}")
+        target = by_id[source_id]
+        if operation == "DISABLE_SOURCE_OBJECT":
+            target["properties"]["enabled"] = False
+        elif operation in {"REPLACE_GEOMETRY", "MERGE_ENDPOINT"}:
+            if not override.get("geometry"):
+                raise ValueError(f"{operation} requires replacement geometry")
+            target["geometry"] = override["geometry"]
+        else:
+            raise ValueError(f"Unsupported road override operation: {operation}")
+        target["properties"].update({
+            "verificationStatus": properties.get("verificationStatus", "MANUALLY_REVIEWED"),
+            "verifiedAt": properties.get("reviewedAt"),
+            "verificationNote": properties.get("reason", ""),
+            "reviewedBy": properties.get("reviewedBy", "manual-review"),
+            "manualOperation": operation,
+        })
+    return list(by_id.values())
+
+
 def apply_override(item: dict[str, Any], overrides: dict[str, dict[str, Any]]) -> dict[str, Any]:
     external_id = item["properties"]["externalId"]
     if external_id in overrides:
@@ -210,6 +304,7 @@ def normalize(raw: dict[str, Any]) -> tuple[dict[str, list[dict[str, Any]]], dic
     review_area = boundary.buffer(0.00045)
     overrides = load_manual()
     aliases = load_aliases()
+    reviews = load_review_manifest()
     layers: dict[str, list[dict[str, Any]]] = {name: [] for name in ("campus", "buildings", "roads", "surfaces", "pois", "entrances")}
     excluded = Counter()
 
@@ -249,6 +344,7 @@ def normalize(raw: dict[str, Any]) -> tuple[dict[str, list[dict[str, Any]]], dic
             properties = base_properties(element, feature_type, name)
             properties["priority"] = 45 if not pedestrian else 20
             properties["osmHighway"] = value["highway"]
+            properties.update(road_access_properties(element))
             clipped = line.intersection(review_area)
             if clipped.is_empty or not clipped.is_valid or not clipped.is_simple:
                 excluded["invalid_or_non_simple_road"] += 1
@@ -276,7 +372,7 @@ def normalize(raw: dict[str, Any]) -> tuple[dict[str, list[dict[str, Any]]], dic
             point = Point(element["lon"], element["lat"])
             if point.within(review_area):
                 properties = base_properties(element, "POI", osm_name(element) or "未命名地点")
-                properties.update({"aliases": [], "keywords": [], "category": poi_category(element), "priority": 40, "positionSource": "OSM_NODE"})
+                properties.update({"aliases": [], "keywords": [], "category": poi_category(element), "priority": 40, "positionSource": "OSM_NODE", "freshnessStatus": "SOURCE_ONLY", "lastVerifiedAt": None})
                 item = apply_aliases(apply_override(feature(point, properties), overrides), aliases)
                 layers["pois"].append(item)
 
@@ -297,6 +393,10 @@ def normalize(raw: dict[str, Any]) -> tuple[dict[str, list[dict[str, Any]]], dic
         layers["pois"].append(feature(point, properties))
 
     layers["entrances"].extend(load_manual_entrances())
+    layers["roads"] = apply_road_overrides(layers["roads"])
+    for layer_items in layers.values():
+        for item in layer_items:
+            apply_review(item, reviews)
 
     return layers, dict(excluded)
 
@@ -387,12 +487,27 @@ def validate(layers: dict[str, list[dict[str, Any]]], excluded: dict[str, int]) 
 
 
 def write_outputs(raw_path: Path) -> dict[str, Any]:
+    from gis_review import generate_review_artifacts
+
     raw = json.loads(raw_path.read_text(encoding="utf-8"))
     layers, excluded = normalize(raw)
     DATASET_DIR.mkdir(parents=True, exist_ok=True)
     for layer, items in layers.items():
         (DATASET_DIR / f"{layer}.geojson").write_text(json.dumps(collection(layer, items), ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     report = validate(layers, excluded)
+    topology = generate_review_artifacts(layers, local_metric, DATASET_DIR)
+    report["topologyClassification"] = {
+        "connected": topology["connected"],
+        "disconnected": topology["disconnected"],
+        "classification": topology["classification"],
+        "priority": topology["priority"],
+        "p0RoadCount": topology["p0RoadCount"],
+    }
+    report["entranceCoverage"] = topology["qualityMetrics"]["formalEntranceCoverage"]
+    report["manualVerificationCoverage"] = {
+        "coreBuildings": topology["qualityMetrics"]["coreBuildingVerification"],
+        "corePois": topology["qualityMetrics"]["corePoiVerification"],
+    }
     metadata = DATASET_DIR / "metadata"
     metadata.mkdir(parents=True, exist_ok=True)
     (metadata / "validation-report.json").write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

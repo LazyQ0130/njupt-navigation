@@ -18,9 +18,10 @@ import {
   createMapOptions,
 } from './mapConfig'
 import type { CampusBoundaryFeature, CampusMapController, CampusMapInput } from './types'
+import { addGisReviewLayers, setReviewLayerVisibility as setGisReviewLayerVisibility } from './reviewLayers'
 
 export function createCampusMap(input: CampusMapInput): CampusMapController {
-  const { container, campus, data, callbacks } = input
+  const { container, campus, data, reviewData, callbacks } = input
   const map = new Map(createMapOptions(container, campus))
   const initialBounds: LngLatBoundsLike = [
     [campus.bounds.west, campus.bounds.south],
@@ -42,6 +43,7 @@ export function createCampusMap(input: CampusMapInput): CampusMapController {
       data,
     })
     campusVisualLayers.forEach((layer) => map.addLayer(layer))
+    if (reviewData) addGisReviewLayers(map, reviewData, callbacks.onReviewSelect)
     addUserLocationLayer(map)
     configureBuildingInteraction(map, (id, name, category) => {
       if (selectedBuildingId !== undefined) {
@@ -104,6 +106,9 @@ export function createCampusMap(input: CampusMapInput): CampusMapController {
       const source = map.getSource(USER_LOCATION_SOURCE_ID) as GeoJSONSource | undefined
       source?.setData(userLocationFeature(longitude, latitude))
       map.flyTo({ center: [longitude, latitude], zoom: 17.5, pitch: 42, essential: true })
+    },
+    setReviewLayerVisibility(group, visible) {
+      setGisReviewLayerVisibility(map, group, visible)
     },
   }
 }

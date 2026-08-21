@@ -6,6 +6,8 @@
 
 南京邮电大学官方校区地图、联系地址、校庆跑路线和考试通知只用于登记事实与人工审核提示。仓库没有复制其图片/PDF，也没有从高德、百度、Google 或其他商业地图抓取数据。当前真实数据仅通过自动来源与空间校验，尚未现场核验。
 
+Phase 1.6 的 `review/`、`metadata/topology-report.json` 和 `manual/field-review-template.csv` 是上述同一批 OSM 派生 Geometry 的审核辅助物，不是新地图来源，也不会改变 `dataSource=OSM` 的血缘。人工确认状态单独写入 review manifest/manual override，并记录时间与备注；raw OSM 保持不变。候选入口只是道路端点与建筑边界的工程距离推断，不是入口事实。
+
 ## 当前仓库中的地图内容
 
 `data/sample-xianlin.geojson` 由本项目为 Phase 1 功能验收手工编写。所有坐标、边界、建筑轮廓、建筑名称、道路、绿地、水体、运动场和 POI 都是合成演示内容，不是测绘结果，也不是对南京邮电大学仙林校区真实设施的声明。

@@ -1,0 +1,13 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "allowedOperations": [
+      "REPLACE_GEOMETRY",
+      "DISABLE_SOURCE_OBJECT",
+      "ADD_MANUAL_PATH",
+      "MERGE_ENDPOINT"
+    ],
+    "note": "Review suggestions are never applied here automatically. Every feature must include review provenance."
+  },
+  "features": []
+}

@@ -1,6 +1,6 @@
 # 南邮仙林 2.5D 智慧校园导航系统
 
-面向南京邮电大学仙林校区学生和访客的移动端优先校园地图与导航平台。本仓库当前进入 **Phase 1.5：真实 GIS 数据质量门**；搜索、路由、导航及后台编辑器将在后续阶段按顺序实现。
+面向南京邮电大学仙林校区学生和访客的移动端优先校园地图与导航平台。本仓库当前进入 **Phase 1.6：真实 GIS 人工核验辅助与拓扑清理**；搜索、路由、导航及后台编辑器将在后续阶段按顺序实现。
 
 ## 产品目标
 
@@ -133,6 +133,8 @@ docker compose up -d --build
 
 导入命令先运行 Geometry/坐标/校界/重复/道路检查，再按依赖顺序幂等 upsert，并只停用 `data_source=SYNTHETIC` 的展示对象。生产使用 `prod` profile 时，启动 Demo importer 被禁用。当前覆盖 87 建筑、38 POI、181 条道路/步道、193 个地表/运动/水体对象和 1 个校界；入口为 0。全部真实对象最高为 `SOURCE_VERIFIED`，尚无 `MANUALLY_REVIEWED` 或 `FIELD_VERIFIED` 数据。
 
+Phase 1.6 增加只读 review GeoJSON、道路端点分类、道路穿建筑解释、入口候选、人工 override/manifest 和现场 CSV 工作流。开发环境可用 `?debug=gisp1` 开启只读 GIS Review Mode；普通构建及学生 UI 默认隐藏。当前 368 个道路端点中 271 个已连接、97 个待分级复核（P0 2 / P1 25 / P2 70），并生成 5 个入口候选但没有将其冒充正式入口。详见 `docs/ROAD_TOPOLOGY_REVIEW.md`、`docs/FIELD_REVIEW_ROUTES.md` 和 `docs/GIS_VALIDATION_REPORT.md`。
+
 ## Phase 1 地图 API
 
 - `GET /api/map/bootstrap`：校区相机、浏览边界、统计和图层可用性。
@@ -163,7 +165,8 @@ docker compose config
 
 - [x] Phase 0：工程、PostGIS 模型、迁移、示例数据、导入、Docker
 - [x] Phase 1：2.5D 校园地图（合成数据验收）
-- [ ] Phase 1.5：真实仙林 GIS v1（自动采集/校验完成，等待人工与现场核验）
+- [x] Phase 1.5：真实仙林 GIS v1（自动采集、校验、导入）
+- [ ] Phase 1.6：人工核验辅助、拓扑清理与入口 v1（工具完成，等待 P0/现场核验）
 - [ ] Phase 2：POI 搜索
 - [ ] Phase 3：校园路网与路线规划
 - [ ] Phase 4：GPS 导航

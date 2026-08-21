@@ -45,6 +45,19 @@
 - [ ] 主要建筑入口与通行属性现场核验
 - [ ] 将确认对象提升为 MANUALLY_REVIEWED / FIELD_VERIFIED
 
+## Phase 1.6 — GIS 人工核验辅助与入口 v1
+
+- [x] 按完整道路 Geometry 重做 endpoint topology classification
+- [x] 输出 topology report 与五类只读 review GeoJSON
+- [x] 逐条解释 3 条道路、4 个 road/building 相交组合
+- [x] 增强 road/building/POI/entrance override 与 review manifest
+- [x] 生成 5 个 candidate entrance，且不自动进入正式 Entrance
+- [x] 提供 field review CSV、转换脚本和 A/B/C 现场路线
+- [x] 增加开发环境只读 GIS Review Mode，生产普通 UI 默认关闭
+- [x] 以 Flyway V4 支持入口通行属性 UNKNOWN/NULL
+- [ ] 人工确认 2 条 P0 拓扑道路与 1 个 P0 道路穿建筑组合
+- [ ] 人工确认校界、南北门、核心建筑/POI及第一批正式入口
+
 ## Phase 2 — POI 搜索
 
 - [ ] 中文名称/别名/关键词模糊搜索

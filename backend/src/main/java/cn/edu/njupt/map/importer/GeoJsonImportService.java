@@ -273,9 +273,11 @@ public class GeoJsonImportService {
         BuildingEntrance entrance = existing.orElseGet(BuildingEntrance::new);
         entrance.updateFromImport(
                 building, externalId, requiredText(properties, "name"), point,
-                properties.path("walkingAccess").asBoolean(true),
-                properties.path("cyclingAccess").asBoolean(false),
-                properties.path("accessible").asBoolean(false),
+                optionalBoolean(properties, "walkingAccess"),
+                optionalBoolean(properties, "cyclingAccess"),
+                optionalBoolean(properties, "accessible"),
+                optionalBoolean(properties, "vehicleAccess"),
+                optionalText(properties, "openingHours").orElse(null),
                 metadata.dataSource(), metadata.verificationStatus(), metadata.sourceId(),
                 metadata.sourceUpdatedAt(), properties.path("enabled").asBoolean(true)
         );
@@ -384,6 +386,17 @@ public class GeoJsonImportService {
 
     private Optional<String> inheritedText(JsonNode properties, JsonNode defaults, String field) {
         return optionalText(properties, field).or(() -> optionalText(defaults, field));
+    }
+
+    private Boolean optionalBoolean(JsonNode properties, String field) {
+        JsonNode value = properties.path(field);
+        if (value.isMissingNode() || value.isNull()) {
+            return null;
+        }
+        if (!value.isBoolean()) {
+            throw new IllegalArgumentException(field + " 必须是 boolean 或 null");
+        }
+        return value.asBoolean();
     }
 
     private record SourceMetadata(String dataSource, String verificationStatus,

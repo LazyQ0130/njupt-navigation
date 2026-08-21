@@ -9,6 +9,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from xianlin_pipeline import (  # noqa: E402
     apply_override,
     apply_aliases,
+    apply_review,
     building_category,
     feature,
     height_properties,
@@ -44,6 +45,20 @@ class XianlinPipelineTest(unittest.TestCase):
         updated = apply_aliases(item, {"教学2号楼": ["教2", "教二"]})
 
         self.assertEqual(updated["properties"]["aliases"], ["教2", "教二"])
+
+    def test_manual_review_changes_status_without_changing_source_lineage(self):
+        item = feature(Point(118.92, 32.11), {
+            "externalId": "osm:node:1", "name": "地点", "dataSource": "OPENSTREETMAP",
+            "verificationStatus": "SOURCE_VERIFIED",
+        })
+
+        updated = apply_review(item, {"osm:node:1": {
+            "status": "MANUALLY_REVIEWED", "reviewedAt": "2026-08-22",
+            "reviewedBy": "manual-review", "notes": "官方地图核对",
+        }})
+
+        self.assertEqual(updated["properties"]["verificationStatus"], "MANUALLY_REVIEWED")
+        self.assertEqual(updated["properties"]["dataSource"], "OPENSTREETMAP")
 
     def test_coordinate_validation_rejects_non_wgs84_range(self):
         campus = feature(

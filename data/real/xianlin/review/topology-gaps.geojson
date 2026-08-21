@@ -1,0 +1,3228 @@
+{
+  "type": "FeatureCollection",
+  "name": "topology-gaps",
+  "metadata": {
+    "generatedAt": "2026-08-22",
+    "purpose": "MANUAL_REVIEW_ONLY",
+    "appliesChanges": false
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "osm:way:118942534:0:start",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.92286083875152,
+          32.106548570877955
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:118942534:0:start",
+        "severity": "P2",
+        "reason": "Endpoint belongs to a larger component and has no nearby unsnapped road.",
+        "sourceObjectId": "osm:way:118942534",
+        "name": "学海路",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "LIKELY_VALID_TERMINUS",
+        "roadType": "ROAD_MAIN",
+        "nearestRoadId": "osm:way:423022850",
+        "distanceMeters": 7.61,
+        "nearestPoint": [
+          118.92272095,
+          32.10712452
+        ],
+        "nearestBuildingId": "osm:way:223859811",
+        "buildingDistanceMeters": 164.45,
+        "campusBoundaryDistanceMeters": 48.16,
+        "componentEdgeCount": 158,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:140811047:0:start",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.91907891546246,
+          32.11987162237178
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:140811047:0:start",
+        "severity": "P2",
+        "reason": "Endpoint belongs to a larger component and has no nearby unsnapped road.",
+        "sourceObjectId": "osm:way:140811047",
+        "name": "文澜路",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "LIKELY_VALID_TERMINUS",
+        "roadType": "ROAD_MAIN",
+        "nearestRoadId": "osm:way:118942534",
+        "distanceMeters": 8.0,
+        "nearestPoint": [
+          118.91903999,
+          32.12041507
+        ],
+        "nearestBuildingId": "osm:way:225265337",
+        "buildingDistanceMeters": 167.49,
+        "campusBoundaryDistanceMeters": 43.09,
+        "componentEdgeCount": 158,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:140811049:0:start",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.92293776724382,
+          32.10651606162628
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:140811049:0:start",
+        "severity": "P2",
+        "reason": "Endpoint belongs to a larger component and has no nearby unsnapped road.",
+        "sourceObjectId": "osm:way:140811049",
+        "name": "文苑路",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "LIKELY_VALID_TERMINUS",
+        "roadType": "ROAD_MAIN",
+        "nearestRoadId": "osm:way:118942534",
+        "distanceMeters": 8.09,
+        "nearestPoint": [
+          118.92274631,
+          32.10705921
+        ],
+        "nearestBuildingId": "osm:way:223859811",
+        "buildingDistanceMeters": 163.67,
+        "campusBoundaryDistanceMeters": 49.09,
+        "componentEdgeCount": 158,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:423022850:0:end",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.92278502739191,
+          32.106599633791426
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:423022850:0:end",
+        "severity": "P2",
+        "reason": "Endpoint belongs to a larger component and has no nearby unsnapped road.",
+        "sourceObjectId": "osm:way:423022850",
+        "name": "文苑路",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "LIKELY_VALID_TERMINUS",
+        "roadType": "ROAD_MAIN",
+        "nearestRoadId": "osm:way:118942534",
+        "distanceMeters": 7.06,
+        "nearestPoint": [
+          118.92274541,
+          32.10711121
+        ],
+        "nearestBuildingId": "osm:way:223859811",
+        "buildingDistanceMeters": 163.8,
+        "campusBoundaryDistanceMeters": 46.83,
+        "componentEdgeCount": 158,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:89911411:0:start",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.92626325503242,
+          32.10731417677269
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:89911411:0:start",
+        "severity": "P2",
+        "reason": "Endpoint belongs to a larger component and has no nearby unsnapped road.",
+        "sourceObjectId": "osm:way:89911411",
+        "name": "学典路",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "LIKELY_VALID_TERMINUS",
+        "roadType": "ROAD_MAIN",
+        "nearestRoadId": "osm:way:140811049",
+        "distanceMeters": 23.79,
+        "nearestPoint": [
+          118.92606283,
+          32.1080272
+        ],
+        "nearestBuildingId": "osm:way:224938858",
+        "buildingDistanceMeters": 122.91,
+        "campusBoundaryDistanceMeters": 48.91,
+        "componentEdgeCount": 158,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223699471:0:end",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.9242046,
+          32.1081053
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:223699471:0:end",
+        "severity": "P1",
+        "reason": "Endpoint is close to a building boundary and may be a valid entrance terminus.",
+        "sourceObjectId": "osm:way:223699471",
+        "name": "未命名道路",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "NEAR_BUILDING_ENTRANCE",
+        "roadType": "ROAD_MAIN",
+        "nearestRoadId": "osm:way:223859831",
+        "distanceMeters": 38.46,
+        "nearestPoint": [
+          118.92409008,
+          32.10826804
+        ],
+        "nearestBuildingId": "osm:way:223859826",
+        "buildingDistanceMeters": 1.73,
+        "campusBoundaryDistanceMeters": 86.12,
+        "componentEdgeCount": 158,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223699476:0:end",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.9231056,
+          32.1087255
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:223699476:0:end",
+        "severity": "P2",
+        "reason": "Endpoint reaches the campus review boundary and may continue outside the dataset.",
+        "sourceObjectId": "osm:way:223699476",
+        "name": "未命名道路",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "NEAR_CAMPUS_BOUNDARY",
+        "roadType": "ROAD_MAIN",
+        "nearestRoadId": "osm:way:118942534",
+        "distanceMeters": 16.95,
+        "nearestPoint": [
+          118.92281133,
+          32.10924025
+        ],
+        "nearestBuildingId": "osm:way:223859811",
+        "buildingDistanceMeters": 97.79,
+        "campusBoundaryDistanceMeters": 0.0,
+        "componentEdgeCount": 158,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:224952400:0:end",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.9234008,
+          32.1079051
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:224952400:0:end",
+        "severity": "P2",
+        "reason": "Endpoint belongs to a larger component and has no nearby unsnapped road.",
+        "sourceObjectId": "osm:way:224952400",
+        "name": "未命名道路",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "LIKELY_VALID_TERMINUS",
+        "roadType": "ROAD_MAIN",
+        "nearestRoadId": "osm:way:223859831",
+        "distanceMeters": 14.55,
+        "nearestPoint": [
+          118.92344055,
+          32.10841906
+        ],
+        "nearestBuildingId": "osm:way:223859811",
+        "buildingDistanceMeters": 32.39,
+        "campusBoundaryDistanceMeters": 29.13,
+        "componentEdgeCount": 158,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:224952411:0:end",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.9236965,
+          32.1083
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:224952411:0:end",
+        "severity": "P2",
+        "reason": "Endpoint belongs to a larger component and has no nearby unsnapped road.",
+        "sourceObjectId": "osm:way:224952411",
+        "name": "未命名道路",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "LIKELY_VALID_TERMINUS",
+        "roadType": "ROAD_MAIN",
+        "nearestRoadId": "osm:way:224996916",
+        "distanceMeters": 14.31,
+        "nearestPoint": [
+          118.92343016,
+          32.10880951
+        ],
+        "nearestBuildingId": "osm:way:223859811",
+        "buildingDistanceMeters": 30.42,
+        "campusBoundaryDistanceMeters": 57.14,
+        "componentEdgeCount": 158,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:224954177:0:end",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.9253865,
+          32.1091887
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:224954177:0:end",
+        "severity": "P2",
+        "reason": "Endpoint is close to a building boundary and may be a valid entrance terminus.",
+        "sourceObjectId": "osm:way:224954177",
+        "name": "未命名道路",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "NEAR_BUILDING_ENTRANCE",
+        "roadType": "ROAD_MAIN",
+        "nearestRoadId": "osm:way:224953924",
+        "distanceMeters": 24.77,
+        "nearestPoint": [
+          118.92500928,
+          32.10969934
+        ],
+        "nearestBuildingId": "osm:way:223699451",
+        "buildingDistanceMeters": 3.09,
+        "campusBoundaryDistanceMeters": 157.11,
+        "componentEdgeCount": 158,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:964850648:0:end",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.93087915119112,
+          32.109244144019655
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:964850648:0:end",
+        "severity": "P2",
+        "reason": "Endpoint belongs to a larger component and has no nearby unsnapped road.",
+        "sourceObjectId": "osm:way:964850648",
+        "name": "仙境路",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "LIKELY_VALID_TERMINUS",
+        "roadType": "ROAD_MAIN",
+        "nearestRoadId": "osm:way:876594630",
+        "distanceMeters": 5.95,
+        "nearestPoint": [
+          118.93073361,
+          32.10980164
+        ],
+        "nearestBuildingId": "osm:way:1390009973",
+        "buildingDistanceMeters": 229.09,
+        "campusBoundaryDistanceMeters": 42.87,
+        "componentEdgeCount": 14,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:876594633:0:start",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.93085470606033,
+          32.10958913445024
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:876594633:0:start",
+        "severity": "P2",
+        "reason": "Endpoint belongs to a larger component and has no nearby unsnapped road.",
+        "sourceObjectId": "osm:way:876594633",
+        "name": "仙境路",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "LIKELY_VALID_TERMINUS",
+        "roadType": "ROAD_MAIN",
+        "nearestRoadId": "osm:way:876594630",
+        "distanceMeters": 16.76,
+        "nearestPoint": [
+          118.9305855,
+          32.1100252
+        ],
+        "nearestBuildingId": "osm:way:1390009973",
+        "buildingDistanceMeters": 210.92,
+        "campusBoundaryDistanceMeters": 43.4,
+        "componentEdgeCount": 14,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:964850650:0:start",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.9307723824136,
+          32.10903609096693
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:964850650:0:start",
+        "severity": "P2",
+        "reason": "Endpoint belongs to a larger component and has no nearby unsnapped road.",
+        "sourceObjectId": "osm:way:964850650",
+        "name": "文苑路",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "LIKELY_VALID_TERMINUS",
+        "roadType": "ROAD_MAIN",
+        "nearestRoadId": "osm:way:964850648",
+        "distanceMeters": 25.1,
+        "nearestPoint": [
+          118.93076466,
+          32.10975478
+        ],
+        "nearestBuildingId": "osm:way:1390009973",
+        "buildingDistanceMeters": 232.88,
+        "campusBoundaryDistanceMeters": 44.78,
+        "componentEdgeCount": 158,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:964850652:0:end",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.93002250769976,
+          32.108647541983785
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:964850652:0:end",
+        "severity": "P2",
+        "reason": "Endpoint belongs to a larger component and has no nearby unsnapped road.",
+        "sourceObjectId": "osm:way:964850652",
+        "name": "文苑路",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "LIKELY_VALID_TERMINUS",
+        "roadType": "ROAD_MAIN",
+        "nearestRoadId": "osm:way:964850650",
+        "distanceMeters": 16.72,
+        "nearestPoint": [
+          118.92984848,
+          32.10930063
+        ],
+        "nearestBuildingId": "osm:way:1390009973",
+        "buildingDistanceMeters": 214.05,
+        "campusBoundaryDistanceMeters": 48.43,
+        "componentEdgeCount": 158,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:155414099:0:start",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.92277282073022,
+          32.1120123462528
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:155414099:0:start",
+        "severity": "P2",
+        "reason": "Endpoint belongs to a larger component and has no nearby unsnapped road.",
+        "sourceObjectId": "osm:way:155414099",
+        "name": "未命名道路",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "LIKELY_VALID_TERMINUS",
+        "roadType": "ROAD_MAIN",
+        "nearestRoadId": "osm:way:118942534",
+        "distanceMeters": 23.28,
+        "nearestPoint": [
+          118.92290518,
+          32.11251829
+        ],
+        "nearestBuildingId": "osm:way:223699454",
+        "buildingDistanceMeters": 131.05,
+        "campusBoundaryDistanceMeters": 42.44,
+        "componentEdgeCount": 158,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223699464:0:end",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.9262459,
+          32.1146797
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:223699464:0:end",
+        "severity": "P2",
+        "reason": "Endpoint belongs to a larger component and has no nearby unsnapped road.",
+        "sourceObjectId": "osm:way:223699464",
+        "name": "未命名步道",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "LIKELY_VALID_TERMINUS",
+        "roadType": "ROAD_PEDESTRIAN",
+        "nearestRoadId": "osm:way:155412175",
+        "distanceMeters": 5.38,
+        "nearestPoint": [
+          118.9261325,
+          32.11514165
+        ],
+        "nearestBuildingId": "osm:way:223859810",
+        "buildingDistanceMeters": 32.96,
+        "campusBoundaryDistanceMeters": 304.32,
+        "componentEdgeCount": 158,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223699466:0:end",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.9263366,
+          32.1146792
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:223699466:0:end",
+        "severity": "P2",
+        "reason": "Endpoint belongs to a larger component and has no nearby unsnapped road.",
+        "sourceObjectId": "osm:way:223699466",
+        "name": "未命名步道",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "LIKELY_VALID_TERMINUS",
+        "roadType": "ROAD_PEDESTRIAN",
+        "nearestRoadId": "osm:way:155412175",
+        "distanceMeters": 5.16,
+        "nearestPoint": [
+          118.92622315,
+          32.11514315
+        ],
+        "nearestBuildingId": "osm:way:223859810",
+        "buildingDistanceMeters": 26.14,
+        "campusBoundaryDistanceMeters": 295.99,
+        "componentEdgeCount": 158,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223699467:0:start",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.9264168,
+          32.1149873
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:223699467:0:start",
+        "severity": "P2",
+        "reason": "Endpoint belongs to a larger component and has no nearby unsnapped road.",
+        "sourceObjectId": "osm:way:223699467",
+        "name": "未命名步道",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "LIKELY_VALID_TERMINUS",
+        "roadType": "ROAD_PEDESTRIAN",
+        "nearestRoadId": "osm:way:223699458",
+        "distanceMeters": 6.05,
+        "nearestPoint": [
+          118.92630349,
+          32.11555264
+        ],
+        "nearestBuildingId": "osm:way:223859810",
+        "buildingDistanceMeters": 53.11,
+        "campusBoundaryDistanceMeters": 296.63,
+        "componentEdgeCount": 158,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223699467:0:end",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.9264168,
+          32.1149873
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:223699467:0:end",
+        "severity": "P2",
+        "reason": "Endpoint belongs to a larger component and has no nearby unsnapped road.",
+        "sourceObjectId": "osm:way:223699467",
+        "name": "未命名步道",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "LIKELY_VALID_TERMINUS",
+        "roadType": "ROAD_PEDESTRIAN",
+        "nearestRoadId": "osm:way:223699458",
+        "distanceMeters": 6.05,
+        "nearestPoint": [
+          118.92630349,
+          32.11555264
+        ],
+        "nearestBuildingId": "osm:way:223859810",
+        "buildingDistanceMeters": 53.11,
+        "campusBoundaryDistanceMeters": 296.63,
+        "componentEdgeCount": 158,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223859789:0:end",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.9274734,
+          32.1127692
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:223859789:0:end",
+        "severity": "P2",
+        "reason": "Endpoint belongs to a larger component and has no nearby unsnapped road.",
+        "sourceObjectId": "osm:way:223859789",
+        "name": "未命名步道",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "LIKELY_VALID_TERMINUS",
+        "roadType": "ROAD_PEDESTRIAN",
+        "nearestRoadId": "osm:way:223699455",
+        "distanceMeters": 8.68,
+        "nearestPoint": [
+          118.92745095,
+          32.11328141
+        ],
+        "nearestBuildingId": "osm:way:223859794",
+        "buildingDistanceMeters": 41.4,
+        "campusBoundaryDistanceMeters": 160.2,
+        "componentEdgeCount": 158,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223859806:0:end",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.9269011,
+          32.1132973
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:223859806:0:end",
+        "severity": "P2",
+        "reason": "Endpoint belongs to a larger component and has no nearby unsnapped road.",
+        "sourceObjectId": "osm:way:223859806",
+        "name": "未命名步道",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "LIKELY_VALID_TERMINUS",
+        "roadType": "ROAD_PEDESTRIAN",
+        "nearestRoadId": "osm:way:155412163",
+        "distanceMeters": 11.07,
+        "nearestPoint": [
+          118.92678512,
+          32.11390809
+        ],
+        "nearestBuildingId": "osm:way:223859810",
+        "buildingDistanceMeters": 24.55,
+        "campusBoundaryDistanceMeters": 217.0,
+        "componentEdgeCount": 158,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223859838:0:start",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.9278757,
+          32.1106791
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:223859838:0:start",
+        "severity": "P2",
+        "reason": "Endpoint belongs to a larger component and has no nearby unsnapped road.",
+        "sourceObjectId": "osm:way:223859838",
+        "name": "未命名步道",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "LIKELY_VALID_TERMINUS",
+        "roadType": "ROAD_PEDESTRIAN",
+        "nearestRoadId": "osm:way:223699455",
+        "distanceMeters": 11.28,
+        "nearestPoint": [
+          118.92787345,
+          32.11122512
+        ],
+        "nearestBuildingId": "osm:way:1390009974",
+        "buildingDistanceMeters": 32.78,
+        "campusBoundaryDistanceMeters": 157.78,
+        "componentEdgeCount": 158,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223859838:0:end",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.9265346,
+          32.1103201
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:223859838:0:end",
+        "severity": "P2",
+        "reason": "Endpoint belongs to a larger component and has no nearby unsnapped road.",
+        "sourceObjectId": "osm:way:223859838",
+        "name": "未命名步道",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "LIKELY_VALID_TERMINUS",
+        "roadType": "ROAD_PEDESTRIAN",
+        "nearestRoadId": "osm:way:155412175",
+        "distanceMeters": 11.99,
+        "nearestPoint": [
+          118.92629291,
+          32.1108306
+        ],
+        "nearestBuildingId": "osm:way:223699456",
+        "buildingDistanceMeters": 53.02,
+        "campusBoundaryDistanceMeters": 235.97,
+        "componentEdgeCount": 158,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223859842:0:start",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.927552,
+          32.1116798
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:223859842:0:start",
+        "severity": "P2",
+        "reason": "Endpoint belongs to a larger component and has no nearby unsnapped road.",
+        "sourceObjectId": "osm:way:223859842",
+        "name": "未命名步道",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "LIKELY_VALID_TERMINUS",
+        "roadType": "ROAD_PEDESTRIAN",
+        "nearestRoadId": "osm:way:223699455",
+        "distanceMeters": 12.22,
+        "nearestPoint": [
+          118.92756491,
+          32.11221062
+        ],
+        "nearestBuildingId": "osm:way:223859824",
+        "buildingDistanceMeters": 54.55,
+        "campusBoundaryDistanceMeters": 161.33,
+        "componentEdgeCount": 158,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:224937776:0:start",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.9274805,
+          32.1122308
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:224937776:0:start",
+        "severity": "P2",
+        "reason": "Endpoint belongs to a larger component and has no nearby unsnapped road.",
+        "sourceObjectId": "osm:way:224937776",
+        "name": "未命名步道",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "LIKELY_VALID_TERMINUS",
+        "roadType": "ROAD_PEDESTRIAN",
+        "nearestRoadId": "osm:way:223699455",
+        "distanceMeters": 10.62,
+        "nearestPoint": [
+          118.92747824,
+          32.11274945
+        ],
+        "nearestBuildingId": "osm:way:223859797",
+        "buildingDistanceMeters": 43.16,
+        "campusBoundaryDistanceMeters": 160.66,
+        "componentEdgeCount": 158,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:224995051:0:end",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.9249524,
+          32.111995
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:224995051:0:end",
+        "severity": "P2",
+        "reason": "Endpoint belongs to a larger component and has no nearby unsnapped road.",
+        "sourceObjectId": "osm:way:224995051",
+        "name": "未命名道路",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "LIKELY_VALID_TERMINUS",
+        "roadType": "ROAD_MAIN",
+        "nearestRoadId": "osm:way:224995052",
+        "distanceMeters": 7.02,
+        "nearestPoint": [
+          118.92483826,
+          32.11244217
+        ],
+        "nearestBuildingId": "osm:way:223699452",
+        "buildingDistanceMeters": 17.67,
+        "campusBoundaryDistanceMeters": 163.02,
+        "componentEdgeCount": 158,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:224995721:0:end",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.924599,
+          32.1120018
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:224995721:0:end",
+        "severity": "P1",
+        "reason": "Endpoint is near another road, but a conservative snap is not automatically safe.",
+        "sourceObjectId": "osm:way:224995721",
+        "name": "未命名步道",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "NEAR_OTHER_ROAD",
+        "roadType": "ROAD_PEDESTRIAN",
+        "nearestRoadId": "osm:way:224995051",
+        "distanceMeters": 2.32,
+        "nearestPoint": [
+          118.92448474,
+          32.11249146
+        ],
+        "nearestBuildingId": "osm:way:223699452",
+        "buildingDistanceMeters": 18.44,
+        "campusBoundaryDistanceMeters": 129.7,
+        "componentEdgeCount": 158,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:224995747:0:start",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.9241445,
+          32.112204
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:224995747:0:start",
+        "severity": "P1",
+        "reason": "Endpoint is close to a building boundary and may be a valid entrance terminus.",
+        "sourceObjectId": "osm:way:224995747",
+        "name": "未命名步道",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "NEAR_BUILDING_ENTRANCE",
+        "roadType": "ROAD_PEDESTRIAN",
+        "nearestRoadId": "osm:way:223699457",
+        "distanceMeters": 19.94,
+        "nearestPoint": [
+          118.92381854,
+          32.11271579
+        ],
+        "nearestBuildingId": "osm:way:223699454",
+        "buildingDistanceMeters": 0.0,
+        "campusBoundaryDistanceMeters": 86.15,
+        "componentEdgeCount": 1,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:224995747:0:end",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.9241294,
+          32.1119518
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:224995747:0:end",
+        "severity": "P1",
+        "reason": "Endpoint is near another road, but a conservative snap is not automatically safe.",
+        "sourceObjectId": "osm:way:224995747",
+        "name": "未命名步道",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "NEAR_OTHER_ROAD",
+        "roadType": "ROAD_PEDESTRIAN",
+        "nearestRoadId": "osm:way:224995051",
+        "distanceMeters": 2.51,
+        "nearestPoint": [
+          118.92401491,
+          32.11243973
+        ],
+        "nearestBuildingId": "osm:way:223699452",
+        "buildingDistanceMeters": 13.27,
+        "campusBoundaryDistanceMeters": 85.62,
+        "componentEdgeCount": 1,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:224996491:0:start",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.9247941,
+          32.1122041
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:224996491:0:start",
+        "severity": "P1",
+        "reason": "Endpoint is close to a building boundary and may be a valid entrance terminus.",
+        "sourceObjectId": "osm:way:224996491",
+        "name": "未命名步道",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "NEAR_BUILDING_ENTRANCE",
+        "roadType": "ROAD_PEDESTRIAN",
+        "nearestRoadId": "osm:way:224995721",
+        "distanceMeters": 4.71,
+        "nearestPoint": [
+          118.92467818,
+          32.11267214
+        ],
+        "nearestBuildingId": "osm:way:223699454",
+        "buildingDistanceMeters": 0.0,
+        "campusBoundaryDistanceMeters": 147.37,
+        "componentEdgeCount": 158,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:224996566:0:end",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.9249268,
+          32.112736
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:224996566:0:end",
+        "severity": "P2",
+        "reason": "Endpoint belongs to a larger component and has no nearby unsnapped road.",
+        "sourceObjectId": "osm:way:224996566",
+        "name": "未命名道路",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "LIKELY_VALID_TERMINUS",
+        "roadType": "ROAD_MAIN",
+        "nearestRoadId": "osm:way:224954736",
+        "distanceMeters": 4.83,
+        "nearestPoint": [
+          118.92481258,
+          32.11329036
+        ],
+        "nearestBuildingId": "osm:way:223699454",
+        "buildingDistanceMeters": 8.27,
+        "campusBoundaryDistanceMeters": 158.85,
+        "componentEdgeCount": 158,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225009121:0:start",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.9266364,
+          32.1132927
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:225009121:0:start",
+        "severity": "P2",
+        "reason": "Endpoint belongs to a larger component and has no nearby unsnapped road.",
+        "sourceObjectId": "osm:way:225009121",
+        "name": "未命名步道",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "LIKELY_VALID_TERMINUS",
+        "roadType": "ROAD_PEDESTRIAN",
+        "nearestRoadId": "osm:way:155412163",
+        "distanceMeters": 11.27,
+        "nearestPoint": [
+          118.92652039,
+          32.11390527
+        ],
+        "nearestBuildingId": "osm:way:223859810",
+        "buildingDistanceMeters": 25.04,
+        "campusBoundaryDistanceMeters": 241.83,
+        "componentEdgeCount": 158,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225093475:0:end",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.9265248,
+          32.1122262
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:225093475:0:end",
+        "severity": "P2",
+        "reason": "Endpoint belongs to a larger component and has no nearby unsnapped road.",
+        "sourceObjectId": "osm:way:225093475",
+        "name": "未命名步道",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "LIKELY_VALID_TERMINUS",
+        "roadType": "ROAD_PEDESTRIAN",
+        "nearestRoadId": "osm:way:155412175",
+        "distanceMeters": 11.33,
+        "nearestPoint": [
+          118.92629009,
+          32.11273671
+        ],
+        "nearestBuildingId": "osm:way:223699452",
+        "buildingDistanceMeters": 67.45,
+        "campusBoundaryDistanceMeters": 250.57,
+        "componentEdgeCount": 158,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225520901:0:end",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.92249931116821,
+          32.1138935295352
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:225520901:0:end",
+        "severity": "P2",
+        "reason": "Endpoint belongs to a larger component and has no nearby unsnapped road.",
+        "sourceObjectId": "osm:way:225520901",
+        "name": "未命名道路",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "LIKELY_VALID_TERMINUS",
+        "roadType": "ROAD_MAIN",
+        "nearestRoadId": "osm:way:118942534",
+        "distanceMeters": 16.81,
+        "nearestPoint": [
+          118.92254995,
+          32.11446139
+        ],
+        "nearestBuildingId": "osm:way:1173057050",
+        "buildingDistanceMeters": 161.03,
+        "campusBoundaryDistanceMeters": 45.89,
+        "componentEdgeCount": 158,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:1443621025:0:end",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.9231875,
+          32.1111046
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:1443621025:0:end",
+        "severity": "P2",
+        "reason": "Endpoint reaches the campus review boundary and may continue outside the dataset.",
+        "sourceObjectId": "osm:way:1443621025",
+        "name": "未命名道路",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "NEAR_CAMPUS_BOUNDARY",
+        "roadType": "ROAD_MAIN",
+        "nearestRoadId": "osm:way:118942534",
+        "distanceMeters": 18.04,
+        "nearestPoint": [
+          118.92288167,
+          32.11161887
+        ],
+        "nearestBuildingId": "osm:way:155434036",
+        "buildingDistanceMeters": 92.34,
+        "campusBoundaryDistanceMeters": 0.0,
+        "componentEdgeCount": 158,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:155412172:0:end",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.9299125,
+          32.1102504
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:155412172:0:end",
+        "severity": "P2",
+        "reason": "Endpoint reaches the campus review boundary and may continue outside the dataset.",
+        "sourceObjectId": "osm:way:155412172",
+        "name": "未命名道路",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "NEAR_CAMPUS_BOUNDARY",
+        "roadType": "ROAD_MAIN",
+        "nearestRoadId": "osm:way:876594631",
+        "distanceMeters": 24.63,
+        "nearestPoint": [
+          118.93002542,
+          32.11087064
+        ],
+        "nearestBuildingId": "osm:way:1390009973",
+        "buildingDistanceMeters": 108.78,
+        "campusBoundaryDistanceMeters": 0.0,
+        "componentEdgeCount": 158,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:188621612:0:end",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.93029099038974,
+          32.110493962460204
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:188621612:0:end",
+        "severity": "P1",
+        "reason": "Endpoint is near another road, but a conservative snap is not automatically safe.",
+        "sourceObjectId": "osm:way:188621612",
+        "name": "未命名道路",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "NEAR_OTHER_ROAD",
+        "roadType": "ROAD_MAIN",
+        "nearestRoadId": "osm:way:876594633",
+        "distanceMeters": 2.78,
+        "nearestPoint": [
+          118.93014959,
+          32.11099431
+        ],
+        "nearestBuildingId": "osm:way:223859829",
+        "buildingDistanceMeters": 136.58,
+        "campusBoundaryDistanceMeters": 44.07,
+        "componentEdgeCount": 14,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:188621612:1:start",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.92995197713688,
+          32.11112996319034
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:188621612:1:start",
+        "severity": "P1",
+        "reason": "Endpoint is near another road, but a conservative snap is not automatically safe.",
+        "sourceObjectId": "osm:way:188621612",
+        "name": "未命名道路",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "NEAR_OTHER_ROAD",
+        "roadType": "ROAD_MAIN",
+        "nearestRoadId": "osm:way:876594633",
+        "distanceMeters": 2.54,
+        "nearestPoint": [
+          118.92981299,
+          32.11163111
+        ],
+        "nearestBuildingId": "osm:way:223859829",
+        "buildingDistanceMeters": 81.36,
+        "campusBoundaryDistanceMeters": 43.44,
+        "componentEdgeCount": 14,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:224939806:0:end",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.9299296,
+          32.1095492
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:224939806:0:end",
+        "severity": "P2",
+        "reason": "Endpoint belongs to a larger component and has no nearby unsnapped road.",
+        "sourceObjectId": "osm:way:224939806",
+        "name": "未命名道路",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "LIKELY_VALID_TERMINUS",
+        "roadType": "ROAD_MAIN",
+        "nearestRoadId": "osm:way:224939821",
+        "distanceMeters": 39.66,
+        "nearestPoint": [
+          118.92958831,
+          32.11036204
+        ],
+        "nearestBuildingId": "osm:way:1390009973",
+        "buildingDistanceMeters": 135.25,
+        "campusBoundaryDistanceMeters": 35.35,
+        "componentEdgeCount": 158,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225267149:0:start",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.9204254,
+          32.1195085
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:225267149:0:start",
+        "severity": "P1",
+        "reason": "Endpoint is near another road, but a conservative snap is not automatically safe.",
+        "sourceObjectId": "osm:way:225267149",
+        "name": "未命名步道",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "NEAR_OTHER_ROAD",
+        "roadType": "ROAD_PEDESTRIAN",
+        "nearestRoadId": "osm:way:225268089",
+        "distanceMeters": 2.35,
+        "nearestPoint": [
+          118.92028665,
+          32.12002414
+        ],
+        "nearestBuildingId": "osm:way:225265337",
+        "buildingDistanceMeters": 36.61,
+        "campusBoundaryDistanceMeters": 67.07,
+        "componentEdgeCount": 2,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225267150:0:end",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.9206917,
+          32.1194405
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:225267150:0:end",
+        "severity": "P1",
+        "reason": "Endpoint is near another road, but a conservative snap is not automatically safe.",
+        "sourceObjectId": "osm:way:225267150",
+        "name": "未命名步道",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "NEAR_OTHER_ROAD",
+        "roadType": "ROAD_PEDESTRIAN",
+        "nearestRoadId": "osm:way:224941985",
+        "distanceMeters": 3.48,
+        "nearestPoint": [
+          118.92059585,
+          32.11992395
+        ],
+        "nearestBuildingId": "osm:way:225265337",
+        "buildingDistanceMeters": 15.39,
+        "campusBoundaryDistanceMeters": 85.62,
+        "componentEdgeCount": 2,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225267152:0:start",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.9203924,
+          32.1194923
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:225267152:0:start",
+        "severity": "P1",
+        "reason": "Endpoint is near another road, but a conservative snap is not automatically safe.",
+        "sourceObjectId": "osm:way:225267152",
+        "name": "未命名步道",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "NEAR_OTHER_ROAD",
+        "roadType": "ROAD_PEDESTRIAN",
+        "nearestRoadId": "osm:way:225268089",
+        "distanceMeters": 2.49,
+        "nearestPoint": [
+          118.92028665,
+          32.12002414
+        ],
+        "nearestBuildingId": "osm:way:225265337",
+        "buildingDistanceMeters": 37.97,
+        "campusBoundaryDistanceMeters": 63.48,
+        "componentEdgeCount": 1,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225267152:0:end",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.9204823,
+          32.1193379
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:225267152:0:end",
+        "severity": "P1",
+        "reason": "Endpoint is near another road, but a conservative snap is not automatically safe.",
+        "sourceObjectId": "osm:way:225267152",
+        "name": "未命名步道",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "NEAR_OTHER_ROAD",
+        "roadType": "ROAD_PEDESTRIAN",
+        "nearestRoadId": "osm:way:224941985",
+        "distanceMeters": 3.5,
+        "nearestPoint": [
+          118.92038594,
+          32.1198209
+        ],
+        "nearestBuildingId": "osm:way:225265337",
+        "buildingDistanceMeters": 23.04,
+        "campusBoundaryDistanceMeters": 62.86,
+        "componentEdgeCount": 1,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225268089:0:start",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.9204012,
+          32.1195135
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:225268089:0:start",
+        "severity": "P1",
+        "reason": "Endpoint is near another road, but a conservative snap is not automatically safe.",
+        "sourceObjectId": "osm:way:225268089",
+        "name": "未命名道路",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "NEAR_OTHER_ROAD",
+        "roadType": "ROAD_MAIN",
+        "nearestRoadId": "osm:way:225267149",
+        "distanceMeters": 2.35,
+        "nearestPoint": [
+          118.92031085,
+          32.12001914
+        ],
+        "nearestBuildingId": "osm:way:225265337",
+        "buildingDistanceMeters": 38.72,
+        "campusBoundaryDistanceMeters": 65.32,
+        "componentEdgeCount": 158,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:1173057048:0:end",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.9213094,
+          32.1181277
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:1173057048:0:end",
+        "severity": "P2",
+        "reason": "Endpoint belongs to a larger component and has no nearby unsnapped road.",
+        "sourceObjectId": "osm:way:1173057048",
+        "name": "未命名道路",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "LIKELY_VALID_TERMINUS",
+        "roadType": "ROAD_MAIN",
+        "nearestRoadId": "osm:way:1173057038",
+        "distanceMeters": 5.43,
+        "nearestPoint": [
+          118.92122333,
+          32.11859563
+        ],
+        "nearestBuildingId": "osm:way:225265337",
+        "buildingDistanceMeters": 129.27,
+        "campusBoundaryDistanceMeters": 70.42,
+        "componentEdgeCount": 158,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:140811043:0:end",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.91911776652306,
+          32.1199649165835
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:140811043:0:end",
+        "severity": "P2",
+        "reason": "Endpoint belongs to a larger component and has no nearby unsnapped road.",
+        "sourceObjectId": "osm:way:140811043",
+        "name": "学海路",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "LIKELY_VALID_TERMINUS",
+        "roadType": "ROAD_MAIN",
+        "nearestRoadId": "osm:way:1539473111",
+        "distanceMeters": 6.8,
+        "nearestPoint": [
+          118.91904096,
+          32.12042315
+        ],
+        "nearestBuildingId": "osm:way:225265337",
+        "buildingDistanceMeters": 168.39,
+        "campusBoundaryDistanceMeters": 43.57,
+        "componentEdgeCount": 158,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223859850:0:end",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.9198937,
+          32.1193245
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:223859850:0:end",
+        "severity": "P2",
+        "reason": "Endpoint belongs to a larger component and has no nearby unsnapped road.",
+        "sourceObjectId": "osm:way:223859850",
+        "name": "未命名道路",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "LIKELY_VALID_TERMINUS",
+        "roadType": "ROAD_MAIN",
+        "nearestRoadId": "osm:way:224942025",
+        "distanceMeters": 21.22,
+        "nearestPoint": [
+          118.91966935,
+          32.12000274
+        ],
+        "nearestBuildingId": "osm:way:225265337",
+        "buildingDistanceMeters": 78.09,
+        "campusBoundaryDistanceMeters": 13.28,
+        "componentEdgeCount": 158,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:949265197:0:end",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.92215593575833,
+          32.12177221683542
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:949265197:0:end",
+        "severity": "P2",
+        "reason": "Endpoint belongs to a larger component and has no nearby unsnapped road.",
+        "sourceObjectId": "osm:way:949265197",
+        "name": "未命名道路",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "LIKELY_VALID_TERMINUS",
+        "roadType": "ROAD_MAIN",
+        "nearestRoadId": "osm:way:489234880",
+        "distanceMeters": 12.58,
+        "nearestPoint": [
+          118.92210832,
+          32.12218436
+        ],
+        "nearestBuildingId": "osm:way:225109136",
+        "buildingDistanceMeters": 63.47,
+        "campusBoundaryDistanceMeters": 44.54,
+        "componentEdgeCount": 158,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:1173057038:0:end",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.9223596,
+          32.1185805
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:1173057038:0:end",
+        "severity": "P2",
+        "reason": "Endpoint belongs to a larger component and has no nearby unsnapped road.",
+        "sourceObjectId": "osm:way:1173057038",
+        "name": "未命名道路",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "LIKELY_VALID_TERMINUS",
+        "roadType": "ROAD_MAIN",
+        "nearestRoadId": "osm:way:1173057037",
+        "distanceMeters": 17.84,
+        "nearestPoint": [
+          118.92240887,
+          32.11917196
+        ],
+        "nearestBuildingId": "osm:way:1173059720",
+        "buildingDistanceMeters": 108.79,
+        "campusBoundaryDistanceMeters": 181.37,
+        "componentEdgeCount": 158,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:1173057044:0:end",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.9220131,
+          32.1191944
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:1173057044:0:end",
+        "severity": "P2",
+        "reason": "Endpoint belongs to a larger component and has no nearby unsnapped road.",
+        "sourceObjectId": "osm:way:1173057044",
+        "name": "未命名道路",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "LIKELY_VALID_TERMINUS",
+        "roadType": "ROAD_MAIN",
+        "nearestRoadId": "osm:way:1173057037",
+        "distanceMeters": 12.14,
+        "nearestPoint": [
+          118.92201003,
+          32.11976004
+        ],
+        "nearestBuildingId": "osm:way:225265337",
+        "buildingDistanceMeters": 81.08,
+        "campusBoundaryDistanceMeters": 179.01,
+        "componentEdgeCount": 158,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:1539473118:0:end",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.92209366567764,
+          32.12160852742022
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:1539473118:0:end",
+        "severity": "P2",
+        "reason": "Endpoint belongs to a larger component and has no nearby unsnapped road.",
+        "sourceObjectId": "osm:way:1539473118",
+        "name": "文澜路",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "LIKELY_VALID_TERMINUS",
+        "roadType": "ROAD_MAIN",
+        "nearestRoadId": "osm:way:949265197",
+        "distanceMeters": 14.04,
+        "nearestPoint": [
+          118.92210726,
+          32.12218384
+        ],
+        "nearestBuildingId": "osm:way:225109136",
+        "buildingDistanceMeters": 49.45,
+        "campusBoundaryDistanceMeters": 42.63,
+        "componentEdgeCount": 158,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:1539473118:1:start",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.92204200103099,
+          32.12158245098792
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:1539473118:1:start",
+        "severity": "P2",
+        "reason": "Endpoint belongs to a larger component and has no nearby unsnapped road.",
+        "sourceObjectId": "osm:way:1539473118",
+        "name": "文澜路",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "LIKELY_VALID_TERMINUS",
+        "roadType": "ROAD_MAIN",
+        "nearestRoadId": "osm:way:1539473123",
+        "distanceMeters": 14.85,
+        "nearestPoint": [
+          118.92200991,
+          32.1219786
+        ],
+        "nearestBuildingId": "osm:way:225109136",
+        "buildingDistanceMeters": 49.36,
+        "campusBoundaryDistanceMeters": 47.01,
+        "componentEdgeCount": 158,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:1539473118:1:end",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.92019456114498,
+          32.12065000212333
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:1539473118:1:end",
+        "severity": "P2",
+        "reason": "Endpoint belongs to a larger component and has no nearby unsnapped road.",
+        "sourceObjectId": "osm:way:1539473118",
+        "name": "文澜路",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "LIKELY_VALID_TERMINUS",
+        "roadType": "ROAD_MAIN",
+        "nearestRoadId": "osm:way:1539473123",
+        "distanceMeters": 18.19,
+        "nearestPoint": [
+          118.92018097,
+          32.12102044
+        ],
+        "nearestBuildingId": "osm:way:225265337",
+        "buildingDistanceMeters": 154.43,
+        "campusBoundaryDistanceMeters": 47.88,
+        "componentEdgeCount": 158,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223699450:0:end",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.925113,
+          32.1221912
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:223699450:0:end",
+        "severity": "P2",
+        "reason": "Endpoint belongs to a larger component and has no nearby unsnapped road.",
+        "sourceObjectId": "osm:way:223699450",
+        "name": "未命名道路",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "LIKELY_VALID_TERMINUS",
+        "roadType": "ROAD_MAIN",
+        "nearestRoadId": "osm:way:225109877",
+        "distanceMeters": 38.06,
+        "nearestPoint": [
+          118.92520038,
+          32.12240364
+        ],
+        "nearestBuildingId": "osm:way:223859802",
+        "buildingDistanceMeters": 64.73,
+        "campusBoundaryDistanceMeters": 42.74,
+        "componentEdgeCount": 158,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223699460:0:start",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.9263667,
+          32.1201947
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:223699460:0:start",
+        "severity": "P2",
+        "reason": "Endpoint belongs to a larger component and has no nearby unsnapped road.",
+        "sourceObjectId": "osm:way:223699460",
+        "name": "未命名道路",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "LIKELY_VALID_TERMINUS",
+        "roadType": "ROAD_MAIN",
+        "nearestRoadId": "osm:way:223699450",
+        "distanceMeters": 5.63,
+        "nearestPoint": [
+          118.92629749,
+          32.12073854
+        ],
+        "nearestBuildingId": "osm:way:225253711",
+        "buildingDistanceMeters": 33.13,
+        "campusBoundaryDistanceMeters": 292.96,
+        "componentEdgeCount": 158,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223699460:0:end",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.9263667,
+          32.1201947
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:223699460:0:end",
+        "severity": "P2",
+        "reason": "Endpoint belongs to a larger component and has no nearby unsnapped road.",
+        "sourceObjectId": "osm:way:223699460",
+        "name": "未命名道路",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "LIKELY_VALID_TERMINUS",
+        "roadType": "ROAD_MAIN",
+        "nearestRoadId": "osm:way:223699450",
+        "distanceMeters": 5.63,
+        "nearestPoint": [
+          118.92629749,
+          32.12073854
+        ],
+        "nearestBuildingId": "osm:way:225253711",
+        "buildingDistanceMeters": 33.13,
+        "campusBoundaryDistanceMeters": 292.96,
+        "componentEdgeCount": 158,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223699473:0:start",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.9242584,
+          32.1188904
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:223699473:0:start",
+        "severity": "P2",
+        "reason": "Endpoint belongs to a larger component and has no nearby unsnapped road.",
+        "sourceObjectId": "osm:way:223699473",
+        "name": "未命名道路",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "LIKELY_VALID_TERMINUS",
+        "roadType": "ROAD_MAIN",
+        "nearestRoadId": "osm:way:223699478",
+        "distanceMeters": 8.93,
+        "nearestPoint": [
+          118.92411918,
+          32.11947904
+        ],
+        "nearestBuildingId": "osm:way:1281082570",
+        "buildingDistanceMeters": 24.02,
+        "campusBoundaryDistanceMeters": 311.5,
+        "componentEdgeCount": 158,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223699473:0:end",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.9242584,
+          32.1188904
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:223699473:0:end",
+        "severity": "P2",
+        "reason": "Endpoint belongs to a larger component and has no nearby unsnapped road.",
+        "sourceObjectId": "osm:way:223699473",
+        "name": "未命名道路",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "LIKELY_VALID_TERMINUS",
+        "roadType": "ROAD_MAIN",
+        "nearestRoadId": "osm:way:223699478",
+        "distanceMeters": 8.93,
+        "nearestPoint": [
+          118.92411918,
+          32.11947904
+        ],
+        "nearestBuildingId": "osm:way:1281082570",
+        "buildingDistanceMeters": 24.02,
+        "campusBoundaryDistanceMeters": 311.5,
+        "componentEdgeCount": 158,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:224941322:0:end",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.9233295,
+          32.1213856
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:224941322:0:end",
+        "severity": "P2",
+        "reason": "Endpoint belongs to a larger component and has no nearby unsnapped road.",
+        "sourceObjectId": "osm:way:224941322",
+        "name": "未命名步道",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "LIKELY_VALID_TERMINUS",
+        "roadType": "ROAD_PEDESTRIAN",
+        "nearestRoadId": "osm:way:140811046",
+        "distanceMeters": 65.34,
+        "nearestPoint": [
+          118.92286749,
+          32.1224077
+        ],
+        "nearestBuildingId": "osm:way:223859827",
+        "buildingDistanceMeters": 21.05,
+        "campusBoundaryDistanceMeters": 35.52,
+        "componentEdgeCount": 158,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:224941334:0:end",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.9245173,
+          32.1217052
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:224941334:0:end",
+        "severity": "P2",
+        "reason": "Endpoint belongs to a larger component and has no nearby unsnapped road.",
+        "sourceObjectId": "osm:way:224941334",
+        "name": "未命名步道",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "LIKELY_VALID_TERMINUS",
+        "roadType": "ROAD_PEDESTRIAN",
+        "nearestRoadId": "osm:way:223699450",
+        "distanceMeters": 75.5,
+        "nearestPoint": [
+          118.92509625,
+          32.12255743
+        ],
+        "nearestBuildingId": "osm:way:223859802",
+        "buildingDistanceMeters": 6.2,
+        "campusBoundaryDistanceMeters": 61.08,
+        "componentEdgeCount": 158,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225107325:0:start",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.9270418,
+          32.1217718
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:225107325:0:start",
+        "severity": "P2",
+        "reason": "Endpoint belongs to a larger component and has no nearby unsnapped road.",
+        "sourceObjectId": "osm:way:225107325",
+        "name": "未命名步道",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "LIKELY_VALID_TERMINUS",
+        "roadType": "ROAD_PEDESTRIAN",
+        "nearestRoadId": "osm:way:224941251",
+        "distanceMeters": 10.16,
+        "nearestPoint": [
+          118.92698046,
+          32.12220248
+        ],
+        "nearestBuildingId": "osm:way:225253712",
+        "buildingDistanceMeters": 60.84,
+        "campusBoundaryDistanceMeters": 171.87,
+        "componentEdgeCount": 158,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225108277:0:end",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.925418,
+          32.120078
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:225108277:0:end",
+        "severity": "P2",
+        "reason": "Endpoint belongs to a larger component and has no nearby unsnapped road.",
+        "sourceObjectId": "osm:way:225108277",
+        "name": "未命名步道",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "LIKELY_VALID_TERMINUS",
+        "roadType": "ROAD_PEDESTRIAN",
+        "nearestRoadId": "osm:way:225109878",
+        "distanceMeters": 31.71,
+        "nearestPoint": [
+          118.92558148,
+          32.12042724
+        ],
+        "nearestBuildingId": "osm:way:1281082570",
+        "buildingDistanceMeters": 38.23,
+        "campusBoundaryDistanceMeters": 259.29,
+        "componentEdgeCount": 158,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225109875:0:end",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.9257019,
+          32.1214726
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:225109875:0:end",
+        "severity": "P2",
+        "reason": "Endpoint belongs to a larger component and has no nearby unsnapped road.",
+        "sourceObjectId": "osm:way:225109875",
+        "name": "未命名步道",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "LIKELY_VALID_TERMINUS",
+        "roadType": "ROAD_PEDESTRIAN",
+        "nearestRoadId": "osm:way:223699450",
+        "distanceMeters": 8.36,
+        "nearestPoint": [
+          118.92551058,
+          32.12194544
+        ],
+        "nearestBuildingId": "osm:way:223859802",
+        "buildingDistanceMeters": 57.07,
+        "campusBoundaryDistanceMeters": 139.3,
+        "componentEdgeCount": 158,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225109876:0:end",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.9255434,
+          32.1216981
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:225109876:0:end",
+        "severity": "P2",
+        "reason": "Endpoint belongs to a larger component and has no nearby unsnapped road.",
+        "sourceObjectId": "osm:way:225109876",
+        "name": "未命名步道",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "LIKELY_VALID_TERMINUS",
+        "roadType": "ROAD_PEDESTRIAN",
+        "nearestRoadId": "osm:way:223699450",
+        "distanceMeters": 7.88,
+        "nearestPoint": [
+          118.92535647,
+          32.12217307
+        ],
+        "nearestBuildingId": "osm:way:223859802",
+        "buildingDistanceMeters": 54.75,
+        "campusBoundaryDistanceMeters": 110.24,
+        "componentEdgeCount": 158,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225109877:0:end",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.9253941,
+          32.1219315
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:225109877:0:end",
+        "severity": "P2",
+        "reason": "Endpoint belongs to a larger component and has no nearby unsnapped road.",
+        "sourceObjectId": "osm:way:225109877",
+        "name": "未命名步道",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "LIKELY_VALID_TERMINUS",
+        "roadType": "ROAD_PEDESTRIAN",
+        "nearestRoadId": "osm:way:223699450",
+        "distanceMeters": 8.59,
+        "nearestPoint": [
+          118.92520064,
+          32.12240326
+        ],
+        "nearestBuildingId": "osm:way:223859802",
+        "buildingDistanceMeters": 59.52,
+        "campusBoundaryDistanceMeters": 80.86,
+        "componentEdgeCount": 158,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225109878:0:start",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.925696,
+          32.1199166
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:225109878:0:start",
+        "severity": "P2",
+        "reason": "Endpoint belongs to a larger component and has no nearby unsnapped road.",
+        "sourceObjectId": "osm:way:225109878",
+        "name": "未命名步道",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "LIKELY_VALID_TERMINUS",
+        "roadType": "ROAD_PEDESTRIAN",
+        "nearestRoadId": "osm:way:223699478",
+        "distanceMeters": 24.5,
+        "nearestPoint": [
+          118.92571153,
+          32.12023532
+        ],
+        "nearestBuildingId": "osm:way:1281082570",
+        "buildingDistanceMeters": 52.47,
+        "campusBoundaryDistanceMeters": 287.87,
+        "componentEdgeCount": 158,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225109879:0:start",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.9261251,
+          32.1201286
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:225109879:0:start",
+        "severity": "P2",
+        "reason": "Endpoint belongs to a larger component and has no nearby unsnapped road.",
+        "sourceObjectId": "osm:way:225109879",
+        "name": "未命名步道",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "LIKELY_VALID_TERMINUS",
+        "roadType": "ROAD_PEDESTRIAN",
+        "nearestRoadId": "osm:way:223699460",
+        "distanceMeters": 18.94,
+        "nearestPoint": [
+          118.92620889,
+          32.12061214
+        ],
+        "nearestBuildingId": "osm:way:225253711",
+        "buildingDistanceMeters": 52.8,
+        "campusBoundaryDistanceMeters": 287.86,
+        "componentEdgeCount": 158,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225112716:0:start",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.926201,
+          32.1185495
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:225112716:0:start",
+        "severity": "P2",
+        "reason": "Endpoint belongs to a larger component and has no nearby unsnapped road.",
+        "sourceObjectId": "osm:way:225112716",
+        "name": "未命名道路",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "LIKELY_VALID_TERMINUS",
+        "roadType": "ROAD_MAIN",
+        "nearestRoadId": "osm:way:1173059718",
+        "distanceMeters": 60.47,
+        "nearestPoint": [
+          118.92642469,
+          32.11859534
+        ],
+        "nearestBuildingId": "osm:way:223944209",
+        "buildingDistanceMeters": 12.43,
+        "campusBoundaryDistanceMeters": 363.96,
+        "componentEdgeCount": 158,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225112725:0:start",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.9267803,
+          32.1192037
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:225112725:0:start",
+        "severity": "P2",
+        "reason": "Endpoint belongs to a larger component and has no nearby unsnapped road.",
+        "sourceObjectId": "osm:way:225112725",
+        "name": "未命名道路",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "LIKELY_VALID_TERMINUS",
+        "roadType": "ROAD_MAIN",
+        "nearestRoadId": "osm:way:223699465",
+        "distanceMeters": 27.25,
+        "nearestPoint": [
+          118.92691828,
+          32.1198342
+        ],
+        "nearestBuildingId": "osm:way:223944209",
+        "buildingDistanceMeters": 8.62,
+        "campusBoundaryDistanceMeters": 313.11,
+        "componentEdgeCount": 158,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225199796:0:end",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.9279898,
+          32.1184203
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:225199796:0:end",
+        "severity": "P1",
+        "reason": "Endpoint is close to a building boundary and may be a valid entrance terminus.",
+        "sourceObjectId": "osm:way:225199796",
+        "name": "未命名步道",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "NEAR_BUILDING_ENTRANCE",
+        "roadType": "ROAD_PEDESTRIAN",
+        "nearestRoadId": "osm:way:225199797",
+        "distanceMeters": 9.5,
+        "nearestPoint": [
+          118.92778981,
+          32.11888543
+        ],
+        "nearestBuildingId": "osm:way:225198911",
+        "buildingDistanceMeters": 1.52,
+        "campusBoundaryDistanceMeters": 197.79,
+        "componentEdgeCount": 158,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225199797:0:start",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.9278494,
+          32.1186309
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:225199797:0:start",
+        "severity": "P1",
+        "reason": "Road belongs to a component of at most two features and is separated from the mapped network.",
+        "sourceObjectId": "osm:way:225199797",
+        "name": "未命名步道",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "ISOLATED_SEGMENT",
+        "roadType": "ROAD_PEDESTRIAN",
+        "nearestRoadId": "osm:way:225199796",
+        "distanceMeters": 26.77,
+        "nearestPoint": [
+          118.92786906,
+          32.11892809
+        ],
+        "nearestBuildingId": "osm:way:225198911",
+        "buildingDistanceMeters": 7.68,
+        "campusBoundaryDistanceMeters": 208.28,
+        "componentEdgeCount": 1,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225199797:0:end",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.9281355,
+          32.1182045
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:225199797:0:end",
+        "severity": "P1",
+        "reason": "Road belongs to a component of at most two features and is separated from the mapped network.",
+        "sourceObjectId": "osm:way:225199797",
+        "name": "未命名步道",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "ISOLATED_SEGMENT",
+        "roadType": "ROAD_PEDESTRIAN",
+        "nearestRoadId": "osm:way:225199796",
+        "distanceMeters": 27.53,
+        "nearestPoint": [
+          118.9278753,
+          32.11893094
+        ],
+        "nearestBuildingId": "osm:way:225198909",
+        "buildingDistanceMeters": 8.92,
+        "campusBoundaryDistanceMeters": 190.21,
+        "componentEdgeCount": 1,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225205498:0:start",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.9273154,
+          32.1184455
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:225205498:0:start",
+        "severity": "P2",
+        "reason": "Endpoint belongs to a larger component and has no nearby unsnapped road.",
+        "sourceObjectId": "osm:way:225205498",
+        "name": "未命名道路",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "LIKELY_VALID_TERMINUS",
+        "roadType": "ROAD_MAIN",
+        "nearestRoadId": "osm:way:223699465",
+        "distanceMeters": 24.09,
+        "nearestPoint": [
+          118.92742129,
+          32.11906645
+        ],
+        "nearestBuildingId": "osm:way:225198913",
+        "buildingDistanceMeters": 54.72,
+        "campusBoundaryDistanceMeters": 260.27,
+        "componentEdgeCount": 158,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:1173057047:0:end",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.9218738,
+          32.1184066
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:1173057047:0:end",
+        "severity": "P2",
+        "reason": "Endpoint belongs to a larger component and has no nearby unsnapped road.",
+        "sourceObjectId": "osm:way:1173057047",
+        "name": "未命名道路",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "LIKELY_VALID_TERMINUS",
+        "roadType": "ROAD_MAIN",
+        "nearestRoadId": "osm:way:1173057038",
+        "distanceMeters": 5.93,
+        "nearestPoint": [
+          118.92179034,
+          32.11887061
+        ],
+        "nearestBuildingId": "osm:way:225265337",
+        "buildingDistanceMeters": 128.42,
+        "campusBoundaryDistanceMeters": 131.81,
+        "componentEdgeCount": 158,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:1173059718:0:end",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.9265392,
+          32.1180847
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:1173059718:0:end",
+        "severity": "P2",
+        "reason": "Endpoint belongs to a larger component and has no nearby unsnapped road.",
+        "sourceObjectId": "osm:way:1173059718",
+        "name": "未命名步道",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "LIKELY_VALID_TERMINUS",
+        "roadType": "ROAD_PEDESTRIAN",
+        "nearestRoadId": "osm:way:225112716",
+        "distanceMeters": 60.42,
+        "nearestPoint": [
+          118.92610836,
+          32.11907073
+        ],
+        "nearestBuildingId": "osm:way:223944209",
+        "buildingDistanceMeters": 65.03,
+        "campusBoundaryDistanceMeters": 339.18,
+        "componentEdgeCount": 158,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:1173064916:0:start",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.922699,
+          32.1197053
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:1173064916:0:start",
+        "severity": "P1",
+        "reason": "Road belongs to a component of at most two features and is separated from the mapped network.",
+        "sourceObjectId": "osm:way:1173064916",
+        "name": "未命名道路",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "ISOLATED_SEGMENT",
+        "roadType": "ROAD_MAIN",
+        "nearestRoadId": "osm:way:223699469",
+        "distanceMeters": 69.67,
+        "nearestPoint": [
+          118.92323155,
+          32.12052026
+        ],
+        "nearestBuildingId": "osm:way:223859827",
+        "buildingDistanceMeters": 106.44,
+        "campusBoundaryDistanceMeters": 163.67,
+        "componentEdgeCount": 1,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:1173064916:0:end",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.9223468,
+          32.1202283
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:1173064916:0:end",
+        "severity": "P1",
+        "reason": "Road belongs to a component of at most two features and is separated from the mapped network.",
+        "sourceObjectId": "osm:way:1173064916",
+        "name": "未命名道路",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "ISOLATED_SEGMENT",
+        "roadType": "ROAD_MAIN",
+        "nearestRoadId": "osm:way:223699469",
+        "distanceMeters": 70.43,
+        "nearestPoint": [
+          118.92287827,
+          32.1210589
+        ],
+        "nearestBuildingId": "osm:way:223859827",
+        "buildingDistanceMeters": 98.55,
+        "campusBoundaryDistanceMeters": 97.02,
+        "componentEdgeCount": 1,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223699479:0:end",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.93077210469441,
+          32.118468442968144
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:223699479:0:end",
+        "severity": "P0",
+        "reason": "Endpoint is within 2m of a compatible road and the suggested segment avoids mapped obstacles.",
+        "sourceObjectId": "osm:way:223699479",
+        "name": "未命名道路",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "LIKELY_TOPOLOGY_GAP",
+        "roadType": "ROAD_MAIN",
+        "nearestRoadId": "osm:way:964850646",
+        "distanceMeters": 0.79,
+        "nearestPoint": [
+          118.9306492,
+          32.11897892
+        ],
+        "nearestBuildingId": "osm:way:223859852",
+        "buildingDistanceMeters": 45.26,
+        "campusBoundaryDistanceMeters": 44.24,
+        "componentEdgeCount": 158,
+        "suggestedFix": {
+          "operation": "MERGE_ENDPOINT",
+          "targetRoadId": "osm:way:964850646",
+          "targetCoordinate": [
+            118.9306492,
+            32.11897892
+          ],
+          "applied": false
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225094821:0:start",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.9284479,
+          32.1177297
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:225094821:0:start",
+        "severity": "P1",
+        "reason": "Road belongs to a component of at most two features and is separated from the mapped network.",
+        "sourceObjectId": "osm:way:225094821",
+        "name": "未命名步道",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "ISOLATED_SEGMENT",
+        "roadType": "ROAD_PEDESTRIAN",
+        "nearestRoadId": "osm:way:223699479",
+        "distanceMeters": 26.43,
+        "nearestPoint": [
+          118.92847025,
+          32.11803169
+        ],
+        "nearestBuildingId": "osm:way:225198908",
+        "buildingDistanceMeters": 37.11,
+        "campusBoundaryDistanceMeters": 186.56,
+        "componentEdgeCount": 1,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225094821:0:end",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.9283897,
+          32.1175146
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:225094821:0:end",
+        "severity": "P1",
+        "reason": "Road belongs to a component of at most two features and is separated from the mapped network.",
+        "sourceObjectId": "osm:way:225094821",
+        "name": "未命名步道",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "ISOLATED_SEGMENT",
+        "roadType": "ROAD_PEDESTRIAN",
+        "nearestRoadId": "osm:way:223699479",
+        "distanceMeters": 8.36,
+        "nearestPoint": [
+          118.92831847,
+          32.11795926
+        ],
+        "nearestBuildingId": "osm:way:225198908",
+        "buildingDistanceMeters": 60.41,
+        "campusBoundaryDistanceMeters": 187.01,
+        "componentEdgeCount": 1,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225100414:0:end",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.9305027,
+          32.1180662
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:225100414:0:end",
+        "severity": "P1",
+        "reason": "Endpoint is close to a building boundary and may be a valid entrance terminus.",
+        "sourceObjectId": "osm:way:225100414",
+        "name": "未命名步道",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "NEAR_BUILDING_ENTRANCE",
+        "roadType": "ROAD_PEDESTRIAN",
+        "nearestRoadId": "osm:way:225100415",
+        "distanceMeters": 20.72,
+        "nearestPoint": [
+          118.93020111,
+          32.11847844
+        ],
+        "nearestBuildingId": "osm:way:223859852",
+        "buildingDistanceMeters": 1.88,
+        "campusBoundaryDistanceMeters": 0.0,
+        "componentEdgeCount": 158,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225102231:0:start",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.9291654,
+          32.1180671
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:225102231:0:start",
+        "severity": "P1",
+        "reason": "Road belongs to a component of at most two features and is separated from the mapped network.",
+        "sourceObjectId": "osm:way:225102231",
+        "name": "未命名步道",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "ISOLATED_SEGMENT",
+        "roadType": "ROAD_PEDESTRIAN",
+        "nearestRoadId": "osm:way:223699479",
+        "distanceMeters": 25.95,
+        "nearestPoint": [
+          118.92918527,
+          32.11837289
+        ],
+        "nearestBuildingId": "osm:way:225198908",
+        "buildingDistanceMeters": 36.51,
+        "campusBoundaryDistanceMeters": 109.32,
+        "componentEdgeCount": 1,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225102231:0:end",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.9293117,
+          32.1179628
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:225102231:0:end",
+        "severity": "P1",
+        "reason": "Road belongs to a component of at most two features and is separated from the mapped network.",
+        "sourceObjectId": "osm:way:225102231",
+        "name": "未命名步道",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "ISOLATED_SEGMENT",
+        "roadType": "ROAD_PEDESTRIAN",
+        "nearestRoadId": "osm:way:223699479",
+        "distanceMeters": 9.15,
+        "nearestPoint": [
+          118.92924459,
+          32.1184012
+        ],
+        "nearestBuildingId": "osm:way:225198908",
+        "buildingDistanceMeters": 53.39,
+        "campusBoundaryDistanceMeters": 103.06,
+        "componentEdgeCount": 1,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225204143:0:start",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.9286243,
+          32.1197471
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:225204143:0:start",
+        "severity": "P1",
+        "reason": "Endpoint is near another road, but a conservative snap is not automatically safe.",
+        "sourceObjectId": "osm:way:225204143",
+        "name": "未命名步道",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "NEAR_OTHER_ROAD",
+        "roadType": "ROAD_PEDESTRIAN",
+        "nearestRoadId": "osm:way:223859848",
+        "distanceMeters": 3.73,
+        "nearestPoint": [
+          118.92854428,
+          32.12027424
+        ],
+        "nearestBuildingId": "osm:way:224896131",
+        "buildingDistanceMeters": 11.27,
+        "campusBoundaryDistanceMeters": 145.38,
+        "componentEdgeCount": 1,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225204143:0:end",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.9285232,
+          32.1194102
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:225204143:0:end",
+        "severity": "P1",
+        "reason": "Road belongs to a component of at most two features and is separated from the mapped network.",
+        "sourceObjectId": "osm:way:225204143",
+        "name": "未命名步道",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "ISOLATED_SEGMENT",
+        "roadType": "ROAD_PEDESTRIAN",
+        "nearestRoadId": "osm:way:223859833",
+        "distanceMeters": 11.43,
+        "nearestPoint": [
+          118.92846783,
+          32.11983059
+        ],
+        "nearestBuildingId": "osm:way:224896131",
+        "buildingDistanceMeters": 9.29,
+        "campusBoundaryDistanceMeters": 162.64,
+        "componentEdgeCount": 1,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:964850645:0:end",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.93090283557748,
+          32.11827099531455
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:964850645:0:end",
+        "severity": "P2",
+        "reason": "Endpoint belongs to a larger component and has no nearby unsnapped road.",
+        "sourceObjectId": "osm:way:964850645",
+        "name": "仙境路",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "LIKELY_VALID_TERMINUS",
+        "roadType": "ROAD_MAIN",
+        "nearestRoadId": "osm:way:964850646",
+        "distanceMeters": 12.93,
+        "nearestPoint": [
+          118.93065117,
+          32.11878065
+        ],
+        "nearestBuildingId": "osm:way:223859852",
+        "buildingDistanceMeters": 44.08,
+        "campusBoundaryDistanceMeters": 44.0,
+        "componentEdgeCount": 14,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:964850646:0:end",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.93075167057599,
+          32.11872087113013
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:964850646:0:end",
+        "severity": "P2",
+        "reason": "Endpoint belongs to a larger component and has no nearby unsnapped road.",
+        "sourceObjectId": "osm:way:964850646",
+        "name": "仙境路",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "LIKELY_VALID_TERMINUS",
+        "roadType": "ROAD_MAIN",
+        "nearestRoadId": "osm:way:223699479",
+        "distanceMeters": 27.97,
+        "nearestPoint": [
+          118.93065762,
+          32.11897908
+        ],
+        "nearestBuildingId": "osm:way:223859807",
+        "buildingDistanceMeters": 58.53,
+        "campusBoundaryDistanceMeters": 43.77,
+        "componentEdgeCount": 14,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:964850646:1:start",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.93076333502843,
+          32.11848202845496
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:964850646:1:start",
+        "severity": "P0",
+        "reason": "Endpoint is within 2m of a compatible road and the suggested segment avoids mapped obstacles.",
+        "sourceObjectId": "osm:way:964850646",
+        "name": "仙境路",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "LIKELY_TOPOLOGY_GAP",
+        "roadType": "ROAD_MAIN",
+        "nearestRoadId": "osm:way:223699479",
+        "distanceMeters": 1.56,
+        "nearestPoint": [
+          118.9306501,
+          32.11897859
+        ],
+        "nearestBuildingId": "osm:way:223859852",
+        "buildingDistanceMeters": 45.66,
+        "campusBoundaryDistanceMeters": 44.24,
+        "componentEdgeCount": 14,
+        "suggestedFix": {
+          "operation": "MERGE_ENDPOINT",
+          "targetRoadId": "osm:way:223699479",
+          "targetCoordinate": [
+            118.9306501,
+            32.11897859
+          ],
+          "applied": false
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:1467927210:0:start",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.92972011107965,
+          32.12170708109507
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:1467927210:0:start",
+        "severity": "P2",
+        "reason": "Endpoint belongs to a larger component and has no nearby unsnapped road.",
+        "sourceObjectId": "osm:way:1467927210",
+        "name": "未命名道路",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "LIKELY_VALID_TERMINUS",
+        "roadType": "ROAD_MAIN",
+        "nearestRoadId": "osm:way:89910185",
+        "distanceMeters": 5.87,
+        "nearestPoint": [
+          118.92955034,
+          32.12219335
+        ],
+        "nearestBuildingId": "osm:way:225255202",
+        "buildingDistanceMeters": 72.52,
+        "campusBoundaryDistanceMeters": 44.22,
+        "componentEdgeCount": 14,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:89910185:0:start",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.93062391680074,
+          32.120033270946784
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:89910185:0:start",
+        "severity": "P2",
+        "reason": "Endpoint belongs to a larger component and has no nearby unsnapped road.",
+        "sourceObjectId": "osm:way:89910185",
+        "name": "仙境路",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "LIKELY_VALID_TERMINUS",
+        "roadType": "ROAD_MAIN",
+        "nearestRoadId": "osm:way:876594626",
+        "distanceMeters": 16.24,
+        "nearestPoint": [
+          118.93034817,
+          32.12049238
+        ],
+        "nearestBuildingId": "osm:way:225242517",
+        "buildingDistanceMeters": 71.8,
+        "campusBoundaryDistanceMeters": 43.2,
+        "componentEdgeCount": 14,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:89910185:0:end",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.92824862822937,
+          32.124005251080426
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:89910185:0:end",
+        "severity": "P2",
+        "reason": "Endpoint belongs to a larger component and has no nearby unsnapped road.",
+        "sourceObjectId": "osm:way:89910185",
+        "name": "仙境路",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "LIKELY_VALID_TERMINUS",
+        "roadType": "ROAD_MAIN",
+        "nearestRoadId": "osm:way:876594626",
+        "distanceMeters": 15.86,
+        "nearestPoint": [
+          118.92798495,
+          32.12444952
+        ],
+        "nearestBuildingId": "osm:way:225255192",
+        "buildingDistanceMeters": 232.28,
+        "campusBoundaryDistanceMeters": 46.07,
+        "componentEdgeCount": 14,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:99661763:0:end",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.93048532213679,
+          32.11612556923391
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:99661763:0:end",
+        "severity": "P1",
+        "reason": "Endpoint is near another road, but a conservative snap is not automatically safe.",
+        "sourceObjectId": "osm:way:99661763",
+        "name": "羊山北路",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "NEAR_OTHER_ROAD",
+        "roadType": "ROAD_MAIN",
+        "nearestRoadId": "osm:way:964850645",
+        "distanceMeters": 3.38,
+        "nearestPoint": [
+          118.93033583,
+          32.11664275
+        ],
+        "nearestBuildingId": "osm:way:223859846",
+        "buildingDistanceMeters": 102.87,
+        "campusBoundaryDistanceMeters": 42.92,
+        "componentEdgeCount": 14,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:140811046:0:end",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.92807545291407,
+          32.12413563549137
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:140811046:0:end",
+        "severity": "P2",
+        "reason": "Endpoint belongs to a larger component and has no nearby unsnapped road.",
+        "sourceObjectId": "osm:way:140811046",
+        "name": "文澜路",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "LIKELY_VALID_TERMINUS",
+        "roadType": "ROAD_MAIN",
+        "nearestRoadId": "osm:way:876594626",
+        "distanceMeters": 8.05,
+        "nearestPoint": [
+          118.92788524,
+          32.12461259
+        ],
+        "nearestBuildingId": "osm:way:225255192",
+        "buildingDistanceMeters": 249.46,
+        "campusBoundaryDistanceMeters": 48.08,
+        "componentEdgeCount": 158,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223699474:0:start",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.9283432,
+          32.1173159
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:223699474:0:start",
+        "severity": "P2",
+        "reason": "Endpoint belongs to a larger component and has no nearby unsnapped road.",
+        "sourceObjectId": "osm:way:223699474",
+        "name": "未命名道路",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "LIKELY_VALID_TERMINUS",
+        "roadType": "ROAD_MAIN",
+        "nearestRoadId": "osm:way:223699479",
+        "distanceMeters": 8.94,
+        "nearestPoint": [
+          118.928204,
+          32.11790464
+        ],
+        "nearestBuildingId": "osm:way:224940881",
+        "buildingDistanceMeters": 69.37,
+        "campusBoundaryDistanceMeters": 185.65,
+        "componentEdgeCount": 158,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223699474:0:end",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.9283432,
+          32.1173159
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:223699474:0:end",
+        "severity": "P2",
+        "reason": "Endpoint belongs to a larger component and has no nearby unsnapped road.",
+        "sourceObjectId": "osm:way:223699474",
+        "name": "未命名道路",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "LIKELY_VALID_TERMINUS",
+        "roadType": "ROAD_MAIN",
+        "nearestRoadId": "osm:way:223699479",
+        "distanceMeters": 8.94,
+        "nearestPoint": [
+          118.928204,
+          32.11790464
+        ],
+        "nearestBuildingId": "osm:way:224940881",
+        "buildingDistanceMeters": 69.37,
+        "campusBoundaryDistanceMeters": 185.65,
+        "componentEdgeCount": 158,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:489234880:0:start",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.92760501358433,
+          32.12417106901202
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:489234880:0:start",
+        "severity": "P2",
+        "reason": "Endpoint belongs to a larger component and has no nearby unsnapped road.",
+        "sourceObjectId": "osm:way:489234880",
+        "name": "文澜路",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "LIKELY_VALID_TERMINUS",
+        "roadType": "ROAD_MAIN",
+        "nearestRoadId": "osm:way:140811046",
+        "distanceMeters": 20.46,
+        "nearestPoint": [
+          118.92757287,
+          32.12451049
+        ],
+        "nearestBuildingId": "osm:way:225255192",
+        "buildingDistanceMeters": 266.1,
+        "campusBoundaryDistanceMeters": 49.46,
+        "componentEdgeCount": 158,
+        "suggestedFix": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:876594626:0:start",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.92793903169226,
+          32.12418462032888
+        ]
+      },
+      "properties": {
+        "reviewId": "osm:way:876594626:0:start",
+        "severity": "P2",
+        "reason": "Endpoint belongs to a larger component and has no nearby unsnapped road.",
+        "sourceObjectId": "osm:way:876594626",
+        "name": "仙境路",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "classification": "LIKELY_VALID_TERMINUS",
+        "roadType": "ROAD_MAIN",
+        "nearestRoadId": "osm:way:140811046",
+        "distanceMeters": 9.89,
+        "nearestPoint": [
+          118.92786434,
+          32.1246125
+        ],
+        "nearestBuildingId": "osm:way:225255192",
+        "buildingDistanceMeters": 257.73,
+        "campusBoundaryDistanceMeters": 49.48,
+        "componentEdgeCount": 14,
+        "suggestedFix": null
+      }
+    }
+  ]
+}

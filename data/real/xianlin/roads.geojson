@@ -28,7 +28,15 @@
         "osmType": "way",
         "osmId": 118942534,
         "priority": 45,
-        "osmHighway": "secondary"
+        "osmHighway": "secondary",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -107,7 +115,15 @@
         "osmType": "way",
         "osmId": 140811047,
         "priority": 45,
-        "osmHighway": "secondary"
+        "osmHighway": "secondary",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -138,7 +154,15 @@
         "osmType": "way",
         "osmId": 140811049,
         "priority": 45,
-        "osmHighway": "secondary"
+        "osmHighway": "secondary",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -169,7 +193,15 @@
         "osmType": "way",
         "osmId": 423022850,
         "priority": 45,
-        "osmHighway": "secondary"
+        "osmHighway": "secondary",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -204,7 +236,15 @@
         "osmType": "way",
         "osmId": 89911411,
         "priority": 45,
-        "osmHighway": "tertiary"
+        "osmHighway": "tertiary",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -235,7 +275,15 @@
         "osmType": "way",
         "osmId": 223699461,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -274,7 +322,15 @@
         "osmType": "way",
         "osmId": 223699462,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -305,7 +361,15 @@
         "osmType": "way",
         "osmId": 223699463,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -380,7 +444,15 @@
         "osmType": "way",
         "osmId": 223699471,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -415,7 +487,15 @@
         "osmType": "way",
         "osmId": 223699475,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -454,7 +534,15 @@
         "osmType": "way",
         "osmId": 223699476,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -493,7 +581,15 @@
         "osmType": "way",
         "osmId": 223859831,
         "priority": 20,
-        "osmHighway": "pedestrian"
+        "osmHighway": "pedestrian",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -640,7 +736,15 @@
         "osmType": "way",
         "osmId": 224952400,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -695,7 +799,15 @@
         "osmType": "way",
         "osmId": 224952411,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -738,7 +850,15 @@
         "osmType": "way",
         "osmId": 224954177,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -769,7 +889,15 @@
         "osmType": "way",
         "osmId": 224996916,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -800,7 +928,15 @@
         "osmType": "way",
         "osmId": 226966740,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": "yes",
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -847,7 +983,15 @@
         "osmType": "way",
         "osmId": 673044223,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -882,7 +1026,15 @@
         "osmType": "way",
         "osmId": 964850651,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -913,7 +1065,15 @@
         "osmType": "way",
         "osmId": 964850648,
         "priority": 45,
-        "osmHighway": "secondary"
+        "osmHighway": "secondary",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -944,7 +1104,15 @@
         "osmType": "way",
         "osmId": 155412175,
         "priority": 20,
-        "osmHighway": "pedestrian"
+        "osmHighway": "pedestrian",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -1035,7 +1203,15 @@
         "osmType": "way",
         "osmId": 223699453,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -1166,7 +1342,15 @@
         "osmType": "way",
         "osmId": 223699455,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -1285,7 +1469,15 @@
         "osmType": "way",
         "osmId": 223699457,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -1356,7 +1548,15 @@
         "osmType": "way",
         "osmId": 223859804,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -1391,7 +1591,15 @@
         "osmType": "way",
         "osmId": 223859805,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -1534,7 +1742,15 @@
         "osmType": "way",
         "osmId": 223859841,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -1569,7 +1785,15 @@
         "osmType": "way",
         "osmId": 223859849,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -1600,7 +1824,15 @@
         "osmType": "way",
         "osmId": 224953924,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -1639,7 +1871,15 @@
         "osmType": "way",
         "osmId": 225092939,
         "priority": 20,
-        "osmHighway": "pedestrian"
+        "osmHighway": "pedestrian",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -1674,7 +1914,15 @@
         "osmType": "way",
         "osmId": 226967003,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -1733,7 +1981,15 @@
         "osmType": "way",
         "osmId": 876594630,
         "priority": 45,
-        "osmHighway": "secondary"
+        "osmHighway": "secondary",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": "yes",
+        "layer": "1"
       },
       "geometry": {
         "type": "LineString",
@@ -1764,7 +2020,15 @@
         "osmType": "way",
         "osmId": 876594631,
         "priority": 45,
-        "osmHighway": "secondary"
+        "osmHighway": "secondary",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -1847,7 +2111,15 @@
         "osmType": "way",
         "osmId": 876594633,
         "priority": 45,
-        "osmHighway": "secondary"
+        "osmHighway": "secondary",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -1922,7 +2194,15 @@
         "osmType": "way",
         "osmId": 964850650,
         "priority": 45,
-        "osmHighway": "secondary"
+        "osmHighway": "secondary",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -1961,7 +2241,15 @@
         "osmType": "way",
         "osmId": 964850652,
         "priority": 45,
-        "osmHighway": "secondary"
+        "osmHighway": "secondary",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -1992,7 +2280,15 @@
         "osmType": "way",
         "osmId": 1173059695,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -2079,7 +2375,15 @@
         "osmType": "way",
         "osmId": 1173059696,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -2138,7 +2442,15 @@
         "osmType": "way",
         "osmId": 1173059698,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -2181,7 +2493,15 @@
         "osmType": "way",
         "osmId": 1173059699,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -2220,7 +2540,15 @@
         "osmType": "way",
         "osmId": 1173059700,
         "priority": 20,
-        "osmHighway": "path"
+        "osmHighway": "path",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -2271,7 +2599,15 @@
         "osmType": "way",
         "osmId": 1173059701,
         "priority": 20,
-        "osmHighway": "path"
+        "osmHighway": "path",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -2318,7 +2654,15 @@
         "osmType": "way",
         "osmId": 1173059702,
         "priority": 20,
-        "osmHighway": "path"
+        "osmHighway": "path",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -2349,7 +2693,15 @@
         "osmType": "way",
         "osmId": 1173059703,
         "priority": 20,
-        "osmHighway": "path"
+        "osmHighway": "path",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -2384,7 +2736,15 @@
         "osmType": "way",
         "osmId": 1173059722,
         "priority": 20,
-        "osmHighway": "path"
+        "osmHighway": "path",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -2415,7 +2775,15 @@
         "osmType": "way",
         "osmId": 155412163,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -2454,7 +2822,15 @@
         "osmType": "way",
         "osmId": 155414099,
         "priority": 45,
-        "osmHighway": "tertiary"
+        "osmHighway": "tertiary",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -2485,7 +2861,15 @@
         "osmType": "way",
         "osmId": 223699458,
         "priority": 20,
-        "osmHighway": "path"
+        "osmHighway": "path",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -2516,7 +2900,15 @@
         "osmType": "way",
         "osmId": 223699464,
         "priority": 20,
-        "osmHighway": "steps"
+        "osmHighway": "steps",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -2547,7 +2939,15 @@
         "osmType": "way",
         "osmId": 223699466,
         "priority": 20,
-        "osmHighway": "steps"
+        "osmHighway": "steps",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -2578,7 +2978,15 @@
         "osmType": "way",
         "osmId": 223699467,
         "priority": 20,
-        "osmHighway": "path"
+        "osmHighway": "path",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -2661,7 +3069,15 @@
         "osmType": "way",
         "osmId": 223859789,
         "priority": 20,
-        "osmHighway": "pedestrian"
+        "osmHighway": "pedestrian",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -2780,7 +3196,15 @@
         "osmType": "way",
         "osmId": 223859803,
         "priority": 20,
-        "osmHighway": "pedestrian"
+        "osmHighway": "pedestrian",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -2823,7 +3247,15 @@
         "osmType": "way",
         "osmId": 223859806,
         "priority": 20,
-        "osmHighway": "pedestrian"
+        "osmHighway": "pedestrian",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -2866,7 +3298,15 @@
         "osmType": "way",
         "osmId": 223859830,
         "priority": 20,
-        "osmHighway": "path"
+        "osmHighway": "path",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -2937,7 +3377,15 @@
         "osmType": "way",
         "osmId": 223859838,
         "priority": 20,
-        "osmHighway": "pedestrian"
+        "osmHighway": "pedestrian",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -3028,7 +3476,15 @@
         "osmType": "way",
         "osmId": 223859842,
         "priority": 20,
-        "osmHighway": "track"
+        "osmHighway": "track",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -3111,7 +3567,15 @@
         "osmType": "way",
         "osmId": 223859844,
         "priority": 20,
-        "osmHighway": "track"
+        "osmHighway": "track",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -3166,7 +3630,15 @@
         "osmType": "way",
         "osmId": 224937776,
         "priority": 20,
-        "osmHighway": "track"
+        "osmHighway": "track",
+        "walkingAccess": true,
+        "cyclingAccess": false,
+        "vehicleAccess": false,
+        "accessSource": "OSM_EXPLICIT_TAGS",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -3305,7 +3777,15 @@
         "osmType": "way",
         "osmId": 224937848,
         "priority": 20,
-        "osmHighway": "track"
+        "osmHighway": "track",
+        "walkingAccess": true,
+        "cyclingAccess": false,
+        "vehicleAccess": false,
+        "accessSource": "OSM_EXPLICIT_TAGS",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -3364,7 +3844,15 @@
         "osmType": "way",
         "osmId": 224953943,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -3407,7 +3895,15 @@
         "osmType": "way",
         "osmId": 224953960,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -3450,7 +3946,15 @@
         "osmType": "way",
         "osmId": 224954286,
         "priority": 20,
-        "osmHighway": "pedestrian"
+        "osmHighway": "pedestrian",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -3481,7 +3985,15 @@
         "osmType": "way",
         "osmId": 224954305,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -3512,7 +4024,15 @@
         "osmType": "way",
         "osmId": 224954306,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -3543,7 +4063,15 @@
         "osmType": "way",
         "osmId": 224954736,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -3582,7 +4110,15 @@
         "osmType": "way",
         "osmId": 224995051,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -3633,7 +4169,15 @@
         "osmType": "way",
         "osmId": 224995052,
         "priority": 20,
-        "osmHighway": "pedestrian"
+        "osmHighway": "pedestrian",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -3676,7 +4220,15 @@
         "osmType": "way",
         "osmId": 224995721,
         "priority": 20,
-        "osmHighway": "pedestrian"
+        "osmHighway": "pedestrian",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -3731,7 +4283,15 @@
         "osmType": "way",
         "osmId": 224995747,
         "priority": 20,
-        "osmHighway": "pedestrian"
+        "osmHighway": "pedestrian",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -3782,7 +4342,15 @@
         "osmType": "way",
         "osmId": 224996490,
         "priority": 20,
-        "osmHighway": "pedestrian"
+        "osmHighway": "pedestrian",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -3817,7 +4385,15 @@
         "osmType": "way",
         "osmId": 224996491,
         "priority": 20,
-        "osmHighway": "pedestrian"
+        "osmHighway": "pedestrian",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -3860,7 +4436,15 @@
         "osmType": "way",
         "osmId": 224996492,
         "priority": 20,
-        "osmHighway": "pedestrian"
+        "osmHighway": "pedestrian",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -3891,7 +4475,15 @@
         "osmType": "way",
         "osmId": 224996493,
         "priority": 20,
-        "osmHighway": "pedestrian"
+        "osmHighway": "pedestrian",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -3922,7 +4514,15 @@
         "osmType": "way",
         "osmId": 224996566,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -3969,7 +4569,15 @@
         "osmType": "way",
         "osmId": 225009121,
         "priority": 20,
-        "osmHighway": "pedestrian"
+        "osmHighway": "pedestrian",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -4004,7 +4612,15 @@
         "osmType": "way",
         "osmId": 225093475,
         "priority": 20,
-        "osmHighway": "track"
+        "osmHighway": "track",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -4051,7 +4667,15 @@
         "osmType": "way",
         "osmId": 225093538,
         "priority": 20,
-        "osmHighway": "track"
+        "osmHighway": "track",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -4094,7 +4718,15 @@
         "osmType": "way",
         "osmId": 225520900,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -4125,7 +4757,15 @@
         "osmType": "way",
         "osmId": 225520901,
         "priority": 45,
-        "osmHighway": "tertiary"
+        "osmHighway": "tertiary",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -4156,7 +4796,15 @@
         "osmType": "way",
         "osmId": 970894655,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -4187,7 +4835,15 @@
         "osmType": "way",
         "osmId": 970894656,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": "yes",
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -4218,7 +4874,15 @@
         "osmType": "way",
         "osmId": 1173059705,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -4269,7 +4933,15 @@
         "osmType": "way",
         "osmId": 1173059706,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -4300,7 +4972,15 @@
         "osmType": "way",
         "osmId": 1173059719,
         "priority": 20,
-        "osmHighway": "path"
+        "osmHighway": "path",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -4355,7 +5035,15 @@
         "osmType": "way",
         "osmId": 1173059721,
         "priority": 20,
-        "osmHighway": "path"
+        "osmHighway": "path",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -4394,7 +5082,15 @@
         "osmType": "way",
         "osmId": 1443621025,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -4425,7 +5121,15 @@
         "osmType": "way",
         "osmId": 155412170,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -4476,7 +5180,15 @@
         "osmType": "way",
         "osmId": 155412172,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -4511,7 +5223,15 @@
         "osmType": "way",
         "osmId": 188621612,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "MultiLineString",
@@ -4554,7 +5274,15 @@
         "osmType": "way",
         "osmId": 223859799,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -4605,7 +5333,15 @@
         "osmType": "way",
         "osmId": 223859845,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -4636,7 +5372,15 @@
         "osmType": "way",
         "osmId": 224939806,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -4683,7 +5427,15 @@
         "osmType": "way",
         "osmId": 224939821,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -4722,7 +5474,15 @@
         "osmType": "way",
         "osmId": 224941996,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -4757,7 +5517,15 @@
         "osmType": "way",
         "osmId": 224942000,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -4792,7 +5560,15 @@
         "osmType": "way",
         "osmId": 224942025,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -4839,7 +5615,15 @@
         "osmType": "way",
         "osmId": 224942030,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -4878,7 +5662,15 @@
         "osmType": "way",
         "osmId": 224942035,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -4909,7 +5701,15 @@
         "osmType": "way",
         "osmId": 224942039,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -4940,7 +5740,15 @@
         "osmType": "way",
         "osmId": 225267149,
         "priority": 20,
-        "osmHighway": "track"
+        "osmHighway": "track",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -4983,7 +5791,15 @@
         "osmType": "way",
         "osmId": 225267150,
         "priority": 20,
-        "osmHighway": "track"
+        "osmHighway": "track",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -5022,7 +5838,15 @@
         "osmType": "way",
         "osmId": 225267152,
         "priority": 20,
-        "osmHighway": "track"
+        "osmHighway": "track",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -5065,7 +5889,15 @@
         "osmType": "way",
         "osmId": 225268089,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -5096,7 +5928,15 @@
         "osmType": "way",
         "osmId": 1173057040,
         "priority": 20,
-        "osmHighway": "path"
+        "osmHighway": "path",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -5127,7 +5967,15 @@
         "osmType": "way",
         "osmId": 1173057041,
         "priority": 20,
-        "osmHighway": "path"
+        "osmHighway": "path",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -5162,7 +6010,15 @@
         "osmType": "way",
         "osmId": 1173057045,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -5193,7 +6049,15 @@
         "osmType": "way",
         "osmId": 1173057048,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -5232,7 +6096,15 @@
         "osmType": "way",
         "osmId": 1539473111,
         "priority": 45,
-        "osmHighway": "secondary"
+        "osmHighway": "secondary",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -5263,7 +6135,15 @@
         "osmType": "way",
         "osmId": 140811043,
         "priority": 45,
-        "osmHighway": "secondary"
+        "osmHighway": "secondary",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -5294,7 +6174,15 @@
         "osmType": "way",
         "osmId": 223859850,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -5365,7 +6253,15 @@
         "osmType": "way",
         "osmId": 224941984,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -5404,7 +6300,15 @@
         "osmType": "way",
         "osmId": 224941985,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -5443,7 +6347,15 @@
         "osmType": "way",
         "osmId": 225267147,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -5522,7 +6434,15 @@
         "osmType": "way",
         "osmId": 949265197,
         "priority": 45,
-        "osmHighway": "tertiary"
+        "osmHighway": "tertiary",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -5553,7 +6473,15 @@
         "osmType": "way",
         "osmId": 1173057038,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -5604,7 +6532,15 @@
         "osmType": "way",
         "osmId": 1173057039,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -5683,7 +6619,15 @@
         "osmType": "way",
         "osmId": 1173057042,
         "priority": 20,
-        "osmHighway": "path"
+        "osmHighway": "path",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -5714,7 +6658,15 @@
         "osmType": "way",
         "osmId": 1173057044,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -5753,7 +6705,15 @@
         "osmType": "way",
         "osmId": 1173057046,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -5784,7 +6744,15 @@
         "osmType": "way",
         "osmId": 1539473118,
         "priority": 45,
-        "osmHighway": "secondary"
+        "osmHighway": "secondary",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "MultiLineString",
@@ -5827,7 +6795,15 @@
         "osmType": "way",
         "osmId": 1539473123,
         "priority": 45,
-        "osmHighway": "secondary"
+        "osmHighway": "secondary",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -5858,7 +6834,15 @@
         "osmType": "way",
         "osmId": 223699450,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -5921,7 +6905,15 @@
         "osmType": "way",
         "osmId": 223699460,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -6032,7 +7024,15 @@
         "osmType": "way",
         "osmId": 223699465,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -6103,7 +7103,15 @@
         "osmType": "way",
         "osmId": 223699469,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -6142,7 +7150,15 @@
         "osmType": "way",
         "osmId": 223699473,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -6217,7 +7233,15 @@
         "osmType": "way",
         "osmId": 223699478,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -6264,7 +7288,15 @@
         "osmType": "way",
         "osmId": 223859785,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -6295,7 +7327,15 @@
         "osmType": "way",
         "osmId": 223859835,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -6326,7 +7366,15 @@
         "osmType": "way",
         "osmId": 224941251,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -6361,7 +7409,15 @@
         "osmType": "way",
         "osmId": 224941275,
         "priority": 20,
-        "osmHighway": "pedestrian"
+        "osmHighway": "pedestrian",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -6420,7 +7476,15 @@
         "osmType": "way",
         "osmId": 224941322,
         "priority": 20,
-        "osmHighway": "pedestrian"
+        "osmHighway": "pedestrian",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -6511,7 +7575,15 @@
         "osmType": "way",
         "osmId": 224941330,
         "priority": 20,
-        "osmHighway": "pedestrian"
+        "osmHighway": "pedestrian",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -6542,7 +7614,15 @@
         "osmType": "way",
         "osmId": 224941334,
         "priority": 20,
-        "osmHighway": "pedestrian"
+        "osmHighway": "pedestrian",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -6593,7 +7673,15 @@
         "osmType": "way",
         "osmId": 225107325,
         "priority": 20,
-        "osmHighway": "pedestrian"
+        "osmHighway": "pedestrian",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -6624,7 +7712,15 @@
         "osmType": "way",
         "osmId": 225108277,
         "priority": 20,
-        "osmHighway": "pedestrian"
+        "osmHighway": "pedestrian",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -6655,7 +7751,15 @@
         "osmType": "way",
         "osmId": 225109875,
         "priority": 20,
-        "osmHighway": "pedestrian"
+        "osmHighway": "pedestrian",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -6686,7 +7790,15 @@
         "osmType": "way",
         "osmId": 225109876,
         "priority": 20,
-        "osmHighway": "pedestrian"
+        "osmHighway": "pedestrian",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -6717,7 +7829,15 @@
         "osmType": "way",
         "osmId": 225109877,
         "priority": 20,
-        "osmHighway": "pedestrian"
+        "osmHighway": "pedestrian",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -6748,7 +7868,15 @@
         "osmType": "way",
         "osmId": 225109878,
         "priority": 20,
-        "osmHighway": "pedestrian"
+        "osmHighway": "pedestrian",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -6779,7 +7907,15 @@
         "osmType": "way",
         "osmId": 225109879,
         "priority": 20,
-        "osmHighway": "pedestrian"
+        "osmHighway": "pedestrian",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -6810,7 +7946,15 @@
         "osmType": "way",
         "osmId": 225112716,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -6861,7 +8005,15 @@
         "osmType": "way",
         "osmId": 225112725,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -6892,7 +8044,15 @@
         "osmType": "way",
         "osmId": 225199796,
         "priority": 20,
-        "osmHighway": "pedestrian"
+        "osmHighway": "pedestrian",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -6927,7 +8087,15 @@
         "osmType": "way",
         "osmId": 225199797,
         "priority": 20,
-        "osmHighway": "pedestrian"
+        "osmHighway": "pedestrian",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -6986,7 +8154,15 @@
         "osmType": "way",
         "osmId": 225205498,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -7017,7 +8193,15 @@
         "osmType": "way",
         "osmId": 225251712,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -7048,7 +8232,15 @@
         "osmType": "way",
         "osmId": 1173057037,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -7083,7 +8275,15 @@
         "osmType": "way",
         "osmId": 1173057043,
         "priority": 20,
-        "osmHighway": "path"
+        "osmHighway": "path",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -7114,7 +8314,15 @@
         "osmType": "way",
         "osmId": 1173057047,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -7149,7 +8357,15 @@
         "osmType": "way",
         "osmId": 1173059697,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -7180,7 +8396,15 @@
         "osmType": "way",
         "osmId": 1173059704,
         "priority": 20,
-        "osmHighway": "path"
+        "osmHighway": "path",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -7211,7 +8435,15 @@
         "osmType": "way",
         "osmId": 1173059707,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -7306,7 +8538,15 @@
         "osmType": "way",
         "osmId": 1173059718,
         "priority": 20,
-        "osmHighway": "path"
+        "osmHighway": "path",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -7373,7 +8613,15 @@
         "osmType": "way",
         "osmId": 1173064916,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -7404,7 +8652,15 @@
         "osmType": "way",
         "osmId": 1539473117,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -7435,7 +8691,15 @@
         "osmType": "way",
         "osmId": 1539473119,
         "priority": 45,
-        "osmHighway": "tertiary"
+        "osmHighway": "tertiary",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -7466,7 +8730,15 @@
         "osmType": "way",
         "osmId": 223699479,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -7521,7 +8793,15 @@
         "osmType": "way",
         "osmId": 225094821,
         "priority": 20,
-        "osmHighway": "track"
+        "osmHighway": "track",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -7552,7 +8832,15 @@
         "osmType": "way",
         "osmId": 225100414,
         "priority": 20,
-        "osmHighway": "pedestrian"
+        "osmHighway": "pedestrian",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -7599,7 +8887,15 @@
         "osmType": "way",
         "osmId": 225100415,
         "priority": 20,
-        "osmHighway": "pedestrian"
+        "osmHighway": "pedestrian",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -7634,7 +8930,15 @@
         "osmType": "way",
         "osmId": 225102231,
         "priority": 20,
-        "osmHighway": "track"
+        "osmHighway": "track",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -7665,7 +8969,15 @@
         "osmType": "way",
         "osmId": 225204143,
         "priority": 20,
-        "osmHighway": "track"
+        "osmHighway": "track",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -7712,7 +9024,15 @@
         "osmType": "way",
         "osmId": 876594632,
         "priority": 45,
-        "osmHighway": "secondary"
+        "osmHighway": "secondary",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": "yes",
+        "layer": "1"
       },
       "geometry": {
         "type": "LineString",
@@ -7743,7 +9063,15 @@
         "osmType": "way",
         "osmId": 964850644,
         "priority": 45,
-        "osmHighway": "tertiary"
+        "osmHighway": "tertiary",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -7774,7 +9102,15 @@
         "osmType": "way",
         "osmId": 964850645,
         "priority": 45,
-        "osmHighway": "secondary"
+        "osmHighway": "secondary",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -7817,7 +9153,15 @@
         "osmType": "way",
         "osmId": 964850646,
         "priority": 45,
-        "osmHighway": "secondary"
+        "osmHighway": "secondary",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "MultiLineString",
@@ -7880,7 +9224,15 @@
         "osmType": "way",
         "osmId": 1467927210,
         "priority": 45,
-        "osmHighway": "unclassified"
+        "osmHighway": "unclassified",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -7911,7 +9263,15 @@
         "osmType": "way",
         "osmId": 1467927211,
         "priority": 45,
-        "osmHighway": "secondary"
+        "osmHighway": "secondary",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -7942,7 +9302,15 @@
         "osmType": "way",
         "osmId": 89910185,
         "priority": 45,
-        "osmHighway": "secondary"
+        "osmHighway": "secondary",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -7989,7 +9357,15 @@
         "osmType": "way",
         "osmId": 99661763,
         "priority": 45,
-        "osmHighway": "tertiary"
+        "osmHighway": "tertiary",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -8020,7 +9396,15 @@
         "osmType": "way",
         "osmId": 140811046,
         "priority": 45,
-        "osmHighway": "secondary"
+        "osmHighway": "secondary",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -8067,7 +9451,15 @@
         "osmType": "way",
         "osmId": 223699474,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -8150,7 +9542,15 @@
         "osmType": "way",
         "osmId": 223859808,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -8185,7 +9585,15 @@
         "osmType": "way",
         "osmId": 223859825,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -8272,7 +9680,15 @@
         "osmType": "way",
         "osmId": 223859833,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -8311,7 +9727,15 @@
         "osmType": "way",
         "osmId": 223859848,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -8366,7 +9790,15 @@
         "osmType": "way",
         "osmId": 223859851,
         "priority": 45,
-        "osmHighway": "service"
+        "osmHighway": "service",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -8397,7 +9829,15 @@
         "osmType": "way",
         "osmId": 489234880,
         "priority": 45,
-        "osmHighway": "secondary"
+        "osmHighway": "secondary",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",
@@ -8440,7 +9880,15 @@
         "osmType": "way",
         "osmId": 876594626,
         "priority": 45,
-        "osmHighway": "secondary"
+        "osmHighway": "secondary",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "vehicleAccess": null,
+        "accessSource": "UNKNOWN",
+        "covered": null,
+        "tunnel": null,
+        "bridge": null,
+        "layer": null
       },
       "geometry": {
         "type": "LineString",

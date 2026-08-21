@@ -22,9 +22,11 @@ public class BuildingEntrance {
     @Column(name = "external_id", unique = true, length = 128) private String externalId;
     @Column(nullable = false, length = 128) private String name;
     @Column(nullable = false, columnDefinition = "geometry(Point,4326)") private Point location;
-    @Column(name = "walking_access", nullable = false) private boolean walkingAccess;
-    @Column(name = "cycling_access", nullable = false) private boolean cyclingAccess;
-    @Column(nullable = false) private boolean accessible;
+    @Column(name = "walking_access") private Boolean walkingAccess;
+    @Column(name = "cycling_access") private Boolean cyclingAccess;
+    @Column private Boolean accessible;
+    @Column(name = "vehicle_access") private Boolean vehicleAccess;
+    @Column(name = "opening_hours", length = 160) private String openingHours;
     @Column(name = "data_source", nullable = false, length = 40) private String dataSource;
     @Column(name = "verification_status", nullable = false, length = 40) private String verificationStatus;
     @Column(name = "source_id", length = 128) private String sourceId;
@@ -34,7 +36,8 @@ public class BuildingEntrance {
     @Column(name = "updated_at", nullable = false, insertable = false) private Instant updatedAt;
 
     public void updateFromImport(Building building, String externalId, String name, Point location,
-                                 boolean walkingAccess, boolean cyclingAccess, boolean accessible,
+                                 Boolean walkingAccess, Boolean cyclingAccess, Boolean accessible,
+                                 Boolean vehicleAccess, String openingHours,
                                  String dataSource, String verificationStatus, String sourceId,
                                  Instant sourceUpdatedAt, boolean enabled) {
         this.building = building;
@@ -44,6 +47,8 @@ public class BuildingEntrance {
         this.walkingAccess = walkingAccess;
         this.cyclingAccess = cyclingAccess;
         this.accessible = accessible;
+        this.vehicleAccess = vehicleAccess;
+        this.openingHours = openingHours;
         this.dataSource = dataSource;
         this.verificationStatus = verificationStatus;
         this.sourceId = sourceId;

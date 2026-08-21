@@ -101,6 +101,10 @@ MapLibre 相机、建筑挤出、基础地表图层、POI、定位/指南针/复
 
 在 Phase 2 前建立数据质量门：OSM/官方参考来源登记、分层 GeoJSON、稳定 ID、人工覆盖、Geometry/范围/重复/路网校验、PostGIS 幂等 upsert 和人工审核清单。自动 OSM 数据不能高于 SOURCE_VERIFIED；未现场确认的名称、入口和通行属性继续保持待审核。
 
+### Phase 1.6：Manual GIS Verification Support
+
+在同一真实数据分支内增加道路端点分级、道路穿建筑解释、只读 review layers、可追溯 manual override/review manifest、入口候选和现场核验路线。UNKNOWN 通行属性保持 NULL；候选不会自动进入正式 Entrance，拓扑建议不会自动 snap。Phase 1.6 只压缩人工核验工作集，不实现搜索或路由。
+
 ### Phase 2：POI 搜索
 
 中文名称/别名/关键词搜索、分类、建议、FlyTo、高亮与 Bottom Sheet。

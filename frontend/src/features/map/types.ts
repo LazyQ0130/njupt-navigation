@@ -1,5 +1,6 @@
 import type { Feature, FeatureCollection, Geometry, MultiPolygon, Polygon } from 'geojson'
 import type { CampusFeatureProperties, CampusSummary } from '@/api/map'
+import type { GisReviewCollections } from './gisReview'
 
 export const SUPPORTED_FEATURE_TYPES = [
   'CAMPUS_BOUNDARY',
@@ -24,6 +25,17 @@ export interface SelectedPlace {
   category: string
 }
 
+export interface SelectedReview {
+  id: string
+  name: string
+  source: string
+  verification: string
+  warning: string
+  severity: string
+}
+
+export type ReviewLayerGroup = 'buildings' | 'roads' | 'pois' | 'endpoints' | 'intersections' | 'candidates' | 'verification'
+
 export interface CampusMapController {
   destroy: () => void
   reset: () => void
@@ -31,10 +43,12 @@ export interface CampusMapController {
   resize: () => void
   isInsideCampus: (longitude: number, latitude: number) => boolean
   showLocation: (longitude: number, latitude: number, allowOutside: boolean) => void
+  setReviewLayerVisibility: (group: ReviewLayerGroup, visible: boolean) => void
 }
 
 export interface CampusMapCallbacks {
   onBuildingSelect: (place: SelectedPlace) => void
+  onReviewSelect?: (review: SelectedReview) => void
   onError: (message: string) => void
   onReady: () => void
 }
@@ -43,5 +57,6 @@ export interface CampusMapInput {
   container: HTMLElement
   campus: CampusSummary
   data: NormalizedFeatureCollection
+  reviewData?: GisReviewCollections
   callbacks: CampusMapCallbacks
 }

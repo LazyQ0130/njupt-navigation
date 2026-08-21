@@ -1,0 +1,151 @@
+{
+  "type": "FeatureCollection",
+  "name": "candidate-entrances",
+  "metadata": {
+    "generatedAt": "2026-08-22",
+    "purpose": "MANUAL_REVIEW_ONLY",
+    "appliesChanges": false
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "candidate-entrance:osm:way:224995747:0:start",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.92402997553535,
+          32.11271463722242
+        ]
+      },
+      "properties": {
+        "reviewId": "candidate-entrance:osm:way:224995747:0:start",
+        "severity": "P1",
+        "reason": "Road endpoint is within 2m of the mapped building boundary; candidate only.",
+        "sourceObjectId": "osm:way:224995747",
+        "name": "教5 candidate entrance",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "buildingId": "osm:way:223699454",
+        "buildingName": "教5",
+        "nearestPathId": "osm:way:224995747",
+        "distance": 0.0,
+        "confidence": "HIGH",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "accessible": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "candidate-entrance:osm:way:224996491:0:start",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.92467957916925,
+          32.11271473722242
+        ]
+      },
+      "properties": {
+        "reviewId": "candidate-entrance:osm:way:224996491:0:start",
+        "severity": "P1",
+        "reason": "Road endpoint is within 2m of the mapped building boundary; candidate only.",
+        "sourceObjectId": "osm:way:224996491",
+        "name": "教5 candidate entrance",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "buildingId": "osm:way:223699454",
+        "buildingName": "教5",
+        "nearestPathId": "osm:way:224996491",
+        "distance": 0.0,
+        "confidence": "HIGH",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "accessible": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "candidate-entrance:osm:way:225199796:0:end",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.92788916202541,
+          32.1189379473203
+        ]
+      },
+      "properties": {
+        "reviewId": "candidate-entrance:osm:way:225199796:0:end",
+        "severity": "P2",
+        "reason": "Road endpoint is within 2m of the mapped building boundary; candidate only.",
+        "sourceObjectId": "osm:way:225199796",
+        "name": "25 candidate entrance",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "buildingId": "osm:way:225198911",
+        "buildingName": "25",
+        "nearestPathId": "osm:way:225199796",
+        "distance": 1.52,
+        "confidence": "MEDIUM",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "accessible": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "candidate-entrance:osm:way:223699471:0:end",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.92410843796624,
+          32.10861594662354
+        ]
+      },
+      "properties": {
+        "reviewId": "candidate-entrance:osm:way:223699471:0:end",
+        "severity": "P2",
+        "reason": "Road endpoint is within 2m of the mapped building boundary; candidate only.",
+        "sourceObjectId": "osm:way:223699471",
+        "name": "行政楼办公楼 candidate entrance",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "buildingId": "osm:way:223859826",
+        "buildingName": "行政楼办公楼",
+        "nearestPathId": "osm:way:223699471",
+        "distance": 1.73,
+        "confidence": "MEDIUM",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "accessible": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "candidate-entrance:osm:way:225100414:0:end",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.93037761104418,
+          32.11859123722242
+        ]
+      },
+      "properties": {
+        "reviewId": "candidate-entrance:osm:way:225100414:0:end",
+        "severity": "P2",
+        "reason": "Road endpoint is within 2m of the mapped building boundary; candidate only.",
+        "sourceObjectId": "osm:way:225100414",
+        "name": "收发室 candidate entrance",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "buildingId": "osm:way:223859852",
+        "buildingName": "收发室",
+        "nearestPathId": "osm:way:225100414",
+        "distance": 1.88,
+        "confidence": "MEDIUM",
+        "walkingAccess": null,
+        "cyclingAccess": null,
+        "accessible": null
+      }
+    }
+  ]
+}

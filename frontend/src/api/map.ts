@@ -1,5 +1,6 @@
 import { http } from './http'
 import type { FeatureCollection, Geometry } from 'geojson'
+import type { GisReviewCollections, GisReviewLayerKey } from '@/features/map/gisReview'
 
 export interface CameraConfig {
   longitude: number
@@ -69,4 +70,12 @@ export async function fetchMapFeatures(campusCode: string): Promise<CampusFeatur
     params: { campusCode },
   })
   return response.data
+}
+
+export async function fetchGisReviewLayers(keys: GisReviewLayerKey[]): Promise<GisReviewCollections> {
+  const entries = await Promise.all(keys.map(async (key) => {
+    const response = await http.get<FeatureCollection<Geometry>>(`/map/review/${key}`)
+    return [key, response.data] as const
+  }))
+  return Object.fromEntries(entries) as GisReviewCollections
 }

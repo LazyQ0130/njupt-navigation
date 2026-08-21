@@ -2853,5 +2853,37 @@
       "id": "osm:way:225255218",
       "reason": "missing verified name"
     }
-  ]
+  ],
+  "topologyClassification": {
+    "connected": 271,
+    "disconnected": 97,
+    "classification": {
+      "ISOLATED_SEGMENT": 9,
+      "LIKELY_TOPOLOGY_GAP": 2,
+      "LIKELY_VALID_TERMINUS": 66,
+      "NEAR_BUILDING_ENTRANCE": 6,
+      "NEAR_CAMPUS_BOUNDARY": 3,
+      "NEAR_OTHER_ROAD": 11
+    },
+    "priority": {
+      "P0": 2,
+      "P1": 25,
+      "P2": 70
+    },
+    "p0RoadCount": 2
+  },
+  "entranceCoverage": {
+    "buildingsWithEntrance": 0,
+    "coreBuildings": 18
+  },
+  "manualVerificationCoverage": {
+    "coreBuildings": {
+      "reviewed": 0,
+      "total": 18
+    },
+    "corePois": {
+      "reviewed": 0,
+      "total": 20
+    }
+  }
 }
