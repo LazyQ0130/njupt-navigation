@@ -1,0 +1,47 @@
+{
+  "type": "FeatureCollection",
+  "name": "phase-0-demonstration-only",
+  "metadata": {
+    "crs": "EPSG:4326",
+    "license": "Project-authored synthetic demonstration data",
+    "warning": "Coordinates and shapes are illustrative and must not be treated as surveyed campus data."
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "featureType": "BUILDING",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "demo-building-001",
+        "name": "Phase 0 示例建筑",
+        "aliases": ["示例楼"],
+        "category": "TEACHING",
+        "height": 18,
+        "minHeight": 0,
+        "color": "#D7E3F4",
+        "enabled": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[118.9100, 32.1030], [118.9105, 32.1030], [118.9105, 32.1033], [118.9100, 32.1033], [118.9100, 32.1030]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "featureType": "POI",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "demo-poi-001",
+        "name": "Phase 0 示例服务点",
+        "aliases": ["示例点"],
+        "keywords": ["测试", "服务"],
+        "category": "SERVICE",
+        "enabled": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [118.91025, 32.1029]
+      }
+    }
+  ]
+}

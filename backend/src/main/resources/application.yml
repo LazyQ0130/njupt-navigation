@@ -1,0 +1,54 @@
+spring:
+  application:
+    name: njupt-campus-map-api
+  datasource:
+    url: jdbc:postgresql://${DB_HOST:localhost}:${DB_PORT:5432}/${DB_NAME:njupt_map}
+    username: ${DB_USER:njupt}
+    password: ${DB_PASSWORD:change-me}
+    hikari:
+      maximum-pool-size: ${DB_POOL_MAX_SIZE:10}
+      minimum-idle: 2
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        jdbc:
+          time_zone: UTC
+        format_sql: false
+  flyway:
+    enabled: true
+  servlet:
+    multipart:
+      max-file-size: ${IMPORT_MAX_FILE_SIZE:10MB}
+      max-request-size: ${IMPORT_MAX_FILE_SIZE:10MB}
+
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+  error:
+    include-message: never
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  endpoint:
+    health:
+      probes:
+        enabled: true
+
+app:
+  security:
+    bootstrap-user: ${ADMIN_BOOTSTRAP_USER:admin}
+    bootstrap-password: ${ADMIN_BOOTSTRAP_PASSWORD:change-me-now}
+  import:
+    max-features: ${IMPORT_MAX_FEATURES:5000}
+
+logging:
+  pattern:
+    level: "%5p [traceId=%X{traceId:-}]"
+
