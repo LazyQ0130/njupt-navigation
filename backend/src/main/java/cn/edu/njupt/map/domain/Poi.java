@@ -84,5 +84,16 @@ public class Poi {
     public String getName() {
         return name;
     }
-}
 
+    public String getExternalId() {
+        return externalId;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public Point getLocation() {
+        return location;
+    }
+}

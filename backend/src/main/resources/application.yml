@@ -47,8 +47,8 @@ app:
     bootstrap-password: ${ADMIN_BOOTSTRAP_PASSWORD:change-me-now}
   import:
     max-features: ${IMPORT_MAX_FEATURES:5000}
+    bootstrap-file: ${GEOJSON_IMPORT_FILE:}
 
 logging:
   pattern:
     level: "%5p [traceId=%X{traceId:-}]"
-

@@ -88,5 +88,28 @@ public class Building {
     public String getName() {
         return name;
     }
-}
 
+    public String getExternalId() {
+        return externalId;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public MultiPolygon getGeometry() {
+        return geometry;
+    }
+
+    public double getHeight() {
+        return height;
+    }
+
+    public double getMinHeight() {
+        return minHeight;
+    }
+
+    public String getColor() {
+        return color;
+    }
+}

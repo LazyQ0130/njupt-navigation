@@ -1,10 +1,10 @@
 {
   "type": "FeatureCollection",
-  "name": "phase-0-demonstration-only",
+  "name": "phase-1-synthetic-campus-demo",
   "metadata": {
     "crs": "EPSG:4326",
     "license": "Project-authored synthetic demonstration data",
-    "warning": "Coordinates and shapes are illustrative and must not be treated as surveyed campus data."
+    "warning": "All coordinates, names and shapes are synthetic demo content, not surveyed NJUPT campus data."
   },
   "features": [
     {
@@ -12,18 +12,262 @@
       "properties": {
         "featureType": "BUILDING",
         "campusCode": "NJUPT_XIANLIN",
-        "externalId": "demo-building-001",
-        "name": "Phase 0 示例建筑",
-        "aliases": ["示例楼"],
-        "category": "TEACHING",
-        "height": 18,
+        "externalId": "demo-building-library",
+        "name": "演示图书馆",
+        "aliases": ["示例图书馆"],
+        "category": "LIBRARY",
+        "height": 31,
         "minHeight": 0,
-        "color": "#D7E3F4",
+        "color": "#7C96B3",
         "enabled": true
       },
       "geometry": {
         "type": "Polygon",
-        "coordinates": [[[118.9100, 32.1030], [118.9105, 32.1030], [118.9105, 32.1033], [118.9100, 32.1033], [118.9100, 32.1030]]]
+        "coordinates": [[[118.91055, 32.10335], [118.91145, 32.10335], [118.91145, 32.10418], [118.91055, 32.10418], [118.91055, 32.10335]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "featureType": "BUILDING",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "demo-building-teaching-a",
+        "name": "演示教学楼 A",
+        "aliases": [],
+        "category": "TEACHING",
+        "height": 25,
+        "minHeight": 0,
+        "color": "#91A9C3",
+        "enabled": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[118.90915, 32.10335], [118.91005, 32.10335], [118.91005, 32.10410], [118.90915, 32.10410], [118.90915, 32.10335]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "featureType": "BUILDING",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "demo-building-teaching-b",
+        "name": "演示教学楼 B",
+        "aliases": [],
+        "category": "TEACHING",
+        "height": 22,
+        "minHeight": 0,
+        "color": "#88A1BC",
+        "enabled": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[118.91195, 32.10335], [118.91285, 32.10335], [118.91285, 32.10410], [118.91195, 32.10410], [118.91195, 32.10335]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "featureType": "BUILDING",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "demo-building-admin",
+        "name": "演示行政楼",
+        "aliases": [],
+        "category": "ADMINISTRATION",
+        "height": 19,
+        "minHeight": 0,
+        "color": "#A58D84",
+        "enabled": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[118.91055, 32.10125], [118.91145, 32.10125], [118.91145, 32.10205], [118.91055, 32.10205], [118.91055, 32.10125]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "featureType": "BUILDING",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "demo-building-dining",
+        "name": "演示学生食堂",
+        "aliases": [],
+        "category": "DINING",
+        "height": 14,
+        "minHeight": 0,
+        "color": "#C49A75",
+        "enabled": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[118.91225, 32.10130], [118.91315, 32.10130], [118.91315, 32.10208], [118.91225, 32.10208], [118.91225, 32.10130]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "featureType": "BUILDING",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "demo-building-dormitory",
+        "name": "演示学生宿舍",
+        "aliases": [],
+        "category": "DORMITORY",
+        "height": 28,
+        "minHeight": 0,
+        "color": "#9FAFC2",
+        "enabled": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[118.90885, 32.10120], [118.90965, 32.10120], [118.90965, 32.10215], [118.90885, 32.10215], [118.90885, 32.10120]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "featureType": "CAMPUS_BOUNDARY",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "demo-campus-boundary",
+        "name": "演示校区边界",
+        "priority": 100
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[118.90835, 32.10035], [118.91465, 32.10035], [118.91465, 32.10555], [118.90835, 32.10555], [118.90835, 32.10035]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "featureType": "GREEN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "demo-green-central",
+        "name": "演示中央草坪",
+        "color": "#B9D6B0",
+        "priority": 60
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[118.91005, 32.10235], [118.91210, 32.10235], [118.91210, 32.10310], [118.91005, 32.10310], [118.91005, 32.10235]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "featureType": "GREEN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "demo-green-north",
+        "name": "演示北园",
+        "color": "#C6DDBB",
+        "priority": 40
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[118.90975, 32.10445], [118.91230, 32.10445], [118.91230, 32.10520], [118.90975, 32.10520], [118.90975, 32.10445]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "featureType": "WATER",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "demo-water-west",
+        "name": "演示景观湖",
+        "color": "#9CCBE0",
+        "priority": 70
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[118.90865, 32.10430], [118.90945, 32.10430], [118.90955, 32.10470], [118.90930, 32.10518], [118.90865, 32.10505], [118.90850, 32.10465], [118.90865, 32.10430]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "featureType": "SPORT",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "demo-sport-east",
+        "name": "演示运动场",
+        "color": "#A8C9A8",
+        "priority": 70
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[118.91270, 32.10435], [118.91415, 32.10435], [118.91415, 32.10520], [118.91270, 32.10520], [118.91270, 32.10435]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "featureType": "PLAZA",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "demo-plaza-south",
+        "name": "演示入口广场",
+        "color": "#DDD7C8",
+        "priority": 55
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[118.91000, 32.10055], [118.91200, 32.10055], [118.91200, 32.10105], [118.91000, 32.10105], [118.91000, 32.10055]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "demo-road-main-east-west",
+        "name": "演示校园主路",
+        "color": "#FFFFFF",
+        "priority": 80
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[118.90855, 32.10290], [118.91445, 32.10290]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "featureType": "ROAD_MAIN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "demo-road-main-north-south",
+        "name": "演示校园纵路",
+        "color": "#FFFFFF",
+        "priority": 75
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[118.91170, 32.10055], [118.91170, 32.10535]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "featureType": "ROAD_PEDESTRIAN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "demo-road-walk-west",
+        "name": "演示林荫步道",
+        "color": "#E8E1D2",
+        "priority": 45
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[118.90990, 32.10065], [118.90990, 32.10530]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "featureType": "ROAD_PEDESTRIAN",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "demo-road-walk-east",
+        "name": "演示东侧步道",
+        "color": "#E8E1D2",
+        "priority": 40
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[118.91345, 32.10070], [118.91345, 32.10420]]
       }
     },
     {
@@ -31,17 +275,42 @@
       "properties": {
         "featureType": "POI",
         "campusCode": "NJUPT_XIANLIN",
-        "externalId": "demo-poi-001",
-        "name": "Phase 0 示例服务点",
-        "aliases": ["示例点"],
-        "keywords": ["测试", "服务"],
+        "externalId": "demo-poi-south-gate",
+        "name": "演示南门",
+        "aliases": [],
+        "keywords": ["入口"],
+        "category": "ENTRANCE",
+        "enabled": true
+      },
+      "geometry": {"type": "Point", "coordinates": [118.9110, 32.10048]}
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "featureType": "POI",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "demo-poi-service",
+        "name": "演示校园服务点",
+        "aliases": [],
+        "keywords": ["服务"],
         "category": "SERVICE",
         "enabled": true
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [118.91025, 32.1029]
-      }
+      "geometry": {"type": "Point", "coordinates": [118.91175, 32.10285]}
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "featureType": "POI",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "demo-poi-medical",
+        "name": "演示医务点",
+        "aliases": [],
+        "keywords": ["医疗"],
+        "category": "MEDICAL",
+        "enabled": true
+      },
+      "geometry": {"type": "Point", "coordinates": [118.91365, 32.10275]}
     }
   ]
 }

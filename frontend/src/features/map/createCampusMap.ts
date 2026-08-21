@@ -1,0 +1,156 @@
+import booleanPointInPolygon from '@turf/boolean-point-in-polygon'
+import { point } from '@turf/helpers'
+import {
+  AttributionControl,
+  GeoJSONSource,
+  Map,
+  NavigationControl,
+  type MapLayerMouseEvent,
+  type LngLatBoundsLike,
+} from 'maplibre-gl'
+import type { Feature, Point } from 'geojson'
+import { campusLabelLayers, campusVisualLayers } from './layers'
+import {
+  BUILDING_EXTRUSION_LAYER_ID,
+  CAMPUS_ATTRIBUTION,
+  CAMPUS_SOURCE_ID,
+  USER_LOCATION_SOURCE_ID,
+  createMapOptions,
+} from './mapConfig'
+import type { CampusBoundaryFeature, CampusMapController, CampusMapInput } from './types'
+
+export function createCampusMap(input: CampusMapInput): CampusMapController {
+  const { container, campus, data, callbacks } = input
+  const map = new Map(createMapOptions(container, campus))
+  const initialBounds: LngLatBoundsLike = [
+    [campus.bounds.west, campus.bounds.south],
+    [campus.bounds.east, campus.bounds.north],
+  ]
+  let selectedBuildingId: string | number | undefined
+  let destroyed = false
+
+  map.addControl(new NavigationControl({ showZoom: false, showCompass: true, visualizePitch: true }), 'top-right')
+  map.addControl(new AttributionControl({ compact: true, customAttribution: CAMPUS_ATTRIBUTION }), 'bottom-right')
+
+  map.once('load', () => {
+    if (destroyed) return
+    map.addSource(CAMPUS_SOURCE_ID, {
+      type: 'geojson',
+      data,
+    })
+    campusVisualLayers.forEach((layer) => map.addLayer(layer))
+    addUserLocationLayer(map)
+    configureBuildingInteraction(map, (id, name) => {
+      if (selectedBuildingId !== undefined) {
+        map.setFeatureState({ source: CAMPUS_SOURCE_ID, id: selectedBuildingId }, { selected: false })
+      }
+      selectedBuildingId = id
+      map.setFeatureState({ source: CAMPUS_SOURCE_ID, id }, { selected: true })
+      callbacks.onBuildingSelect(name)
+    })
+    const canvas = map.getCanvas()
+    canvas.setAttribute('role', 'img')
+    canvas.setAttribute('aria-label', `${campus.name} 2.5D 交互地图`)
+    map.once('idle', () => {
+      if (destroyed) return
+      campusLabelLayers.forEach((layer) => map.addLayer(layer))
+    })
+    callbacks.onReady()
+  })
+
+  map.on('error', (event) => {
+    if (!destroyed && event.error) callbacks.onError(event.error.message)
+  })
+
+  const resizeObserver = new ResizeObserver(() => map.resize())
+  resizeObserver.observe(container)
+
+  return {
+    destroy() {
+      destroyed = true
+      resizeObserver.disconnect()
+      map.remove()
+    },
+    resize() {
+      map.resize()
+    },
+    reset() {
+      map.setMaxBounds(initialBounds)
+      map.flyTo({
+        center: [campus.camera.longitude, campus.camera.latitude],
+        zoom: campus.camera.zoom,
+        pitch: campus.camera.pitch,
+        bearing: campus.camera.bearing,
+        essential: true,
+      })
+    },
+    isInsideCampus(longitude, latitude) {
+      const boundary = data.features.find(
+        (feature) => feature.properties.featureType === 'CAMPUS_BOUNDARY',
+      ) as CampusBoundaryFeature | undefined
+      if (boundary) return booleanPointInPolygon(point([longitude, latitude]), boundary)
+      return longitude >= campus.bounds.west && longitude <= campus.bounds.east
+        && latitude >= campus.bounds.south && latitude <= campus.bounds.north
+    },
+    showLocation(longitude, latitude, allowOutside) {
+      if (allowOutside) map.setMaxBounds(null)
+      else map.setMaxBounds(initialBounds)
+      const source = map.getSource(USER_LOCATION_SOURCE_ID) as GeoJSONSource | undefined
+      source?.setData(userLocationFeature(longitude, latitude))
+      map.flyTo({ center: [longitude, latitude], zoom: 17.5, pitch: 42, essential: true })
+    },
+  }
+}
+
+function addUserLocationLayer(map: Map): void {
+  map.addSource(USER_LOCATION_SOURCE_ID, {
+    type: 'geojson',
+    data: userLocationFeature(0, 0),
+  })
+  map.addLayer({
+    id: 'user-location-halo',
+    type: 'circle',
+    source: USER_LOCATION_SOURCE_ID,
+    paint: {
+      'circle-radius': 13,
+      'circle-color': '#177ddc',
+      'circle-opacity': 0.18,
+    },
+  })
+  map.addLayer({
+    id: 'user-location-dot',
+    type: 'circle',
+    source: USER_LOCATION_SOURCE_ID,
+    paint: {
+      'circle-radius': 6,
+      'circle-color': '#177ddc',
+      'circle-stroke-color': '#ffffff',
+      'circle-stroke-width': 2.5,
+    },
+  })
+}
+
+function configureBuildingInteraction(
+  map: Map,
+  onSelect: (id: string | number, name: string) => void,
+): void {
+  map.on('mouseenter', BUILDING_EXTRUSION_LAYER_ID, () => {
+    map.getCanvas().style.cursor = 'pointer'
+  })
+  map.on('mouseleave', BUILDING_EXTRUSION_LAYER_ID, () => {
+    map.getCanvas().style.cursor = ''
+  })
+  map.on('click', BUILDING_EXTRUSION_LAYER_ID, (event: MapLayerMouseEvent) => {
+    const feature = event.features?.[0]
+    if (!feature || feature.id === undefined) return
+    onSelect(feature.id, String(feature.properties?.name ?? '未命名建筑'))
+  })
+}
+
+function userLocationFeature(longitude: number, latitude: number): Feature<Point> {
+  return {
+    type: 'Feature',
+    properties: {},
+    geometry: { type: 'Point', coordinates: [longitude, latitude] },
+  }
+}

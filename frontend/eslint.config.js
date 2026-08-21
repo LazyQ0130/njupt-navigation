@@ -21,6 +21,17 @@ export default [
   },
   {
     files: ['**/*.{ts,vue}'],
+    languageOptions: {
+      globals: {
+        clearTimeout: 'readonly',
+        document: 'readonly',
+        HTMLElement: 'readonly',
+        navigator: 'readonly',
+        ResizeObserver: 'readonly',
+        setTimeout: 'readonly',
+        window: 'readonly',
+      },
+    },
     rules: {
       'vue/multi-word-component-names': 'off',
       'vue/max-attributes-per-line': ['error', { singleline: 4 }],

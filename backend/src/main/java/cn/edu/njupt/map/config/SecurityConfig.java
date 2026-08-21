@@ -22,7 +22,9 @@ public class SecurityConfig {
                 .csrf(csrf -> csrf.disable())
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authorizeHttpRequests(authorize -> authorize
-                        .requestMatchers("/actuator/health/**", "/actuator/info", "/map/bootstrap").permitAll()
+                        .requestMatchers(
+                                "/actuator/health/**", "/actuator/info", "/map/bootstrap", "/map/features"
+                        ).permitAll()
                         .requestMatchers("/admin/**").hasRole("ADMIN")
                         .anyRequest().denyAll())
                 .httpBasic(Customizer.withDefaults())
@@ -45,4 +47,3 @@ public class SecurityConfig {
                 .build());
     }
 }
-

@@ -1,0 +1,29 @@
+import { describe, expect, it } from 'vitest'
+import type { CampusSummary } from '@/api/map'
+import { CAMPUS_ATTRIBUTION, MAP_STYLE, createMapOptions } from './mapConfig'
+
+const campus: CampusSummary = {
+  id: 'campus-1',
+  code: 'NJUPT_XIANLIN',
+  name: '测试校区',
+  camera: { longitude: 118.91, latitude: 32.1, zoom: 16, pitch: 52, bearing: -18 },
+  bounds: { west: 118.90, south: 32.09, east: 118.92, north: 32.11 },
+  data: { buildings: 1, pois: 1, mapFeatures: 1 },
+  layers: { buildings: true, ground: true, roads: true, pois: true },
+}
+
+describe('map config', () => {
+  it('uses the camera and bounds returned by bootstrap API', () => {
+    const options = createMapOptions(document.createElement('div'), campus)
+
+    expect(options.center).toEqual([118.91, 32.1])
+    expect(options.pitch).toBe(52)
+    expect(options.maxBounds).toEqual([[118.90, 32.09], [118.92, 32.11]])
+  })
+
+  it('uses a key-free canvas style with explicit attribution', () => {
+    expect(MAP_STYLE.sources).toEqual({})
+    expect(MAP_STYLE.layers[0]?.type).toBe('background')
+    expect(CAMPUS_ATTRIBUTION).toContain('synthetic demo data')
+  })
+})
