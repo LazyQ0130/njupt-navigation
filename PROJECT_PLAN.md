@@ -47,6 +47,7 @@ Geometry 列固定 SRID 4326，使用 GiST 索引；名称/别名使用 trigram 
 ### Public
 
 - `GET /api/map/bootstrap`：校园、图层版本、可用数据统计
+- `GET /api/map/features`：按校区返回带稳定 ID 和 featureType 的 GeoJSON FeatureCollection
 - `GET /api/pois`、`GET /api/pois/search`、`GET /api/pois/{id}`
 - `GET /api/buildings/{id}`
 - `POST /api/routes`、`POST /api/navigation/reroute`
@@ -143,4 +144,3 @@ DeepSeek 结构化意图、POI 实体解析、SEARCH/ROUTE/NEARBY/NEW_STUDENT、
 ## 10. 开发顺序与质量门
 
 每个 Phase 固定执行：需求/数据确认 → schema/API → 实现 → 单元/集成测试 → 前端 lint/build → Docker smoke test → README/TASKS 更新 → 独立提交。上一阶段验收前不进入下一阶段。
-

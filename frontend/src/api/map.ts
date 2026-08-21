@@ -1,4 +1,5 @@
 import { http } from './http'
+import type { FeatureCollection, Geometry } from 'geojson'
 
 export interface CameraConfig {
   longitude: number
@@ -13,10 +14,39 @@ export interface CampusSummary {
   code: string
   name: string
   camera: CameraConfig
+  bounds: {
+    west: number
+    south: number
+    east: number
+    north: number
+  }
   data: {
     buildings: number
     pois: number
+    mapFeatures: number
   }
+  layers: {
+    buildings: boolean
+    ground: boolean
+    roads: boolean
+    pois: boolean
+  }
+}
+
+export interface CampusFeatureProperties {
+  id: string
+  featureType: string
+  name: string
+  category?: string
+  color?: string
+  height?: number
+  minHeight?: number
+  priority?: number
+}
+
+export type CampusFeatureCollection = FeatureCollection<Geometry, CampusFeatureProperties> & {
+  schemaVersion?: string
+  campusCode?: string
 }
 
 export interface MapBootstrapResponse {
@@ -29,3 +59,9 @@ export async function fetchMapBootstrap(): Promise<MapBootstrapResponse> {
   return response.data
 }
 
+export async function fetchMapFeatures(campusCode: string): Promise<CampusFeatureCollection> {
+  const response = await http.get<CampusFeatureCollection>('/map/features', {
+    params: { campusCode },
+  })
+  return response.data
+}

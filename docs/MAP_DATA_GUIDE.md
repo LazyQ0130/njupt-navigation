@@ -25,7 +25,7 @@
 
 若来源是 GCJ-02 或 BD-09，必须在独立转换流程中转为 WGS84，并把算法、版本和误差记录在批次元数据中，禁止静默混用。
 
-## Phase 0 GeoJSON 约定
+## Phase 1 GeoJSON 约定
 
 根对象是 `FeatureCollection`。每个 Feature 使用 `properties.featureType` 标识：
 
@@ -71,6 +71,13 @@
 
 `externalId` 在同一数据类型内唯一，使重复导入可以更新而不是产生副本。
 
+### 地表与道路
+
+- `CAMPUS_BOUNDARY`、`GREEN`、`WATER`、`SPORT`、`PLAZA` 使用 Polygon 或 MultiPolygon。
+- `ROAD_MAIN`、`ROAD_PEDESTRIAN` 使用 LineString 或 MultiLineString；这些是 Phase 1 展示要素，不等同于可路由的 `PathEdge`。
+- 通用字段为 `externalId`、`name`、`featureType`、`campusCode`、可选 `color`、`priority` 和 `enabled`。
+- 公开 API 会把 Building、POI 和通用 MapFeature 组装为一个标准 FeatureCollection，并保留稳定 `id`。
+
 ## 导入前检查
 
 - 确认坐标系和经纬度顺序；
@@ -80,7 +87,7 @@
 - 抽样叠加到已知控制点，确认无整体偏移；
 - 不把建筑中心当作入口；入口将在后续独立采集。
 
-## Phase 1 前需要人工提供/核验
+## 真实地图上线前需要人工提供/核验
 
 - 校园边界和主校门位置；
 - 所有主要建筑 Polygon、正式名称、别名、用途和大致高度；
@@ -89,4 +96,3 @@
 - 草坪、水体、运动场区域；
 - 数据来源与授权情况；
 - 现场照片或标注，用于校验建筑颜色和相对高度。
-

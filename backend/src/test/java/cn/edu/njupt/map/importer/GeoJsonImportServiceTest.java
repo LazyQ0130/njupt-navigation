@@ -11,6 +11,7 @@ import cn.edu.njupt.map.domain.Campus;
 import cn.edu.njupt.map.repository.BuildingRepository;
 import cn.edu.njupt.map.repository.CampusRepository;
 import cn.edu.njupt.map.repository.PoiRepository;
+import cn.edu.njupt.map.repository.MapFeatureRepository;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.ByteArrayInputStream;
 import java.nio.charset.StandardCharsets;
@@ -23,6 +24,7 @@ class GeoJsonImportServiceTest {
     private CampusRepository campusRepository;
     private BuildingRepository buildingRepository;
     private PoiRepository poiRepository;
+    private MapFeatureRepository mapFeatureRepository;
     private GeoJsonImportService service;
 
     @BeforeEach
@@ -30,8 +32,10 @@ class GeoJsonImportServiceTest {
         campusRepository = mock(CampusRepository.class);
         buildingRepository = mock(BuildingRepository.class);
         poiRepository = mock(PoiRepository.class);
+        mapFeatureRepository = mock(MapFeatureRepository.class);
         service = new GeoJsonImportService(
-                new ObjectMapper(), campusRepository, buildingRepository, poiRepository, 10
+                new ObjectMapper(), campusRepository, buildingRepository, poiRepository,
+                mapFeatureRepository, 10
         );
         when(campusRepository.findByCodeAndEnabledTrue("NJUPT_XIANLIN"))
                 .thenReturn(Optional.of(mock(Campus.class)));
@@ -106,4 +110,3 @@ class GeoJsonImportServiceTest {
         return new ByteArrayInputStream(text.getBytes(StandardCharsets.UTF_8));
     }
 }
-

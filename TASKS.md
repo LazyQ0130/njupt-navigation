@@ -19,13 +19,17 @@
 
 ## Phase 1 — 2.5D 校园地图
 
-- [ ] 引入 MapLibre GL JS 与 Turf.js
-- [ ] 获取真实校园边界和默认相机参数
-- [ ] 建筑 Polygon 与 fill-extrusion
-- [ ] 道路、草坪、水体、操场图层
-- [ ] POI Marker 与建筑交互
-- [ ] 定位、指南针、Reset View
-- [ ] 移动端性能验证
+- [x] 引入 MapLibre GL JS 与 Turf.js
+- [x] 相机、地图边界与图层可用性由 bootstrap API 驱动
+- [x] 建筑 Polygon 与数据库高度/底高/颜色驱动的 fill-extrusion
+- [x] 校区边界、道路、草坪、水体、操场、广场图层
+- [x] POI Symbol/Circle 与建筑点击高亮
+- [x] 定位、越界提示、指南针、Reset View
+- [x] 100dvh、安全区、键盘焦点、移动端与桌面响应式布局
+- [x] 加载失败、无数据、地图资源错误与定位错误状态
+- [x] 前端 mapper/config/state/control 测试和后端 GeoJSON/API 测试
+- [x] 合成数据全栈验收与来源声明
+- [ ] 真实仙林校区边界、建筑、道路和 POI 的授权采集与现场核验
 
 ## Phase 2 — POI 搜索
 

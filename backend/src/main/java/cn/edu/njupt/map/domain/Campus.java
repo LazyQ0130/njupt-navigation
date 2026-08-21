@@ -63,6 +63,10 @@ public class Campus {
         return name;
     }
 
+    public MultiPolygon getBoundary() {
+        return boundary;
+    }
+
     public double getDefaultLongitude() {
         return defaultLongitude;
     }
@@ -83,4 +87,3 @@ public class Campus {
         return defaultBearing;
     }
 }
-

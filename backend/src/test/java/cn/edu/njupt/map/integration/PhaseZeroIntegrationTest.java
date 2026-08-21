@@ -88,6 +88,14 @@ class PhaseZeroIntegrationTest {
         mockMvc.perform(get("/map/bootstrap"))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.campuses[0].data.pois", is(1)));
+
+        mockMvc.perform(get("/map/features"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.type", is("FeatureCollection")))
+                .andExpect(jsonPath("$.features", hasSize(1)))
+                .andExpect(jsonPath("$.features[0].id", is("integration-poi-1")))
+                .andExpect(jsonPath("$.features[0].geometry.coordinates[0]", is(118.91)))
+                .andExpect(jsonPath("$.features[0].geometry.coordinates[1]", is(32.10)));
     }
 
     @Test
@@ -100,4 +108,3 @@ class PhaseZeroIntegrationTest {
                 .andExpect(status().isUnauthorized());
     }
 }
-

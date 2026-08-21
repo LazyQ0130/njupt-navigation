@@ -13,7 +13,9 @@ public record MapBootstrapResponse(
             String code,
             String name,
             Camera camera,
-            DataSummary data
+            Bounds bounds,
+            DataSummary data,
+            LayerAvailability layers
     ) {
     }
 
@@ -26,7 +28,12 @@ public record MapBootstrapResponse(
     ) {
     }
 
-    public record DataSummary(long buildings, long pois) {
+    public record Bounds(double west, double south, double east, double north) {
+    }
+
+    public record DataSummary(long buildings, long pois, long mapFeatures) {
+    }
+
+    public record LayerAvailability(boolean buildings, boolean ground, boolean roads, boolean pois) {
     }
 }
-

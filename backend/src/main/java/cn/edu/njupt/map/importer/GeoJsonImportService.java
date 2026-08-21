@@ -3,10 +3,12 @@ package cn.edu.njupt.map.importer;
 import cn.edu.njupt.map.domain.Building;
 import cn.edu.njupt.map.domain.Campus;
 import cn.edu.njupt.map.domain.Poi;
+import cn.edu.njupt.map.domain.MapFeature;
 import cn.edu.njupt.map.importer.GeoJsonImportResult.ImportError;
 import cn.edu.njupt.map.repository.BuildingRepository;
 import cn.edu.njupt.map.repository.CampusRepository;
 import cn.edu.njupt.map.repository.PoiRepository;
+import cn.edu.njupt.map.repository.MapFeatureRepository;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.IOException;
@@ -38,21 +40,28 @@ public class GeoJsonImportService {
             "SHOP", "SERVICE", "ADMINISTRATION", "ENTRANCE", "NEW_STUDENT", "OTHER"
     );
     private static final List<String> POI_CATEGORIES = BUILDING_CATEGORIES;
+    private static final List<String> MAP_FEATURE_TYPES = List.of(
+            "CAMPUS_BOUNDARY", "GREEN", "WATER", "SPORT", "PLAZA",
+            "ROAD_MAIN", "ROAD_PEDESTRIAN"
+    );
 
     private final ObjectMapper objectMapper;
     private final CampusRepository campusRepository;
     private final BuildingRepository buildingRepository;
     private final PoiRepository poiRepository;
+    private final MapFeatureRepository mapFeatureRepository;
     private final int maxFeatures;
     private final GeometryFactory geometryFactory = new GeometryFactory();
 
     public GeoJsonImportService(ObjectMapper objectMapper, CampusRepository campusRepository,
                                 BuildingRepository buildingRepository, PoiRepository poiRepository,
+                                MapFeatureRepository mapFeatureRepository,
                                 @Value("${app.import.max-features:5000}") int maxFeatures) {
         this.objectMapper = objectMapper;
         this.campusRepository = campusRepository;
         this.buildingRepository = buildingRepository;
         this.poiRepository = poiRepository;
+        this.mapFeatureRepository = mapFeatureRepository;
         this.maxFeatures = maxFeatures;
     }
 
@@ -109,8 +118,46 @@ public class GeoJsonImportService {
         return switch (featureType) {
             case "BUILDING" -> importBuilding(campus, properties, geometry);
             case "POI" -> importPoi(campus, properties, geometry);
-            default -> throw new IllegalArgumentException("Phase 0 不支持 featureType: " + featureType);
+            case "CAMPUS_BOUNDARY", "GREEN", "WATER", "SPORT", "PLAZA",
+                    "ROAD_MAIN", "ROAD_PEDESTRIAN" -> importMapFeature(
+                            campus, featureType, properties, geometry
+                    );
+            default -> throw new IllegalArgumentException("不支持的 featureType: " + featureType);
         };
+    }
+
+    private boolean importMapFeature(Campus campus, String featureType, JsonNode properties,
+                                     Geometry geometry) {
+        if (!MAP_FEATURE_TYPES.contains(featureType)) {
+            throw new IllegalArgumentException("不支持的地图要素类型: " + featureType);
+        }
+        boolean road = featureType.startsWith("ROAD_");
+        boolean validType = road
+                ? "LineString".equals(geometry.getGeometryType())
+                        || "MultiLineString".equals(geometry.getGeometryType())
+                : geometry instanceof Polygon || geometry instanceof MultiPolygon;
+        if (!validType) {
+            throw new IllegalArgumentException(road
+                    ? "道路 Geometry 必须是 LineString 或 MultiLineString"
+                    : "面状地图要素 Geometry 必须是 Polygon 或 MultiPolygon");
+        }
+        validateGeometry(geometry);
+
+        String externalId = requiredText(properties, "externalId");
+        Optional<MapFeature> existing = mapFeatureRepository.findByExternalId(externalId);
+        MapFeature mapFeature = existing.orElseGet(MapFeature::new);
+        mapFeature.updateFromImport(
+                campus,
+                externalId,
+                requiredText(properties, "name"),
+                featureType,
+                geometry,
+                optionalText(properties, "color").orElse(null),
+                properties.path("priority").asInt(0),
+                properties.path("enabled").asBoolean(true)
+        );
+        mapFeatureRepository.save(mapFeature);
+        return existing.isEmpty();
     }
 
     private boolean importBuilding(Campus campus, JsonNode properties, Geometry geometry) {
@@ -246,4 +293,3 @@ public class GeoJsonImportService {
         return List.copyOf(result);
     }
 }
-
