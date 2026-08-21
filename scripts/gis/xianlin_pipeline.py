@@ -5,6 +5,7 @@ from __future__ import annotations
 import argparse
 import json
 import math
+import re
 from collections import Counter, defaultdict
 from datetime import date
 from pathlib import Path
@@ -295,6 +296,60 @@ def apply_override(item: dict[str, Any], overrides: dict[str, dict[str, Any]]) -
     return item
 
 
+GENERIC_NAMES = {
+    "Building", "Dormitory", "Residential Building", "Student Residence",
+    "Student Apartment", "宿舍", "学生宿舍", "公寓", "办公楼", "教学楼",
+    "门卫", "连廊", "主席台",
+}
+
+
+def dormitory_candidate(name: str, category: str) -> dict[str, str] | None:
+    if category != "DORMITORY":
+        return None
+    match = re.match(r"^(\d{1,2})(?:\s|号|栋|楼|$)", name)
+    if match:
+        number = match.group(1)
+        return {
+            "number": number,
+            "displayName": f"{number}号楼",
+            "confidence": "HIGH",
+            "evidence": f"OSM source name begins with the explicit number {number}; no spatial-order inference used",
+        }
+    return {
+        "number": "",
+        "displayName": name,
+        "confidence": "UNKNOWN",
+        "evidence": "Dormitory category is source-backed, but the source name contains no numeric identifier",
+    }
+
+
+def apply_naming_semantics(item: dict[str, Any]) -> dict[str, Any]:
+    props = item["properties"]
+    name = props.get("name", "")
+    category = props.get("category", "")
+    props.setdefault("officialName", None)
+    props.setdefault("displayName", name)
+    props.setdefault("aliases", [])
+    props.setdefault("labelVisible", bool(name) and not name.startswith("未命名"))
+
+    candidate = dormitory_candidate(name, category)
+    if candidate:
+        props["dormitoryCandidate"] = candidate
+        if candidate["number"]:
+            props["displayName"] = candidate["displayName"]
+            props["aliases"] = list(dict.fromkeys([
+                *props.get("aliases", []), candidate["displayName"],
+                f"{candidate['number']}号宿舍",
+            ]))
+        props["labelVisible"] = candidate["confidence"] == "HIGH"
+
+    if (name in GENERIC_NAMES
+            or len(name) > 16
+            or (props.get("featureType") == "BUILDING" and any(token in name for token in ("学院", "教学部")))):
+        props["labelVisible"] = False
+    return item
+
+
 def normalize(raw: dict[str, Any]) -> tuple[dict[str, list[dict[str, Any]]], dict[str, int]]:
     elements = raw["elements"]
     campus_element = next(item for item in elements if item["type"] == "way" and item["id"] == CAMPUS_WAY_ID)
@@ -312,7 +367,6 @@ def normalize(raw: dict[str, Any]) -> tuple[dict[str, list[dict[str, Any]]], dic
     campus_props["priority"] = 100
     layers["campus"].append(feature(boundary, campus_props))
 
-    buildings_by_way: dict[int, dict[str, Any]] = {}
     for element in elements:
         value = tags(element)
         if element["type"] != "way" or "building" not in value:
@@ -328,9 +382,8 @@ def normalize(raw: dict[str, Any]) -> tuple[dict[str, list[dict[str, Any]]], dic
         properties = base_properties(element, "BUILDING", name)
         properties.update({"aliases": [], "category": building_category(element), "minHeight": 0, "color": "#D8DDE1"})
         properties.update(height_properties(element))
-        item = apply_aliases(apply_override(feature(polygon, properties), overrides), aliases)
+        item = apply_naming_semantics(apply_aliases(apply_override(feature(polygon, properties), overrides), aliases))
         layers["buildings"].append(item)
-        buildings_by_way[element["id"]] = item
 
     for element in elements:
         value = tags(element)
@@ -373,21 +426,43 @@ def normalize(raw: dict[str, Any]) -> tuple[dict[str, list[dict[str, Any]]], dic
             if point.within(review_area):
                 properties = base_properties(element, "POI", osm_name(element) or "未命名地点")
                 properties.update({"aliases": [], "keywords": [], "category": poi_category(element), "priority": 40, "positionSource": "OSM_NODE", "freshnessStatus": "SOURCE_ONLY", "lastVerifiedAt": None})
-                item = apply_aliases(apply_override(feature(point, properties), overrides), aliases)
+                item = apply_naming_semantics(apply_aliases(apply_override(feature(point, properties), overrides), aliases))
                 layers["pois"].append(item)
+
+    # Link source POI nodes to a containing building when the spatial match is unambiguous.
+    for poi in layers["pois"]:
+        point_geometry = shape(poi["geometry"])
+        containing = [
+            building for building in layers["buildings"]
+            if point_geometry.within(shape(building["geometry"]))
+        ]
+        if len(containing) == 1:
+            poi["properties"]["buildingExternalId"] = containing[0]["properties"]["externalId"]
+            poi["properties"]["buildingLinkSource"] = "POINT_WITHIN_SINGLE_BUILDING"
 
     # Named facility buildings become POIs linked to the source building. Position is explicitly derived.
     poi_ids = {item["properties"]["externalId"] for item in layers["pois"]}
+    generated_groups: set[str] = set()
     for item in layers["buildings"]:
         category = item["properties"]["category"]
         if category not in {"LIBRARY", "DINING", "MEDICAL", "SPORT", "ADMINISTRATION", "TEACHING"}:
             continue
+        group_id = item["properties"].get("poiGroupId") or item["properties"]["externalId"]
+        if group_id in generated_groups:
+            continue
+        generated_groups.add(group_id)
         source_id = f"{item['properties']['externalId']}:poi"
         if source_id in poi_ids:
             continue
         point = shape(item["geometry"]).representative_point()
         properties = dict(item["properties"])
-        properties.update({"externalId": source_id, "featureType": "POI", "buildingExternalId": item["properties"]["externalId"], "keywords": [], "priority": 45, "positionSource": "DERIVED_REPRESENTATIVE_POINT"})
+        related = [
+            candidate["properties"]["externalId"] for candidate in layers["buildings"]
+            if (candidate["properties"].get("poiGroupId") or candidate["properties"]["externalId"]) == group_id
+        ]
+        properties.update({"externalId": source_id, "featureType": "POI", "buildingExternalId": item["properties"]["externalId"], "relatedBuildingExternalIds": related, "keywords": [], "priority": 45, "positionSource": "DERIVED_REPRESENTATIVE_POINT"})
+        poi_display_name = properties.get("displayName") or properties.get("name", "")
+        properties["labelVisible"] = poi_display_name not in GENERIC_NAMES and len(poi_display_name) <= 16
         for key in ("height", "heightSource", "minHeight", "color"):
             properties.pop(key, None)
         layers["pois"].append(feature(point, properties))
@@ -488,6 +563,7 @@ def validate(layers: dict[str, list[dict[str, Any]]], excluded: dict[str, int]) 
 
 def write_outputs(raw_path: Path) -> dict[str, Any]:
     from gis_review import generate_review_artifacts
+    from naming_audit import generate_naming_artifacts
 
     raw = json.loads(raw_path.read_text(encoding="utf-8"))
     layers, excluded = normalize(raw)
@@ -496,6 +572,8 @@ def write_outputs(raw_path: Path) -> dict[str, Any]:
         (DATASET_DIR / f"{layer}.geojson").write_text(json.dumps(collection(layer, items), ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     report = validate(layers, excluded)
     topology = generate_review_artifacts(layers, local_metric, DATASET_DIR)
+    naming = generate_naming_artifacts(layers, raw, local_metric, DATASET_DIR)
+    report["naming"] = naming
     report["topologyClassification"] = {
         "connected": topology["connected"],
         "disconnected": topology["disconnected"],

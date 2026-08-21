@@ -22,6 +22,7 @@ export type CampusBoundaryFeature = Feature<Polygon | MultiPolygon, CampusFeatur
 
 export interface SelectedPlace {
   name: string
+  officialName?: string
   category: string
 }
 
@@ -34,7 +35,7 @@ export interface SelectedReview {
   severity: string
 }
 
-export type ReviewLayerGroup = 'buildings' | 'roads' | 'pois' | 'endpoints' | 'intersections' | 'candidates' | 'verification'
+export type ReviewLayerGroup = 'buildings' | 'roads' | 'pois' | 'endpoints' | 'intersections' | 'candidates' | 'dormitories' | 'verification'
 
 export interface CampusMapController {
   destroy: () => void

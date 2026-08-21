@@ -14,6 +14,12 @@ export interface CampusSummary {
   id: string
   code: string
   name: string
+  officialName?: string
+  displayName?: string
+  aliases?: string[]
+  keywords?: string[]
+  labelVisible?: boolean
+  buildingId?: string
   camera: CameraConfig
   bounds: {
     west: number

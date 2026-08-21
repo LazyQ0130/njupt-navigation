@@ -657,54 +657,6 @@
     },
     {
       "type": "Feature",
-      "id": "unverified:osm:way:1390009973:poi",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          118.92857083546326,
-          32.1103804
-        ]
-      },
-      "properties": {
-        "reviewId": "unverified:osm:way:1390009973:poi",
-        "severity": "P0",
-        "reason": "POI has source validation but no manual or field verification.",
-        "sourceObjectId": "osm:way:1390009973:poi",
-        "name": "南邮仙林一食堂",
-        "verificationStatus": "PENDING_REVIEW",
-        "notes": "",
-        "category": "DINING",
-        "dataSource": "OPENSTREETMAP",
-        "currentVerificationStatus": "SOURCE_VERIFIED",
-        "freshnessStatus": null
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "unverified:osm:way:1390009975:poi",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          118.92856245687506,
-          32.110768300000004
-        ]
-      },
-      "properties": {
-        "reviewId": "unverified:osm:way:1390009975:poi",
-        "severity": "P0",
-        "reason": "POI has source validation but no manual or field verification.",
-        "sourceObjectId": "osm:way:1390009975:poi",
-        "name": "南邮仙林一食堂",
-        "verificationStatus": "PENDING_REVIEW",
-        "notes": "",
-        "category": "DINING",
-        "dataSource": "OPENSTREETMAP",
-        "currentVerificationStatus": "SOURCE_VERIFIED",
-        "freshnessStatus": null
-      }
-    },
-    {
-      "type": "Feature",
       "id": "unverified:osm:way:1173057052:poi",
       "geometry": {
         "type": "Point",

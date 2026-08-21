@@ -7,7 +7,7 @@ export const poiLayers: LayerSpecification[] = [
     type: 'circle',
     source: 'campus-features',
     minzoom: 16,
-    filter: ['==', ['get', 'featureType'], 'POI'],
+    filter: ['all', ['==', ['get', 'featureType'], 'POI'], ['==', ['coalesce', ['get', 'labelVisible'], true], true]],
     paint: {
       'circle-radius': ['interpolate', ['linear'], ['zoom'], 16, 3.5, 18, 5.5],
       'circle-color': MAP_PALETTE.poi,
@@ -20,9 +20,9 @@ export const poiLayers: LayerSpecification[] = [
     type: 'symbol',
     source: 'campus-features',
     minzoom: 16.8,
-    filter: ['==', ['get', 'featureType'], 'POI'],
+    filter: ['all', ['==', ['get', 'featureType'], 'POI'], ['==', ['coalesce', ['get', 'labelVisible'], true], true]],
     layout: {
-      'text-field': ['get', 'name'],
+      'text-field': ['coalesce', ['get', 'displayName'], ['get', 'name']],
       'text-font': ['Noto Sans Regular'],
       'text-size': ['interpolate', ['linear'], ['zoom'], 16.8, 10, 19, 11.5],
       'text-offset': [0, 1.15],

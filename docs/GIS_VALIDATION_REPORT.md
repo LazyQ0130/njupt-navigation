@@ -4,7 +4,7 @@
 
 ## 基础校验
 
-- 正式输出 500 个对象：Building 87、POI 38、Road 120、Footpath 61、Green 176、Sport 13、Water 4、Campus boundary 1、Entrance 0。
+- 正式输出 498 个对象：Building 87、POI 36、Road 120、Footpath 61、Green 176、Sport 13、Water 4、Campus boundary 1、Entrance 0。POI 减少 2 是一食堂三个相接 Polygon 改为一个用户侧 POI，不是删除 Building Geometry。
 - Geometry error 0、坐标范围错误 0、校界缓冲区外 0、重复稳定 ID 0；PostGIS SRID 全部为 4326。
 - 75 栋建筑具有 OSM `height` 或 `building:levels` 高度依据；12 栋未知并保持 NULL。
 - 原始数据排除 69 个校界外/无效建筑、35 个无名称建筑和 3 条非简单道路。
@@ -44,6 +44,16 @@
 - 工程候选入口：5，关联教5（2 个）、25、行政楼办公楼、收发室；全部仍为 `PENDING_REVIEW`，access 字段为 NULL，不进入 Entrance 表。
 - 核心建筑人工核验：0/18；核心 POI 人工核验：0/20。
 - Campus Boundary、南/北门、核心建筑名称、宿舍与食堂仍为 `PENDING_MANUAL_IDENTIFICATION` 或 `SOURCE_VERIFIED`，没有对象被虚假提升为 `MANUALLY_REVIEWED` / `FIELD_VERIFIED`。
+
+## Naming quality
+
+- 87/87 个 Building 已生成 `displayName`；其中 18 个 generic、学院/教学部占位名、超长名或重复次要 Polygon 的学生端标签被隐藏，Geometry 仍保留。学院仍可作为 POI；仅 2 个超长学院 POI 标签被隐藏，共 20 个无意义或待核验标签不进入学生端。
+- 50 个宿舍候选中 49 个带显式数字 OSM 名称，1 个为青教公寓；已确认编号仍为 0。`HIGH` 只表示工程匹配规则明确，不表示人工事实核验。
+- 原始 Building 同名 5 组（13 个记录）；Building/POI 同语义 17 组。23 个 POI 已通过显式派生或唯一 point-in-polygon 关系关联 Building。
+- 一食堂三个 Polygon 两两接触且 OSM tags 相同，判断为同一 connected complex；未合并 Geometry，主 Building + 相关 Building ID 共同支撑一个 POI。
+- 两个原“行政楼办公楼” Polygon 相距 2.8m，更像两栋独立楼；行政南楼/北楼名称由校方页面与南北空间匹配得出，仍需现场确认。
+
+完整分类、距离、centroid、原始 tags 与来源见 `CAMPUS_NAMING_AUDIT.md`。
 
 ## 结论
 

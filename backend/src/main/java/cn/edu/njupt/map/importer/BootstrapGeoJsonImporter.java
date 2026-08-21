@@ -44,9 +44,9 @@ public class BootstrapGeoJsonImporter implements ApplicationRunner {
     @Override
     public void run(ApplicationArguments arguments) throws IOException {
         if (sourceDirectory != null) {
+            importService.prepareDatasetRefresh(datasetMode);
             importDirectory();
-            importService.activateDataset(datasetMode);
-            LOGGER.info("Bootstrap GeoJSON dataset activated: mode={}", datasetMode);
+            LOGGER.info("Bootstrap GeoJSON authoritative dataset refreshed: mode={}", datasetMode);
             return;
         }
         importFile(source);

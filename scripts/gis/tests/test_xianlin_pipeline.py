@@ -10,13 +10,16 @@ from xianlin_pipeline import (  # noqa: E402
     apply_override,
     apply_aliases,
     apply_review,
+    apply_naming_semantics,
     building_category,
     feature,
     height_properties,
+    dormitory_candidate,
     stable_id,
     validate,
     way_polygon,
 )
+from naming_audit import _duplicate_groups  # noqa: E402
 
 
 class XianlinPipelineTest(unittest.TestCase):
@@ -75,6 +78,48 @@ class XianlinPipelineTest(unittest.TestCase):
 
         self.assertEqual(report["error"], 2)
         self.assertEqual(report["coordinateErrors"][0]["id"], "osm:node:2")
+
+    def test_explicit_dormitory_number_becomes_candidate_not_official_name(self):
+        candidate = dormitory_candidate("25", "DORMITORY")
+
+        self.assertEqual(candidate["number"], "25")
+        self.assertEqual(candidate["displayName"], "25号楼")
+        self.assertEqual(candidate["confidence"], "HIGH")
+
+        item = feature(Point(118.92, 32.11), {
+            "externalId": "osm:way:25", "name": "25", "featureType": "BUILDING",
+            "category": "DORMITORY", "aliases": [],
+        })
+        apply_naming_semantics(item)
+        self.assertEqual(item["properties"]["displayName"], "25号楼")
+        self.assertIsNone(item["properties"]["officialName"])
+        self.assertTrue(item["properties"]["labelVisible"])
+
+    def test_generic_and_long_institution_building_labels_are_suppressed(self):
+        generic = feature(Point(0, 0), {
+            "externalId": "generic", "name": "教学楼", "featureType": "BUILDING", "category": "TEACHING",
+        })
+        institution = feature(Point(0, 0), {
+            "externalId": "college", "name": "计算机学院", "featureType": "BUILDING", "category": "TEACHING",
+        })
+        department = feature(Point(0, 0), {
+            "externalId": "department", "name": "工程实验教学部", "featureType": "BUILDING", "category": "TEACHING",
+        })
+
+        self.assertFalse(apply_naming_semantics(generic)["properties"]["labelVisible"])
+        self.assertFalse(apply_naming_semantics(institution)["properties"]["labelVisible"])
+        self.assertFalse(apply_naming_semantics(department)["properties"]["labelVisible"])
+
+    def test_duplicate_naming_groups_keep_all_physical_ids(self):
+        buildings = [
+            {"properties": {"externalId": "building-a", "name": "一食堂"}},
+            {"properties": {"externalId": "building-b", "name": "一食堂"}},
+            {"properties": {"externalId": "building-c", "name": "图书馆"}},
+        ]
+
+        self.assertEqual(_duplicate_groups(buildings), {
+            "一食堂": ["building-a", "building-b"],
+        })
 
 
 if __name__ == "__main__":

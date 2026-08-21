@@ -10,6 +10,8 @@ import org.mockito.ArgumentCaptor;
 
 import cn.edu.njupt.map.domain.Campus;
 import cn.edu.njupt.map.domain.MapFeature;
+import cn.edu.njupt.map.domain.Building;
+import cn.edu.njupt.map.domain.Poi;
 import cn.edu.njupt.map.repository.BuildingRepository;
 import cn.edu.njupt.map.repository.BuildingEntranceRepository;
 import cn.edu.njupt.map.repository.CampusRepository;
@@ -149,6 +151,30 @@ class GeoJsonImportServiceTest {
         assertThat(captor.getValue().getDataSource()).isEqualTo("OPENSTREETMAP");
         assertThat(captor.getValue().getVerificationStatus()).isEqualTo("SOURCE_VERIFIED");
         assertThat(captor.getValue().getSourceId()).isEqualTo("osm-test");
+    }
+
+    @Test
+    void importsNamingSemanticsAndLinksPoiToBuilding() throws Exception {
+        Building building = new Building();
+        when(buildingRepository.findByExternalId("osm:way:library"))
+                .thenReturn(Optional.of(building));
+        String geoJson = """
+                {"type":"FeatureCollection","features":[{
+                "type":"Feature","properties":{"featureType":"POI","externalId":"library-poi",
+                "name":"仙林校区图书馆","officialName":"仙林校区图书馆","displayName":"图书馆",
+                "labelVisible":true,"aliases":["仙林图书馆"],"keywords":[],"category":"LIBRARY",
+                "buildingExternalId":"osm:way:library"},
+                "geometry":{"type":"Point","coordinates":[118.92,32.11]}}]}
+                """;
+
+        service.importFeatureCollection(stream(geoJson));
+
+        ArgumentCaptor<Poi> captor = ArgumentCaptor.forClass(Poi.class);
+        verify(poiRepository).save(captor.capture());
+        assertThat(captor.getValue().getDisplayName()).isEqualTo("图书馆");
+        assertThat(captor.getValue().getOfficialName()).isEqualTo("仙林校区图书馆");
+        assertThat(captor.getValue().getAliases()).containsExactly("仙林图书馆");
+        assertThat(captor.getValue().getBuilding()).isSameAs(building);
     }
 
     private ByteArrayInputStream stream(String text) {

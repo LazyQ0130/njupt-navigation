@@ -15,12 +15,13 @@ const severityColor: ExpressionSpecification = [
 const sourceId = (key: GisReviewLayerKey) => `gis-review-${key}`
 
 export const reviewLayerIds: Record<ReviewLayerGroup, string[]> = {
-  buildings: ['building-footprint', 'building-extrusion', 'building-outline', 'building-labels'],
+  buildings: ['building-footprint', 'building-extrusion', 'building-outline', 'building-labels', 'dormitory-labels'],
   roads: ['road-main-casing', 'road-main', 'road-pedestrian'],
   pois: ['poi-dots', 'poi-labels'],
   endpoints: ['review-topology-gaps'],
   intersections: ['review-road-building-intersections'],
   candidates: ['review-candidate-entrances'],
+  dormitories: ['review-dormitory-candidates', 'review-dormitory-candidate-labels'],
   verification: ['review-unverified-buildings', 'review-unverified-pois'],
 }
 
@@ -37,6 +38,25 @@ export function addGisReviewLayers(
     type: 'line',
     source: sourceId('unverified-buildings'),
     paint: { 'line-color': severityColor, 'line-width': 2.5, 'line-opacity': 0.9 },
+  })
+  map.addLayer({
+    id: 'review-dormitory-candidates',
+    type: 'circle',
+    source: sourceId('dormitory-candidates'),
+    paint: { 'circle-color': '#38bdf8', 'circle-radius': 7, 'circle-stroke-color': '#0f172a', 'circle-stroke-width': 2 },
+  })
+  map.addLayer({
+    id: 'review-dormitory-candidate-labels',
+    type: 'symbol',
+    source: sourceId('dormitory-candidates'),
+    layout: {
+      'text-field': ['format', ['get', 'candidateDisplayName'], {}, '\n', {}, ['get', 'sourceObjectId'], { 'font-scale': 0.7 }],
+      'text-offset': [0, 1.1],
+      'text-anchor': 'top',
+      'text-size': 11,
+      'text-allow-overlap': false,
+    },
+    paint: { 'text-color': '#e0f2fe', 'text-halo-color': '#0f172a', 'text-halo-width': 1.5 },
   })
   map.addLayer({
     id: 'review-unverified-pois',

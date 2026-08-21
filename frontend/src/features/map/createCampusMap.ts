@@ -45,13 +45,13 @@ export function createCampusMap(input: CampusMapInput): CampusMapController {
     if (reviewData) addGisReviewLayers(map, reviewData, callbacks.onReviewSelect)
     addUserLocationLayer(map)
     fitCampus(map, initialBounds, campus, false)
-    configureBuildingInteraction(map, (id, name, category) => {
+    configureBuildingInteraction(map, (id, name, officialName, category) => {
       if (selectedBuildingId !== undefined) {
         map.setFeatureState({ source: CAMPUS_SOURCE_ID, id: selectedBuildingId }, { selected: false })
       }
       selectedBuildingId = id
       map.setFeatureState({ source: CAMPUS_SOURCE_ID, id }, { selected: true })
-      callbacks.onBuildingSelect({ name, category })
+      callbacks.onBuildingSelect({ name, officialName, category })
     })
     const canvas = map.getCanvas()
     canvas.setAttribute('role', 'img')
@@ -158,7 +158,7 @@ function addUserLocationLayer(map: Map): void {
 
 function configureBuildingInteraction(
   map: Map,
-  onSelect: (id: string | number, name: string, category: string) => void,
+  onSelect: (id: string | number, name: string, officialName: string | undefined, category: string) => void,
 ): void {
   map.on('mouseenter', BUILDING_EXTRUSION_LAYER_ID, () => {
     map.getCanvas().style.cursor = 'pointer'
@@ -171,7 +171,8 @@ function configureBuildingInteraction(
     if (!feature || feature.id === undefined) return
     onSelect(
       feature.id,
-      String(feature.properties?.name ?? '未命名建筑'),
+      String(feature.properties?.displayName ?? feature.properties?.name ?? '未命名建筑'),
+      feature.properties?.officialName ? String(feature.properties.officialName) : undefined,
       String(feature.properties?.category ?? 'BUILDING'),
     )
   })

@@ -65,7 +65,8 @@ class MapFeatureServiceTest {
         polygon.setSRID(4326);
         Building building = new Building();
         building.updateFromImport(
-                mock(Campus.class), "demo-building", "演示楼", List.of(), "TEACHING",
+                mock(Campus.class), "demo-building", "演示楼", "教学演示楼", "演示楼", true,
+                List.of("演示教学楼"), "TEACHING",
                 geometryFactory.createMultiPolygon(new Polygon[]{polygon}), 24.0, 0, "#8CA8C8",
                 "OSM_HEIGHT", "OPENSTREETMAP", "SOURCE_VERIFIED", "osm-test", null, true
         );
@@ -76,6 +77,10 @@ class MapFeatureServiceTest {
 
         assertThat(result.at("/features/0/id").asText()).isEqualTo("demo-building");
         assertThat(result.at("/features/0/properties/featureType").asText()).isEqualTo("BUILDING");
+        assertThat(result.at("/features/0/properties/displayName").asText()).isEqualTo("演示楼");
+        assertThat(result.at("/features/0/properties/officialName").asText()).isEqualTo("教学演示楼");
+        assertThat(result.at("/features/0/properties/aliases/0").asText()).isEqualTo("演示教学楼");
+        assertThat(result.at("/features/0/properties/labelVisible").asBoolean()).isTrue();
         assertThat(result.at("/features/0/geometry/coordinates/0/0/0/0").asDouble())
                 .isEqualTo(118.9100);
         assertThat(result.at("/features/0/geometry/coordinates/0/0/0/1").asDouble())

@@ -27,12 +27,22 @@
         "sourceUpdatedAt": null,
         "osmType": "way",
         "osmId": 223859811,
-        "aliases": [],
+        "aliases": [
+          "行政南楼"
+        ],
         "category": "ADMINISTRATION",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
-        "heightSource": "ESTIMATED_FROM_LEVELS"
+        "heightSource": "ESTIMATED_FROM_LEVELS",
+        "officialName": "行政南楼",
+        "displayName": "行政南楼",
+        "source": "NJUPT_OFFICIAL_SPATIAL_MATCH",
+        "sourceUrl": "https://xkb.njupt.edu.cn/10472/list.htm",
+        "reviewStatus": "NEEDS_FIELD_CONFIRMATION",
+        "reviewedAt": "2026-08-22",
+        "notes": "Official source confirms 行政南楼; assignment to southern OSM polygon is a geographic inference.",
+        "labelVisible": true
       },
       "geometry": {
         "type": "Polygon",
@@ -108,12 +118,22 @@
         "sourceUpdatedAt": null,
         "osmType": "way",
         "osmId": 223859826,
-        "aliases": [],
+        "aliases": [
+          "行政北楼"
+        ],
         "category": "ADMINISTRATION",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
-        "heightSource": "ESTIMATED_FROM_LEVELS"
+        "heightSource": "ESTIMATED_FROM_LEVELS",
+        "officialName": "行政北楼",
+        "displayName": "行政北楼",
+        "source": "NJUPT_OFFICIAL_SPATIAL_MATCH",
+        "sourceUrl": "https://skc.njupt.edu.cn/jgsz/list.htm",
+        "reviewStatus": "NEEDS_FIELD_CONFIRMATION",
+        "reviewedAt": "2026-08-22",
+        "notes": "Official source confirms 行政北楼; assignment to northern OSM polygon is a geographic inference.",
+        "labelVisible": true
       },
       "geometry": {
         "type": "Polygon",
@@ -205,7 +225,10 @@
         "category": "OTHER",
         "minHeight": 0,
         "color": "#D8DDE1",
-        "heightSource": "UNKNOWN"
+        "heightSource": "UNKNOWN",
+        "officialName": null,
+        "displayName": "门卫",
+        "labelVisible": false
       },
       "geometry": {
         "type": "Polygon",
@@ -289,7 +312,10 @@
         "category": "OTHER",
         "minHeight": 0,
         "color": "#D8DDE1",
-        "heightSource": "UNKNOWN"
+        "heightSource": "UNKNOWN",
+        "officialName": null,
+        "displayName": "门卫",
+        "labelVisible": false
       },
       "geometry": {
         "type": "Polygon",
@@ -365,12 +391,23 @@
         "sourceUpdatedAt": null,
         "osmType": "way",
         "osmId": 223699451,
-        "aliases": [],
+        "aliases": [
+          "教1",
+          "教学1号楼"
+        ],
         "category": "OTHER",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 18.0,
-        "heightSource": "OSM_HEIGHT"
+        "heightSource": "OSM_HEIGHT",
+        "officialName": "教学1号楼",
+        "displayName": "教1",
+        "source": "NJUPT_OFFICIAL",
+        "sourceUrl": "https://hqjt.njupt.edu.cn/2014/1215/c5002a66724/page.htm",
+        "reviewStatus": "SOURCE_MATCHED",
+        "reviewedAt": "2026-08-22",
+        "notes": "Official source confirms 教学1~5号楼; OSM identity retained.",
+        "labelVisible": true
       },
       "geometry": {
         "type": "Polygon",
@@ -442,12 +479,23 @@
         "sourceUpdatedAt": null,
         "osmType": "way",
         "osmId": 223859784,
-        "aliases": [],
+        "aliases": [
+          "二食堂",
+          "仙林二食堂"
+        ],
         "category": "DINING",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 9.9,
-        "heightSource": "ESTIMATED_FROM_LEVELS"
+        "heightSource": "ESTIMATED_FROM_LEVELS",
+        "officialName": "仙林二食堂",
+        "displayName": "二食堂",
+        "source": "NJUPT_OFFICIAL",
+        "sourceUrl": "https://hqc.njupt.edu.cn/_t311/2014/0905/c5002a66692/page.htm",
+        "reviewStatus": "SOURCE_MATCHED",
+        "reviewedAt": "2026-08-22",
+        "notes": "Official service page confirms the campus canteen name.",
+        "labelVisible": true
       },
       "geometry": {
         "type": "Polygon",
@@ -523,12 +571,24 @@
         "sourceUpdatedAt": null,
         "osmType": "way",
         "osmId": 223859786,
-        "aliases": [],
+        "aliases": [
+          "12号楼",
+          "12号宿舍"
+        ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
-        "heightSource": "ESTIMATED_FROM_LEVELS"
+        "heightSource": "ESTIMATED_FROM_LEVELS",
+        "officialName": null,
+        "displayName": "12号楼",
+        "labelVisible": true,
+        "dormitoryCandidate": {
+          "number": "12",
+          "displayName": "12号楼",
+          "confidence": "HIGH",
+          "evidence": "OSM source name begins with the explicit number 12; no spatial-order inference used"
+        }
       },
       "geometry": {
         "type": "Polygon",
@@ -620,12 +680,24 @@
         "sourceUpdatedAt": null,
         "osmType": "way",
         "osmId": 223859792,
-        "aliases": [],
+        "aliases": [
+          "6号楼",
+          "6号宿舍"
+        ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
-        "heightSource": "ESTIMATED_FROM_LEVELS"
+        "heightSource": "ESTIMATED_FROM_LEVELS",
+        "officialName": null,
+        "displayName": "6号楼",
+        "labelVisible": true,
+        "dormitoryCandidate": {
+          "number": "6",
+          "displayName": "6号楼",
+          "confidence": "HIGH",
+          "evidence": "OSM source name begins with the explicit number 6; no spatial-order inference used"
+        }
       },
       "geometry": {
         "type": "Polygon",
@@ -709,12 +781,24 @@
         "sourceUpdatedAt": null,
         "osmType": "way",
         "osmId": 223859794,
-        "aliases": [],
+        "aliases": [
+          "9号楼",
+          "9号宿舍"
+        ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
-        "heightSource": "ESTIMATED_FROM_LEVELS"
+        "heightSource": "ESTIMATED_FROM_LEVELS",
+        "officialName": null,
+        "displayName": "9号楼",
+        "labelVisible": true,
+        "dormitoryCandidate": {
+          "number": "9",
+          "displayName": "9号楼",
+          "confidence": "HIGH",
+          "evidence": "OSM source name begins with the explicit number 9; no spatial-order inference used"
+        }
       },
       "geometry": {
         "type": "Polygon",
@@ -774,12 +858,24 @@
         "sourceUpdatedAt": null,
         "osmType": "way",
         "osmId": 223859797,
-        "aliases": [],
+        "aliases": [
+          "7号楼",
+          "7号宿舍"
+        ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
-        "heightSource": "ESTIMATED_FROM_LEVELS"
+        "heightSource": "ESTIMATED_FROM_LEVELS",
+        "officialName": null,
+        "displayName": "7号楼",
+        "labelVisible": true,
+        "dormitoryCandidate": {
+          "number": "7",
+          "displayName": "7号楼",
+          "confidence": "HIGH",
+          "evidence": "OSM source name begins with the explicit number 7; no spatial-order inference used"
+        }
       },
       "geometry": {
         "type": "Polygon",
@@ -871,12 +967,24 @@
         "sourceUpdatedAt": null,
         "osmType": "way",
         "osmId": 223859798,
-        "aliases": [],
+        "aliases": [
+          "3号楼",
+          "3号宿舍"
+        ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
-        "heightSource": "ESTIMATED_FROM_LEVELS"
+        "heightSource": "ESTIMATED_FROM_LEVELS",
+        "officialName": null,
+        "displayName": "3号楼",
+        "labelVisible": true,
+        "dormitoryCandidate": {
+          "number": "3",
+          "displayName": "3号楼",
+          "confidence": "HIGH",
+          "evidence": "OSM source name begins with the explicit number 3; no spatial-order inference used"
+        }
       },
       "geometry": {
         "type": "Polygon",
@@ -936,12 +1044,24 @@
         "sourceUpdatedAt": null,
         "osmType": "way",
         "osmId": 223859813,
-        "aliases": [],
+        "aliases": [
+          "11号楼",
+          "11号宿舍"
+        ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
-        "heightSource": "ESTIMATED_FROM_LEVELS"
+        "heightSource": "ESTIMATED_FROM_LEVELS",
+        "officialName": null,
+        "displayName": "11号楼",
+        "labelVisible": true,
+        "dormitoryCandidate": {
+          "number": "11",
+          "displayName": "11号楼",
+          "confidence": "HIGH",
+          "evidence": "OSM source name begins with the explicit number 11; no spatial-order inference used"
+        }
       },
       "geometry": {
         "type": "Polygon",
@@ -1001,12 +1121,24 @@
         "sourceUpdatedAt": null,
         "osmType": "way",
         "osmId": 223859824,
-        "aliases": [],
+        "aliases": [
+          "5号楼",
+          "5号宿舍"
+        ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
-        "heightSource": "ESTIMATED_FROM_LEVELS"
+        "heightSource": "ESTIMATED_FROM_LEVELS",
+        "officialName": null,
+        "displayName": "5号楼",
+        "labelVisible": true,
+        "dormitoryCandidate": {
+          "number": "5",
+          "displayName": "5号楼",
+          "confidence": "HIGH",
+          "evidence": "OSM source name begins with the explicit number 5; no spatial-order inference used"
+        }
       },
       "geometry": {
         "type": "Polygon",
@@ -1066,12 +1198,24 @@
         "sourceUpdatedAt": null,
         "osmType": "way",
         "osmId": 223859829,
-        "aliases": [],
+        "aliases": [
+          "1号楼",
+          "1号宿舍"
+        ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
-        "heightSource": "ESTIMATED_FROM_LEVELS"
+        "heightSource": "ESTIMATED_FROM_LEVELS",
+        "officialName": null,
+        "displayName": "1号楼",
+        "labelVisible": true,
+        "dormitoryCandidate": {
+          "number": "1",
+          "displayName": "1号楼",
+          "confidence": "HIGH",
+          "evidence": "OSM source name begins with the explicit number 1; no spatial-order inference used"
+        }
       },
       "geometry": {
         "type": "Polygon",
@@ -1159,12 +1303,24 @@
         "sourceUpdatedAt": null,
         "osmType": "way",
         "osmId": 223859843,
-        "aliases": [],
+        "aliases": [
+          "16号楼",
+          "16号宿舍"
+        ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
-        "heightSource": "ESTIMATED_FROM_LEVELS"
+        "heightSource": "ESTIMATED_FROM_LEVELS",
+        "officialName": null,
+        "displayName": "16号楼",
+        "labelVisible": true,
+        "dormitoryCandidate": {
+          "number": "16",
+          "displayName": "16号楼",
+          "confidence": "HIGH",
+          "evidence": "OSM source name begins with the explicit number 16; no spatial-order inference used"
+        }
       },
       "geometry": {
         "type": "Polygon",
@@ -1252,12 +1408,22 @@
         "sourceUpdatedAt": null,
         "osmType": "way",
         "osmId": 224950590,
-        "aliases": [],
+        "aliases": [
+          "圆楼"
+        ],
         "category": "TEACHING",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
-        "heightSource": "ESTIMATED_FROM_LEVELS"
+        "heightSource": "ESTIMATED_FROM_LEVELS",
+        "officialName": "圆楼",
+        "displayName": "圆楼",
+        "source": "NJUPT_OFFICIAL",
+        "sourceUrl": "https://www.njupt.edu.cn/2024/0705/c72a267415/page.htm",
+        "reviewStatus": "SOURCE_MATCHED",
+        "reviewedAt": "2026-08-22",
+        "notes": "Official campus notice uses 圆楼.",
+        "labelVisible": true
       },
       "geometry": {
         "type": "Polygon",
@@ -1378,7 +1544,10 @@
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
-        "heightSource": "ESTIMATED_FROM_LEVELS"
+        "heightSource": "ESTIMATED_FROM_LEVELS",
+        "officialName": null,
+        "displayName": "自动化学院、人工智能学院",
+        "labelVisible": false
       },
       "geometry": {
         "type": "Polygon",
@@ -1422,12 +1591,24 @@
         "sourceUpdatedAt": null,
         "osmType": "way",
         "osmId": 1390009974,
-        "aliases": [],
+        "aliases": [
+          "一食堂",
+          "仙林一食堂"
+        ],
         "category": "DINING",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 9.9,
-        "heightSource": "ESTIMATED_FROM_LEVELS"
+        "heightSource": "ESTIMATED_FROM_LEVELS",
+        "officialName": "仙林一食堂",
+        "displayName": "一食堂",
+        "poiGroupId": "xianlin-canteen-1",
+        "labelVisible": true,
+        "source": "NJUPT_OFFICIAL",
+        "sourceUrl": "https://hqc.njupt.edu.cn/_t311/2014/0905/c5002a66692/page.htm",
+        "reviewStatus": "SOURCE_MATCHED",
+        "reviewedAt": "2026-08-22",
+        "notes": "Primary label and POI anchor for three touching building components; geometry is not merged."
       },
       "geometry": {
         "type": "Polygon",
@@ -1543,12 +1724,23 @@
         "sourceUpdatedAt": null,
         "osmType": "way",
         "osmId": 155434036,
-        "aliases": [],
+        "aliases": [
+          "教3",
+          "教学3号楼"
+        ],
         "category": "OTHER",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
-        "heightSource": "ESTIMATED_FROM_LEVELS"
+        "heightSource": "ESTIMATED_FROM_LEVELS",
+        "officialName": "教学3号楼",
+        "displayName": "教3",
+        "source": "NJUPT_OFFICIAL",
+        "sourceUrl": "https://www.njupt.edu.cn/2024/0705/c72a267415/page.htm",
+        "reviewStatus": "SOURCE_MATCHED",
+        "reviewedAt": "2026-08-22",
+        "notes": "Official source uses 教三; numeric aliases kept conservative.",
+        "labelVisible": true
       },
       "geometry": {
         "type": "Polygon",
@@ -1636,12 +1828,23 @@
         "sourceUpdatedAt": null,
         "osmType": "way",
         "osmId": 223699452,
-        "aliases": [],
+        "aliases": [
+          "教4",
+          "教学4号楼"
+        ],
         "category": "OTHER",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
-        "heightSource": "ESTIMATED_FROM_LEVELS"
+        "heightSource": "ESTIMATED_FROM_LEVELS",
+        "officialName": "教学4号楼",
+        "displayName": "教4",
+        "source": "NJUPT_OFFICIAL",
+        "sourceUrl": "https://hqjt.njupt.edu.cn/2014/1215/c5002a66724/page.htm",
+        "reviewStatus": "SOURCE_MATCHED",
+        "reviewedAt": "2026-08-22",
+        "notes": "No unverified student nickname added.",
+        "labelVisible": true
       },
       "geometry": {
         "type": "Polygon",
@@ -1729,12 +1932,23 @@
         "sourceUpdatedAt": null,
         "osmType": "way",
         "osmId": 223699454,
-        "aliases": [],
+        "aliases": [
+          "教5",
+          "教学5号楼"
+        ],
         "category": "OTHER",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
-        "heightSource": "ESTIMATED_FROM_LEVELS"
+        "heightSource": "ESTIMATED_FROM_LEVELS",
+        "officialName": "教学5号楼",
+        "displayName": "教5",
+        "source": "NJUPT_OFFICIAL",
+        "sourceUrl": "https://hqjt.njupt.edu.cn/2014/1215/c5002a66724/page.htm",
+        "reviewStatus": "SOURCE_MATCHED",
+        "reviewedAt": "2026-08-22",
+        "notes": "No unverified student nickname added.",
+        "labelVisible": true
       },
       "geometry": {
         "type": "Polygon",
@@ -1826,12 +2040,23 @@
         "sourceUpdatedAt": null,
         "osmType": "way",
         "osmId": 223699456,
-        "aliases": [],
+        "aliases": [
+          "教2",
+          "教学2号楼"
+        ],
         "category": "OTHER",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
-        "heightSource": "ESTIMATED_FROM_LEVELS"
+        "heightSource": "ESTIMATED_FROM_LEVELS",
+        "officialName": "教学2号楼",
+        "displayName": "教2",
+        "source": "NJUPT_OFFICIAL",
+        "sourceUrl": "https://hqjt.njupt.edu.cn/2014/1215/c5002a66724/page.htm",
+        "reviewStatus": "SOURCE_MATCHED",
+        "reviewedAt": "2026-08-22",
+        "notes": "No unverified student nickname added.",
+        "labelVisible": true
       },
       "geometry": {
         "type": "Polygon",
@@ -1923,12 +2148,24 @@
         "sourceUpdatedAt": null,
         "osmType": "way",
         "osmId": 223859810,
-        "aliases": [],
+        "aliases": [
+          "图书馆",
+          "仙林图书馆",
+          "仙林校区图书馆"
+        ],
         "category": "LIBRARY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 13.2,
-        "heightSource": "ESTIMATED_FROM_LEVELS"
+        "heightSource": "ESTIMATED_FROM_LEVELS",
+        "officialName": "仙林校区图书馆",
+        "displayName": "图书馆",
+        "source": "NJUPT_OFFICIAL",
+        "sourceUrl": "https://lib.njupt.edu.cn/1384/list.htm",
+        "reviewStatus": "SOURCE_MATCHED",
+        "reviewedAt": "2026-08-22",
+        "notes": "Official library page confirms campus name.",
+        "labelVisible": true
       },
       "geometry": {
         "type": "Polygon",
@@ -2008,7 +2245,10 @@
         "category": "OTHER",
         "minHeight": 0,
         "color": "#D8DDE1",
-        "heightSource": "UNKNOWN"
+        "heightSource": "UNKNOWN",
+        "officialName": null,
+        "displayName": "特大教室",
+        "labelVisible": true
       },
       "geometry": {
         "type": "Polygon",
@@ -2057,7 +2297,10 @@
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
-        "heightSource": "ESTIMATED_FROM_LEVELS"
+        "heightSource": "ESTIMATED_FROM_LEVELS",
+        "officialName": null,
+        "displayName": "连廊",
+        "labelVisible": false
       },
       "geometry": {
         "type": "Polygon",
@@ -2114,7 +2357,10 @@
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
-        "heightSource": "ESTIMATED_FROM_LEVELS"
+        "heightSource": "ESTIMATED_FROM_LEVELS",
+        "officialName": null,
+        "displayName": "连廊",
+        "labelVisible": false
       },
       "geometry": {
         "type": "Polygon",
@@ -2167,7 +2413,10 @@
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
-        "heightSource": "ESTIMATED_FROM_LEVELS"
+        "heightSource": "ESTIMATED_FROM_LEVELS",
+        "officialName": null,
+        "displayName": "电子与光学工程学院、柔性材料（未来技术）学院",
+        "labelVisible": false
       },
       "geometry": {
         "type": "Polygon",
@@ -2219,12 +2468,24 @@
         "sourceUpdatedAt": null,
         "osmType": "way",
         "osmId": 223859783,
-        "aliases": [],
+        "aliases": [
+          "19号楼",
+          "19号宿舍"
+        ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
-        "heightSource": "ESTIMATED_FROM_LEVELS"
+        "heightSource": "ESTIMATED_FROM_LEVELS",
+        "officialName": null,
+        "displayName": "19号楼",
+        "labelVisible": true,
+        "dormitoryCandidate": {
+          "number": "19",
+          "displayName": "19号楼",
+          "confidence": "HIGH",
+          "evidence": "OSM source name begins with the explicit number 19; no spatial-order inference used"
+        }
       },
       "geometry": {
         "type": "Polygon",
@@ -2284,12 +2545,24 @@
         "sourceUpdatedAt": null,
         "osmType": "way",
         "osmId": 223859787,
-        "aliases": [],
+        "aliases": [
+          "10号楼",
+          "10号宿舍"
+        ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
-        "heightSource": "ESTIMATED_FROM_LEVELS"
+        "heightSource": "ESTIMATED_FROM_LEVELS",
+        "officialName": null,
+        "displayName": "10号楼",
+        "labelVisible": true,
+        "dormitoryCandidate": {
+          "number": "10",
+          "displayName": "10号楼",
+          "confidence": "HIGH",
+          "evidence": "OSM source name begins with the explicit number 10; no spatial-order inference used"
+        }
       },
       "geometry": {
         "type": "Polygon",
@@ -2357,12 +2630,24 @@
         "sourceUpdatedAt": null,
         "osmType": "way",
         "osmId": 223859790,
-        "aliases": [],
+        "aliases": [
+          "20号楼",
+          "20号宿舍"
+        ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
-        "heightSource": "ESTIMATED_FROM_LEVELS"
+        "heightSource": "ESTIMATED_FROM_LEVELS",
+        "officialName": null,
+        "displayName": "20号楼",
+        "labelVisible": true,
+        "dormitoryCandidate": {
+          "number": "20",
+          "displayName": "20号楼",
+          "confidence": "HIGH",
+          "evidence": "OSM source name begins with the explicit number 20; no spatial-order inference used"
+        }
       },
       "geometry": {
         "type": "Polygon",
@@ -2442,12 +2727,24 @@
         "sourceUpdatedAt": null,
         "osmType": "way",
         "osmId": 223859791,
-        "aliases": [],
+        "aliases": [
+          "17号楼",
+          "17号宿舍"
+        ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
-        "heightSource": "ESTIMATED_FROM_LEVELS"
+        "heightSource": "ESTIMATED_FROM_LEVELS",
+        "officialName": null,
+        "displayName": "17号楼",
+        "labelVisible": true,
+        "dormitoryCandidate": {
+          "number": "17",
+          "displayName": "17号楼",
+          "confidence": "HIGH",
+          "evidence": "OSM source name begins with the explicit number 17; no spatial-order inference used"
+        }
       },
       "geometry": {
         "type": "Polygon",
@@ -2511,12 +2808,24 @@
         "sourceUpdatedAt": null,
         "osmType": "way",
         "osmId": 223859796,
-        "aliases": [],
+        "aliases": [
+          "15号楼",
+          "15号宿舍"
+        ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
-        "heightSource": "ESTIMATED_FROM_LEVELS"
+        "heightSource": "ESTIMATED_FROM_LEVELS",
+        "officialName": null,
+        "displayName": "15号楼",
+        "labelVisible": true,
+        "dormitoryCandidate": {
+          "number": "15",
+          "displayName": "15号楼",
+          "confidence": "HIGH",
+          "evidence": "OSM source name begins with the explicit number 15; no spatial-order inference used"
+        }
       },
       "geometry": {
         "type": "Polygon",
@@ -2612,12 +2921,24 @@
         "sourceUpdatedAt": null,
         "osmType": "way",
         "osmId": 223859801,
-        "aliases": [],
+        "aliases": [
+          "4号楼",
+          "4号宿舍"
+        ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
-        "heightSource": "ESTIMATED_FROM_LEVELS"
+        "heightSource": "ESTIMATED_FROM_LEVELS",
+        "officialName": null,
+        "displayName": "4号楼",
+        "labelVisible": true,
+        "dormitoryCandidate": {
+          "number": "4",
+          "displayName": "4号楼",
+          "confidence": "HIGH",
+          "evidence": "OSM source name begins with the explicit number 4; no spatial-order inference used"
+        }
       },
       "geometry": {
         "type": "Polygon",
@@ -2677,12 +2998,24 @@
         "sourceUpdatedAt": null,
         "osmType": "way",
         "osmId": 223859809,
-        "aliases": [],
+        "aliases": [
+          "8号楼",
+          "8号宿舍"
+        ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
-        "heightSource": "ESTIMATED_FROM_LEVELS"
+        "heightSource": "ESTIMATED_FROM_LEVELS",
+        "officialName": null,
+        "displayName": "8号楼",
+        "labelVisible": true,
+        "dormitoryCandidate": {
+          "number": "8",
+          "displayName": "8号楼",
+          "confidence": "HIGH",
+          "evidence": "OSM source name begins with the explicit number 8; no spatial-order inference used"
+        }
       },
       "geometry": {
         "type": "Polygon",
@@ -2750,12 +3083,24 @@
         "sourceUpdatedAt": null,
         "osmType": "way",
         "osmId": 223859815,
-        "aliases": [],
+        "aliases": [
+          "13号楼",
+          "13号宿舍"
+        ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
-        "heightSource": "ESTIMATED_FROM_LEVELS"
+        "heightSource": "ESTIMATED_FROM_LEVELS",
+        "officialName": null,
+        "displayName": "13号楼",
+        "labelVisible": true,
+        "dormitoryCandidate": {
+          "number": "13",
+          "displayName": "13号楼",
+          "confidence": "HIGH",
+          "evidence": "OSM source name begins with the explicit number 13; no spatial-order inference used"
+        }
       },
       "geometry": {
         "type": "Polygon",
@@ -2839,12 +3184,24 @@
         "sourceUpdatedAt": null,
         "osmType": "way",
         "osmId": 223859816,
-        "aliases": [],
+        "aliases": [
+          "14号楼",
+          "14号宿舍"
+        ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
-        "heightSource": "ESTIMATED_FROM_LEVELS"
+        "heightSource": "ESTIMATED_FROM_LEVELS",
+        "officialName": null,
+        "displayName": "14号楼",
+        "labelVisible": true,
+        "dormitoryCandidate": {
+          "number": "14",
+          "displayName": "14号楼",
+          "confidence": "HIGH",
+          "evidence": "OSM source name begins with the explicit number 14; no spatial-order inference used"
+        }
       },
       "geometry": {
         "type": "Polygon",
@@ -2932,12 +3289,24 @@
         "sourceUpdatedAt": null,
         "osmType": "way",
         "osmId": 223859832,
-        "aliases": [],
+        "aliases": [
+          "2号楼",
+          "2号宿舍"
+        ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
-        "heightSource": "ESTIMATED_FROM_LEVELS"
+        "heightSource": "ESTIMATED_FROM_LEVELS",
+        "officialName": null,
+        "displayName": "2号楼",
+        "labelVisible": true,
+        "dormitoryCandidate": {
+          "number": "2",
+          "displayName": "2号楼",
+          "confidence": "HIGH",
+          "evidence": "OSM source name begins with the explicit number 2; no spatial-order inference used"
+        }
       },
       "geometry": {
         "type": "Polygon",
@@ -3001,12 +3370,24 @@
         "sourceUpdatedAt": null,
         "osmType": "way",
         "osmId": 223859840,
-        "aliases": [],
+        "aliases": [
+          "18号楼",
+          "18号宿舍"
+        ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
-        "heightSource": "ESTIMATED_FROM_LEVELS"
+        "heightSource": "ESTIMATED_FROM_LEVELS",
+        "officialName": null,
+        "displayName": "18号楼",
+        "labelVisible": true,
+        "dormitoryCandidate": {
+          "number": "18",
+          "displayName": "18号楼",
+          "confidence": "HIGH",
+          "evidence": "OSM source name begins with the explicit number 18; no spatial-order inference used"
+        }
       },
       "geometry": {
         "type": "Polygon",
@@ -3074,12 +3455,24 @@
         "sourceUpdatedAt": null,
         "osmType": "way",
         "osmId": 223859846,
-        "aliases": [],
+        "aliases": [
+          "21号楼",
+          "21号宿舍"
+        ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
-        "heightSource": "ESTIMATED_FROM_LEVELS"
+        "heightSource": "ESTIMATED_FROM_LEVELS",
+        "officialName": null,
+        "displayName": "21号楼",
+        "labelVisible": true,
+        "dormitoryCandidate": {
+          "number": "21",
+          "displayName": "21号楼",
+          "confidence": "HIGH",
+          "evidence": "OSM source name begins with the explicit number 21; no spatial-order inference used"
+        }
       },
       "geometry": {
         "type": "Polygon",
@@ -3167,7 +3560,10 @@
         "category": "OTHER",
         "minHeight": 0,
         "color": "#D8DDE1",
-        "heightSource": "UNKNOWN"
+        "heightSource": "UNKNOWN",
+        "officialName": null,
+        "displayName": "热水房",
+        "labelVisible": true
       },
       "geometry": {
         "type": "Polygon",
@@ -3211,12 +3607,24 @@
         "sourceUpdatedAt": null,
         "osmType": "way",
         "osmId": 1390009973,
-        "aliases": [],
+        "aliases": [
+          "一食堂",
+          "仙林一食堂"
+        ],
         "category": "DINING",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 9.9,
-        "heightSource": "ESTIMATED_FROM_LEVELS"
+        "heightSource": "ESTIMATED_FROM_LEVELS",
+        "officialName": "仙林一食堂",
+        "displayName": "一食堂",
+        "poiGroupId": "xianlin-canteen-1",
+        "labelVisible": false,
+        "source": "NJUPT_OFFICIAL",
+        "sourceUrl": "https://hqc.njupt.edu.cn/_t311/2014/0905/c5002a66692/page.htm",
+        "reviewStatus": "SOURCE_MATCHED",
+        "reviewedAt": "2026-08-22",
+        "notes": "Secondary polygon in connected canteen complex; duplicate label suppressed."
       },
       "geometry": {
         "type": "Polygon",
@@ -3340,12 +3748,24 @@
         "sourceUpdatedAt": null,
         "osmType": "way",
         "osmId": 1390009975,
-        "aliases": [],
+        "aliases": [
+          "一食堂",
+          "仙林一食堂"
+        ],
         "category": "DINING",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 9.9,
-        "heightSource": "ESTIMATED_FROM_LEVELS"
+        "heightSource": "ESTIMATED_FROM_LEVELS",
+        "officialName": "仙林一食堂",
+        "displayName": "一食堂",
+        "poiGroupId": "xianlin-canteen-1",
+        "labelVisible": false,
+        "source": "NJUPT_OFFICIAL",
+        "sourceUrl": "https://hqc.njupt.edu.cn/_t311/2014/0905/c5002a66692/page.htm",
+        "reviewStatus": "SOURCE_MATCHED",
+        "reviewedAt": "2026-08-22",
+        "notes": "Secondary polygon in connected canteen complex; duplicate label suppressed."
       },
       "geometry": {
         "type": "Polygon",
@@ -3513,7 +3933,16 @@
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
-        "heightSource": "UNKNOWN"
+        "heightSource": "UNKNOWN",
+        "officialName": null,
+        "displayName": "青教公寓",
+        "labelVisible": false,
+        "dormitoryCandidate": {
+          "number": "",
+          "displayName": "青教公寓",
+          "confidence": "UNKNOWN",
+          "evidence": "Dormitory category is source-backed, but the source name contains no numeric identifier"
+        }
       },
       "geometry": {
         "type": "Polygon",
@@ -3562,7 +3991,10 @@
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 9.9,
-        "heightSource": "ESTIMATED_FROM_LEVELS"
+        "heightSource": "ESTIMATED_FROM_LEVELS",
+        "officialName": null,
+        "displayName": "看台",
+        "labelVisible": true
       },
       "geometry": {
         "type": "Polygon",
@@ -3631,7 +4063,10 @@
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 9.9,
-        "heightSource": "ESTIMATED_FROM_LEVELS"
+        "heightSource": "ESTIMATED_FROM_LEVELS",
+        "officialName": null,
+        "displayName": "主席台",
+        "labelVisible": false
       },
       "geometry": {
         "type": "Polygon",
@@ -3727,11 +4162,21 @@
         "sourceUpdatedAt": null,
         "osmType": "way",
         "osmId": 223944205,
-        "aliases": [],
+        "aliases": [
+          "青春剧场"
+        ],
         "category": "OTHER",
         "minHeight": 0,
         "color": "#D8DDE1",
-        "heightSource": "UNKNOWN"
+        "heightSource": "UNKNOWN",
+        "officialName": "青春剧场",
+        "displayName": "青春剧场",
+        "source": "NJUPT_OFFICIAL",
+        "sourceUrl": "https://www.njupt.edu.cn/2026/0420/c17121a300358/page.htm",
+        "reviewStatus": "SOURCE_MATCHED",
+        "reviewedAt": "2026-08-22",
+        "notes": "Official source confirms the venue name.",
+        "labelVisible": true
       },
       "geometry": {
         "type": "Polygon",
@@ -3839,11 +4284,21 @@
         "sourceUpdatedAt": null,
         "osmType": "way",
         "osmId": 223944209,
-        "aliases": [],
+        "aliases": [
+          "大学生活动中心"
+        ],
         "category": "OTHER",
         "minHeight": 0,
         "color": "#D8DDE1",
-        "heightSource": "UNKNOWN"
+        "heightSource": "UNKNOWN",
+        "officialName": "大学生活动中心",
+        "displayName": "大学生活动中心",
+        "source": "NJUPT_OFFICIAL",
+        "sourceUrl": "https://www.njupt.edu.cn/2026/0420/c17121a300358/page.htm",
+        "reviewStatus": "SOURCE_MATCHED",
+        "reviewedAt": "2026-08-22",
+        "notes": "Official source confirms the public place name.",
+        "labelVisible": true
       },
       "geometry": {
         "type": "Polygon",
@@ -3939,7 +4394,10 @@
         "category": "OTHER",
         "minHeight": 0,
         "color": "#D8DDE1",
-        "heightSource": "UNKNOWN"
+        "heightSource": "UNKNOWN",
+        "officialName": null,
+        "displayName": "门卫",
+        "labelVisible": false
       },
       "geometry": {
         "type": "Polygon",
@@ -3983,12 +4441,24 @@
         "sourceUpdatedAt": null,
         "osmType": "way",
         "osmId": 225253706,
-        "aliases": [],
+        "aliases": [
+          "46号楼",
+          "46号宿舍"
+        ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
-        "heightSource": "ESTIMATED_FROM_LEVELS"
+        "heightSource": "ESTIMATED_FROM_LEVELS",
+        "officialName": null,
+        "displayName": "46号楼",
+        "labelVisible": true,
+        "dormitoryCandidate": {
+          "number": "46",
+          "displayName": "46号楼",
+          "confidence": "HIGH",
+          "evidence": "OSM source name begins with the explicit number 46; no spatial-order inference used"
+        }
       },
       "geometry": {
         "type": "Polygon",
@@ -4072,12 +4542,24 @@
         "sourceUpdatedAt": null,
         "osmType": "way",
         "osmId": 225253707,
-        "aliases": [],
+        "aliases": [
+          "47号楼",
+          "47号宿舍"
+        ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
-        "heightSource": "ESTIMATED_FROM_LEVELS"
+        "heightSource": "ESTIMATED_FROM_LEVELS",
+        "officialName": null,
+        "displayName": "47号楼",
+        "labelVisible": true,
+        "dormitoryCandidate": {
+          "number": "47",
+          "displayName": "47号楼",
+          "confidence": "HIGH",
+          "evidence": "OSM source name begins with the explicit number 47; no spatial-order inference used"
+        }
       },
       "geometry": {
         "type": "Polygon",
@@ -4169,12 +4651,24 @@
         "sourceUpdatedAt": null,
         "osmType": "way",
         "osmId": 225253711,
-        "aliases": [],
+        "aliases": [
+          "48号楼",
+          "48号宿舍"
+        ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
-        "heightSource": "ESTIMATED_FROM_LEVELS"
+        "heightSource": "ESTIMATED_FROM_LEVELS",
+        "officialName": null,
+        "displayName": "48号楼",
+        "labelVisible": true,
+        "dormitoryCandidate": {
+          "number": "48",
+          "displayName": "48号楼",
+          "confidence": "HIGH",
+          "evidence": "OSM source name begins with the explicit number 48; no spatial-order inference used"
+        }
       },
       "geometry": {
         "type": "Polygon",
@@ -4258,12 +4752,24 @@
         "sourceUpdatedAt": null,
         "osmType": "way",
         "osmId": 225253712,
-        "aliases": [],
+        "aliases": [
+          "49号楼",
+          "49号宿舍"
+        ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
-        "heightSource": "ESTIMATED_FROM_LEVELS"
+        "heightSource": "ESTIMATED_FROM_LEVELS",
+        "officialName": null,
+        "displayName": "49号楼",
+        "labelVisible": true,
+        "dormitoryCandidate": {
+          "number": "49",
+          "displayName": "49号楼",
+          "confidence": "HIGH",
+          "evidence": "OSM source name begins with the explicit number 49; no spatial-order inference used"
+        }
       },
       "geometry": {
         "type": "Polygon",
@@ -4344,7 +4850,10 @@
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
-        "heightSource": "ESTIMATED_FROM_LEVELS"
+        "heightSource": "ESTIMATED_FROM_LEVELS",
+        "officialName": null,
+        "displayName": "地理与生物信息学院",
+        "labelVisible": false
       },
       "geometry": {
         "type": "Polygon",
@@ -4393,7 +4902,10 @@
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
-        "heightSource": "ESTIMATED_FROM_LEVELS"
+        "heightSource": "ESTIMATED_FROM_LEVELS",
+        "officialName": null,
+        "displayName": "集成电路科学与工程学院",
+        "labelVisible": false
       },
       "geometry": {
         "type": "Polygon",
@@ -4442,7 +4954,10 @@
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
-        "heightSource": "ESTIMATED_FROM_LEVELS"
+        "heightSource": "ESTIMATED_FROM_LEVELS",
+        "officialName": null,
+        "displayName": "工程实验教学部",
+        "labelVisible": false
       },
       "geometry": {
         "type": "Polygon",
@@ -4499,7 +5014,10 @@
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
-        "heightSource": "ESTIMATED_FROM_LEVELS"
+        "heightSource": "ESTIMATED_FROM_LEVELS",
+        "officialName": null,
+        "displayName": "计算机学院、软件学院、网络空间安全学院",
+        "labelVisible": false
       },
       "geometry": {
         "type": "Polygon",
@@ -4587,12 +5105,22 @@
         "sourceUpdatedAt": null,
         "osmType": "way",
         "osmId": 1173057056,
-        "aliases": [],
+        "aliases": [
+          "文科楼"
+        ],
         "category": "TEACHING",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
-        "heightSource": "ESTIMATED_FROM_LEVELS"
+        "heightSource": "ESTIMATED_FROM_LEVELS",
+        "officialName": "文科楼",
+        "displayName": "文科楼",
+        "source": "NJUPT_OFFICIAL",
+        "sourceUrl": "https://www.njupt.edu.cn/2024/0705/c72a267415/page.htm",
+        "reviewStatus": "SOURCE_MATCHED",
+        "reviewedAt": "2026-08-22",
+        "notes": "Official campus page uses 文科楼; the longer OSM institution prefix remains in compatible name.",
+        "labelVisible": true
       },
       "geometry": {
         "type": "Polygon",
@@ -4657,7 +5185,10 @@
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
-        "heightSource": "ESTIMATED_FROM_LEVELS"
+        "heightSource": "ESTIMATED_FROM_LEVELS",
+        "officialName": null,
+        "displayName": "材料科学与工程学院-新大楼",
+        "labelVisible": false
       },
       "geometry": {
         "type": "Polygon",
@@ -4733,12 +5264,22 @@
         "sourceUpdatedAt": null,
         "osmType": "way",
         "osmId": 1281082570,
-        "aliases": [],
+        "aliases": [
+          "新体育馆"
+        ],
         "category": "SPORT",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 13.2,
-        "heightSource": "ESTIMATED_FROM_LEVELS"
+        "heightSource": "ESTIMATED_FROM_LEVELS",
+        "officialName": "新体育馆",
+        "displayName": "新体育馆",
+        "source": "OPENSTREETMAP",
+        "sourceUrl": "https://www.openstreetmap.org/way/1281082570",
+        "reviewStatus": "SOURCE_ONLY",
+        "reviewedAt": "2026-08-22",
+        "notes": "Explicit OSM name retained; field verification remains desirable.",
+        "labelVisible": true
       },
       "geometry": {
         "type": "Polygon",
@@ -4810,7 +5351,10 @@
         "category": "OTHER",
         "minHeight": 0,
         "color": "#D8DDE1",
-        "heightSource": "UNKNOWN"
+        "heightSource": "UNKNOWN",
+        "officialName": null,
+        "displayName": "门卫",
+        "labelVisible": false
       },
       "geometry": {
         "type": "Polygon",
@@ -4898,7 +5442,10 @@
         "category": "ADMINISTRATION",
         "minHeight": 0,
         "color": "#D8DDE1",
-        "heightSource": "UNKNOWN"
+        "heightSource": "UNKNOWN",
+        "officialName": null,
+        "displayName": "收发室",
+        "labelVisible": true
       },
       "geometry": {
         "type": "Polygon",
@@ -4946,7 +5493,10 @@
         "category": "OTHER",
         "minHeight": 0,
         "color": "#D8DDE1",
-        "heightSource": "UNKNOWN"
+        "heightSource": "UNKNOWN",
+        "officialName": null,
+        "displayName": "主席台",
+        "labelVisible": false
       },
       "geometry": {
         "type": "Polygon",
@@ -4990,12 +5540,24 @@
         "sourceUpdatedAt": null,
         "osmType": "way",
         "osmId": 225198908,
-        "aliases": [],
+        "aliases": [
+          "22号楼",
+          "22号宿舍"
+        ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
-        "heightSource": "ESTIMATED_FROM_LEVELS"
+        "heightSource": "ESTIMATED_FROM_LEVELS",
+        "officialName": null,
+        "displayName": "22号楼",
+        "labelVisible": true,
+        "dormitoryCandidate": {
+          "number": "22",
+          "displayName": "22号楼",
+          "confidence": "HIGH",
+          "evidence": "OSM source name begins with the explicit number 22; no spatial-order inference used"
+        }
       },
       "geometry": {
         "type": "Polygon",
@@ -5091,12 +5653,24 @@
         "sourceUpdatedAt": null,
         "osmType": "way",
         "osmId": 225198910,
-        "aliases": [],
+        "aliases": [
+          "24号楼",
+          "24号宿舍"
+        ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
-        "heightSource": "ESTIMATED_FROM_LEVELS"
+        "heightSource": "ESTIMATED_FROM_LEVELS",
+        "officialName": null,
+        "displayName": "24号楼",
+        "labelVisible": true,
+        "dormitoryCandidate": {
+          "number": "24",
+          "displayName": "24号楼",
+          "confidence": "HIGH",
+          "evidence": "OSM source name begins with the explicit number 24; no spatial-order inference used"
+        }
       },
       "geometry": {
         "type": "Polygon",
@@ -5192,12 +5766,24 @@
         "sourceUpdatedAt": null,
         "osmType": "way",
         "osmId": 225198912,
-        "aliases": [],
+        "aliases": [
+          "26号楼",
+          "26号宿舍"
+        ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
-        "heightSource": "ESTIMATED_FROM_LEVELS"
+        "heightSource": "ESTIMATED_FROM_LEVELS",
+        "officialName": null,
+        "displayName": "26号楼",
+        "labelVisible": true,
+        "dormitoryCandidate": {
+          "number": "26",
+          "displayName": "26号楼",
+          "confidence": "HIGH",
+          "evidence": "OSM source name begins with the explicit number 26; no spatial-order inference used"
+        }
       },
       "geometry": {
         "type": "Polygon",
@@ -5269,12 +5855,24 @@
         "sourceUpdatedAt": null,
         "osmType": "way",
         "osmId": 225242507,
-        "aliases": [],
+        "aliases": [
+          "28号楼",
+          "28号宿舍"
+        ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
-        "heightSource": "ESTIMATED_FROM_LEVELS"
+        "heightSource": "ESTIMATED_FROM_LEVELS",
+        "officialName": null,
+        "displayName": "28号楼",
+        "labelVisible": true,
+        "dormitoryCandidate": {
+          "number": "28",
+          "displayName": "28号楼",
+          "confidence": "HIGH",
+          "evidence": "OSM source name begins with the explicit number 28; no spatial-order inference used"
+        }
       },
       "geometry": {
         "type": "Polygon",
@@ -5362,12 +5960,24 @@
         "sourceUpdatedAt": null,
         "osmType": "way",
         "osmId": 225242509,
-        "aliases": [],
+        "aliases": [
+          "29号楼",
+          "29号宿舍"
+        ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
-        "heightSource": "ESTIMATED_FROM_LEVELS"
+        "heightSource": "ESTIMATED_FROM_LEVELS",
+        "officialName": null,
+        "displayName": "29号楼",
+        "labelVisible": true,
+        "dormitoryCandidate": {
+          "number": "29",
+          "displayName": "29号楼",
+          "confidence": "HIGH",
+          "evidence": "OSM source name begins with the explicit number 29; no spatial-order inference used"
+        }
       },
       "geometry": {
         "type": "Polygon",
@@ -5471,12 +6081,24 @@
         "sourceUpdatedAt": null,
         "osmType": "way",
         "osmId": 225242511,
-        "aliases": [],
+        "aliases": [
+          "30号楼",
+          "30号宿舍"
+        ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
-        "heightSource": "ESTIMATED_FROM_LEVELS"
+        "heightSource": "ESTIMATED_FROM_LEVELS",
+        "officialName": null,
+        "displayName": "30号楼",
+        "labelVisible": true,
+        "dormitoryCandidate": {
+          "number": "30",
+          "displayName": "30号楼",
+          "confidence": "HIGH",
+          "evidence": "OSM source name begins with the explicit number 30; no spatial-order inference used"
+        }
       },
       "geometry": {
         "type": "Polygon",
@@ -5572,12 +6194,24 @@
         "sourceUpdatedAt": null,
         "osmType": "way",
         "osmId": 225242513,
-        "aliases": [],
+        "aliases": [
+          "31号楼",
+          "31号宿舍"
+        ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
-        "heightSource": "ESTIMATED_FROM_LEVELS"
+        "heightSource": "ESTIMATED_FROM_LEVELS",
+        "officialName": null,
+        "displayName": "31号楼",
+        "labelVisible": true,
+        "dormitoryCandidate": {
+          "number": "31",
+          "displayName": "31号楼",
+          "confidence": "HIGH",
+          "evidence": "OSM source name begins with the explicit number 31; no spatial-order inference used"
+        }
       },
       "geometry": {
         "type": "Polygon",
@@ -5649,12 +6283,24 @@
         "sourceUpdatedAt": null,
         "osmType": "way",
         "osmId": 225242515,
-        "aliases": [],
+        "aliases": [
+          "32号楼",
+          "32号宿舍"
+        ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
-        "heightSource": "ESTIMATED_FROM_LEVELS"
+        "heightSource": "ESTIMATED_FROM_LEVELS",
+        "officialName": null,
+        "displayName": "32号楼",
+        "labelVisible": true,
+        "dormitoryCandidate": {
+          "number": "32",
+          "displayName": "32号楼",
+          "confidence": "HIGH",
+          "evidence": "OSM source name begins with the explicit number 32; no spatial-order inference used"
+        }
       },
       "geometry": {
         "type": "Polygon",
@@ -5718,12 +6364,24 @@
         "sourceUpdatedAt": null,
         "osmType": "way",
         "osmId": 225242517,
-        "aliases": [],
+        "aliases": [
+          "33号楼",
+          "33号宿舍"
+        ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
-        "heightSource": "ESTIMATED_FROM_LEVELS"
+        "heightSource": "ESTIMATED_FROM_LEVELS",
+        "officialName": null,
+        "displayName": "33号楼",
+        "labelVisible": true,
+        "dormitoryCandidate": {
+          "number": "33",
+          "displayName": "33号楼",
+          "confidence": "HIGH",
+          "evidence": "OSM source name begins with the explicit number 33; no spatial-order inference used"
+        }
       },
       "geometry": {
         "type": "Polygon",
@@ -5807,12 +6465,24 @@
         "sourceUpdatedAt": null,
         "osmType": "way",
         "osmId": 225250615,
-        "aliases": [],
+        "aliases": [
+          "34号楼",
+          "34号宿舍"
+        ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
-        "heightSource": "ESTIMATED_FROM_LEVELS"
+        "heightSource": "ESTIMATED_FROM_LEVELS",
+        "officialName": null,
+        "displayName": "34号楼",
+        "labelVisible": true,
+        "dormitoryCandidate": {
+          "number": "34",
+          "displayName": "34号楼",
+          "confidence": "HIGH",
+          "evidence": "OSM source name begins with the explicit number 34; no spatial-order inference used"
+        }
       },
       "geometry": {
         "type": "Polygon",
@@ -5896,12 +6566,24 @@
         "sourceUpdatedAt": null,
         "osmType": "way",
         "osmId": 225250617,
-        "aliases": [],
+        "aliases": [
+          "36号楼",
+          "36号宿舍"
+        ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
-        "heightSource": "ESTIMATED_FROM_LEVELS"
+        "heightSource": "ESTIMATED_FROM_LEVELS",
+        "officialName": null,
+        "displayName": "36号楼",
+        "labelVisible": true,
+        "dormitoryCandidate": {
+          "number": "36",
+          "displayName": "36号楼",
+          "confidence": "HIGH",
+          "evidence": "OSM source name begins with the explicit number 36; no spatial-order inference used"
+        }
       },
       "geometry": {
         "type": "Polygon",
@@ -6005,12 +6687,24 @@
         "sourceUpdatedAt": null,
         "osmType": "way",
         "osmId": 225250618,
-        "aliases": [],
+        "aliases": [
+          "37号楼",
+          "37号宿舍"
+        ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
-        "heightSource": "ESTIMATED_FROM_LEVELS"
+        "heightSource": "ESTIMATED_FROM_LEVELS",
+        "officialName": null,
+        "displayName": "37号楼",
+        "labelVisible": true,
+        "dormitoryCandidate": {
+          "number": "37",
+          "displayName": "37号楼",
+          "confidence": "HIGH",
+          "evidence": "OSM source name begins with the explicit number 37; no spatial-order inference used"
+        }
       },
       "geometry": {
         "type": "Polygon",
@@ -6086,12 +6780,24 @@
         "sourceUpdatedAt": null,
         "osmType": "way",
         "osmId": 225250619,
-        "aliases": [],
+        "aliases": [
+          "38号楼",
+          "38号宿舍"
+        ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
-        "heightSource": "ESTIMATED_FROM_LEVELS"
+        "heightSource": "ESTIMATED_FROM_LEVELS",
+        "officialName": null,
+        "displayName": "38号楼",
+        "labelVisible": true,
+        "dormitoryCandidate": {
+          "number": "38",
+          "displayName": "38号楼",
+          "confidence": "HIGH",
+          "evidence": "OSM source name begins with the explicit number 38; no spatial-order inference used"
+        }
       },
       "geometry": {
         "type": "Polygon",
@@ -6163,12 +6869,24 @@
         "sourceUpdatedAt": null,
         "osmType": "way",
         "osmId": 225250620,
-        "aliases": [],
+        "aliases": [
+          "39号楼",
+          "39号宿舍"
+        ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
-        "heightSource": "ESTIMATED_FROM_LEVELS"
+        "heightSource": "ESTIMATED_FROM_LEVELS",
+        "officialName": null,
+        "displayName": "39号楼",
+        "labelVisible": true,
+        "dormitoryCandidate": {
+          "number": "39",
+          "displayName": "39号楼",
+          "confidence": "HIGH",
+          "evidence": "OSM source name begins with the explicit number 39; no spatial-order inference used"
+        }
       },
       "geometry": {
         "type": "Polygon",
@@ -6252,12 +6970,24 @@
         "sourceUpdatedAt": null,
         "osmType": "way",
         "osmId": 225251648,
-        "aliases": [],
+        "aliases": [
+          "35号楼",
+          "35号宿舍"
+        ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
-        "heightSource": "ESTIMATED_FROM_LEVELS"
+        "heightSource": "ESTIMATED_FROM_LEVELS",
+        "officialName": null,
+        "displayName": "35号楼",
+        "labelVisible": true,
+        "dormitoryCandidate": {
+          "number": "35",
+          "displayName": "35号楼",
+          "confidence": "HIGH",
+          "evidence": "OSM source name begins with the explicit number 35; no spatial-order inference used"
+        }
       },
       "geometry": {
         "type": "Polygon",
@@ -6357,12 +7087,24 @@
         "sourceUpdatedAt": null,
         "osmType": "way",
         "osmId": 225255198,
-        "aliases": [],
+        "aliases": [
+          "40号楼",
+          "40号宿舍"
+        ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
-        "heightSource": "ESTIMATED_FROM_LEVELS"
+        "heightSource": "ESTIMATED_FROM_LEVELS",
+        "officialName": null,
+        "displayName": "40号楼",
+        "labelVisible": true,
+        "dormitoryCandidate": {
+          "number": "40",
+          "displayName": "40号楼",
+          "confidence": "HIGH",
+          "evidence": "OSM source name begins with the explicit number 40; no spatial-order inference used"
+        }
       },
       "geometry": {
         "type": "Polygon",
@@ -6446,12 +7188,24 @@
         "sourceUpdatedAt": null,
         "osmType": "way",
         "osmId": 225255200,
-        "aliases": [],
+        "aliases": [
+          "44号楼",
+          "44号宿舍"
+        ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
-        "heightSource": "ESTIMATED_FROM_LEVELS"
+        "heightSource": "ESTIMATED_FROM_LEVELS",
+        "officialName": null,
+        "displayName": "44号楼",
+        "labelVisible": true,
+        "dormitoryCandidate": {
+          "number": "44",
+          "displayName": "44号楼",
+          "confidence": "HIGH",
+          "evidence": "OSM source name begins with the explicit number 44; no spatial-order inference used"
+        }
       },
       "geometry": {
         "type": "Polygon",
@@ -6527,12 +7281,24 @@
         "sourceUpdatedAt": null,
         "osmType": "way",
         "osmId": 225255202,
-        "aliases": [],
+        "aliases": [
+          "42号楼",
+          "42号宿舍"
+        ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
-        "heightSource": "ESTIMATED_FROM_LEVELS"
+        "heightSource": "ESTIMATED_FROM_LEVELS",
+        "officialName": null,
+        "displayName": "42号楼",
+        "labelVisible": true,
+        "dormitoryCandidate": {
+          "number": "42",
+          "displayName": "42号楼",
+          "confidence": "HIGH",
+          "evidence": "OSM source name begins with the explicit number 42; no spatial-order inference used"
+        }
       },
       "geometry": {
         "type": "Polygon",
@@ -6640,11 +7406,22 @@
         "sourceUpdatedAt": null,
         "osmType": "way",
         "osmId": 224896131,
-        "aliases": [],
+        "aliases": [
+          "三食堂",
+          "仙林三食堂"
+        ],
         "category": "DINING",
         "minHeight": 0,
         "color": "#D8DDE1",
-        "heightSource": "UNKNOWN"
+        "heightSource": "UNKNOWN",
+        "officialName": "仙林三食堂",
+        "displayName": "三食堂",
+        "source": "NJUPT_OFFICIAL",
+        "sourceUrl": "https://hqc.njupt.edu.cn/_t311/2014/0905/c5002a66692/page.htm",
+        "reviewStatus": "SOURCE_MATCHED",
+        "reviewedAt": "2026-08-22",
+        "notes": "Official service page confirms the campus canteen name.",
+        "labelVisible": true
       },
       "geometry": {
         "type": "Polygon",
@@ -6784,12 +7561,24 @@
         "sourceUpdatedAt": null,
         "osmType": "way",
         "osmId": 225198909,
-        "aliases": [],
+        "aliases": [
+          "23号楼",
+          "23号宿舍"
+        ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
-        "heightSource": "ESTIMATED_FROM_LEVELS"
+        "heightSource": "ESTIMATED_FROM_LEVELS",
+        "officialName": null,
+        "displayName": "23号楼",
+        "labelVisible": true,
+        "dormitoryCandidate": {
+          "number": "23",
+          "displayName": "23号楼",
+          "confidence": "HIGH",
+          "evidence": "OSM source name begins with the explicit number 23; no spatial-order inference used"
+        }
       },
       "geometry": {
         "type": "Polygon",
@@ -6865,12 +7654,24 @@
         "sourceUpdatedAt": null,
         "osmType": "way",
         "osmId": 225198911,
-        "aliases": [],
+        "aliases": [
+          "25号楼",
+          "25号宿舍"
+        ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
-        "heightSource": "ESTIMATED_FROM_LEVELS"
+        "heightSource": "ESTIMATED_FROM_LEVELS",
+        "officialName": null,
+        "displayName": "25号楼",
+        "labelVisible": true,
+        "dormitoryCandidate": {
+          "number": "25",
+          "displayName": "25号楼",
+          "confidence": "HIGH",
+          "evidence": "OSM source name begins with the explicit number 25; no spatial-order inference used"
+        }
       },
       "geometry": {
         "type": "Polygon",
@@ -6962,12 +7763,24 @@
         "sourceUpdatedAt": null,
         "osmType": "way",
         "osmId": 225198913,
-        "aliases": [],
+        "aliases": [
+          "27号楼",
+          "27号宿舍"
+        ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
-        "heightSource": "ESTIMATED_FROM_LEVELS"
+        "heightSource": "ESTIMATED_FROM_LEVELS",
+        "officialName": null,
+        "displayName": "27号楼",
+        "labelVisible": true,
+        "dormitoryCandidate": {
+          "number": "27",
+          "displayName": "27号楼",
+          "confidence": "HIGH",
+          "evidence": "OSM source name begins with the explicit number 27; no spatial-order inference used"
+        }
       },
       "geometry": {
         "type": "Polygon",
@@ -7051,12 +7864,24 @@
         "sourceUpdatedAt": null,
         "osmType": "way",
         "osmId": 225255192,
-        "aliases": [],
+        "aliases": [
+          "45号楼",
+          "45号宿舍"
+        ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
-        "heightSource": "ESTIMATED_FROM_LEVELS"
+        "heightSource": "ESTIMATED_FROM_LEVELS",
+        "officialName": null,
+        "displayName": "45号楼",
+        "labelVisible": true,
+        "dormitoryCandidate": {
+          "number": "45",
+          "displayName": "45号楼",
+          "confidence": "HIGH",
+          "evidence": "OSM source name begins with the explicit number 45; no spatial-order inference used"
+        }
       },
       "geometry": {
         "type": "Polygon",
@@ -7144,12 +7969,24 @@
         "sourceUpdatedAt": null,
         "osmType": "way",
         "osmId": 225255194,
-        "aliases": [],
+        "aliases": [
+          "43号楼",
+          "43号宿舍"
+        ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
-        "heightSource": "ESTIMATED_FROM_LEVELS"
+        "heightSource": "ESTIMATED_FROM_LEVELS",
+        "officialName": null,
+        "displayName": "43号楼",
+        "labelVisible": true,
+        "dormitoryCandidate": {
+          "number": "43",
+          "displayName": "43号楼",
+          "confidence": "HIGH",
+          "evidence": "OSM source name begins with the explicit number 43; no spatial-order inference used"
+        }
       },
       "geometry": {
         "type": "Polygon",
@@ -7221,12 +8058,24 @@
         "sourceUpdatedAt": null,
         "osmType": "way",
         "osmId": 225255196,
-        "aliases": [],
+        "aliases": [
+          "41号楼",
+          "41号宿舍"
+        ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
-        "heightSource": "ESTIMATED_FROM_LEVELS"
+        "heightSource": "ESTIMATED_FROM_LEVELS",
+        "officialName": null,
+        "displayName": "41号楼",
+        "labelVisible": true,
+        "dormitoryCandidate": {
+          "number": "41",
+          "displayName": "41号楼",
+          "confidence": "HIGH",
+          "evidence": "OSM source name begins with the explicit number 41; no spatial-order inference used"
+        }
       },
       "geometry": {
         "type": "Polygon",

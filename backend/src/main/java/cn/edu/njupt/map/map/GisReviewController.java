@@ -22,7 +22,8 @@ public class GisReviewController {
             "road-building-intersections", "road-building-intersections.geojson",
             "unverified-buildings", "unverified-buildings.geojson",
             "unverified-pois", "unverified-pois.geojson",
-            "candidate-entrances", "candidate-entrances.geojson"
+            "candidate-entrances", "candidate-entrances.geojson",
+            "dormitory-candidates", "dormitory-candidates.geojson"
     );
 
     private final ObjectMapper objectMapper;

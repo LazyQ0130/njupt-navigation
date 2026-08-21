@@ -55,7 +55,7 @@
     },
     "corePoiVerification": {
       "reviewed": 0,
-      "total": 20
+      "total": 18
     },
     "formalEntranceCoverage": {
       "buildingsWithEntrance": 0,

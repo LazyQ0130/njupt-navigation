@@ -36,6 +36,7 @@ const reviewVisibility = ref<Record<ReviewLayerGroup, boolean>>({
   endpoints: true,
   intersections: true,
   candidates: true,
+  dormitories: true,
   verification: true,
 })
 const toastMessage = ref('')

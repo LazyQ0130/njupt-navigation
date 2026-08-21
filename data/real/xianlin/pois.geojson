@@ -33,7 +33,12 @@
         "priority": 40,
         "positionSource": "OSM_NODE",
         "freshnessStatus": "SOURCE_ONLY",
-        "lastVerifiedAt": null
+        "lastVerifiedAt": null,
+        "officialName": null,
+        "displayName": "恋之味",
+        "labelVisible": true,
+        "buildingExternalId": "osm:way:223859786",
+        "buildingLinkSource": "POINT_WITHIN_SINGLE_BUILDING"
       },
       "geometry": {
         "type": "Point",
@@ -63,7 +68,10 @@
         "priority": 40,
         "positionSource": "OSM_NODE",
         "freshnessStatus": "SOURCE_ONLY",
-        "lastVerifiedAt": null
+        "lastVerifiedAt": null,
+        "officialName": null,
+        "displayName": "卧具洗衣房",
+        "labelVisible": true
       },
       "geometry": {
         "type": "Point",
@@ -93,7 +101,10 @@
         "priority": 40,
         "positionSource": "OSM_NODE",
         "freshnessStatus": "SOURCE_ONLY",
-        "lastVerifiedAt": null
+        "lastVerifiedAt": null,
+        "officialName": null,
+        "displayName": "中信银行ATM",
+        "labelVisible": true
       },
       "geometry": {
         "type": "Point",
@@ -123,7 +134,12 @@
         "priority": 40,
         "positionSource": "OSM_NODE",
         "freshnessStatus": "SOURCE_ONLY",
-        "lastVerifiedAt": null
+        "lastVerifiedAt": null,
+        "officialName": null,
+        "displayName": "苏果好的便利店",
+        "labelVisible": true,
+        "buildingExternalId": "osm:way:223859797",
+        "buildingLinkSource": "POINT_WITHIN_SINGLE_BUILDING"
       },
       "geometry": {
         "type": "Point",
@@ -153,7 +169,10 @@
         "priority": 40,
         "positionSource": "OSM_NODE",
         "freshnessStatus": "SOURCE_ONLY",
-        "lastVerifiedAt": null
+        "lastVerifiedAt": null,
+        "officialName": null,
+        "displayName": "一鸣真鲜奶吧",
+        "labelVisible": true
       },
       "geometry": {
         "type": "Point",
@@ -183,7 +202,10 @@
         "priority": 40,
         "positionSource": "OSM_NODE",
         "freshnessStatus": "SOURCE_ONLY",
-        "lastVerifiedAt": null
+        "lastVerifiedAt": null,
+        "officialName": null,
+        "displayName": "图文中心",
+        "labelVisible": true
       },
       "geometry": {
         "type": "Point",
@@ -213,7 +235,10 @@
         "priority": 40,
         "positionSource": "OSM_NODE",
         "freshnessStatus": "SOURCE_ONLY",
-        "lastVerifiedAt": null
+        "lastVerifiedAt": null,
+        "officialName": null,
+        "displayName": "茶心语",
+        "labelVisible": true
       },
       "geometry": {
         "type": "Point",
@@ -243,7 +268,10 @@
         "priority": 40,
         "positionSource": "OSM_NODE",
         "freshnessStatus": "SOURCE_ONLY",
-        "lastVerifiedAt": null
+        "lastVerifiedAt": null,
+        "officialName": null,
+        "displayName": "美家乐汉堡店",
+        "labelVisible": true
       },
       "geometry": {
         "type": "Point",
@@ -273,7 +301,10 @@
         "priority": 40,
         "positionSource": "OSM_NODE",
         "freshnessStatus": "SOURCE_ONLY",
-        "lastVerifiedAt": null
+        "lastVerifiedAt": null,
+        "officialName": null,
+        "displayName": "中国联通",
+        "labelVisible": true
       },
       "geometry": {
         "type": "Point",
@@ -303,7 +334,10 @@
         "priority": 40,
         "positionSource": "OSM_NODE",
         "freshnessStatus": "SOURCE_ONLY",
-        "lastVerifiedAt": null
+        "lastVerifiedAt": null,
+        "officialName": null,
+        "displayName": "波浪湾",
+        "labelVisible": true
       },
       "geometry": {
         "type": "Point",
@@ -333,7 +367,10 @@
         "priority": 40,
         "positionSource": "OSM_NODE",
         "freshnessStatus": "SOURCE_ONLY",
-        "lastVerifiedAt": null
+        "lastVerifiedAt": null,
+        "officialName": null,
+        "displayName": "校园眼镜",
+        "labelVisible": true
       },
       "geometry": {
         "type": "Point",
@@ -363,7 +400,10 @@
         "priority": 40,
         "positionSource": "OSM_NODE",
         "freshnessStatus": "SOURCE_ONLY",
-        "lastVerifiedAt": null
+        "lastVerifiedAt": null,
+        "officialName": null,
+        "displayName": "邮苑书店",
+        "labelVisible": true
       },
       "geometry": {
         "type": "Point",
@@ -393,7 +433,10 @@
         "priority": 40,
         "positionSource": "OSM_NODE",
         "freshnessStatus": "SOURCE_ONLY",
-        "lastVerifiedAt": null
+        "lastVerifiedAt": null,
+        "officialName": null,
+        "displayName": "HOTDOG吧",
+        "labelVisible": true
       },
       "geometry": {
         "type": "Point",
@@ -423,7 +466,10 @@
         "priority": 40,
         "positionSource": "OSM_NODE",
         "freshnessStatus": "SOURCE_ONLY",
-        "lastVerifiedAt": null
+        "lastVerifiedAt": null,
+        "officialName": null,
+        "displayName": "南邮仙林四食堂",
+        "labelVisible": true
       },
       "geometry": {
         "type": "Point",
@@ -453,7 +499,12 @@
         "priority": 40,
         "positionSource": "OSM_NODE",
         "freshnessStatus": "SOURCE_ONLY",
-        "lastVerifiedAt": null
+        "lastVerifiedAt": null,
+        "officialName": null,
+        "displayName": "仙林湾",
+        "labelVisible": true,
+        "buildingExternalId": "osm:way:1390009973",
+        "buildingLinkSource": "POINT_WITHIN_SINGLE_BUILDING"
       },
       "geometry": {
         "type": "Point",
@@ -483,7 +534,12 @@
         "priority": 40,
         "positionSource": "OSM_NODE",
         "freshnessStatus": "SOURCE_ONLY",
-        "lastVerifiedAt": null
+        "lastVerifiedAt": null,
+        "officialName": null,
+        "displayName": "南邮置业",
+        "labelVisible": true,
+        "buildingExternalId": "osm:way:224896131",
+        "buildingLinkSource": "POINT_WITHIN_SINGLE_BUILDING"
       },
       "geometry": {
         "type": "Point",
@@ -513,7 +569,12 @@
         "priority": 40,
         "positionSource": "OSM_NODE",
         "freshnessStatus": "SOURCE_ONLY",
-        "lastVerifiedAt": null
+        "lastVerifiedAt": null,
+        "officialName": null,
+        "displayName": "麦当劳",
+        "labelVisible": true,
+        "buildingExternalId": "osm:way:224896131",
+        "buildingLinkSource": "POINT_WITHIN_SINGLE_BUILDING"
       },
       "geometry": {
         "type": "Point",
@@ -543,7 +604,12 @@
         "priority": 40,
         "positionSource": "OSM_NODE",
         "freshnessStatus": "SOURCE_ONLY",
-        "lastVerifiedAt": null
+        "lastVerifiedAt": null,
+        "officialName": null,
+        "displayName": "中超华诚超市",
+        "labelVisible": true,
+        "buildingExternalId": "osm:way:224896131",
+        "buildingLinkSource": "POINT_WITHIN_SINGLE_BUILDING"
       },
       "geometry": {
         "type": "Point",
@@ -573,7 +639,10 @@
         "priority": 40,
         "positionSource": "OSM_NODE",
         "freshnessStatus": "SOURCE_ONLY",
-        "lastVerifiedAt": null
+        "lastVerifiedAt": null,
+        "officialName": null,
+        "displayName": "南京邮电大学通达学院",
+        "labelVisible": true
       },
       "geometry": {
         "type": "Point",
@@ -597,9 +666,22 @@
         "sourceUpdatedAt": null,
         "osmType": "way",
         "osmId": 223859811,
-        "aliases": [],
+        "aliases": [
+          "行政南楼"
+        ],
         "category": "ADMINISTRATION",
+        "officialName": "行政南楼",
+        "displayName": "行政南楼",
+        "source": "NJUPT_OFFICIAL_SPATIAL_MATCH",
+        "sourceUrl": "https://xkb.njupt.edu.cn/10472/list.htm",
+        "reviewStatus": "NEEDS_FIELD_CONFIRMATION",
+        "reviewedAt": "2026-08-22",
+        "notes": "Official source confirms 行政南楼; assignment to southern OSM polygon is a geographic inference.",
+        "labelVisible": true,
         "buildingExternalId": "osm:way:223859811",
+        "relatedBuildingExternalIds": [
+          "osm:way:223859811"
+        ],
         "keywords": [],
         "priority": 45,
         "positionSource": "DERIVED_REPRESENTATIVE_POINT"
@@ -626,9 +708,22 @@
         "sourceUpdatedAt": null,
         "osmType": "way",
         "osmId": 223859826,
-        "aliases": [],
+        "aliases": [
+          "行政北楼"
+        ],
         "category": "ADMINISTRATION",
+        "officialName": "行政北楼",
+        "displayName": "行政北楼",
+        "source": "NJUPT_OFFICIAL_SPATIAL_MATCH",
+        "sourceUrl": "https://skc.njupt.edu.cn/jgsz/list.htm",
+        "reviewStatus": "NEEDS_FIELD_CONFIRMATION",
+        "reviewedAt": "2026-08-22",
+        "notes": "Official source confirms 行政北楼; assignment to northern OSM polygon is a geographic inference.",
+        "labelVisible": true,
         "buildingExternalId": "osm:way:223859826",
+        "relatedBuildingExternalIds": [
+          "osm:way:223859826"
+        ],
         "keywords": [],
         "priority": 45,
         "positionSource": "DERIVED_REPRESENTATIVE_POINT"
@@ -655,9 +750,23 @@
         "sourceUpdatedAt": null,
         "osmType": "way",
         "osmId": 223859784,
-        "aliases": [],
+        "aliases": [
+          "二食堂",
+          "仙林二食堂"
+        ],
         "category": "DINING",
+        "officialName": "仙林二食堂",
+        "displayName": "二食堂",
+        "source": "NJUPT_OFFICIAL",
+        "sourceUrl": "https://hqc.njupt.edu.cn/_t311/2014/0905/c5002a66692/page.htm",
+        "reviewStatus": "SOURCE_MATCHED",
+        "reviewedAt": "2026-08-22",
+        "notes": "Official service page confirms the campus canteen name.",
+        "labelVisible": true,
         "buildingExternalId": "osm:way:223859784",
+        "relatedBuildingExternalIds": [
+          "osm:way:223859784"
+        ],
         "keywords": [],
         "priority": 45,
         "positionSource": "DERIVED_REPRESENTATIVE_POINT"
@@ -684,9 +793,22 @@
         "sourceUpdatedAt": null,
         "osmType": "way",
         "osmId": 224950590,
-        "aliases": [],
+        "aliases": [
+          "圆楼"
+        ],
         "category": "TEACHING",
+        "officialName": "圆楼",
+        "displayName": "圆楼",
+        "source": "NJUPT_OFFICIAL",
+        "sourceUrl": "https://www.njupt.edu.cn/2024/0705/c72a267415/page.htm",
+        "reviewStatus": "SOURCE_MATCHED",
+        "reviewedAt": "2026-08-22",
+        "notes": "Official campus notice uses 圆楼.",
+        "labelVisible": true,
         "buildingExternalId": "osm:way:224950590",
+        "relatedBuildingExternalIds": [
+          "osm:way:224950590"
+        ],
         "keywords": [],
         "priority": 45,
         "positionSource": "DERIVED_REPRESENTATIVE_POINT"
@@ -715,7 +837,13 @@
         "osmId": 1173057051,
         "aliases": [],
         "category": "TEACHING",
+        "officialName": null,
+        "displayName": "自动化学院、人工智能学院",
+        "labelVisible": true,
         "buildingExternalId": "osm:way:1173057051",
+        "relatedBuildingExternalIds": [
+          "osm:way:1173057051"
+        ],
         "keywords": [],
         "priority": 45,
         "positionSource": "DERIVED_REPRESENTATIVE_POINT"
@@ -742,9 +870,26 @@
         "sourceUpdatedAt": null,
         "osmType": "way",
         "osmId": 1390009974,
-        "aliases": [],
+        "aliases": [
+          "一食堂",
+          "仙林一食堂"
+        ],
         "category": "DINING",
+        "officialName": "仙林一食堂",
+        "displayName": "一食堂",
+        "poiGroupId": "xianlin-canteen-1",
+        "labelVisible": true,
+        "source": "NJUPT_OFFICIAL",
+        "sourceUrl": "https://hqc.njupt.edu.cn/_t311/2014/0905/c5002a66692/page.htm",
+        "reviewStatus": "SOURCE_MATCHED",
+        "reviewedAt": "2026-08-22",
+        "notes": "Primary label and POI anchor for three touching building components; geometry is not merged.",
         "buildingExternalId": "osm:way:1390009974",
+        "relatedBuildingExternalIds": [
+          "osm:way:1390009974",
+          "osm:way:1390009973",
+          "osm:way:1390009975"
+        ],
         "keywords": [],
         "priority": 45,
         "positionSource": "DERIVED_REPRESENTATIVE_POINT"
@@ -771,9 +916,24 @@
         "sourceUpdatedAt": null,
         "osmType": "way",
         "osmId": 223859810,
-        "aliases": [],
+        "aliases": [
+          "图书馆",
+          "仙林图书馆",
+          "仙林校区图书馆"
+        ],
         "category": "LIBRARY",
+        "officialName": "仙林校区图书馆",
+        "displayName": "图书馆",
+        "source": "NJUPT_OFFICIAL",
+        "sourceUrl": "https://lib.njupt.edu.cn/1384/list.htm",
+        "reviewStatus": "SOURCE_MATCHED",
+        "reviewedAt": "2026-08-22",
+        "notes": "Official library page confirms campus name.",
+        "labelVisible": true,
         "buildingExternalId": "osm:way:223859810",
+        "relatedBuildingExternalIds": [
+          "osm:way:223859810"
+        ],
         "keywords": [],
         "priority": 45,
         "positionSource": "DERIVED_REPRESENTATIVE_POINT"
@@ -802,7 +962,13 @@
         "osmId": 1173057050,
         "aliases": [],
         "category": "TEACHING",
+        "officialName": null,
+        "displayName": "电子与光学工程学院、柔性材料（未来技术）学院",
+        "labelVisible": false,
         "buildingExternalId": "osm:way:1173057050",
+        "relatedBuildingExternalIds": [
+          "osm:way:1173057050"
+        ],
         "keywords": [],
         "priority": 45,
         "positionSource": "DERIVED_REPRESENTATIVE_POINT"
@@ -812,64 +978,6 @@
         "coordinates": [
           118.92387204219938,
           32.1154508
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "osm:way:1390009973:poi",
-      "properties": {
-        "featureType": "POI",
-        "campusCode": "NJUPT_XIANLIN",
-        "externalId": "osm:way:1390009973:poi",
-        "name": "南邮仙林一食堂",
-        "dataSource": "OPENSTREETMAP",
-        "verificationStatus": "SOURCE_VERIFIED",
-        "sourceId": "osm-xianlin-2026-08-22",
-        "sourceUpdatedAt": null,
-        "osmType": "way",
-        "osmId": 1390009973,
-        "aliases": [],
-        "category": "DINING",
-        "buildingExternalId": "osm:way:1390009973",
-        "keywords": [],
-        "priority": 45,
-        "positionSource": "DERIVED_REPRESENTATIVE_POINT"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          118.92857083546326,
-          32.1103804
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "osm:way:1390009975:poi",
-      "properties": {
-        "featureType": "POI",
-        "campusCode": "NJUPT_XIANLIN",
-        "externalId": "osm:way:1390009975:poi",
-        "name": "南邮仙林一食堂",
-        "dataSource": "OPENSTREETMAP",
-        "verificationStatus": "SOURCE_VERIFIED",
-        "sourceId": "osm-xianlin-2026-08-22",
-        "sourceUpdatedAt": null,
-        "osmType": "way",
-        "osmId": 1390009975,
-        "aliases": [],
-        "category": "DINING",
-        "buildingExternalId": "osm:way:1390009975",
-        "keywords": [],
-        "priority": 45,
-        "positionSource": "DERIVED_REPRESENTATIVE_POINT"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          118.92856245687506,
-          32.110768300000004
         ]
       }
     },
@@ -889,7 +997,13 @@
         "osmId": 1173057052,
         "aliases": [],
         "category": "TEACHING",
+        "officialName": null,
+        "displayName": "地理与生物信息学院",
+        "labelVisible": true,
         "buildingExternalId": "osm:way:1173057052",
+        "relatedBuildingExternalIds": [
+          "osm:way:1173057052"
+        ],
         "keywords": [],
         "priority": 45,
         "positionSource": "DERIVED_REPRESENTATIVE_POINT"
@@ -918,7 +1032,13 @@
         "osmId": 1173057053,
         "aliases": [],
         "category": "TEACHING",
+        "officialName": null,
+        "displayName": "集成电路科学与工程学院",
+        "labelVisible": true,
         "buildingExternalId": "osm:way:1173057053",
+        "relatedBuildingExternalIds": [
+          "osm:way:1173057053"
+        ],
         "keywords": [],
         "priority": 45,
         "positionSource": "DERIVED_REPRESENTATIVE_POINT"
@@ -947,7 +1067,13 @@
         "osmId": 1173057054,
         "aliases": [],
         "category": "TEACHING",
+        "officialName": null,
+        "displayName": "工程实验教学部",
+        "labelVisible": true,
         "buildingExternalId": "osm:way:1173057054",
+        "relatedBuildingExternalIds": [
+          "osm:way:1173057054"
+        ],
         "keywords": [],
         "priority": 45,
         "positionSource": "DERIVED_REPRESENTATIVE_POINT"
@@ -976,7 +1102,13 @@
         "osmId": 1173057055,
         "aliases": [],
         "category": "TEACHING",
+        "officialName": null,
+        "displayName": "计算机学院、软件学院、网络空间安全学院",
+        "labelVisible": false,
         "buildingExternalId": "osm:way:1173057055",
+        "relatedBuildingExternalIds": [
+          "osm:way:1173057055"
+        ],
         "keywords": [],
         "priority": 45,
         "positionSource": "DERIVED_REPRESENTATIVE_POINT"
@@ -1003,9 +1135,22 @@
         "sourceUpdatedAt": null,
         "osmType": "way",
         "osmId": 1173057056,
-        "aliases": [],
+        "aliases": [
+          "文科楼"
+        ],
         "category": "TEACHING",
+        "officialName": "文科楼",
+        "displayName": "文科楼",
+        "source": "NJUPT_OFFICIAL",
+        "sourceUrl": "https://www.njupt.edu.cn/2024/0705/c72a267415/page.htm",
+        "reviewStatus": "SOURCE_MATCHED",
+        "reviewedAt": "2026-08-22",
+        "notes": "Official campus page uses 文科楼; the longer OSM institution prefix remains in compatible name.",
+        "labelVisible": true,
         "buildingExternalId": "osm:way:1173057056",
+        "relatedBuildingExternalIds": [
+          "osm:way:1173057056"
+        ],
         "keywords": [],
         "priority": 45,
         "positionSource": "DERIVED_REPRESENTATIVE_POINT"
@@ -1034,7 +1179,13 @@
         "osmId": 1173059720,
         "aliases": [],
         "category": "TEACHING",
+        "officialName": null,
+        "displayName": "材料科学与工程学院-新大楼",
+        "labelVisible": true,
         "buildingExternalId": "osm:way:1173059720",
+        "relatedBuildingExternalIds": [
+          "osm:way:1173059720"
+        ],
         "keywords": [],
         "priority": 45,
         "positionSource": "DERIVED_REPRESENTATIVE_POINT"
@@ -1061,9 +1212,22 @@
         "sourceUpdatedAt": null,
         "osmType": "way",
         "osmId": 1281082570,
-        "aliases": [],
+        "aliases": [
+          "新体育馆"
+        ],
         "category": "SPORT",
+        "officialName": "新体育馆",
+        "displayName": "新体育馆",
+        "source": "OPENSTREETMAP",
+        "sourceUrl": "https://www.openstreetmap.org/way/1281082570",
+        "reviewStatus": "SOURCE_ONLY",
+        "reviewedAt": "2026-08-22",
+        "notes": "Explicit OSM name retained; field verification remains desirable.",
+        "labelVisible": true,
         "buildingExternalId": "osm:way:1281082570",
+        "relatedBuildingExternalIds": [
+          "osm:way:1281082570"
+        ],
         "keywords": [],
         "priority": 45,
         "positionSource": "DERIVED_REPRESENTATIVE_POINT"
@@ -1092,7 +1256,13 @@
         "osmId": 223859852,
         "aliases": [],
         "category": "ADMINISTRATION",
+        "officialName": null,
+        "displayName": "收发室",
+        "labelVisible": true,
         "buildingExternalId": "osm:way:223859852",
+        "relatedBuildingExternalIds": [
+          "osm:way:223859852"
+        ],
         "keywords": [],
         "priority": 45,
         "positionSource": "DERIVED_REPRESENTATIVE_POINT"
@@ -1119,9 +1289,23 @@
         "sourceUpdatedAt": null,
         "osmType": "way",
         "osmId": 224896131,
-        "aliases": [],
+        "aliases": [
+          "三食堂",
+          "仙林三食堂"
+        ],
         "category": "DINING",
+        "officialName": "仙林三食堂",
+        "displayName": "三食堂",
+        "source": "NJUPT_OFFICIAL",
+        "sourceUrl": "https://hqc.njupt.edu.cn/_t311/2014/0905/c5002a66692/page.htm",
+        "reviewStatus": "SOURCE_MATCHED",
+        "reviewedAt": "2026-08-22",
+        "notes": "Official service page confirms the campus canteen name.",
+        "labelVisible": true,
         "buildingExternalId": "osm:way:224896131",
+        "relatedBuildingExternalIds": [
+          "osm:way:224896131"
+        ],
         "keywords": [],
         "priority": 45,
         "positionSource": "DERIVED_REPRESENTATIVE_POINT"

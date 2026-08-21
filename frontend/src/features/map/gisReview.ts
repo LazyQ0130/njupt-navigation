@@ -6,6 +6,7 @@ export const GIS_REVIEW_LAYER_KEYS = [
   'unverified-buildings',
   'unverified-pois',
   'candidate-entrances',
+  'dormitory-candidates',
 ] as const
 
 export type GisReviewLayerKey = (typeof GIS_REVIEW_LAYER_KEYS)[number]

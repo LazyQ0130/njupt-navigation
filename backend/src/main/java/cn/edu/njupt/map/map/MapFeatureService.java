@@ -20,7 +20,7 @@ import org.springframework.transaction.annotation.Transactional;
 @Service
 public class MapFeatureService {
 
-    private static final String SCHEMA_VERSION = "2026-08-phase1.5";
+    private static final String SCHEMA_VERSION = "2026-08-phase1.6.2";
 
     private final ObjectMapper objectMapper;
     private final CampusRepository campusRepository;
@@ -74,6 +74,8 @@ public class MapFeatureService {
         return feature(
                 item.getExternalId(), item.getName(), "BUILDING", item.getGeometry(),
                 properties -> {
+                    namingProperties(properties, item.getOfficialName(), item.getDisplayName(),
+                            item.getAliases(), item.isLabelVisible());
                     properties.put("category", item.getCategory());
                     if (item.getHeight() != null) {
                         properties.put("height", item.getHeight());
@@ -92,6 +94,13 @@ public class MapFeatureService {
         return feature(
                 item.getExternalId(), item.getName(), "POI", item.getLocation(),
                 properties -> {
+                    namingProperties(properties, item.getOfficialName(), item.getDisplayName(),
+                            item.getAliases(), item.isLabelVisible());
+                    ArrayNode keywords = properties.putArray("keywords");
+                    item.getKeywords().forEach(keywords::add);
+                    if (item.getBuilding() != null) {
+                        properties.put("buildingId", item.getBuilding().getExternalId());
+                    }
                     properties.put("category", item.getCategory());
                     properties.put("priority", 40);
                     sourceMetadata(properties, item.getDataSource(), item.getVerificationStatus(),
@@ -137,6 +146,15 @@ public class MapFeatureService {
         if (value != null && !value.isBlank()) {
             node.put(field, value);
         }
+    }
+
+    private void namingProperties(ObjectNode properties, String officialName, String displayName,
+                                  java.util.List<String> aliases, boolean labelVisible) {
+        putIfPresent(properties, "officialName", officialName);
+        putIfPresent(properties, "displayName", displayName);
+        properties.put("labelVisible", labelVisible);
+        ArrayNode aliasValues = properties.putArray("aliases");
+        aliases.forEach(aliasValues::add);
     }
 
     private void sourceMetadata(ObjectNode node, String dataSource, String verificationStatus,

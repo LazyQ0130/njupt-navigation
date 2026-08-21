@@ -2,6 +2,8 @@
 
 核验结果先填写 `data/real/xianlin/manual/field-review-template.csv`，再运行 `python scripts/gis/apply_field_review.py --input <field-review.csv> --reviewed-at <ISO-8601>`。肉眼对照公开资料使用 `MANUALLY_REVIEWED`，亲临现场确认使用 `FIELD_VERIFIED`；不要修改 raw OSM 或直接编辑 normalized GeoJSON。
 
+宿舍编号单独填写 `data/real/xianlin/manual/dormitory-review.csv` 的 `confirmed_number`、`confirmed_display_name`、`aliases`、`status` 和 `notes`。候选列由 pipeline 重建，不能把 `HIGH` 当作人工确认；地图辅助核验可用 `?debug=gisp1` 并开启 **Dormitory Candidates**。
+
 ## P0：校界与校门
 
 - [ ] Campus Boundary（OSM way `89910254`）
@@ -59,13 +61,17 @@
 - [ ] 是否确为宿舍
 - [ ] `displayName` 与常用别名
 - [ ] 一栋多编号或命名不清时标记 `AMBIGUOUS`，不强制一对一
+- [ ] `21 国防生楼` 的学生端短名是否应为 `21号楼`
+- [ ] 青教公寓是否存在需要展示的正式编号；没有证据则保持无编号
+- [ ] 不根据相邻顺序补号或纠正编号
 
-对一、二、三、四食堂逐个核验：
+对一、二、三食堂逐个核验（当前数据没有足够证据建立“四食堂”正式对象）：
 
 - [ ] 正式名称和学生常用名
 - [ ] Building / POI 对应关系
 - [ ] 当前是否仍营业
 - [ ] 主要入口和附近道路
+- [ ] 一食堂三个相接 Polygon 是否确属同一用户侧 complex；不要在核验前合并 Geometry
 
 对收发室、快递点、超市、商铺逐个核验：
 

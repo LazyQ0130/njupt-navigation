@@ -12,5 +12,6 @@ describe('GIS review mode', () => {
     expect(isGisReviewModeEnabled('?debug=gisp1', true)).toBe(true)
     expect(activeReviewLayerKeys(true)).toContain('topology-gaps')
     expect(activeReviewLayerKeys(true)).toContain('candidate-entrances')
+    expect(activeReviewLayerKeys(true)).toContain('dormitory-candidates')
   })
 })

@@ -17,6 +17,7 @@ const groups: Array<{ key: ReviewLayerGroup, label: string }> = [
   { key: 'endpoints', label: 'Disconnected Endpoints' },
   { key: 'intersections', label: 'Intersection Warnings' },
   { key: 'candidates', label: 'Candidate Entrances' },
+  { key: 'dormitories', label: 'Dormitory Candidates' },
   { key: 'verification', label: 'Verification Status' },
 ]
 </script>

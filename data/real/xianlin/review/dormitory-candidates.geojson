@@ -1,0 +1,1110 @@
+{
+  "type": "FeatureCollection",
+  "name": "xianlin-dormitory-candidates",
+  "metadata": {
+    "developmentOnly": true,
+    "confidenceMeaning": "engineering matching confidence, not factual verification"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "osm:way:223859786",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.92847911621044,
+          32.1131984
+        ]
+      },
+      "properties": {
+        "reviewId": "dormitory:osm:way:223859786",
+        "sourceObjectId": "osm:way:223859786",
+        "name": "12",
+        "candidateNumber": "12",
+        "candidateDisplayName": "12号楼",
+        "confidence": "HIGH",
+        "currentVerificationStatus": "SOURCE_VERIFIED",
+        "reason": "OSM source name begins with the explicit number 12; no spatial-order inference used",
+        "severity": "P2"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223859792",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.92858350913755,
+          32.11200065
+        ]
+      },
+      "properties": {
+        "reviewId": "dormitory:osm:way:223859792",
+        "sourceObjectId": "osm:way:223859792",
+        "name": "6",
+        "candidateNumber": "6",
+        "candidateDisplayName": "6号楼",
+        "confidence": "HIGH",
+        "currentVerificationStatus": "SOURCE_VERIFIED",
+        "reason": "OSM source name begins with the explicit number 6; no spatial-order inference used",
+        "severity": "P2"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223859794",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.92816651547435,
+          32.1126953
+        ]
+      },
+      "properties": {
+        "reviewId": "dormitory:osm:way:223859794",
+        "sourceObjectId": "osm:way:223859794",
+        "name": "9",
+        "candidateNumber": "9",
+        "candidateDisplayName": "9号楼",
+        "confidence": "HIGH",
+        "currentVerificationStatus": "SOURCE_VERIFIED",
+        "reason": "OSM source name begins with the explicit number 9; no spatial-order inference used",
+        "severity": "P2"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223859797",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.92847088037637,
+          32.11239865
+        ]
+      },
+      "properties": {
+        "reviewId": "dormitory:osm:way:223859797",
+        "sourceObjectId": "osm:way:223859797",
+        "name": "7",
+        "candidateNumber": "7",
+        "candidateDisplayName": "7号楼",
+        "confidence": "HIGH",
+        "currentVerificationStatus": "SOURCE_VERIFIED",
+        "reason": "OSM source name begins with the explicit number 7; no spatial-order inference used",
+        "severity": "P2"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223859798",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.92830861238929,
+          32.11149765
+        ]
+      },
+      "properties": {
+        "reviewId": "dormitory:osm:way:223859798",
+        "sourceObjectId": "osm:way:223859798",
+        "name": "3",
+        "candidateNumber": "3",
+        "candidateDisplayName": "3号楼",
+        "confidence": "HIGH",
+        "currentVerificationStatus": "SOURCE_VERIFIED",
+        "reason": "OSM source name begins with the explicit number 3; no spatial-order inference used",
+        "severity": "P2"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223859813",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.928164504986,
+          32.11294865
+        ]
+      },
+      "properties": {
+        "reviewId": "dormitory:osm:way:223859813",
+        "sourceObjectId": "osm:way:223859813",
+        "name": "11",
+        "candidateNumber": "11",
+        "candidateDisplayName": "11号楼",
+        "confidence": "HIGH",
+        "currentVerificationStatus": "SOURCE_VERIFIED",
+        "reason": "OSM source name begins with the explicit number 11; no spatial-order inference used",
+        "severity": "P2"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223859824",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.92830614975023,
+          32.1117613
+        ]
+      },
+      "properties": {
+        "reviewId": "dormitory:osm:way:223859824",
+        "sourceObjectId": "osm:way:223859824",
+        "name": "5",
+        "candidateNumber": "5",
+        "candidateDisplayName": "5号楼",
+        "confidence": "HIGH",
+        "currentVerificationStatus": "SOURCE_VERIFIED",
+        "reason": "OSM source name begins with the explicit number 5; no spatial-order inference used",
+        "severity": "P2"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223859829",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.92861207312491,
+          32.111236000000005
+        ]
+      },
+      "properties": {
+        "reviewId": "dormitory:osm:way:223859829",
+        "sourceObjectId": "osm:way:223859829",
+        "name": "1",
+        "candidateNumber": "1",
+        "candidateDisplayName": "1号楼",
+        "confidence": "HIGH",
+        "currentVerificationStatus": "SOURCE_VERIFIED",
+        "reason": "OSM source name begins with the explicit number 1; no spatial-order inference used",
+        "severity": "P2"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223859843",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.92873430787455,
+          32.114695499999996
+        ]
+      },
+      "properties": {
+        "reviewId": "dormitory:osm:way:223859843",
+        "sourceObjectId": "osm:way:223859843",
+        "name": "16",
+        "candidateNumber": "16",
+        "candidateDisplayName": "16号楼",
+        "confidence": "HIGH",
+        "currentVerificationStatus": "SOURCE_VERIFIED",
+        "reason": "OSM source name begins with the explicit number 16; no spatial-order inference used",
+        "severity": "P2"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223859783",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.92924928004498,
+          32.1152699
+        ]
+      },
+      "properties": {
+        "reviewId": "dormitory:osm:way:223859783",
+        "sourceObjectId": "osm:way:223859783",
+        "name": "19",
+        "candidateNumber": "19",
+        "candidateDisplayName": "19号楼",
+        "confidence": "HIGH",
+        "currentVerificationStatus": "SOURCE_VERIFIED",
+        "reason": "OSM source name begins with the explicit number 19; no spatial-order inference used",
+        "severity": "P2"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223859787",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.92886020032178,
+          32.1129434
+        ]
+      },
+      "properties": {
+        "reviewId": "dormitory:osm:way:223859787",
+        "sourceObjectId": "osm:way:223859787",
+        "name": "10",
+        "candidateNumber": "10",
+        "candidateDisplayName": "10号楼",
+        "confidence": "HIGH",
+        "currentVerificationStatus": "SOURCE_VERIFIED",
+        "reason": "OSM source name begins with the explicit number 10; no spatial-order inference used",
+        "severity": "P2"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223859790",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.92855909763787,
+          32.11527725
+        ]
+      },
+      "properties": {
+        "reviewId": "dormitory:osm:way:223859790",
+        "sourceObjectId": "osm:way:223859790",
+        "name": "20",
+        "candidateNumber": "20",
+        "candidateDisplayName": "20号楼",
+        "confidence": "HIGH",
+        "currentVerificationStatus": "SOURCE_VERIFIED",
+        "reason": "OSM source name begins with the explicit number 20; no spatial-order inference used",
+        "severity": "P2"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223859791",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.92918265952326,
+          32.11498545
+        ]
+      },
+      "properties": {
+        "reviewId": "dormitory:osm:way:223859791",
+        "sourceObjectId": "osm:way:223859791",
+        "name": "17",
+        "candidateNumber": "17",
+        "candidateDisplayName": "17号楼",
+        "confidence": "HIGH",
+        "currentVerificationStatus": "SOURCE_VERIFIED",
+        "reason": "OSM source name begins with the explicit number 17; no spatial-order inference used",
+        "severity": "P2"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223859796",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.92890783708685,
+          32.11431235
+        ]
+      },
+      "properties": {
+        "reviewId": "dormitory:osm:way:223859796",
+        "sourceObjectId": "osm:way:223859796",
+        "name": "15",
+        "candidateNumber": "15",
+        "candidateDisplayName": "15号楼",
+        "confidence": "HIGH",
+        "currentVerificationStatus": "SOURCE_VERIFIED",
+        "reason": "OSM source name begins with the explicit number 15; no spatial-order inference used",
+        "severity": "P2"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223859801",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.92889145071857,
+          32.1117518
+        ]
+      },
+      "properties": {
+        "reviewId": "dormitory:osm:way:223859801",
+        "sourceObjectId": "osm:way:223859801",
+        "name": "4",
+        "candidateNumber": "4",
+        "candidateDisplayName": "4号楼",
+        "confidence": "HIGH",
+        "currentVerificationStatus": "SOURCE_VERIFIED",
+        "reason": "OSM source name begins with the explicit number 4; no spatial-order inference used",
+        "severity": "P2"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223859809",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.92886089615013,
+          32.1126812
+        ]
+      },
+      "properties": {
+        "reviewId": "dormitory:osm:way:223859809",
+        "sourceObjectId": "osm:way:223859809",
+        "name": "8",
+        "candidateNumber": "8",
+        "candidateDisplayName": "8号楼",
+        "confidence": "HIGH",
+        "currentVerificationStatus": "SOURCE_VERIFIED",
+        "reason": "OSM source name begins with the explicit number 8; no spatial-order inference used",
+        "severity": "P2"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223859815",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.92883624626052,
+          32.113603299999994
+        ]
+      },
+      "properties": {
+        "reviewId": "dormitory:osm:way:223859815",
+        "sourceObjectId": "osm:way:223859815",
+        "name": "13",
+        "candidateNumber": "13",
+        "candidateDisplayName": "13号楼",
+        "confidence": "HIGH",
+        "currentVerificationStatus": "SOURCE_VERIFIED",
+        "reason": "OSM source name begins with the explicit number 13; no spatial-order inference used",
+        "severity": "P2"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223859816",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.92886395459266,
+          32.11396245
+        ]
+      },
+      "properties": {
+        "reviewId": "dormitory:osm:way:223859816",
+        "sourceObjectId": "osm:way:223859816",
+        "name": "14",
+        "candidateNumber": "14",
+        "candidateDisplayName": "14号楼",
+        "confidence": "HIGH",
+        "currentVerificationStatus": "SOURCE_VERIFIED",
+        "reason": "OSM source name begins with the explicit number 14; no spatial-order inference used",
+        "severity": "P2"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223859832",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.92891795617945,
+          32.1114938
+        ]
+      },
+      "properties": {
+        "reviewId": "dormitory:osm:way:223859832",
+        "sourceObjectId": "osm:way:223859832",
+        "name": "2",
+        "candidateNumber": "2",
+        "candidateDisplayName": "2号楼",
+        "confidence": "HIGH",
+        "currentVerificationStatus": "SOURCE_VERIFIED",
+        "reason": "OSM source name begins with the explicit number 2; no spatial-order inference used",
+        "severity": "P2"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223859840",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.9284858671488,
+          32.11499205
+        ]
+      },
+      "properties": {
+        "reviewId": "dormitory:osm:way:223859840",
+        "sourceObjectId": "osm:way:223859840",
+        "name": "18",
+        "candidateNumber": "18",
+        "candidateDisplayName": "18号楼",
+        "confidence": "HIGH",
+        "currentVerificationStatus": "SOURCE_VERIFIED",
+        "reason": "OSM source name begins with the explicit number 18; no spatial-order inference used",
+        "severity": "P2"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:223859846",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.92899935,
+          32.11556545
+        ]
+      },
+      "properties": {
+        "reviewId": "dormitory:osm:way:223859846",
+        "sourceObjectId": "osm:way:223859846",
+        "name": "21 国防生楼",
+        "candidateNumber": "21",
+        "candidateDisplayName": "21号楼",
+        "confidence": "HIGH",
+        "currentVerificationStatus": "SOURCE_VERIFIED",
+        "reason": "OSM source name begins with the explicit number 21; no spatial-order inference used",
+        "severity": "P2"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225265337",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.92095655,
+          32.11935305
+        ]
+      },
+      "properties": {
+        "reviewId": "dormitory:osm:way:225265337",
+        "sourceObjectId": "osm:way:225265337",
+        "name": "青教公寓",
+        "candidateNumber": "",
+        "candidateDisplayName": "青教公寓",
+        "confidence": "UNKNOWN",
+        "currentVerificationStatus": "SOURCE_VERIFIED",
+        "reason": "Dormitory category is source-backed, but the source name contains no numeric identifier",
+        "severity": "P1"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225253706",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.9275901480229,
+          32.12039125
+        ]
+      },
+      "properties": {
+        "reviewId": "dormitory:osm:way:225253706",
+        "sourceObjectId": "osm:way:225253706",
+        "name": "46",
+        "candidateNumber": "46",
+        "candidateDisplayName": "46号楼",
+        "confidence": "HIGH",
+        "currentVerificationStatus": "SOURCE_VERIFIED",
+        "reason": "OSM source name begins with the explicit number 46; no spatial-order inference used",
+        "severity": "P2"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225253707",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.92709360484204,
+          32.120453499999996
+        ]
+      },
+      "properties": {
+        "reviewId": "dormitory:osm:way:225253707",
+        "sourceObjectId": "osm:way:225253707",
+        "name": "47",
+        "candidateNumber": "47",
+        "candidateDisplayName": "47号楼",
+        "confidence": "HIGH",
+        "currentVerificationStatus": "SOURCE_VERIFIED",
+        "reason": "OSM source name begins with the explicit number 47; no spatial-order inference used",
+        "severity": "P2"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225253711",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.92723893245126,
+          32.12086945
+        ]
+      },
+      "properties": {
+        "reviewId": "dormitory:osm:way:225253711",
+        "sourceObjectId": "osm:way:225253711",
+        "name": "48",
+        "candidateNumber": "48",
+        "candidateDisplayName": "48号楼",
+        "confidence": "HIGH",
+        "currentVerificationStatus": "SOURCE_VERIFIED",
+        "reason": "OSM source name begins with the explicit number 48; no spatial-order inference used",
+        "severity": "P2"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225253712",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.92671075673428,
+          32.1209123
+        ]
+      },
+      "properties": {
+        "reviewId": "dormitory:osm:way:225253712",
+        "sourceObjectId": "osm:way:225253712",
+        "name": "49",
+        "candidateNumber": "49",
+        "candidateDisplayName": "49号楼",
+        "confidence": "HIGH",
+        "currentVerificationStatus": "SOURCE_VERIFIED",
+        "reason": "OSM source name begins with the explicit number 49; no spatial-order inference used",
+        "severity": "P2"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225198908",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.9288941349761,
+          32.1183738
+        ]
+      },
+      "properties": {
+        "reviewId": "dormitory:osm:way:225198908",
+        "sourceObjectId": "osm:way:225198908",
+        "name": "22",
+        "candidateNumber": "22",
+        "candidateDisplayName": "22号楼",
+        "confidence": "HIGH",
+        "currentVerificationStatus": "SOURCE_VERIFIED",
+        "reason": "OSM source name begins with the explicit number 22; no spatial-order inference used",
+        "severity": "P2"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225198910",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.92893410029555,
+          32.118723849999995
+        ]
+      },
+      "properties": {
+        "reviewId": "dormitory:osm:way:225198910",
+        "sourceObjectId": "osm:way:225198910",
+        "name": "24",
+        "candidateNumber": "24",
+        "candidateDisplayName": "24号楼",
+        "confidence": "HIGH",
+        "currentVerificationStatus": "SOURCE_VERIFIED",
+        "reason": "OSM source name begins with the explicit number 24; no spatial-order inference used",
+        "severity": "P2"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225198912",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.92877028867187,
+          32.11892735
+        ]
+      },
+      "properties": {
+        "reviewId": "dormitory:osm:way:225198912",
+        "sourceObjectId": "osm:way:225198912",
+        "name": "26",
+        "candidateNumber": "26",
+        "candidateDisplayName": "26号楼",
+        "confidence": "HIGH",
+        "currentVerificationStatus": "SOURCE_VERIFIED",
+        "reason": "OSM source name begins with the explicit number 26; no spatial-order inference used",
+        "severity": "P2"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225242507",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.92992858163356,
+          32.118876799999995
+        ]
+      },
+      "properties": {
+        "reviewId": "dormitory:osm:way:225242507",
+        "sourceObjectId": "osm:way:225242507",
+        "name": "28",
+        "candidateNumber": "28",
+        "candidateDisplayName": "28号楼",
+        "confidence": "HIGH",
+        "currentVerificationStatus": "SOURCE_VERIFIED",
+        "reason": "OSM source name begins with the explicit number 28; no spatial-order inference used",
+        "severity": "P2"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225242509",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.92960067345777,
+          32.1190429
+        ]
+      },
+      "properties": {
+        "reviewId": "dormitory:osm:way:225242509",
+        "sourceObjectId": "osm:way:225242509",
+        "name": "29",
+        "candidateNumber": "29",
+        "candidateDisplayName": "29号楼",
+        "confidence": "HIGH",
+        "currentVerificationStatus": "SOURCE_VERIFIED",
+        "reason": "OSM source name begins with the explicit number 29; no spatial-order inference used",
+        "severity": "P2"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225242511",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.93006997885033,
+          32.119296250000005
+        ]
+      },
+      "properties": {
+        "reviewId": "dormitory:osm:way:225242511",
+        "sourceObjectId": "osm:way:225242511",
+        "name": "30",
+        "candidateNumber": "30",
+        "candidateDisplayName": "30号楼",
+        "confidence": "HIGH",
+        "currentVerificationStatus": "SOURCE_VERIFIED",
+        "reason": "OSM source name begins with the explicit number 30; no spatial-order inference used",
+        "severity": "P2"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225242513",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.92944791049126,
+          32.11926055
+        ]
+      },
+      "properties": {
+        "reviewId": "dormitory:osm:way:225242513",
+        "sourceObjectId": "osm:way:225242513",
+        "name": "31",
+        "candidateNumber": "31",
+        "candidateDisplayName": "31号楼",
+        "confidence": "HIGH",
+        "currentVerificationStatus": "SOURCE_VERIFIED",
+        "reason": "OSM source name begins with the explicit number 31; no spatial-order inference used",
+        "severity": "P2"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225242515",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.92995940241437,
+          32.1194988
+        ]
+      },
+      "properties": {
+        "reviewId": "dormitory:osm:way:225242515",
+        "sourceObjectId": "osm:way:225242515",
+        "name": "32",
+        "candidateNumber": "32",
+        "candidateDisplayName": "32号楼",
+        "confidence": "HIGH",
+        "currentVerificationStatus": "SOURCE_VERIFIED",
+        "reason": "OSM source name begins with the explicit number 32; no spatial-order inference used",
+        "severity": "P2"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225242517",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.92957574911844,
+          32.1195986
+        ]
+      },
+      "properties": {
+        "reviewId": "dormitory:osm:way:225242517",
+        "sourceObjectId": "osm:way:225242517",
+        "name": "33",
+        "candidateNumber": "33",
+        "candidateDisplayName": "33号楼",
+        "confidence": "HIGH",
+        "currentVerificationStatus": "SOURCE_VERIFIED",
+        "reason": "OSM source name begins with the explicit number 33; no spatial-order inference used",
+        "severity": "P2"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225250615",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.92947015550207,
+          32.1199285
+        ]
+      },
+      "properties": {
+        "reviewId": "dormitory:osm:way:225250615",
+        "sourceObjectId": "osm:way:225250615",
+        "name": "34",
+        "candidateNumber": "34",
+        "candidateDisplayName": "34号楼",
+        "confidence": "HIGH",
+        "currentVerificationStatus": "SOURCE_VERIFIED",
+        "reason": "OSM source name begins with the explicit number 34; no spatial-order inference used",
+        "severity": "P2"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225250617",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.92956182416387,
+          32.1203833
+        ]
+      },
+      "properties": {
+        "reviewId": "dormitory:osm:way:225250617",
+        "sourceObjectId": "osm:way:225250617",
+        "name": "36",
+        "candidateNumber": "36",
+        "candidateDisplayName": "36号楼",
+        "confidence": "HIGH",
+        "currentVerificationStatus": "SOURCE_VERIFIED",
+        "reason": "OSM source name begins with the explicit number 36; no spatial-order inference used",
+        "severity": "P2"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225250618",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.92873153600553,
+          32.120295049999996
+        ]
+      },
+      "properties": {
+        "reviewId": "dormitory:osm:way:225250618",
+        "sourceObjectId": "osm:way:225250618",
+        "name": "37",
+        "candidateNumber": "37",
+        "candidateDisplayName": "37号楼",
+        "confidence": "HIGH",
+        "currentVerificationStatus": "SOURCE_VERIFIED",
+        "reason": "OSM source name begins with the explicit number 37; no spatial-order inference used",
+        "severity": "P2"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225250619",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.92933664587787,
+          32.12058005
+        ]
+      },
+      "properties": {
+        "reviewId": "dormitory:osm:way:225250619",
+        "sourceObjectId": "osm:way:225250619",
+        "name": "38",
+        "candidateNumber": "38",
+        "candidateDisplayName": "38号楼",
+        "confidence": "HIGH",
+        "currentVerificationStatus": "SOURCE_VERIFIED",
+        "reason": "OSM source name begins with the explicit number 38; no spatial-order inference used",
+        "severity": "P2"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225250620",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.92882506985063,
+          32.1206683
+        ]
+      },
+      "properties": {
+        "reviewId": "dormitory:osm:way:225250620",
+        "sourceObjectId": "osm:way:225250620",
+        "name": "39",
+        "candidateNumber": "39",
+        "candidateDisplayName": "39号楼",
+        "confidence": "HIGH",
+        "currentVerificationStatus": "SOURCE_VERIFIED",
+        "reason": "OSM source name begins with the explicit number 39; no spatial-order inference used",
+        "severity": "P2"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225251648",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.92888969136615,
+          32.12004965
+        ]
+      },
+      "properties": {
+        "reviewId": "dormitory:osm:way:225251648",
+        "sourceObjectId": "osm:way:225251648",
+        "name": "35",
+        "candidateNumber": "35",
+        "candidateDisplayName": "35号楼",
+        "confidence": "HIGH",
+        "currentVerificationStatus": "SOURCE_VERIFIED",
+        "reason": "OSM source name begins with the explicit number 35; no spatial-order inference used",
+        "severity": "P2"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225255198",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.92883319984728,
+          32.1210107
+        ]
+      },
+      "properties": {
+        "reviewId": "dormitory:osm:way:225255198",
+        "sourceObjectId": "osm:way:225255198",
+        "name": "40",
+        "candidateNumber": "40",
+        "candidateDisplayName": "40号楼",
+        "confidence": "HIGH",
+        "currentVerificationStatus": "SOURCE_VERIFIED",
+        "reason": "OSM source name begins with the explicit number 40; no spatial-order inference used",
+        "severity": "P2"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225255200",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.92871017830997,
+          32.1215648
+        ]
+      },
+      "properties": {
+        "reviewId": "dormitory:osm:way:225255200",
+        "sourceObjectId": "osm:way:225255200",
+        "name": "44",
+        "candidateNumber": "44",
+        "candidateDisplayName": "44号楼",
+        "confidence": "HIGH",
+        "currentVerificationStatus": "SOURCE_VERIFIED",
+        "reason": "OSM source name begins with the explicit number 44; no spatial-order inference used",
+        "severity": "P2"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225255202",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.92893317843667,
+          32.12139465
+        ]
+      },
+      "properties": {
+        "reviewId": "dormitory:osm:way:225255202",
+        "sourceObjectId": "osm:way:225255202",
+        "name": "42",
+        "candidateNumber": "42",
+        "candidateDisplayName": "42号楼",
+        "confidence": "HIGH",
+        "currentVerificationStatus": "SOURCE_VERIFIED",
+        "reason": "OSM source name begins with the explicit number 42; no spatial-order inference used",
+        "severity": "P2"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225198909",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.92831572950378,
+          32.1184177
+        ]
+      },
+      "properties": {
+        "reviewId": "dormitory:osm:way:225198909",
+        "sourceObjectId": "osm:way:225198909",
+        "name": "23",
+        "candidateNumber": "23",
+        "candidateDisplayName": "23号楼",
+        "confidence": "HIGH",
+        "currentVerificationStatus": "SOURCE_VERIFIED",
+        "reason": "OSM source name begins with the explicit number 23; no spatial-order inference used",
+        "severity": "P2"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225198911",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.92813187622943,
+          32.118612549999995
+        ]
+      },
+      "properties": {
+        "reviewId": "dormitory:osm:way:225198911",
+        "sourceObjectId": "osm:way:225198911",
+        "name": "25",
+        "candidateNumber": "25",
+        "candidateDisplayName": "25号楼",
+        "confidence": "HIGH",
+        "currentVerificationStatus": "SOURCE_VERIFIED",
+        "reason": "OSM source name begins with the explicit number 25; no spatial-order inference used",
+        "severity": "P2"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225198913",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.92834864861624,
+          32.1189935
+        ]
+      },
+      "properties": {
+        "reviewId": "dormitory:osm:way:225198913",
+        "sourceObjectId": "osm:way:225198913",
+        "name": "27",
+        "candidateNumber": "27",
+        "candidateDisplayName": "27号楼",
+        "confidence": "HIGH",
+        "currentVerificationStatus": "SOURCE_VERIFIED",
+        "reason": "OSM source name begins with the explicit number 27; no spatial-order inference used",
+        "severity": "P2"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225255192",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.92833230778061,
+          32.1216807
+        ]
+      },
+      "properties": {
+        "reviewId": "dormitory:osm:way:225255192",
+        "sourceObjectId": "osm:way:225255192",
+        "name": "45",
+        "candidateNumber": "45",
+        "candidateDisplayName": "45号楼",
+        "confidence": "HIGH",
+        "currentVerificationStatus": "SOURCE_VERIFIED",
+        "reason": "OSM source name begins with the explicit number 45; no spatial-order inference used",
+        "severity": "P2"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225255194",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.92821984687414,
+          32.12130225
+        ]
+      },
+      "properties": {
+        "reviewId": "dormitory:osm:way:225255194",
+        "sourceObjectId": "osm:way:225255194",
+        "name": "43",
+        "candidateNumber": "43",
+        "candidateDisplayName": "43号楼",
+        "confidence": "HIGH",
+        "currentVerificationStatus": "SOURCE_VERIFIED",
+        "reason": "OSM source name begins with the explicit number 43; no spatial-order inference used",
+        "severity": "P2"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "osm:way:225255196",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.92838533874522,
+          32.12107885
+        ]
+      },
+      "properties": {
+        "reviewId": "dormitory:osm:way:225255196",
+        "sourceObjectId": "osm:way:225255196",
+        "name": "41",
+        "candidateNumber": "41",
+        "candidateDisplayName": "41号楼",
+        "confidence": "HIGH",
+        "currentVerificationStatus": "SOURCE_VERIFIED",
+        "reason": "OSM source name begins with the explicit number 41; no spatial-order inference used",
+        "severity": "P2"
+      }
+    }
+  ]
+}

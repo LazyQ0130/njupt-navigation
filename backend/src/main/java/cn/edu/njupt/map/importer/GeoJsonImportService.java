@@ -197,6 +197,31 @@ public class GeoJsonImportService {
         return java.util.Map.of("synthetic", synthetic, "openStreetMap", osm, "manual", manual);
     }
 
+    /**
+     * Makes a bootstrap directory an authoritative snapshot. Existing rows are disabled first;
+     * every feature present in the incoming files is enabled again by its normal upsert.
+     */
+    @Transactional
+    public java.util.Map<String, Integer> prepareDatasetRefresh(String mode) {
+        String normalized = mode.toLowerCase(Locale.ROOT);
+        if (!List.of("demo", "real").contains(normalized)) {
+            throw new IllegalArgumentException("dataset mode 必须是 demo 或 real");
+        }
+        int synthetic = buildingRepository.setEnabledByDataSource("SYNTHETIC", false)
+                + poiRepository.setEnabledByDataSource("SYNTHETIC", false)
+                + mapFeatureRepository.setEnabledByDataSource("SYNTHETIC", false)
+                + buildingEntranceRepository.setEnabledByDataSource("SYNTHETIC", false);
+        int osm = buildingRepository.setEnabledByDataSource("OPENSTREETMAP", false)
+                + poiRepository.setEnabledByDataSource("OPENSTREETMAP", false)
+                + mapFeatureRepository.setEnabledByDataSource("OPENSTREETMAP", false)
+                + buildingEntranceRepository.setEnabledByDataSource("OPENSTREETMAP", false);
+        int manual = buildingRepository.setEnabledByDataSource("MANUAL", false)
+                + poiRepository.setEnabledByDataSource("MANUAL", false)
+                + mapFeatureRepository.setEnabledByDataSource("MANUAL", false)
+                + buildingEntranceRepository.setEnabledByDataSource("MANUAL", false);
+        return java.util.Map.of("synthetic", synthetic, "openStreetMap", osm, "manual", manual);
+    }
+
     private boolean importBuilding(Campus campus, JsonNode properties, Geometry geometry,
                                    SourceMetadata metadata) {
         MultiPolygon multiPolygon = toMultiPolygon(geometry);
@@ -217,6 +242,9 @@ public class GeoJsonImportService {
                 campus,
                 externalId,
                 name,
+                optionalText(properties, "officialName").orElse(null),
+                optionalText(properties, "displayName").orElse(name),
+                properties.path("labelVisible").asBoolean(true),
                 textArray(properties, "aliases"),
                 category,
                 multiPolygon,
@@ -249,6 +277,9 @@ public class GeoJsonImportService {
                 building,
                 externalId,
                 requiredText(properties, "name"),
+                optionalText(properties, "officialName").orElse(null),
+                optionalText(properties, "displayName").orElse(requiredText(properties, "name")),
+                properties.path("labelVisible").asBoolean(true),
                 textArray(properties, "aliases"),
                 textArray(properties, "keywords"),
                 validatedCategory(properties, POI_CATEGORIES),

@@ -1,15 +1,15 @@
 {
   "datasetId": "njupt-xianlin-real-v1",
   "generatedAt": "2026-08-22",
-  "total": 500,
-  "valid": 500,
+  "total": 498,
+  "valid": 498,
   "warning": 338,
   "error": 0,
   "byFeatureType": {
     "BUILDING": 87,
     "CAMPUS_BOUNDARY": 1,
     "GREEN": 176,
-    "POI": 38,
+    "POI": 36,
     "ROAD_MAIN": 120,
     "ROAD_PEDESTRIAN": 61,
     "SPORT": 13,
@@ -49,9 +49,7 @@
         "osm:way:1390009974",
         "osm:way:1390009973",
         "osm:way:1390009975",
-        "osm:way:1390009974:poi",
-        "osm:way:1390009973:poi",
-        "osm:way:1390009975:poi"
+        "osm:way:1390009974:poi"
       ],
       "图书馆": [
         "osm:way:223859810",
@@ -2854,6 +2852,37 @@
       "reason": "missing verified name"
     }
   ],
+  "naming": {
+    "totalBuildings": 87,
+    "namedBuildings": 87,
+    "unnamedBuildings": 0,
+    "buildingsWithDisplayName": 87,
+    "hiddenBuildingLabels": 18,
+    "hiddenPoiLabels": 2,
+    "hiddenTotalLabels": 20,
+    "duplicateBuildingNameGroups": 5,
+    "duplicateBuildingRecords": 13,
+    "dormitoryCandidates": 50,
+    "confirmedDormitoryNumbers": 0,
+    "teachingBuildings": 9,
+    "canteenBuildings": 5,
+    "publicBuildings": 5,
+    "buildingPoiDuplicateGroups": 17,
+    "linkedPois": 23,
+    "uniqueAliases": 124,
+    "issueCounts": {
+      "UNNAMED": 0,
+      "GENERIC_NAME": 8,
+      "DUPLICATE_NAME": 13,
+      "OVERLONG_NAME": 4,
+      "AMBIGUOUS_NAME": 8,
+      "TECHNICAL_NAME": 0,
+      "MISSING_DISPLAY_NAME": 0,
+      "MISSING_ALIAS": 47,
+      "DORMITORY_UNKNOWN_NUMBER": 1,
+      "BUILDING_POI_DUPLICATE": 36
+    }
+  },
   "topologyClassification": {
     "connected": 271,
     "disconnected": 97,
@@ -2883,7 +2912,7 @@
     },
     "corePois": {
       "reviewed": 0,
-      "total": 20
+      "total": 18
     }
   }
 }

@@ -58,6 +58,19 @@
 - [ ] 人工确认 2 条 P0 拓扑道路与 1 个 P0 道路穿建筑组合
 - [ ] 人工确认校界、南北门、核心建筑/POI及第一批正式入口
 
+## Phase 1.6.2 — 校园命名与标签可读性
+
+- [x] 输出 Building/POI 十类命名问题审计与统计
+- [x] 建立 officialName / displayName / aliases / keywords 用途边界
+- [x] 生成 50 个宿舍候选 CSV、说明文档和 dev-only review layer
+- [x] 保持宿舍 `confirmed_*` 为空，不按地理位置猜编号
+- [x] 教1—教5、图书馆、食堂等使用来源可追溯的短标签
+- [x] 一食堂保留三个物理 Polygon，仅生成一个用户侧 POI/标签组
+- [x] POI 通过 buildingId 关联明确所在 Building
+- [x] 分离宿舍标签层（zoom 17+）并过滤 generic/ambiguous labels
+- [ ] 按 `DORMITORY_REVIEW.md` 完成人工/现场核验
+- [ ] 现场确认行政南楼/北楼的空间匹配
+
 ## Phase 2 — POI 搜索
 
 - [ ] 中文名称/别名/关键词模糊搜索
