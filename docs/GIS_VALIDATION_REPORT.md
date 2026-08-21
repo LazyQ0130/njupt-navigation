@@ -58,3 +58,12 @@
 ## 结论
 
 数据继续通过格式、Geometry、范围和稳定 ID 门槛，但人工质量门尚未通过。当前最小人工工作集是 2 个 P0 拓扑端点、1 个 P0 道路穿建筑组合，以及现场路线中列出的核心名称、校门和入口。完成核验前，本数据不能作为真实导航路网。
+
+## Phase 1.7 Validation v3
+
+- Valid objects: 498/498; errors: 0; raw warnings: 338.
+- MANUALLY_REVIEWED: 0; FIELD_VERIFIED: 0.
+- Confirmed dormitories: 0/50; formal entrances: 0; confirmed gates: 0/2.
+- P0 topology endpoints unresolved: 2; road/building P0 unresolved: 1.
+- Warning impact: BLOCKS_PHASE_2 7 groups; BLOCKS_PHASE_3 3 groups; NON_BLOCKING 4 groups.
+- `PHASE_2_READY = NO`. Details: `PHASE_2_DATA_READINESS.md`.

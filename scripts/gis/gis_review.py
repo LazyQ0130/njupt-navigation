@@ -415,14 +415,18 @@ def write_field_review_template(path: Path, buildings: list[dict[str, Any]], poi
             continue
         rows.append({
             "object_id": props["externalId"], "object_type": object_type,
-            "current_name": props["name"], "confirmed_name": "", "status": "",
+            "current_name": props["name"], "confirmed_name": "",
+            "confirmed_official_name": "", "confirmed_display_name": "", "aliases": "",
+            "status": "", "review_method": "", "name_verified": "", "geometry_verified": "",
             "entrance_lat": "", "entrance_lon": "", "walking_access": "",
             "cycling_access": "", "accessible": "", "notes": "",
         })
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", newline="", encoding="utf-8-sig") as handle:
         writer = csv.DictWriter(handle, fieldnames=list(rows[0].keys()) if rows else [
-            "object_id", "object_type", "current_name", "confirmed_name", "status",
+            "object_id", "object_type", "current_name", "confirmed_name",
+            "confirmed_official_name", "confirmed_display_name", "aliases", "status",
+            "review_method", "name_verified", "geometry_verified",
             "entrance_lat", "entrance_lon", "walking_access", "cycling_access", "accessible", "notes",
         ])
         writer.writeheader()

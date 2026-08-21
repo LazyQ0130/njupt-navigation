@@ -2914,5 +2914,43 @@
       "reviewed": 0,
       "total": 18
     }
+  },
+  "verificationV3": {
+    "manualReviewedCount": 0,
+    "fieldVerifiedCount": 0,
+    "confirmedDormitories": 0,
+    "pendingDormitories": 50,
+    "formalEntrances": 0,
+    "gateVerification": {
+      "reviewed": 0,
+      "required": 2
+    },
+    "p0TopologyRemaining": 2,
+    "roadBuildingP0Remaining": 1,
+    "phase2BlockerCount": 7,
+    "phase3BlockerCount": 3,
+    "phase2Ready": false,
+    "warningClassification": {
+      "BLOCKS_PHASE_2": [
+        "教1—教5名称与 Polygon 对应尚未经过用户人工确认",
+        "图书馆名称与位置尚未经过用户人工确认",
+        "一、二、三食堂的用户侧 POI 尚未经过人工确认",
+        "行政南楼/北楼的空间映射仍是候选",
+        "南门/北门尚无已确认的可搜索对象",
+        "宿舍编号尚未完成任何人工抽样确认",
+        "主席台 road/building P0 Geometry 歧义仍未解决"
+      ],
+      "BLOCKS_PHASE_3": [
+        "Formal Entrance 为 0，无法可靠选择建筑入口",
+        "仍有 2 个 P0 topology gap endpoint",
+        "道路/校门通行属性和无障碍属性仍有 UNKNOWN"
+      ],
+      "NON_BLOCKING": [
+        "12 栋建筑高度保持 NULL，2.5D 使用安全 fallback",
+        "20 个 generic/ambiguous/overlong 标签已隐藏但 Geometry 保留",
+        "P1/P2 topology warnings 保留为后续现场核验工作集",
+        "商业 POI 时效性尚未逐一现场复核"
+      ]
+    }
   }
 }

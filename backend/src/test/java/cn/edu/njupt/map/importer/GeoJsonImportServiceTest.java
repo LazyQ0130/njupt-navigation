@@ -177,6 +177,24 @@ class GeoJsonImportServiceTest {
         assertThat(captor.getValue().getBuilding()).isSameAs(building);
     }
 
+    @Test
+    void authoritativeRefreshDisablesExistingRowsBeforeUpsert() {
+        service.prepareDatasetRefresh("real");
+
+        verify(buildingRepository).setEnabledByDataSource("OPENSTREETMAP", false);
+        verify(poiRepository).setEnabledByDataSource("OPENSTREETMAP", false);
+        verify(mapFeatureRepository).setEnabledByDataSource("OPENSTREETMAP", false);
+        verify(buildingEntranceRepository).setEnabledByDataSource("OPENSTREETMAP", false);
+        verify(buildingRepository).setEnabledByDataSource("MANUAL", false);
+        verify(poiRepository).setEnabledByDataSource("SYNTHETIC", false);
+    }
+
+    @Test
+    void authoritativeRefreshRejectsUnknownMode() {
+        assertThatThrownBy(() -> service.prepareDatasetRefresh("unknown"))
+                .isInstanceOf(IllegalArgumentException.class);
+    }
+
     private ByteArrayInputStream stream(String text) {
         return new ByteArrayInputStream(text.getBytes(StandardCharsets.UTF_8));
     }

@@ -35,7 +35,7 @@ Generated from the normalized Xianlin dataset on 2026-08-22. `officialName` is s
 | MISSING_DISPLAY_NAME | 0 | — |
 | MISSING_ALIAS | 47 | `osm:way:224938858`, `osm:way:224938894`, `osm:way:1173057051`, `osm:way:224954737`, `osm:way:224990427` |
 | DORMITORY_UNKNOWN_NUMBER | 1 | `osm:way:225265337` |
-| BUILDING_POI_DUPLICATE | 36 | `osm:way:1173057050`, `osm:way:1173057050:poi`, `osm:way:1173057051`, `osm:way:1173057051:poi`, `osm:way:1173057053` |
+| BUILDING_POI_DUPLICATE | 36 | `osm:way:223859784`, `osm:way:223859784:poi`, `osm:way:1281082570`, `osm:way:1281082570:poi`, `osm:way:223859811` |
 
 `BUILDING_POI_DUPLICATE` is expected where a physical Building and user-facing POI represent the same place. It is audited, linked through `buildingId`, and should be deduplicated by future search—not deleted here.
 

@@ -57,7 +57,8 @@ class XianlinPipelineTest(unittest.TestCase):
 
         updated = apply_review(item, {"osm:node:1": {
             "status": "MANUALLY_REVIEWED", "reviewedAt": "2026-08-22",
-            "reviewedBy": "manual-review", "notes": "官方地图核对",
+            "reviewMethod": "OFFICIAL_REFERENCE", "nameVerified": True,
+            "geometryVerified": False, "reviewedBy": "manual-review", "notes": "官方地图核对",
         }})
 
         self.assertEqual(updated["properties"]["verificationStatus"], "MANUALLY_REVIEWED")

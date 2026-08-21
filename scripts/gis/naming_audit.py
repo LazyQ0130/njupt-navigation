@@ -92,6 +92,11 @@ def _issues(buildings: list[dict[str, Any]], pois: list[dict[str, Any]]) -> dict
 def _write_dormitory_artifacts(
     buildings: list[dict[str, Any]], dataset_dir: Path,
 ) -> tuple[list[dict[str, str]], dict[str, Any]]:
+    manual_path = dataset_dir / "manual" / "dormitory-review.csv"
+    existing_rows: dict[str, dict[str, str]] = {}
+    if manual_path.is_file():
+        with manual_path.open(encoding="utf-8-sig", newline="") as handle:
+            existing_rows = {row["osm_id"]: row for row in csv.DictReader(handle)}
     rows: list[dict[str, str]] = []
     review_features = []
     for item in buildings:
@@ -116,6 +121,17 @@ def _write_dormitory_artifacts(
             "status": "NEEDS_MANUAL_CONFIRMATION",
             "notes": "Engineering matching confidence only; not a factual verification.",
         }
+        existing = existing_rows.get(props["externalId"], {})
+        if (existing.get("confirmed_number", "").strip()
+                or existing.get("confirmed_display_name", "").strip()
+                or existing.get("status", "").strip() in {"MANUALLY_REVIEWED", "FIELD_VERIFIED"}):
+            for field in ("confirmed_number", "confirmed_display_name", "aliases", "status", "notes"):
+                row[field] = existing.get(field, "")
+            if props.get("verificationStatus") != row["status"]:
+                raise ValueError(
+                    f"{props['externalId']}: confirmed dormitory CSV must first be applied with "
+                    "apply_field_review.py --dormitory-input so override and review manifest stay synchronized"
+                )
         rows.append(row)
         review_features.append({
             "type": "Feature",
@@ -134,7 +150,6 @@ def _write_dormitory_artifacts(
             },
         })
     rows.sort(key=lambda row: (int(row["candidate_number"]) if row["candidate_number"].isdigit() else 999, row["osm_id"]))
-    manual_path = dataset_dir / "manual" / "dormitory-review.csv"
     with manual_path.open("w", encoding="utf-8-sig", newline="") as handle:
         writer = csv.DictWriter(handle, fieldnames=DORMITORY_FIELDS)
         writer.writeheader()

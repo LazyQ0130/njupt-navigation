@@ -1,8 +1,8 @@
 # 仙林校区人工审核清单
 
-核验结果先填写 `data/real/xianlin/manual/field-review-template.csv`，再运行 `python scripts/gis/apply_field_review.py --input <field-review.csv> --reviewed-at <ISO-8601>`。肉眼对照公开资料使用 `MANUALLY_REVIEWED`，亲临现场确认使用 `FIELD_VERIFIED`；不要修改 raw OSM 或直接编辑 normalized GeoJSON。
+核验结果先填写 `data/real/xianlin/manual/field-review-template.csv`，再运行 `python scripts/gis/apply_field_review.py --input <field-review.csv> --reviewed-at <ISO-8601>`。肉眼对照官方资料使用 `MANUALLY_REVIEWED` + `OFFICIAL_REFERENCE`，用户人工确认使用 `MANUALLY_REVIEWED` + `USER_MANUAL_REVIEW`，亲临现场确认使用 `FIELD_VERIFIED` + `FIELD_CHECK`；同时分别填写 `name_verified` 与 `geometry_verified`。不要修改 raw OSM 或直接编辑 normalized GeoJSON，也不要在 manifest 存储用户私人身份。
 
-宿舍编号单独填写 `data/real/xianlin/manual/dormitory-review.csv` 的 `confirmed_number`、`confirmed_display_name`、`aliases`、`status` 和 `notes`。候选列由 pipeline 重建，不能把 `HIGH` 当作人工确认；地图辅助核验可用 `?debug=gisp1` 并开启 **Dormitory Candidates**。
+宿舍编号单独填写 `data/real/xianlin/manual/dormitory-review.csv` 的 `confirmed_number`、`confirmed_display_name`、`aliases`、`status` 和 `notes`，再运行 `python scripts/gis/apply_field_review.py --dormitory-input data/real/xianlin/manual/dormitory-review.csv --reviewed-at <ISO-8601>`。转换器会同步更新 `building-names.json` 与 `review-manifest.json`。候选列由 pipeline 重建，不能把 `HIGH` 当作人工确认；地图辅助核验可用 `?debug=gisp1` 并开启 **Dormitory Candidates**。
 
 ## P0：校界与校门
 
@@ -89,7 +89,7 @@
 
 ## 完成定义
 
-- [ ] 每条记录包含 `reviewedBy`、`reviewedAt` 和原因/备注
+- [ ] 每条记录包含 `reviewedAt`、`reviewMethod`、`nameVerified`、`geometryVerified` 和原因/备注；`reviewedBy` 只用通用值
 - [ ] `dataSource=OSM` 等来源血缘未被人工状态覆盖
 - [ ] 重新 build 后 topology/validation report 与 manual 文件一致
 - [ ] 现场路线 A/B/C 记录已汇总，P0 均已处理或给出明确解释

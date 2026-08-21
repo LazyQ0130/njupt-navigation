@@ -213,9 +213,15 @@ def apply_review(item: dict[str, Any], reviews: dict[str, dict[str, Any]]) -> di
         raise ValueError(f"Review {external_id} must be MANUALLY_REVIEWED or FIELD_VERIFIED")
     if not review.get("reviewedAt"):
         raise ValueError(f"Review {external_id} must include reviewedAt")
+    method = review.get("reviewMethod")
+    if method not in {"OFFICIAL_REFERENCE", "USER_MANUAL_REVIEW", "FIELD_CHECK"}:
+        raise ValueError(f"Review {external_id} must include a supported reviewMethod")
     item["properties"].update({
         "verificationStatus": status,
         "verifiedAt": review["reviewedAt"],
+        "reviewMethod": method,
+        "nameVerified": bool(review.get("nameVerified", False)),
+        "geometryVerified": bool(review.get("geometryVerified", False)),
         "verificationNote": review.get("notes", ""),
         "reviewedBy": review.get("reviewedBy", "manual-review"),
     })
@@ -461,11 +467,18 @@ def normalize(raw: dict[str, Any]) -> tuple[dict[str, list[dict[str, Any]]], dic
             if (candidate["properties"].get("poiGroupId") or candidate["properties"]["externalId"]) == group_id
         ]
         properties.update({"externalId": source_id, "featureType": "POI", "buildingExternalId": item["properties"]["externalId"], "relatedBuildingExternalIds": related, "keywords": [], "priority": 45, "positionSource": "DERIVED_REPRESENTATIVE_POINT"})
+        properties["verificationStatus"] = "SOURCE_VERIFIED"
+        properties.pop("verifiedAt", None)
+        properties.pop("verificationNote", None)
+        properties.pop("reviewedBy", None)
         poi_display_name = properties.get("displayName") or properties.get("name", "")
         properties["labelVisible"] = poi_display_name not in GENERIC_NAMES and len(poi_display_name) <= 16
         for key in ("height", "heightSource", "minHeight", "color"):
             properties.pop(key, None)
-        layers["pois"].append(feature(point, properties))
+        derived = apply_naming_semantics(apply_aliases(
+            apply_override(feature(point, properties), overrides), aliases,
+        ))
+        layers["pois"].append(derived)
 
     layers["entrances"].extend(load_manual_entrances())
     layers["roads"] = apply_road_overrides(layers["roads"])
@@ -564,6 +577,7 @@ def validate(layers: dict[str, list[dict[str, Any]]], excluded: dict[str, int]) 
 def write_outputs(raw_path: Path) -> dict[str, Any]:
     from gis_review import generate_review_artifacts
     from naming_audit import generate_naming_artifacts
+    from readiness_report import generate_readiness_report
 
     raw = json.loads(raw_path.read_text(encoding="utf-8"))
     layers, excluded = normalize(raw)
@@ -586,6 +600,9 @@ def write_outputs(raw_path: Path) -> dict[str, Any]:
         "coreBuildings": topology["qualityMetrics"]["coreBuildingVerification"],
         "corePois": topology["qualityMetrics"]["corePoiVerification"],
     }
+    report["verificationV3"] = generate_readiness_report(
+        layers, topology, naming, report, DATASET_DIR,
+    )
     metadata = DATASET_DIR / "metadata"
     metadata.mkdir(parents=True, exist_ok=True)
     (metadata / "validation-report.json").write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

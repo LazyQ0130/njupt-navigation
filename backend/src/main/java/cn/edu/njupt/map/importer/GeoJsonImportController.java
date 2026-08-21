@@ -33,4 +33,9 @@ public class GeoJsonImportController {
     public java.util.Map<String, Integer> activateDataset(@PathVariable String mode) {
         return importService.activateDataset(mode);
     }
+
+    @PostMapping("/dataset-mode/{mode}/refresh")
+    public java.util.Map<String, Integer> prepareDatasetRefresh(@PathVariable String mode) {
+        return importService.prepareDatasetRefresh(mode);
+    }
 }

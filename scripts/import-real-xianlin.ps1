@@ -12,6 +12,10 @@ if ($LASTEXITCODE -ne 0) { throw "GIS validation failed; import stopped." }
 
 $summary = [ordered]@{ created = 0; updated = 0; failed = 0 }
 $files = @("campus", "surfaces", "buildings", "pois", "roads", "entrances")
+& curl.exe --silent --show-error --fail-with-body -u "$Username`:$Password" `
+    -X POST "$BaseUrl/admin/imports/dataset-mode/real/refresh" | Out-Null
+if ($LASTEXITCODE -ne 0) { throw "Unable to prepare authoritative real dataset refresh" }
+
 foreach ($layer in $files) {
     $path = "$repoRoot/data/real/xianlin/$layer.geojson"
     $response = & curl.exe --silent --show-error --fail-with-body `
@@ -24,9 +28,5 @@ foreach ($layer in $files) {
     $summary.failed += $result.failed
     Write-Output "$layer`: created=$($result.created), updated=$($result.updated)"
 }
-
-& curl.exe --silent --show-error --fail-with-body -u "$Username`:$Password" `
-    -X POST "$BaseUrl/admin/imports/dataset-mode/real" | Out-Null
-if ($LASTEXITCODE -ne 0) { throw "Unable to activate real dataset" }
 
 Write-Output "Real Xianlin GIS import complete: $($summary | ConvertTo-Json -Compress)"

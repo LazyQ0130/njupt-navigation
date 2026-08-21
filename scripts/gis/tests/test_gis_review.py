@@ -1,13 +1,17 @@
 import sys
+import json
+import tempfile
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
 from shapely.geometry import LineString, Point, Polygon, mapping
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from apply_field_review import build_updates  # noqa: E402
-from gis_review import analyze_intersections, classify_endpoints  # noqa: E402
+from apply_field_review import build_dormitory_updates, build_updates  # noqa: E402
+from gis_review import analyze_intersections, classify_endpoints, entrance_validation  # noqa: E402
+from xianlin_pipeline import apply_override, apply_review, apply_road_overrides  # noqa: E402
 
 
 def item(geometry, external_id, feature_type, name, category="OTHER", **properties):
@@ -75,8 +79,96 @@ class GisReviewTest(unittest.TestCase):
         reviews, buildings, _, entrances = build_updates(rows, "2026-08-22", "manual-review")
 
         self.assertEqual(reviews[0]["status"], "FIELD_VERIFIED")
+        self.assertEqual(reviews[0]["reviewMethod"], "FIELD_CHECK")
+        self.assertTrue(reviews[0]["nameVerified"])
+        self.assertFalse(reviews[0]["geometryVerified"])
         self.assertEqual(buildings["osm:way:1"]["name"], "教学2号楼")
+        self.assertEqual(buildings["osm:way:1"]["officialName"], "教学2号楼")
         self.assertIsNone(entrances[0]["properties"]["cyclingAccess"])
+        self.assertEqual(len(reviews), 2)
+        self.assertEqual(reviews[1]["objectId"], entrances[0]["properties"]["externalId"])
+        self.assertTrue(reviews[1]["geometryVerified"])
+
+    def test_review_manifest_has_final_status_precedence_and_dimensions(self):
+        feature = item(Point(1, 1), "osm:way:1", "BUILDING", "教1")
+        feature["properties"]["verificationStatus"] = "MANUALLY_REVIEWED"
+        reviews = {"osm:way:1": {
+            "objectId": "osm:way:1", "status": "FIELD_VERIFIED",
+            "reviewedAt": "2026-08-22", "reviewMethod": "FIELD_CHECK",
+            "nameVerified": True, "geometryVerified": False, "notes": "名称现场确认",
+        }}
+
+        apply_review(feature, reviews)
+
+        self.assertEqual(feature["properties"]["verificationStatus"], "FIELD_VERIFIED")
+        self.assertEqual(feature["properties"]["reviewMethod"], "FIELD_CHECK")
+        self.assertTrue(feature["properties"]["nameVerified"])
+        self.assertFalse(feature["properties"]["geometryVerified"])
+
+    def test_confirmed_dormitory_requires_explicit_review_and_builds_safe_names(self):
+        rows = [{
+            "osm_id": "osm:way:25", "confirmed_number": "25",
+            "confirmed_display_name": "25号楼", "aliases": "25栋|25号学生公寓",
+            "status": "MANUALLY_REVIEWED", "notes": "用户对照校园资料确认",
+        }]
+
+        reviews, buildings = build_dormitory_updates(rows, "2026-08-22")
+
+        self.assertEqual(reviews[0]["reviewMethod"], "USER_MANUAL_REVIEW")
+        self.assertEqual(buildings["osm:way:25"]["officialName"], "25号学生宿舍")
+        self.assertEqual(buildings["osm:way:25"]["displayName"], "25号楼")
+        self.assertIn("25号宿舍", buildings["osm:way:25"]["aliases"])
+
+    def test_manual_override_survives_changed_osm_name_and_keeps_stable_id(self):
+        override = {"osm:way:1": {
+            "officialName": "教学1号楼", "displayName": "教1",
+            "verificationStatus": "MANUALLY_REVIEWED",
+        }}
+        first = item(Point(1, 1), "osm:way:1", "BUILDING", "旧 OSM 名称")
+        refreshed = item(Point(1, 1), "osm:way:1", "BUILDING", "刷新后的 OSM 名称")
+
+        apply_override(first, override)
+        apply_override(refreshed, override)
+
+        self.assertEqual(refreshed["properties"]["externalId"], "osm:way:1")
+        self.assertEqual(refreshed["properties"]["displayName"], "教1")
+        self.assertEqual(refreshed["properties"]["verificationStatus"], "MANUALLY_REVIEWED")
+
+    def test_confirmed_merge_endpoint_override_is_traceable_and_minimal(self):
+        road = item(LineString([(0, 0), (1, 0)]), "road-a", "ROAD_MAIN", "Road A")
+        override = {
+            "type": "FeatureCollection",
+            "features": [{
+                "type": "Feature",
+                "geometry": mapping(LineString([(0, 0), (1.1, 0)])),
+                "properties": {
+                    "operation": "MERGE_ENDPOINT", "sourceObjectId": "road-a",
+                    "verificationStatus": "FIELD_VERIFIED", "reviewedAt": "2026-08-22",
+                    "reviewedBy": "manual-review", "reason": "现场确认连通",
+                },
+            }],
+        }
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "road-overrides.geojson"
+            path.write_text(json.dumps(override), encoding="utf-8")
+            with patch("xianlin_pipeline.MANUAL_DIR", Path(directory)):
+                updated = apply_road_overrides([road])
+
+        self.assertEqual(updated[0]["properties"]["externalId"], "road-a")
+        self.assertEqual(updated[0]["properties"]["manualOperation"], "MERGE_ENDPOINT")
+        self.assertEqual(updated[0]["geometry"]["coordinates"][-1], [1.1, 0.0])
+
+    def test_formal_entrance_validation_checks_building_and_network_distance(self):
+        layers = self.layers()
+        layers["entrances"] = [item(
+            Point(51.5, 50), "entrance-1", "ENTRANCE", "主要入口",
+            buildingExternalId="building-1",
+        )]
+
+        result = entrance_validation(layers, lambda geometry: geometry)
+
+        self.assertEqual(result[0]["boundaryStatus"], "OK")
+        self.assertEqual(result[0]["networkStatus"], "OK")
 
 
 if __name__ == "__main__":

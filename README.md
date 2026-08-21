@@ -132,11 +132,13 @@ python scripts/gis/xianlin_pipeline.py build
 docker compose up -d --build
 ```
 
-Pipeline 先运行 Geometry/坐标/校界/重复/道路和命名检查；Docker Compose 随后按 campus/surfaces/buildings/pois/roads/entrances 的依赖顺序幂等 upsert，并激活 `real` 数据集，只停用 `data_source=SYNTHETIC` 的展示对象。分开开发或需要手工刷新时仍可运行 `./scripts/import-real-xianlin.ps1`。生产使用 `prod` profile 时启动 importer 被禁用。当前覆盖 87 建筑、36 POI、181 条道路/步道、193 个地表/运动/水体对象和 1 个校界；入口为 0。一食堂三个相接建筑 Polygon 保持独立，但只派生一个用户侧 POI。
+Pipeline 先运行 Geometry/坐标/校界/重复/道路和命名检查；Docker Compose 随后把 real 目录作为 authoritative snapshot，先停用旧展示行，再按 campus/surfaces/buildings/pois/roads/entrances 的依赖顺序幂等 upsert，因此 OSM refresh 已移除的对象不会残留。分开开发或需要手工刷新时运行 `./scripts/import-real-xianlin.ps1`，采用相同快照语义。生产使用 `prod` profile 时启动 importer 被禁用。当前覆盖 87 建筑、36 POI、181 条道路/步道、193 个地表/运动/水体对象和 1 个校界；入口为 0。一食堂三个相接建筑 Polygon 保持独立，但只派生一个用户侧 POI。
 
 Phase 1.6 增加只读 review GeoJSON、道路端点分类、道路穿建筑解释、入口候选、人工 override/manifest 和现场 CSV 工作流。开发环境可用 `?debug=gisp1` 开启只读 GIS Review Mode；普通构建及学生 UI 默认隐藏。当前 368 个道路端点中 271 个已连接、97 个待分级复核（P0 2 / P1 25 / P2 70），并生成 5 个入口候选但没有将其冒充正式入口。详见 `docs/ROAD_TOPOLOGY_REVIEW.md`、`docs/FIELD_REVIEW_ROUTES.md` 和 `docs/GIS_VALIDATION_REPORT.md`。
 
 Phase 1.6.2 以 Flyway V5 增加兼容式 `official_name`、`display_name` 和 `label_visible`，保留 `name`；API 同时输出别名和 Building/POI 关联。地图标签使用 `displayName ?? name`，无意义标签被抑制，宿舍编号仅在 zoom 17+ 显示。50 个宿舍候选全部来自显式 OSM 名称/分类，`confirmed_*` 仍为空；开发审核层和人工 CSV 详见 `docs/CAMPUS_NAMING_AUDIT.md` 与 `docs/DORMITORY_REVIEW.md`。
+
+Phase 1.7 将 CSV 人工结果规范化写入既有 manual override + review manifest，并分别记录核验方法、名称核验与 Geometry 核验。当前没有收到新的用户确认事实，因此 `MANUALLY_REVIEWED=0`、`FIELD_VERIFIED=0`，没有把 `HIGH` 宿舍候选自动升级；Validation v3 判定 `PHASE_2_READY=NO`，PR #2 应保持 Draft。门槛与最小确认清单见 `docs/PHASE_2_DATA_READINESS.md`。
 
 ## Phase 1 地图 API
 
@@ -171,6 +173,7 @@ docker compose config
 - [x] Phase 1.5：真实仙林 GIS v1（自动采集、校验、导入）
 - [ ] Phase 1.6：人工核验辅助、拓扑清理与入口 v1（工具完成，等待 P0/现场核验）
 - [x] Phase 1.6.2：命名审计、宿舍候选工作流与标签层级
+- [ ] Phase 1.7：人工确认写回与 Validation v3（工具完成，等待人工事实）
 - [ ] Phase 2：POI 搜索
 - [ ] Phase 3：校园路网与路线规划
 - [ ] Phase 4：GPS 导航

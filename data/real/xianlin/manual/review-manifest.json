@@ -1,5 +1,5 @@
 {
   "schemaVersion": "1.0",
-  "instructions": "Only add MANUALLY_REVIEWED or FIELD_VERIFIED records with reviewedAt, reviewedBy and notes.",
+  "instructions": "Only add MANUALLY_REVIEWED or FIELD_VERIFIED records with reviewedAt, reviewMethod, nameVerified, geometryVerified and notes. Keep reviewedBy generic; do not store private identity.",
   "reviews": []
 }
