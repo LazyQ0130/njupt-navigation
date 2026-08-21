@@ -32,7 +32,8 @@ services:
       DB_PASSWORD: ${POSTGRES_PASSWORD:-change-me}
       ADMIN_BOOTSTRAP_USER: ${ADMIN_BOOTSTRAP_USER:-admin}
       ADMIN_BOOTSTRAP_PASSWORD: ${ADMIN_BOOTSTRAP_PASSWORD:-change-me-now}
-      GEOJSON_IMPORT_FILE: /app/data/sample-xianlin.geojson
+      GEOJSON_IMPORT_DIRECTORY: /app/data/real/xianlin
+      GEOJSON_IMPORT_DATASET_MODE: real
       GIS_REVIEW_DIRECTORY: /app/data/real/xianlin/review
       SPRING_PROFILES_ACTIVE: docker
     volumes:

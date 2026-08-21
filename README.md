@@ -92,6 +92,8 @@ Vite 会把 `/api` 代理到 `http://localhost:8080`。
 | `DB_USER/DB_PASSWORD` | 数据库凭据 |
 | `ADMIN_BOOTSTRAP_USER/PASSWORD` | Phase 0 导入端点临时 Basic Auth；Phase 7 将替换为正式管理员体系 |
 | `GEOJSON_IMPORT_FILE` | 可选：后端启动时导入容器内 GeoJSON 文件 |
+| `GEOJSON_IMPORT_DIRECTORY` | 可选：后端启动时按依赖顺序导入分层真实 GeoJSON 目录 |
+| `GEOJSON_IMPORT_DATASET_MODE` | 启动导入完成后激活 `demo` 或 `real` 数据集 |
 
 ## 数据库初始化
 
@@ -100,7 +102,7 @@ Flyway 在后端启动时自动执行 `backend/src/main/resources/db/migration`�
 1. 启用 `postgis` 与 `pg_trgm`；
 2. 创建 campus、building、entrance、poi、path_node、path_edge、scenario 等表；
 3. 为 Geometry、别名搜索和路网字段建立索引；
-4. 插入校区元数据；Docker 开发环境会幂等导入明确标注的合成演示 GeoJSON。
+4. 插入校区元数据；Docker 开发环境会幂等导入仓库内的真实仙林分层 GeoJSON。
 
 ## GeoJSON 导入
 
@@ -117,7 +119,7 @@ Flyway 在后端启动时自动执行 `backend/src/main/resources/db/migration`�
 curl.exe -u "admin:change-me-now" -F "file=@data/sample-xianlin.geojson" http://localhost:8080/api/admin/imports/geojson
 ```
 
-响应包含成功数、失败数以及逐条错误原因。Docker Compose 默认通过同一服务幂等加载示例文件。生产环境使用前必须修改临时管理员密码。
+响应包含成功数、失败数以及逐条错误原因。示例文件只用于手工测试，不再由 Docker Compose 默认加载。生产环境使用前必须修改临时管理员密码。
 
 ## 真实仙林 GIS 数据
 
@@ -128,10 +130,9 @@ python -m pip install -r scripts/gis/requirements.txt
 python scripts/gis/fetch_osm_xianlin.py
 python scripts/gis/xianlin_pipeline.py build
 docker compose up -d --build
-./scripts/import-real-xianlin.ps1
 ```
 
-导入命令先运行 Geometry/坐标/校界/重复/道路检查，再按依赖顺序幂等 upsert，并只停用 `data_source=SYNTHETIC` 的展示对象。生产使用 `prod` profile 时，启动 Demo importer 被禁用。当前覆盖 87 建筑、38 POI、181 条道路/步道、193 个地表/运动/水体对象和 1 个校界；入口为 0。全部真实对象最高为 `SOURCE_VERIFIED`，尚无 `MANUALLY_REVIEWED` 或 `FIELD_VERIFIED` 数据。
+Pipeline 先运行 Geometry/坐标/校界/重复/道路检查；Docker Compose 随后按 campus/surfaces/buildings/pois/roads/entrances 的依赖顺序幂等 upsert，并激活 `real` 数据集，只停用 `data_source=SYNTHETIC` 的展示对象。分开开发或需要手工刷新时仍可运行 `./scripts/import-real-xianlin.ps1`。生产使用 `prod` profile 时启动 importer 被禁用。当前覆盖 87 建筑、38 POI、181 条道路/步道、193 个地表/运动/水体对象和 1 个校界；入口为 0。全部真实对象最高为 `SOURCE_VERIFIED`，尚无 `MANUALLY_REVIEWED` 或 `FIELD_VERIFIED` 数据。
 
 Phase 1.6 增加只读 review GeoJSON、道路端点分类、道路穿建筑解释、入口候选、人工 override/manifest 和现场 CSV 工作流。开发环境可用 `?debug=gisp1` 开启只读 GIS Review Mode；普通构建及学生 UI 默认隐藏。当前 368 个道路端点中 271 个已连接、97 个待分级复核（P0 2 / P1 25 / P2 70），并生成 5 个入口候选但没有将其冒充正式入口。详见 `docs/ROAD_TOPOLOGY_REVIEW.md`、`docs/FIELD_REVIEW_ROUTES.md` 和 `docs/GIS_VALIDATION_REPORT.md`。
 
@@ -140,7 +141,7 @@ Phase 1.6 增加只读 review GeoJSON、道路端点分类、道路穿建筑解�
 - `GET /api/map/bootstrap`：校区相机、浏览边界、统计和图层可用性。
 - `GET /api/map/features?campusCode=NJUPT_XIANLIN`：标准 GeoJSON `FeatureCollection`；每个 Feature 都包含稳定 `id` 和 `properties.featureType`。
 
-前端使用不依赖商业密钥的纯色底图样式。地图内容全部来自 PostGIS → Spring Boot → GeoJSON → MapLibre 数据链。运行真实导入命令后显示 OSM 派生数据并保留 OSM attribution；示例文件中的合成名称、坐标和形状仅供测试，不能用于真实导航。详见 `docs/DATA_SOURCES.md`。
+前端使用不依赖商业密钥的纯色底图样式。地图内容全部来自 PostGIS → Spring Boot → GeoJSON → MapLibre 数据链。Docker 默认显示 OSM 派生数据并保留 OSM attribution；示例文件中的合成名称、坐标和形状仅供测试，不能用于真实导航。详见 `docs/DATA_SOURCES.md`。
 
 ## 管理员账号初始化
 

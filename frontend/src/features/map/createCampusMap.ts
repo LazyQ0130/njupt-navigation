@@ -5,7 +5,6 @@ import {
   GeoJSONSource,
   Map,
   type MapLayerMouseEvent,
-  type LngLatBoundsLike,
 } from 'maplibre-gl'
 import type { Feature, Point } from 'geojson'
 import { campusLabelLayers, campusVisualLayers } from './layers'
@@ -19,14 +18,14 @@ import {
 } from './mapConfig'
 import type { CampusBoundaryFeature, CampusMapController, CampusMapInput } from './types'
 import { addGisReviewLayers, setReviewLayerVisibility as setGisReviewLayerVisibility } from './reviewLayers'
+import { installDevelopmentDiagnostics } from './renderDiagnostics'
+import { campusFitPadding, deriveCampusViewport } from './campusViewport'
 
 export function createCampusMap(input: CampusMapInput): CampusMapController {
   const { container, campus, data, reviewData, callbacks } = input
-  const map = new Map(createMapOptions(container, campus))
-  const initialBounds: LngLatBoundsLike = [
-    [campus.bounds.west, campus.bounds.south],
-    [campus.bounds.east, campus.bounds.north],
-  ]
+  const viewport = deriveCampusViewport(data, campus)
+  const initialBounds = viewport.bounds
+  const map = new Map(createMapOptions(container, campus, viewport))
   let selectedBuildingId: string | number | undefined
   let destroyed = false
 
@@ -45,6 +44,7 @@ export function createCampusMap(input: CampusMapInput): CampusMapController {
     campusVisualLayers.forEach((layer) => map.addLayer(layer))
     if (reviewData) addGisReviewLayers(map, reviewData, callbacks.onReviewSelect)
     addUserLocationLayer(map)
+    fitCampus(map, initialBounds, campus, false)
     configureBuildingInteraction(map, (id, name, category) => {
       if (selectedBuildingId !== undefined) {
         map.setFeatureState({ source: CAMPUS_SOURCE_ID, id: selectedBuildingId }, { selected: false })
@@ -59,6 +59,12 @@ export function createCampusMap(input: CampusMapInput): CampusMapController {
     map.once('idle', () => {
       if (destroyed) return
       campusLabelLayers.forEach((layer) => map.addLayer(layer))
+    })
+    if (import.meta.env.DEV) installDevelopmentDiagnostics(map, data)
+    requestAnimationFrame(() => {
+      if (destroyed) return
+      map.resize()
+      fitCampus(map, initialBounds, campus, false)
     })
     callbacks.onReady()
   })
@@ -81,13 +87,7 @@ export function createCampusMap(input: CampusMapInput): CampusMapController {
     },
     reset() {
       map.setMaxBounds(initialBounds)
-      map.flyTo({
-        center: [campus.camera.longitude, campus.camera.latitude],
-        zoom: campus.camera.zoom,
-        pitch: campus.camera.pitch,
-        bearing: campus.camera.bearing,
-        essential: true,
-      })
+      fitCampus(map, initialBounds, campus, true)
     },
     resetNorth() {
       map.easeTo({ bearing: 0, pitch: campus.camera.pitch, duration: 200 })
@@ -111,6 +111,21 @@ export function createCampusMap(input: CampusMapInput): CampusMapController {
       setGisReviewLayerVisibility(map, group, visible)
     },
   }
+}
+
+function fitCampus(
+  map: Map,
+  bounds: [[number, number], [number, number]],
+  campus: CampusMapInput['campus'],
+  animate: boolean,
+): void {
+  map.fitBounds(bounds, {
+    padding: campusFitPadding(map.getContainer().getBoundingClientRect().width),
+    pitch: campus.camera.pitch,
+    bearing: campus.camera.bearing,
+    duration: animate ? 600 : 0,
+    essential: true,
+  })
 }
 
 function addUserLocationLayer(map: Map): void {
