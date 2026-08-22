@@ -31,6 +31,46 @@
 - [x] 合成数据全栈验收与来源声明
 - [ ] 真实仙林校区边界、建筑、道路和 POI 的授权采集与现场核验
 
+## Phase 1.5 — 真实仙林 GIS 数据质量门
+
+- [x] OSM Overpass 获取脚本、缓存与 ODbL attribution
+- [x] 南邮官方公开参考来源登记（不分发图片/PDF）
+- [x] 分层真实 GeoJSON、稳定 ID 和 manual override 目录
+- [x] Geometry、坐标、校界、重复、路网连接和穿建筑校验
+- [x] V3 来源/核验元数据与未知高度 NULL 语义
+- [x] Building/POI/MapFeature/Entrance 幂等导入链路
+- [x] Demo/Real 来源级切换与 production Demo 启动保护
+- [x] Validation report 与人工审核 checklist
+- [ ] 校界、名称、食堂/宿舍/校门和道路人工叠图核验
+- [ ] 主要建筑入口与通行属性现场核验
+- [ ] 将确认对象提升为 MANUALLY_REVIEWED / FIELD_VERIFIED
+
+## Phase 1.6 — GIS 人工核验辅助与入口 v1
+
+- [x] 按完整道路 Geometry 重做 endpoint topology classification
+- [x] 输出 topology report 与五类只读 review GeoJSON
+- [x] 逐条解释 3 条道路、4 个 road/building 相交组合
+- [x] 增强 road/building/POI/entrance override 与 review manifest
+- [x] 生成 5 个 candidate entrance，且不自动进入正式 Entrance
+- [x] 提供 field review CSV、转换脚本和 A/B/C 现场路线
+- [x] 增加开发环境只读 GIS Review Mode，生产普通 UI 默认关闭
+- [x] 以 Flyway V4 支持入口通行属性 UNKNOWN/NULL
+- [ ] 人工确认 2 条 P0 拓扑道路与 1 个 P0 道路穿建筑组合
+- [ ] 人工确认校界、南北门、核心建筑/POI及第一批正式入口
+
+## Phase 1.6.2 — 校园命名与标签可读性
+
+- [x] 输出 Building/POI 十类命名问题审计与统计
+- [x] 建立 officialName / displayName / aliases / keywords 用途边界
+- [x] 生成 50 个宿舍候选 CSV、说明文档和 dev-only review layer
+- [x] 保持宿舍 `confirmed_*` 为空，不按地理位置猜编号
+- [x] 教1—教5、图书馆、食堂等使用来源可追溯的短标签
+- [x] 一食堂保留三个物理 Polygon，仅生成一个用户侧 POI/标签组
+- [x] POI 通过 buildingId 关联明确所在 Building
+- [x] 分离宿舍标签层（zoom 17+）并过滤 generic/ambiguous labels
+- [ ] 按 `DORMITORY_REVIEW.md` 完成人工/现场核验
+- [ ] 现场确认行政南楼/北楼的空间匹配
+
 ## Phase 2 — POI 搜索
 
 - [ ] 中文名称/别名/关键词模糊搜索

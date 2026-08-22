@@ -48,6 +48,10 @@ app:
   import:
     max-features: ${IMPORT_MAX_FEATURES:5000}
     bootstrap-file: ${GEOJSON_IMPORT_FILE:}
+    bootstrap-directory: ${GEOJSON_IMPORT_DIRECTORY:}
+    bootstrap-dataset-mode: ${GEOJSON_IMPORT_DATASET_MODE:demo}
+  review:
+    directory: ${GIS_REVIEW_DIRECTORY:../data/real/xianlin/review}
 
 logging:
   pattern:

@@ -1,0 +1,2957 @@
+{
+  "datasetId": "njupt-xianlin-real-v1",
+  "generatedAt": "2026-08-22",
+  "total": 508,
+  "valid": 508,
+  "warning": 338,
+  "error": 0,
+  "byFeatureType": {
+    "BUILDING": 87,
+    "CAMPUS_BOUNDARY": 1,
+    "DORMITORY_ZONE": 10,
+    "GREEN": 176,
+    "POI": 36,
+    "ROAD_MAIN": 120,
+    "ROAD_PEDESTRIAN": 61,
+    "SPORT": 13,
+    "WATER": 4
+  },
+  "geometryErrors": [],
+  "coordinateErrors": [],
+  "coordinateSystem": "EPSG:4326 (WGS84 longitude, latitude)",
+  "outOfBounds": [],
+  "duplicates": {
+    "names": {
+      "行政楼办公楼": [
+        "osm:way:223859811",
+        "osm:way:223859826",
+        "osm:way:223859811:poi",
+        "osm:way:223859826:poi"
+      ],
+      "门卫": [
+        "osm:way:224938858",
+        "osm:way:224938894",
+        "osm:way:225109136",
+        "osm:way:223859807"
+      ],
+      "南邮仙林二食堂": [
+        "osm:way:223859784",
+        "osm:way:223859784:poi"
+      ],
+      "圆楼": [
+        "osm:way:224950590",
+        "osm:way:224950590:poi"
+      ],
+      "自动化学院、人工智能学院": [
+        "osm:way:1173057051",
+        "osm:way:1173057051:poi"
+      ],
+      "南邮仙林一食堂": [
+        "osm:way:1390009974",
+        "osm:way:1390009973",
+        "osm:way:1390009975",
+        "osm:way:1390009974:poi"
+      ],
+      "图书馆": [
+        "osm:way:223859810",
+        "osm:way:223859810:poi"
+      ],
+      "连廊": [
+        "osm:way:224990427",
+        "osm:way:224990428"
+      ],
+      "电子与光学工程学院、柔性材料（未来技术）学院": [
+        "osm:way:1173057050",
+        "osm:way:1173057050:poi"
+      ],
+      "主席台": [
+        "osm:way:223859827",
+        "osm:way:224940881"
+      ],
+      "地理与生物信息学院": [
+        "osm:way:1173057052",
+        "osm:way:1173057052:poi"
+      ],
+      "集成电路科学与工程学院": [
+        "osm:way:1173057053",
+        "osm:way:1173057053:poi"
+      ],
+      "工程实验教学部": [
+        "osm:way:1173057054",
+        "osm:way:1173057054:poi"
+      ],
+      "计算机学院、软件学院、网络空间安全学院": [
+        "osm:way:1173057055",
+        "osm:way:1173057055:poi"
+      ],
+      "南京邮电大学-文科楼": [
+        "osm:way:1173057056",
+        "osm:way:1173057056:poi"
+      ],
+      "材料科学与工程学院-新大楼": [
+        "osm:way:1173059720",
+        "osm:way:1173059720:poi"
+      ],
+      "新体育馆": [
+        "osm:way:1281082570",
+        "osm:way:1281082570:poi"
+      ],
+      "收发室": [
+        "osm:way:223859852",
+        "osm:way:223859852:poi"
+      ],
+      "南邮仙林三食堂": [
+        "osm:way:224896131",
+        "osm:way:224896131:poi"
+      ],
+      "学海路": [
+        "osm:way:118942534",
+        "osm:way:140811043"
+      ],
+      "文澜路": [
+        "osm:way:140811047",
+        "osm:way:1539473111",
+        "osm:way:1539473118",
+        "osm:way:1539473123",
+        "osm:way:140811046",
+        "osm:way:489234880"
+      ],
+      "文苑路": [
+        "osm:way:140811049",
+        "osm:way:423022850",
+        "osm:way:964850650",
+        "osm:way:964850652"
+      ],
+      "仙境路": [
+        "osm:way:964850648",
+        "osm:way:876594630",
+        "osm:way:876594631",
+        "osm:way:876594633",
+        "osm:way:876594632",
+        "osm:way:964850645",
+        "osm:way:964850646",
+        "osm:way:89910185",
+        "osm:way:876594626"
+      ],
+      "羊山北路": [
+        "osm:way:964850644",
+        "osm:way:99661763"
+      ],
+      "手球场": [
+        "osm:way:223859819",
+        "osm:way:223859847"
+      ]
+    },
+    "identicalGeometry": []
+  },
+  "missingNames": [
+    {
+      "id": "osm:way:223699461",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223699462",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223699463",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223699471",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223699475",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223699476",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223859831",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224952400",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224952411",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224954177",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224996916",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:226966740",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:673044223",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:964850651",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:155412175",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223699453",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223699455",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223699457",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223859804",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223859805",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223859841",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223859849",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224953924",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225092939",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:226967003",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:1173059695",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:1173059696",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:1173059698",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:1173059699",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:1173059700",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:1173059701",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:1173059702",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:1173059703",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:1173059722",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:155412163",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:155414099",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223699458",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223699464",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223699466",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223699467",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223859789",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223859803",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223859806",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223859830",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223859838",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223859842",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223859844",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224937776",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224937848",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224953943",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224953960",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224954286",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224954305",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224954306",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224954736",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224995051",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224995052",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224995721",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224995747",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224996490",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224996491",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224996492",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224996493",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224996566",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225009121",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225093475",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225093538",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225520900",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225520901",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:970894655",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:970894656",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:1173059705",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:1173059706",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:1173059719",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:1173059721",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:1443621025",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:155412170",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:155412172",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:188621612",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223859799",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223859845",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224939806",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224939821",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224941996",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224942000",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224942025",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224942030",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224942035",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224942039",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225267149",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225267150",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225267152",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225268089",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:1173057040",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:1173057041",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:1173057045",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:1173057048",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223859850",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224941984",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224941985",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225267147",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:949265197",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:1173057038",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:1173057039",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:1173057042",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:1173057044",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:1173057046",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223699450",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223699460",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223699465",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223699469",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223699473",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223699478",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223859785",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223859835",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224941251",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224941275",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224941322",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224941330",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224941334",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225107325",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225108277",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225109875",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225109876",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225109877",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225109878",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225109879",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225112716",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225112725",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225199796",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225199797",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225205498",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225251712",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:1173057037",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:1173057043",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:1173057047",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:1173059697",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:1173059704",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:1173059707",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:1173059718",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:1173064916",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:1539473117",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:1539473119",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223699479",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225094821",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225100414",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225100415",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225102231",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225204143",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:1467927210",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:1467927211",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223699474",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223859808",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223859825",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223859833",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223859848",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223859851",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223859836",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224938954",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224939064",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224939102",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224939105",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224939149",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224939486",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224939777",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224937908",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224939766",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224939838",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224940111",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225002058",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225002897",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225002899",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225006468",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225006469",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225092101",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225092102",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225101766",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224937955",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224940526",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224990801",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224990802",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224990803",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224990804",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224990805",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224991425",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224991427",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224991429",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224992394",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224992395",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224992396",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224992397",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224992509",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224992510",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224992782",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224992783",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224992784",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224992785",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224992786",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224993034",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224994117",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224994118",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224994119",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224994120",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224994121",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224994122",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224994870",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224994871",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224994872",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224995376",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224995377",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224995378",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224995720",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224996124",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224996125",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224997626",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224997627",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224997628",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224997629",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224997630",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224997758",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224997759",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224997760",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224997761",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225004378",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225004379",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225004380",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225004381",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225004382",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225004383",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225006155",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225006156",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225006466",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225006467",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225200151",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225200152",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225200153",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225269029",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224938508",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225001565",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225001566",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225002056",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225002057",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225002901",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225088249",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225090743",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225090744",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225092251",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225092397",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224941413",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224941417",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225106064",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225106065",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225106066",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225106950",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225107324",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225107427",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225109397",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225109420",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225111267",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225111268",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225111645",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225111916",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225111917",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225111918",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225111920",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225111921",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225111922",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225112714",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225112715",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225112717",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225112718",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225112719",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225112720",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225112721",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225112722",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225205344",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225205346",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225205347",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225205349",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225205901",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225205902",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225253708",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225253709",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225253710",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225253713",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225253714",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225253715",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225255208",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225255209",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225255210",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225255219",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:1173057057",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225100846",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225102477",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225102825",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225102826",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225102827",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225102828",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225204141",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225204385",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225206687",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225206688",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225206689",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225206690",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225249417",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225249419",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225249421",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225249422",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225249424",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225249426",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225249428",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225249429",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225251641",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225251642",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225251643",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225251644",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225251645",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225251646",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225251647",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225255213",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225255214",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225255215",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225255216",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225255217",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225763938",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224896261",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225094685",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225106603",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225199798",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225204386",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225205351",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225205900",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225255211",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225255212",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225255218",
+      "reason": "missing verified name"
+    }
+  ],
+  "unverified": 0,
+  "excludedRaw": {
+    "building_outside_or_invalid": 69,
+    "unnamed_building": 35,
+    "invalid_or_non_simple_road": 3
+  },
+  "roadConnectivity": {
+    "roadCount": 181,
+    "endpointCount": 368,
+    "danglingEndpointsAt4m": 244
+  },
+  "roadBuildingIntersections": [
+    {
+      "id": "osm:way:224954286",
+      "buildingIntersections": 2
+    },
+    {
+      "id": "osm:way:970894656",
+      "buildingIntersections": 1
+    },
+    {
+      "id": "osm:way:224941322",
+      "buildingIntersections": 1
+    }
+  ],
+  "warnings": [
+    {
+      "id": "osm:way:223699461",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223699462",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223699463",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223699471",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223699475",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223699476",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223859831",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224952400",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224952411",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224954177",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224996916",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:226966740",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:673044223",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:964850651",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:155412175",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223699453",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223699455",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223699457",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223859804",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223859805",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223859841",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223859849",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224953924",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225092939",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:226967003",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:1173059695",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:1173059696",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:1173059698",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:1173059699",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:1173059700",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:1173059701",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:1173059702",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:1173059703",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:1173059722",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:155412163",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:155414099",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223699458",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223699464",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223699466",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223699467",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223859789",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223859803",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223859806",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223859830",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223859838",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223859842",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223859844",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224937776",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224937848",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224953943",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224953960",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224954286",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224954305",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224954306",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224954736",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224995051",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224995052",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224995721",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224995747",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224996490",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224996491",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224996492",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224996493",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224996566",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225009121",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225093475",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225093538",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225520900",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225520901",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:970894655",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:970894656",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:1173059705",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:1173059706",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:1173059719",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:1173059721",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:1443621025",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:155412170",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:155412172",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:188621612",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223859799",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223859845",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224939806",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224939821",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224941996",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224942000",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224942025",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224942030",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224942035",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224942039",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225267149",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225267150",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225267152",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225268089",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:1173057040",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:1173057041",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:1173057045",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:1173057048",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223859850",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224941984",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224941985",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225267147",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:949265197",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:1173057038",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:1173057039",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:1173057042",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:1173057044",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:1173057046",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223699450",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223699460",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223699465",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223699469",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223699473",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223699478",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223859785",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223859835",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224941251",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224941275",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224941322",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224941330",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224941334",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225107325",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225108277",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225109875",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225109876",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225109877",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225109878",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225109879",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225112716",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225112725",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225199796",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225199797",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225205498",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225251712",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:1173057037",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:1173057043",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:1173057047",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:1173059697",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:1173059704",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:1173059707",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:1173059718",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:1173064916",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:1539473117",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:1539473119",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223699479",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225094821",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225100414",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225100415",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225102231",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225204143",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:1467927210",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:1467927211",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223699474",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223859808",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223859825",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223859833",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223859848",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223859851",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:223859836",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224938954",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224939064",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224939102",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224939105",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224939149",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224939486",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224939777",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224937908",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224939766",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224939838",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224940111",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225002058",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225002897",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225002899",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225006468",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225006469",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225092101",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225092102",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225101766",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224937955",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224940526",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224990801",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224990802",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224990803",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224990804",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224990805",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224991425",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224991427",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224991429",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224992394",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224992395",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224992396",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224992397",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224992509",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224992510",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224992782",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224992783",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224992784",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224992785",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224992786",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224993034",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224994117",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224994118",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224994119",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224994120",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224994121",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224994122",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224994870",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224994871",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224994872",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224995376",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224995377",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224995378",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224995720",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224996124",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224996125",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224997626",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224997627",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224997628",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224997629",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224997630",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224997758",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224997759",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224997760",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224997761",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225004378",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225004379",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225004380",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225004381",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225004382",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225004383",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225006155",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225006156",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225006466",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225006467",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225200151",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225200152",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225200153",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225269029",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224938508",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225001565",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225001566",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225002056",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225002057",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225002901",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225088249",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225090743",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225090744",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225092251",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225092397",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224941413",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224941417",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225106064",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225106065",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225106066",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225106950",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225107324",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225107427",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225109397",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225109420",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225111267",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225111268",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225111645",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225111916",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225111917",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225111918",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225111920",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225111921",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225111922",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225112714",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225112715",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225112717",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225112718",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225112719",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225112720",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225112721",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225112722",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225205344",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225205346",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225205347",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225205349",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225205901",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225205902",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225253708",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225253709",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225253710",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225253713",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225253714",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225253715",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225255208",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225255209",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225255210",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225255219",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:1173057057",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225100846",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225102477",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225102825",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225102826",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225102827",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225102828",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225204141",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225204385",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225206687",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225206688",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225206689",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225206690",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225249417",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225249419",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225249421",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225249422",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225249424",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225249426",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225249428",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225249429",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225251641",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225251642",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225251643",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225251644",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225251645",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225251646",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225251647",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225255213",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225255214",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225255215",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225255216",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225255217",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225763938",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:224896261",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225094685",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225106603",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225199798",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225204386",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225205351",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225205900",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225255211",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225255212",
+      "reason": "missing verified name"
+    },
+    {
+      "id": "osm:way:225255218",
+      "reason": "missing verified name"
+    }
+  ],
+  "naming": {
+    "totalBuildings": 87,
+    "namedBuildings": 87,
+    "unnamedBuildings": 0,
+    "buildingsWithDisplayName": 87,
+    "hiddenBuildingLabels": 18,
+    "hiddenPoiLabels": 2,
+    "hiddenTotalLabels": 20,
+    "duplicateBuildingNameGroups": 5,
+    "duplicateBuildingRecords": 13,
+    "dormitoryCandidates": 50,
+    "confirmedDormitoryNumbers": 0,
+    "teachingBuildings": 9,
+    "canteenBuildings": 5,
+    "publicBuildings": 5,
+    "buildingPoiDuplicateGroups": 17,
+    "linkedPois": 23,
+    "uniqueAliases": 222,
+    "issueCounts": {
+      "UNNAMED": 0,
+      "GENERIC_NAME": 8,
+      "DUPLICATE_NAME": 13,
+      "OVERLONG_NAME": 4,
+      "AMBIGUOUS_NAME": 8,
+      "TECHNICAL_NAME": 0,
+      "MISSING_DISPLAY_NAME": 0,
+      "MISSING_ALIAS": 47,
+      "DORMITORY_UNKNOWN_NUMBER": 1,
+      "BUILDING_POI_DUPLICATE": 36
+    }
+  },
+  "topologyClassification": {
+    "connected": 271,
+    "disconnected": 97,
+    "classification": {
+      "ISOLATED_SEGMENT": 9,
+      "LIKELY_TOPOLOGY_GAP": 2,
+      "LIKELY_VALID_TERMINUS": 66,
+      "NEAR_BUILDING_ENTRANCE": 6,
+      "NEAR_CAMPUS_BOUNDARY": 3,
+      "NEAR_OTHER_ROAD": 11
+    },
+    "priority": {
+      "P0": 2,
+      "P1": 25,
+      "P2": 70
+    },
+    "p0RoadCount": 2
+  },
+  "entranceCoverage": {
+    "buildingsWithEntrance": 0,
+    "coreBuildings": 18
+  },
+  "manualVerificationCoverage": {
+    "coreBuildings": {
+      "reviewed": 0,
+      "total": 18
+    },
+    "corePois": {
+      "reviewed": 0,
+      "total": 18
+    }
+  },
+  "verificationV3": {
+    "manualReviewedCount": 0,
+    "fieldVerifiedCount": 0,
+    "confirmedDormitories": 0,
+    "pendingDormitories": 50,
+    "formalEntrances": 0,
+    "gateVerification": {
+      "reviewed": 0,
+      "required": 2
+    },
+    "p0TopologyRemaining": 2,
+    "roadBuildingP0Remaining": 1,
+    "phase2BlockerCount": 7,
+    "phase3BlockerCount": 3,
+    "phase2Ready": false,
+    "warningClassification": {
+      "BLOCKS_PHASE_2": [
+        "教1—教5名称与 Polygon 对应尚未经过用户人工确认",
+        "图书馆名称与位置尚未经过用户人工确认",
+        "一、二、三食堂的用户侧 POI 尚未经过人工确认",
+        "行政南楼/北楼的空间映射仍是候选",
+        "南门/北门尚无已确认的可搜索对象",
+        "宿舍编号尚未完成任何人工抽样确认",
+        "主席台 road/building P0 Geometry 歧义仍未解决"
+      ],
+      "BLOCKS_PHASE_3": [
+        "Formal Entrance 为 0，无法可靠选择建筑入口",
+        "仍有 2 个 P0 topology gap endpoint",
+        "道路/校门通行属性和无障碍属性仍有 UNKNOWN"
+      ],
+      "NON_BLOCKING": [
+        "12 栋建筑高度保持 NULL，2.5D 使用安全 fallback",
+        "20 个 generic/ambiguous/overlong 标签已隐藏但 Geometry 保留",
+        "P1/P2 topology warnings 保留为后续现场核验工作集",
+        "商业 POI 时效性尚未逐一现场复核"
+      ]
+    }
+  }
+}

@@ -39,4 +39,45 @@ describe('normalizeMapData', () => {
 
     expect(normalizeMapData(input).features).toHaveLength(0)
   })
+
+  it('preserves displayName and allows a safe fallback to name', () => {
+    const input = {
+      type: 'FeatureCollection',
+      features: [
+        {
+          type: 'Feature', id: 'short', properties: {
+            id: 'short', featureType: 'BUILDING', name: '教学2号楼', displayName: '教2',
+          }, geometry: { type: 'Point', coordinates: [118.91, 32.1] },
+        },
+        {
+          type: 'Feature', id: 'fallback', properties: {
+            id: 'fallback', featureType: 'POI', name: '图书馆',
+          }, geometry: { type: 'Point', coordinates: [118.92, 32.1] },
+        },
+      ],
+    } as CampusFeatureCollection
+
+    const result = normalizeMapData(input)
+
+    expect(result.features[0]?.properties.displayName).toBe('教2')
+    expect(result.features[1]?.properties.displayName ?? result.features[1]?.properties.name).toBe('图书馆')
+  })
+
+  it('normalizes dormitory zone label features without losing their semantic role', () => {
+    const input = {
+      type: 'FeatureCollection',
+      features: [{
+        type: 'Feature', id: 'zone-liu', properties: {
+          id: 'zone-liu', featureType: 'dormitory_zone', name: '柳苑',
+          displayName: '柳苑', geometryRole: 'LABEL_ONLY',
+        }, geometry: { type: 'Point', coordinates: [118.9291, 32.1203] },
+      }],
+    } as CampusFeatureCollection
+
+    const [zone] = normalizeMapData(input).features
+
+    expect(zone?.properties.featureType).toBe('DORMITORY_ZONE')
+    expect(zone?.properties.displayName).toBe('柳苑')
+    expect(zone?.properties.geometryRole).toBe('LABEL_ONLY')
+  })
 })

@@ -1,13 +1,17 @@
 <script setup lang="ts">
 import { computed, nextTick, onBeforeUnmount, onMounted, ref, shallowRef } from 'vue'
 import type { CampusSummary } from '@/api/map'
-import { fetchMapFeatures } from '@/api/map'
+import { fetchGisReviewLayers, fetchMapFeatures } from '@/api/map'
 import { formatApiError } from '@/api/http'
 import { useMapBootstrapStore } from '@/stores/mapBootstrap'
 import { createCampusMap } from '../createCampusMap'
 import { normalizeMapData } from '../mapDataMapper'
 import { deriveMapUiState, geolocationErrorMessage } from '../mapUiState'
 import type { CampusMapController, NormalizedFeatureCollection, SelectedPlace } from '../types'
+import type { ReviewLayerGroup, SelectedReview } from '../types'
+import { activeReviewLayerKeys, isGisReviewModeEnabled } from '../gisReview'
+import type { GisReviewCollections } from '../gisReview'
+import GisReviewPanel from './GisReviewPanel.vue'
 import MapControls from './MapControls.vue'
 import MapSearchPlaceholder from './MapSearchPlaceholder.vue'
 import MapStatusOverlay from './MapStatusOverlay.vue'
@@ -23,6 +27,18 @@ const loading = ref(true)
 const error = ref('')
 const locating = ref(false)
 const selectedPlace = ref<SelectedPlace>()
+const selectedReview = ref<SelectedReview>()
+const reviewMode = isGisReviewModeEnabled(window.location.search)
+const reviewVisibility = ref<Record<ReviewLayerGroup, boolean>>({
+  buildings: true,
+  roads: true,
+  pois: true,
+  endpoints: true,
+  intersections: true,
+  candidates: true,
+  dormitories: true,
+  verification: true,
+})
 const toastMessage = ref('')
 const toastActionLabel = ref('')
 const toastSecondaryLabel = ref('')
@@ -55,12 +71,22 @@ async function loadMap(): Promise<void> {
     }
     await nextTick()
     if (!mapHost.value) throw new Error('地图容器尚未准备好')
+    let reviewData: GisReviewCollections | undefined
+    if (reviewMode) {
+      try {
+        reviewData = await fetchGisReviewLayers(activeReviewLayerKeys(true))
+      } catch (reason) {
+        showToast(`GIS review 数据加载失败：${formatApiError(reason)}`)
+      }
+    }
     controller = createCampusMap({
       container: mapHost.value,
       campus: campus.value,
       data: data.value,
+      reviewData,
       callbacks: {
         onBuildingSelect: (place) => { selectedPlace.value = place },
+        onReviewSelect: (review) => { selectedReview.value = review },
         onError: (message) => showToast(`地图资源提示：${message}`),
         onReady: () => { loading.value = false },
       },
@@ -109,6 +135,11 @@ function resetCampus(): void {
 
 function resetNorth(): void {
   controller?.resetNorth()
+}
+
+function toggleReviewLayer(group: ReviewLayerGroup, visible: boolean): void {
+  reviewVisibility.value[group] = visible
+  controller?.setReviewLayerVisibility(group, visible)
 }
 
 function showToast(
@@ -179,6 +210,14 @@ onBeforeUnmount(() => {
       <PlacePeek :place="selectedPlace" @close="selectedPlace = undefined" />
     </div>
 
+    <div v-if="reviewMode" class="review-slot">
+      <GisReviewPanel
+        :visibility="reviewVisibility"
+        :selected="selectedReview"
+        @toggle="toggleReviewLayer"
+      />
+    </div>
+
     <div class="toast-slot" :class="{ 'has-place': selectedPlace }">
       <MapToast
         :message="toastMessage"
@@ -209,12 +248,14 @@ onBeforeUnmount(() => {
 .map-controls.has-place { bottom: max(196px, calc(env(safe-area-inset-bottom) + 188px)); }
 .place-slot { position: absolute; z-index: 13; right: 12px; bottom: max(112px, calc(env(safe-area-inset-bottom) + 104px)); left: 12px; display: flex; justify-content: center; pointer-events: none; }
 .place-slot > * { pointer-events: auto; }
+.review-slot { position: absolute; z-index: 30; top: max(78px, calc(env(safe-area-inset-top) + 70px)); left: max(12px, env(safe-area-inset-left)); }
 .toast-slot { position: absolute; z-index: 20; top: max(74px, calc(env(safe-area-inset-top) + 66px)); left: 50%; transform: translateX(-50%); }
 @media (min-width: 768px) {
   .map-header { padding: 24px 0 0 24px; }
   .quick-actions { bottom: 18px; }
   .map-controls, .map-controls.has-place { top: 24px; right: 24px; bottom: auto; }
   .place-slot { right: auto; bottom: 24px; left: 24px; justify-content: flex-start; }
+  .review-slot { top: 86px; right: 24px; left: auto; }
   .toast-slot, .toast-slot.has-place { top: 86px; bottom: auto; }
 }
 </style>

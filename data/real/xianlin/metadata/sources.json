@@ -1,0 +1,72 @@
+{
+  "datasetId": "njupt-xianlin-real-v1",
+  "sources": [
+    {
+      "source_name": "OpenStreetMap Xianlin campus extract",
+      "source_url": "https://www.openstreetmap.org/way/89910254",
+      "source_type": "OSM Overpass extract",
+      "license": "ODbL 1.0",
+      "required_attribution": "© OpenStreetMap contributors",
+      "retrieved_at": "2026-08-22",
+      "coordinate_system": "WGS84 / EPSG:4326",
+      "precision": "community mapped; varies by object",
+      "verification_status": "SOURCE_VERIFIED",
+      "notes": "Geometry source for the v1 dataset; not field verified. Raw Overpass response is retained with the dataset."
+    },
+    {
+      "source_name": "NJUPT official campus map page",
+      "source_url": "https://www.njupt.edu.cn/17230/list.htm",
+      "source_type": "official reference page",
+      "license": "Copyright retained by NJUPT; reference only",
+      "retrieved_at": "2026-08-22",
+      "coordinate_system": "not applicable",
+      "precision": "official schematic reference; not survey geometry",
+      "verification_status": "SOURCE_VERIFIED",
+      "notes": "The page and its campus-map image directly label the numbered dormitory zones. The image is reference-only and is not redistributed; its 2017 publication date means current field confirmation remains desirable."
+    },
+    {
+      "source_name": "NJUPT official Xianlin campus map image",
+      "source_url": "https://www.njupt.edu.cn/_upload/article/images/eb/1f/e323ae9b457181e6874b1fc47842/d70d14a3-62d5-450d-9ec4-ae0ca836dc8c.jpg",
+      "source_type": "official schematic campus map",
+      "license": "Copyright retained by NJUPT; factual reference only",
+      "retrieved_at": "2026-08-22",
+      "coordinate_system": "not applicable",
+      "precision": "zone names and numbered-building membership only; not boundary geometry",
+      "verification_status": "SOURCE_VERIFIED",
+      "notes": "Supports 梅苑1–6、兰苑7–12、竹苑13–15、菊苑16–21、桃苑22–27、李苑28–33、柳苑34–39、桂苑40–45、南荷46–47、北荷48–49. Label points remain derived from OSM building geometry and are explicitly LABEL_ONLY."
+    },
+    {
+      "source_name": "NJUPT official contact and address page",
+      "source_url": "https://www.njupt.edu.cn/15/list.htm",
+      "source_type": "official public web page",
+      "license": "Copyright retained by NJUPT; factual reference only",
+      "retrieved_at": "2026-08-22",
+      "coordinate_system": "not applicable",
+      "precision": "campus postal address",
+      "verification_status": "SOURCE_VERIFIED",
+      "notes": "Confirms Xianlin campus at 9 Wenyuan Road, Nanjing."
+    },
+    {
+      "source_name": "NJUPT anniversary run route",
+      "source_url": "https://xqp.njupt.edu.cn/hdgk/list.htm",
+      "source_type": "official public web page",
+      "license": "Copyright retained by NJUPT; factual reference only",
+      "retrieved_at": "2026-08-22",
+      "coordinate_system": "not applicable",
+      "precision": "named route landmarks only",
+      "verification_status": "SOURCE_VERIFIED",
+      "notes": "Confirms names including library, Dingxin Avenue, south/north gates, canteens, activity centre, gymnasium, discipline building, administration building and round building; does not verify geometry."
+    },
+    {
+      "source_name": "NJUPT graduate examination notice",
+      "source_url": "https://yzb.njupt.edu.cn/2020/1218/c12466a178675/page.htm",
+      "source_type": "official public web page",
+      "license": "Copyright retained by NJUPT; factual reference only",
+      "retrieved_at": "2026-08-22",
+      "coordinate_system": "not applicable",
+      "precision": "building-name reference",
+      "verification_status": "SOURCE_VERIFIED",
+      "notes": "Confirms 教2 and 教3 as Xianlin teaching buildings; attachment is not redistributed."
+    }
+  ]
+}

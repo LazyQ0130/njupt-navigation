@@ -6,14 +6,25 @@ import type { SelectedPlace } from '../types'
 const props = defineProps<{ place: SelectedPlace }>()
 defineEmits<{ close: [] }>()
 
-const categoryLabel = computed(() => ({
-  ADMIN: '行政服务',
+const categoryLabel = computed(() => {
+  if (props.place.category === 'DORMITORY' && props.place.dormitoryZone) {
+    return `${props.place.dormitoryZone} · 学生宿舍`
+  }
+  return ({
+  ADMINISTRATION: '行政服务',
   DINING: '餐饮服务',
   DORMITORY: '学生宿舍',
   LIBRARY: '图书馆',
   SERVICE: '校园服务',
   TEACHING: '教学建筑',
-}[props.place.category] ?? '校园建筑'))
+  }[props.place.category] ?? '校园建筑')
+})
+
+const secondaryName = computed(() => (
+  props.place.officialName && props.place.officialName !== props.place.name
+    ? props.place.officialName
+    : undefined
+))
 </script>
 
 <template>
@@ -24,6 +35,7 @@ const categoryLabel = computed(() => ({
     <span class="place-copy">
       <small>{{ categoryLabel }}</small>
       <strong>{{ place.name }}</strong>
+      <span v-if="secondaryName" class="official-name">{{ secondaryName }}</span>
     </span>
     <button type="button" aria-label="关闭地点信息" @click="$emit('close')">
       <X :size="18" :stroke-width="1.8" aria-hidden="true" />
@@ -37,6 +49,7 @@ const categoryLabel = computed(() => ({
 .place-copy { display: grid; min-width: 0; gap: 2px; }
 small { color: var(--ui-text-secondary); font-size: 10px; font-weight: 650; }
 strong { overflow: hidden; color: var(--ui-text); font-size: 14px; text-overflow: ellipsis; white-space: nowrap; }
+.official-name { overflow: hidden; color: var(--ui-text-secondary); font-size: 11px; text-overflow: ellipsis; white-space: nowrap; }
 button { display: grid; width: 34px; height: 34px; place-items: center; border: 0; border-radius: 9px; background: transparent; color: var(--ui-text-secondary); }
 button:hover { background: var(--ui-surface-muted); color: var(--ui-text); }
 @keyframes place-in { from { opacity: 0; transform: translateY(10px); } }

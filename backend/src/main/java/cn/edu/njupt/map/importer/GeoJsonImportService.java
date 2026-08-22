@@ -1,11 +1,13 @@
 package cn.edu.njupt.map.importer;
 
 import cn.edu.njupt.map.domain.Building;
+import cn.edu.njupt.map.domain.BuildingEntrance;
 import cn.edu.njupt.map.domain.Campus;
 import cn.edu.njupt.map.domain.Poi;
 import cn.edu.njupt.map.domain.MapFeature;
 import cn.edu.njupt.map.importer.GeoJsonImportResult.ImportError;
 import cn.edu.njupt.map.repository.BuildingRepository;
+import cn.edu.njupt.map.repository.BuildingEntranceRepository;
 import cn.edu.njupt.map.repository.CampusRepository;
 import cn.edu.njupt.map.repository.PoiRepository;
 import cn.edu.njupt.map.repository.MapFeatureRepository;
@@ -14,6 +16,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.time.Instant;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Locale;
@@ -42,12 +45,13 @@ public class GeoJsonImportService {
     private static final List<String> POI_CATEGORIES = BUILDING_CATEGORIES;
     private static final List<String> MAP_FEATURE_TYPES = List.of(
             "CAMPUS_BOUNDARY", "GREEN", "WATER", "SPORT", "PLAZA",
-            "ROAD_MAIN", "ROAD_PEDESTRIAN"
+            "ROAD_MAIN", "ROAD_PEDESTRIAN", "DORMITORY_ZONE"
     );
 
     private final ObjectMapper objectMapper;
     private final CampusRepository campusRepository;
     private final BuildingRepository buildingRepository;
+    private final BuildingEntranceRepository buildingEntranceRepository;
     private final PoiRepository poiRepository;
     private final MapFeatureRepository mapFeatureRepository;
     private final int maxFeatures;
@@ -56,10 +60,12 @@ public class GeoJsonImportService {
     public GeoJsonImportService(ObjectMapper objectMapper, CampusRepository campusRepository,
                                 BuildingRepository buildingRepository, PoiRepository poiRepository,
                                 MapFeatureRepository mapFeatureRepository,
+                                BuildingEntranceRepository buildingEntranceRepository,
                                 @Value("${app.import.max-features:5000}") int maxFeatures) {
         this.objectMapper = objectMapper;
         this.campusRepository = campusRepository;
         this.buildingRepository = buildingRepository;
+        this.buildingEntranceRepository = buildingEntranceRepository;
         this.poiRepository = poiRepository;
         this.mapFeatureRepository = mapFeatureRepository;
         this.maxFeatures = maxFeatures;
@@ -88,7 +94,7 @@ public class GeoJsonImportService {
             JsonNode feature = features.get(index);
             String externalId = feature.path("properties").path("externalId").asText(null);
             try {
-                boolean wasCreated = importFeature(feature);
+                boolean wasCreated = importFeature(feature, root.path("metadata"));
                 if (wasCreated) {
                     created++;
                 } else {
@@ -103,7 +109,7 @@ public class GeoJsonImportService {
         return new GeoJsonImportResult(features.size(), succeeded, errors.size(), created, updated, errors);
     }
 
-    private boolean importFeature(JsonNode feature) throws ParseException {
+    private boolean importFeature(JsonNode feature, JsonNode defaults) throws ParseException {
         if (!"Feature".equals(feature.path("type").asText())) {
             throw new IllegalArgumentException("对象 type 必须是 Feature");
         }
@@ -114,30 +120,37 @@ public class GeoJsonImportService {
         Campus campus = campusRepository.findByCodeAndEnabledTrue(campusCode)
                 .orElseThrow(() -> new IllegalArgumentException("找不到启用的校区: " + campusCode));
         Geometry geometry = readGeometry(feature.path("geometry"));
+        SourceMetadata metadata = sourceMetadata(properties, defaults);
 
         return switch (featureType) {
-            case "BUILDING" -> importBuilding(campus, properties, geometry);
-            case "POI" -> importPoi(campus, properties, geometry);
+            case "BUILDING" -> importBuilding(campus, properties, geometry, metadata);
+            case "POI" -> importPoi(campus, properties, geometry, metadata);
+            case "ENTRANCE" -> importEntrance(properties, geometry, metadata);
             case "CAMPUS_BOUNDARY", "GREEN", "WATER", "SPORT", "PLAZA",
-                    "ROAD_MAIN", "ROAD_PEDESTRIAN" -> importMapFeature(
-                            campus, featureType, properties, geometry
+                    "ROAD_MAIN", "ROAD_PEDESTRIAN", "DORMITORY_ZONE" -> importMapFeature(
+                            campus, featureType, properties, geometry, metadata
                     );
             default -> throw new IllegalArgumentException("不支持的 featureType: " + featureType);
         };
     }
 
     private boolean importMapFeature(Campus campus, String featureType, JsonNode properties,
-                                     Geometry geometry) {
+                                     Geometry geometry, SourceMetadata metadata) {
         if (!MAP_FEATURE_TYPES.contains(featureType)) {
             throw new IllegalArgumentException("不支持的地图要素类型: " + featureType);
         }
         boolean road = featureType.startsWith("ROAD_");
-        boolean validType = road
+        boolean zoneLabel = "DORMITORY_ZONE".equals(featureType);
+        boolean validType = zoneLabel
+                ? geometry instanceof Point
+                : road
                 ? "LineString".equals(geometry.getGeometryType())
                         || "MultiLineString".equals(geometry.getGeometryType())
                 : geometry instanceof Polygon || geometry instanceof MultiPolygon;
         if (!validType) {
-            throw new IllegalArgumentException(road
+            throw new IllegalArgumentException(zoneLabel
+                    ? "Dormitory Zone Geometry 必须是 Point"
+                    : road
                     ? "道路 Geometry 必须是 LineString 或 MultiLineString"
                     : "面状地图要素 Geometry 必须是 Polygon 或 MultiPolygon");
         }
@@ -154,22 +167,77 @@ public class GeoJsonImportService {
                 geometry,
                 optionalText(properties, "color").orElse(null),
                 properties.path("priority").asInt(0),
+                metadata.dataSource(), metadata.verificationStatus(), metadata.sourceId(),
+                metadata.sourceUpdatedAt(),
                 properties.path("enabled").asBoolean(true)
         );
         mapFeatureRepository.save(mapFeature);
+        if ("CAMPUS_BOUNDARY".equals(featureType)) {
+            campus.updateBoundary(toMultiPolygon(geometry), metadata.dataSource(),
+                    metadata.verificationStatus(), metadata.sourceId(), metadata.sourceUpdatedAt());
+            campusRepository.save(campus);
+        }
         return existing.isEmpty();
     }
 
-    private boolean importBuilding(Campus campus, JsonNode properties, Geometry geometry) {
+    @Transactional
+    public java.util.Map<String, Integer> activateDataset(String mode) {
+        String normalized = mode.toLowerCase(Locale.ROOT);
+        if (!List.of("demo", "real").contains(normalized)) {
+            throw new IllegalArgumentException("dataset mode 必须是 demo 或 real");
+        }
+        boolean demo = "demo".equals(normalized);
+        int synthetic = buildingRepository.setEnabledByDataSource("SYNTHETIC", demo)
+                + poiRepository.setEnabledByDataSource("SYNTHETIC", demo)
+                + mapFeatureRepository.setEnabledByDataSource("SYNTHETIC", demo)
+                + buildingEntranceRepository.setEnabledByDataSource("SYNTHETIC", demo);
+        int osm = buildingRepository.setEnabledByDataSource("OPENSTREETMAP", !demo)
+                + poiRepository.setEnabledByDataSource("OPENSTREETMAP", !demo)
+                + mapFeatureRepository.setEnabledByDataSource("OPENSTREETMAP", !demo)
+                + buildingEntranceRepository.setEnabledByDataSource("OPENSTREETMAP", !demo);
+        int manual = buildingRepository.setEnabledByDataSource("MANUAL", !demo)
+                + poiRepository.setEnabledByDataSource("MANUAL", !demo)
+                + mapFeatureRepository.setEnabledByDataSource("MANUAL", !demo)
+                + buildingEntranceRepository.setEnabledByDataSource("MANUAL", !demo);
+        return java.util.Map.of("synthetic", synthetic, "openStreetMap", osm, "manual", manual);
+    }
+
+    /**
+     * Makes a bootstrap directory an authoritative snapshot. Existing rows are disabled first;
+     * every feature present in the incoming files is enabled again by its normal upsert.
+     */
+    @Transactional
+    public java.util.Map<String, Integer> prepareDatasetRefresh(String mode) {
+        String normalized = mode.toLowerCase(Locale.ROOT);
+        if (!List.of("demo", "real").contains(normalized)) {
+            throw new IllegalArgumentException("dataset mode 必须是 demo 或 real");
+        }
+        int synthetic = buildingRepository.setEnabledByDataSource("SYNTHETIC", false)
+                + poiRepository.setEnabledByDataSource("SYNTHETIC", false)
+                + mapFeatureRepository.setEnabledByDataSource("SYNTHETIC", false)
+                + buildingEntranceRepository.setEnabledByDataSource("SYNTHETIC", false);
+        int osm = buildingRepository.setEnabledByDataSource("OPENSTREETMAP", false)
+                + poiRepository.setEnabledByDataSource("OPENSTREETMAP", false)
+                + mapFeatureRepository.setEnabledByDataSource("OPENSTREETMAP", false)
+                + buildingEntranceRepository.setEnabledByDataSource("OPENSTREETMAP", false);
+        int manual = buildingRepository.setEnabledByDataSource("MANUAL", false)
+                + poiRepository.setEnabledByDataSource("MANUAL", false)
+                + mapFeatureRepository.setEnabledByDataSource("MANUAL", false)
+                + buildingEntranceRepository.setEnabledByDataSource("MANUAL", false);
+        return java.util.Map.of("synthetic", synthetic, "openStreetMap", osm, "manual", manual);
+    }
+
+    private boolean importBuilding(Campus campus, JsonNode properties, Geometry geometry,
+                                   SourceMetadata metadata) {
         MultiPolygon multiPolygon = toMultiPolygon(geometry);
         validateGeometry(multiPolygon);
 
         String externalId = requiredText(properties, "externalId");
         String name = requiredText(properties, "name");
         String category = validatedCategory(properties, BUILDING_CATEGORIES);
-        double height = properties.path("height").asDouble(10);
+        Double height = properties.hasNonNull("height") ? properties.path("height").asDouble() : null;
         double minHeight = properties.path("minHeight").asDouble(0);
-        if (minHeight < 0 || height < minHeight) {
+        if (minHeight < 0 || height != null && height < minHeight) {
             throw new IllegalArgumentException("建筑高度必须满足 0 <= minHeight <= height");
         }
 
@@ -179,19 +247,28 @@ public class GeoJsonImportService {
                 campus,
                 externalId,
                 name,
+                optionalText(properties, "officialName").orElse(null),
+                optionalText(properties, "displayName").orElse(name),
+                properties.path("labelVisible").asBoolean(true),
                 textArray(properties, "aliases"),
+                optionalText(properties, "dormitoryZone").orElse(null),
+                optionalText(properties, "buildingNumber").orElse(null),
                 category,
                 multiPolygon,
                 height,
                 minHeight,
                 optionalText(properties, "color").orElse("#D7E3F4"),
+                optionalText(properties, "heightSource").orElse("UNKNOWN"),
+                metadata.dataSource(), metadata.verificationStatus(), metadata.sourceId(),
+                metadata.sourceUpdatedAt(),
                 properties.path("enabled").asBoolean(true)
         );
         buildingRepository.save(building);
         return existing.isEmpty();
     }
 
-    private boolean importPoi(Campus campus, JsonNode properties, Geometry geometry) {
+    private boolean importPoi(Campus campus, JsonNode properties, Geometry geometry,
+                              SourceMetadata metadata) {
         if (!(geometry instanceof Point point)) {
             throw new IllegalArgumentException("POI Geometry 必须是 Point");
         }
@@ -200,17 +277,49 @@ public class GeoJsonImportService {
         String externalId = requiredText(properties, "externalId");
         Optional<Poi> existing = poiRepository.findByExternalId(externalId);
         Poi poi = existing.orElseGet(Poi::new);
+        Building building = optionalText(properties, "buildingExternalId")
+                .flatMap(buildingRepository::findByExternalId).orElse(null);
         poi.updateFromImport(
                 campus,
+                building,
                 externalId,
                 requiredText(properties, "name"),
+                optionalText(properties, "officialName").orElse(null),
+                optionalText(properties, "displayName").orElse(requiredText(properties, "name")),
+                properties.path("labelVisible").asBoolean(true),
                 textArray(properties, "aliases"),
                 textArray(properties, "keywords"),
                 validatedCategory(properties, POI_CATEGORIES),
                 point,
+                metadata.dataSource(), metadata.verificationStatus(), metadata.sourceId(),
+                metadata.sourceUpdatedAt(),
                 properties.path("enabled").asBoolean(true)
         );
         poiRepository.save(poi);
+        return existing.isEmpty();
+    }
+
+    private boolean importEntrance(JsonNode properties, Geometry geometry, SourceMetadata metadata) {
+        if (!(geometry instanceof Point point)) {
+            throw new IllegalArgumentException("Entrance Geometry 必须是 Point");
+        }
+        validateGeometry(point);
+        Building building = buildingRepository.findByExternalId(requiredText(properties, "buildingExternalId"))
+                .orElseThrow(() -> new IllegalArgumentException("Entrance 找不到关联建筑"));
+        String externalId = requiredText(properties, "externalId");
+        Optional<BuildingEntrance> existing = buildingEntranceRepository.findByExternalId(externalId);
+        BuildingEntrance entrance = existing.orElseGet(BuildingEntrance::new);
+        entrance.updateFromImport(
+                building, externalId, requiredText(properties, "name"), point,
+                optionalBoolean(properties, "walkingAccess"),
+                optionalBoolean(properties, "cyclingAccess"),
+                optionalBoolean(properties, "accessible"),
+                optionalBoolean(properties, "vehicleAccess"),
+                optionalText(properties, "openingHours").orElse(null),
+                metadata.dataSource(), metadata.verificationStatus(), metadata.sourceId(),
+                metadata.sourceUpdatedAt(), properties.path("enabled").asBoolean(true)
+        );
+        buildingEntranceRepository.save(entrance);
         return existing.isEmpty();
     }
 
@@ -292,4 +401,42 @@ public class GeoJsonImportService {
         }
         return List.copyOf(result);
     }
+
+    private SourceMetadata sourceMetadata(JsonNode properties, JsonNode defaults) {
+        String dataSource = inheritedText(properties, defaults, "dataSource").orElse("UNKNOWN")
+                .toUpperCase(Locale.ROOT);
+        String verificationStatus = inheritedText(properties, defaults, "verificationStatus")
+                .orElse("UNVERIFIED").toUpperCase(Locale.ROOT);
+        if (!List.of("UNVERIFIED", "SOURCE_VERIFIED", "MANUALLY_REVIEWED", "FIELD_VERIFIED",
+                "PENDING_FIELD_VERIFICATION").contains(verificationStatus)) {
+            throw new IllegalArgumentException("不支持的 verificationStatus: " + verificationStatus);
+        }
+        Instant sourceUpdatedAt = inheritedText(properties, defaults, "sourceUpdatedAt")
+                .map(value -> {
+                    try { return Instant.parse(value); }
+                    catch (RuntimeException exception) {
+                        throw new IllegalArgumentException("sourceUpdatedAt 必须是 ISO-8601 Instant");
+                    }
+                }).orElse(null);
+        return new SourceMetadata(dataSource, verificationStatus,
+                inheritedText(properties, defaults, "sourceId").orElse(null), sourceUpdatedAt);
+    }
+
+    private Optional<String> inheritedText(JsonNode properties, JsonNode defaults, String field) {
+        return optionalText(properties, field).or(() -> optionalText(defaults, field));
+    }
+
+    private Boolean optionalBoolean(JsonNode properties, String field) {
+        JsonNode value = properties.path(field);
+        if (value.isMissingNode() || value.isNull()) {
+            return null;
+        }
+        if (!value.isBoolean()) {
+            throw new IllegalArgumentException(field + " 必须是 boolean 或 null");
+        }
+        return value.asBoolean();
+    }
+
+    private record SourceMetadata(String dataSource, String verificationStatus,
+                                  String sourceId, Instant sourceUpdatedAt) { }
 }

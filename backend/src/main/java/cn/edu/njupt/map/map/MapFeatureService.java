@@ -20,7 +20,7 @@ import org.springframework.transaction.annotation.Transactional;
 @Service
 public class MapFeatureService {
 
-    private static final String SCHEMA_VERSION = "2026-08-phase1";
+    private static final String SCHEMA_VERSION = "2026-08-phase1.7.1";
 
     private final ObjectMapper objectMapper;
     private final CampusRepository campusRepository;
@@ -64,6 +64,17 @@ public class MapFeatureService {
                 properties -> {
                     putIfPresent(properties, "color", item.getColor());
                     properties.put("priority", item.getPriority());
+                    if ("DORMITORY_ZONE".equals(item.getFeatureType())) {
+                        properties.put("officialName", item.getName());
+                        properties.put("displayName", item.getName());
+                        properties.putArray("aliases").add(item.getName());
+                        properties.put("category", "DORMITORY_ZONE");
+                        properties.put("labelVisible", true);
+                        properties.put("geometryRole", "LABEL_ONLY");
+                        putIfPresent(properties, "source", item.getSourceId());
+                    }
+                    sourceMetadata(properties, item.getDataSource(), item.getVerificationStatus(),
+                            item.getSourceId(), item.getSourceUpdatedAt());
                 }
         );
     }
@@ -72,11 +83,20 @@ public class MapFeatureService {
         return feature(
                 item.getExternalId(), item.getName(), "BUILDING", item.getGeometry(),
                 properties -> {
+                    namingProperties(properties, item.getOfficialName(), item.getDisplayName(),
+                            item.getAliases(), item.isLabelVisible());
+                    putIfPresent(properties, "dormitoryZone", item.getDormitoryZone());
+                    putIfPresent(properties, "buildingNumber", item.getBuildingNumber());
                     properties.put("category", item.getCategory());
-                    properties.put("height", item.getHeight());
+                    if (item.getHeight() != null) {
+                        properties.put("height", item.getHeight());
+                    }
                     properties.put("minHeight", item.getMinHeight());
+                    properties.put("heightSource", item.getHeightSource());
                     putIfPresent(properties, "color", item.getColor());
                     properties.put("priority", buildingPriority(item.getCategory()));
+                    sourceMetadata(properties, item.getDataSource(), item.getVerificationStatus(),
+                            item.getSourceId(), item.getSourceUpdatedAt());
                 }
         );
     }
@@ -85,8 +105,17 @@ public class MapFeatureService {
         return feature(
                 item.getExternalId(), item.getName(), "POI", item.getLocation(),
                 properties -> {
+                    namingProperties(properties, item.getOfficialName(), item.getDisplayName(),
+                            item.getAliases(), item.isLabelVisible());
+                    ArrayNode keywords = properties.putArray("keywords");
+                    item.getKeywords().forEach(keywords::add);
+                    if (item.getBuilding() != null) {
+                        properties.put("buildingId", item.getBuilding().getExternalId());
+                    }
                     properties.put("category", item.getCategory());
                     properties.put("priority", 40);
+                    sourceMetadata(properties, item.getDataSource(), item.getVerificationStatus(),
+                            item.getSourceId(), item.getSourceUpdatedAt());
                 }
         );
     }
@@ -127,6 +156,25 @@ public class MapFeatureService {
     private void putIfPresent(ObjectNode node, String field, String value) {
         if (value != null && !value.isBlank()) {
             node.put(field, value);
+        }
+    }
+
+    private void namingProperties(ObjectNode properties, String officialName, String displayName,
+                                  java.util.List<String> aliases, boolean labelVisible) {
+        putIfPresent(properties, "officialName", officialName);
+        putIfPresent(properties, "displayName", displayName);
+        properties.put("labelVisible", labelVisible);
+        ArrayNode aliasValues = properties.putArray("aliases");
+        aliases.forEach(aliasValues::add);
+    }
+
+    private void sourceMetadata(ObjectNode node, String dataSource, String verificationStatus,
+                                String sourceId, java.time.Instant sourceUpdatedAt) {
+        node.put("dataSource", dataSource);
+        node.put("verificationStatus", verificationStatus);
+        putIfPresent(node, "sourceId", sourceId);
+        if (sourceUpdatedAt != null) {
+            node.put("sourceUpdatedAt", sourceUpdatedAt.toString());
         }
     }
 }

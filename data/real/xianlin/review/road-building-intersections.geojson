@@ -1,0 +1,147 @@
+{
+  "type": "FeatureCollection",
+  "name": "road-building-intersections",
+  "metadata": {
+    "generatedAt": "2026-08-22",
+    "purpose": "MANUAL_REVIEW_ONLY",
+    "appliesChanges": false
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "road-building:osm:way:224954286:osm:way:224990427",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.92475095000982,
+            32.110479737980015
+          ],
+          [
+            118.92479658951115,
+            32.11048027555728
+          ]
+        ]
+      },
+      "properties": {
+        "reviewId": "road-building:osm:way:224954286:osm:way:224990427",
+        "severity": "P1",
+        "reason": "Road geometry overlaps a building polygon by more than 1m.",
+        "sourceObjectId": "osm:way:224954286",
+        "name": "未命名步道",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "roadId": "osm:way:224954286",
+        "roadHighway": "pedestrian",
+        "buildingId": "osm:way:224990427",
+        "buildingName": "连廊",
+        "intersectionLengthMeters": 4.3,
+        "intersectionAreaSquareMeters": 0.0,
+        "likelyCause": "C_OR_D_MAPPED_COVERED_PASSAGE",
+        "recommendedAction": "Retain road and confirm whether it is an indoor, covered, or under-building passage."
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "road-building:osm:way:224954286:osm:way:224990428",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.92539354447392,
+            32.110487306953466
+          ],
+          [
+            118.9254392,
+            32.11048784471948
+          ]
+        ]
+      },
+      "properties": {
+        "reviewId": "road-building:osm:way:224954286:osm:way:224990428",
+        "severity": "P1",
+        "reason": "Road geometry overlaps a building polygon by more than 1m.",
+        "sourceObjectId": "osm:way:224954286",
+        "name": "未命名步道",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "roadId": "osm:way:224954286",
+        "roadHighway": "pedestrian",
+        "buildingId": "osm:way:224990428",
+        "buildingName": "连廊",
+        "intersectionLengthMeters": 4.31,
+        "intersectionAreaSquareMeters": 0.0,
+        "likelyCause": "C_OR_D_MAPPED_COVERED_PASSAGE",
+        "recommendedAction": "Retain road and confirm whether it is an indoor, covered, or under-building passage."
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "road-building:osm:way:970894656:osm:way:223699451",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.9254133,
+            32.1094816
+          ],
+          [
+            118.9259981,
+            32.1094871
+          ]
+        ]
+      },
+      "properties": {
+        "reviewId": "road-building:osm:way:970894656:osm:way:223699451",
+        "severity": "P1",
+        "reason": "Road geometry overlaps a building polygon by more than 1m.",
+        "sourceObjectId": "osm:way:970894656",
+        "name": "未命名道路",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "roadId": "osm:way:970894656",
+        "roadHighway": "service",
+        "buildingId": "osm:way:223699451",
+        "buildingName": "教1",
+        "intersectionLengthMeters": 55.14,
+        "intersectionAreaSquareMeters": 0.0,
+        "likelyCause": "C_OR_D_MAPPED_COVERED_PASSAGE",
+        "recommendedAction": "Retain road and confirm whether it is an indoor, covered, or under-building passage."
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "road-building:osm:way:224941322:osm:way:223859827",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.92399038850259,
+            32.12026445475343
+          ],
+          [
+            118.92394771283979,
+            32.12027326084258
+          ]
+        ]
+      },
+      "properties": {
+        "reviewId": "road-building:osm:way:224941322:osm:way:223859827",
+        "severity": "P0",
+        "reason": "Road geometry overlaps a building polygon by more than 1m.",
+        "sourceObjectId": "osm:way:224941322",
+        "name": "未命名步道",
+        "verificationStatus": "PENDING_REVIEW",
+        "notes": "",
+        "roadId": "osm:way:224941322",
+        "roadHighway": "pedestrian",
+        "buildingId": "osm:way:223859827",
+        "buildingName": "主席台",
+        "intersectionLengthMeters": 4.14,
+        "intersectionAreaSquareMeters": 0.0,
+        "likelyCause": "A_OR_B_REQUIRES_MANUAL_REVIEW",
+        "recommendedAction": "Compare road and building footprint in field/official reference before any override."
+      }
+    }
+  ]
+}

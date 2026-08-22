@@ -10,6 +10,7 @@ import cn.edu.njupt.map.repository.CampusRepository;
 import cn.edu.njupt.map.repository.PoiRepository;
 import cn.edu.njupt.map.repository.MapFeatureRepository;
 import java.util.List;
+import org.locationtech.jts.geom.Envelope;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -42,6 +43,14 @@ public class MapBootstrapService {
                     boolean roads = mapFeatureRepository.existsByCampusIdAndFeatureTypeInAndEnabledTrue(
                             campus.getId(), List.of("ROAD_MAIN", "ROAD_PEDESTRIAN")
                     );
+                    Envelope envelope = campus.getBoundary() == null
+                            ? new Envelope(
+                                    campus.getDefaultLongitude() - 0.0065,
+                                    campus.getDefaultLongitude() + 0.0065,
+                                    campus.getDefaultLatitude() - 0.0045,
+                                    campus.getDefaultLatitude() + 0.0045)
+                            : campus.getBoundary().getEnvelopeInternal();
+                    double padding = 0.00045;
                     return new CampusSummary(
                         campus.getId(),
                         campus.getCode(),
@@ -54,10 +63,10 @@ public class MapBootstrapService {
                                 campus.getDefaultBearing()
                         ),
                         new Bounds(
-                                campus.getDefaultLongitude() - 0.0065,
-                                campus.getDefaultLatitude() - 0.0045,
-                                campus.getDefaultLongitude() + 0.0065,
-                                campus.getDefaultLatitude() + 0.0045
+                                envelope.getMinX() - padding,
+                                envelope.getMinY() - padding,
+                                envelope.getMaxX() + padding,
+                                envelope.getMaxY() + padding
                         ),
                         new DataSummary(buildings, pois, mapFeatures),
                         new LayerAvailability(buildings > 0, ground, roads, pois > 0)
@@ -65,6 +74,6 @@ public class MapBootstrapService {
                 })
                 .toList();
 
-        return new MapBootstrapResponse("2026-08-phase1", campuses);
+        return new MapBootstrapResponse("2026-08-phase1.5", campuses);
     }
 }

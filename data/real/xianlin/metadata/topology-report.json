@@ -1,0 +1,68 @@
+{
+  "totalEndpoints": 368,
+  "connected": 271,
+  "disconnected": 97,
+  "classification": {
+    "ISOLATED_SEGMENT": 9,
+    "LIKELY_TOPOLOGY_GAP": 2,
+    "LIKELY_VALID_TERMINUS": 66,
+    "NEAR_BUILDING_ENTRANCE": 6,
+    "NEAR_CAMPUS_BOUNDARY": 3,
+    "NEAR_OTHER_ROAD": 11
+  },
+  "priority": {
+    "P0": 2,
+    "P1": 25,
+    "P2": 70
+  },
+  "p0RoadCount": 2,
+  "p0RoadIds": [
+    "osm:way:223699479",
+    "osm:way:964850646"
+  ],
+  "candidateEntranceCount": 5,
+  "legacyEndpointOnlyAudit": {
+    "legacyDisconnectedAt4m": 244,
+    "reclassifiedConnectedToRoadGeometry": 163,
+    "remainingLegacyClassifications": {
+      "ISOLATED_SEGMENT": 9,
+      "LIKELY_VALID_TERMINUS": 58,
+      "NEAR_BUILDING_ENTRANCE": 6,
+      "NEAR_CAMPUS_BOUNDARY": 3,
+      "NEAR_OTHER_ROAD": 5
+    },
+    "newlyDetectedDisconnectedMissedByEndpointOnlyCheck": 16
+  },
+  "thresholdsMeters": {
+    "exactTopology": 0.15,
+    "likelyGap": 2.0,
+    "nearRoad": 4.0,
+    "nearBuilding": 5.0,
+    "candidateEntrance": 2.0,
+    "campusBoundary": 10.0
+  },
+  "generatedAt": "2026-08-22",
+  "roadBuildingIntersections": 4,
+  "intersectionPriority": {
+    "P1": 3,
+    "P0": 1
+  },
+  "entranceValidation": [],
+  "qualityMetrics": {
+    "coreBuildingVerification": {
+      "reviewed": 0,
+      "total": 18
+    },
+    "corePoiVerification": {
+      "reviewed": 0,
+      "total": 18
+    },
+    "formalEntranceCoverage": {
+      "buildingsWithEntrance": 0,
+      "coreBuildings": 18
+    },
+    "candidateEntranceCount": 5,
+    "roadP0TopologyIssueCount": 2
+  },
+  "gateStatus": "PENDING_MANUAL_IDENTIFICATION"
+}

@@ -2,6 +2,10 @@
   "type": "FeatureCollection",
   "name": "phase-1-synthetic-campus-demo",
   "metadata": {
+    "datasetId": "phase1-demo",
+    "dataSource": "SYNTHETIC",
+    "sourceId": "phase1-demo",
+    "verificationStatus": "UNVERIFIED",
     "crs": "EPSG:4326",
     "license": "Project-authored synthetic demonstration data",
     "warning": "All coordinates, names and shapes are synthetic demo content, not surveyed NJUPT campus data."

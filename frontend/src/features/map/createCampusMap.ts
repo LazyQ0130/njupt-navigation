@@ -5,7 +5,6 @@ import {
   GeoJSONSource,
   Map,
   type MapLayerMouseEvent,
-  type LngLatBoundsLike,
 } from 'maplibre-gl'
 import type { Feature, Point } from 'geojson'
 import { campusLabelLayers, campusVisualLayers } from './layers'
@@ -18,18 +17,29 @@ import {
   createMapOptions,
 } from './mapConfig'
 import type { CampusBoundaryFeature, CampusMapController, CampusMapInput } from './types'
+import { addGisReviewLayers, setReviewLayerVisibility as setGisReviewLayerVisibility } from './reviewLayers'
+import {
+  applyRequestedDiagnosticZoom,
+  installDevelopmentDiagnostics,
+  isMapDiagnosticsEnabled,
+  runRequestedDiagnosticZoomSweep,
+} from './renderDiagnostics'
+import { campusFitPadding, deriveCampusViewport } from './campusViewport'
 
 export function createCampusMap(input: CampusMapInput): CampusMapController {
-  const { container, campus, data, callbacks } = input
-  const map = new Map(createMapOptions(container, campus))
-  const initialBounds: LngLatBoundsLike = [
-    [campus.bounds.west, campus.bounds.south],
-    [campus.bounds.east, campus.bounds.north],
-  ]
+  const { container, campus, data, reviewData, callbacks } = input
+  const viewport = deriveCampusViewport(data, campus)
+  const initialBounds = viewport.bounds
+  const map = new Map(createMapOptions(container, campus, viewport))
+  const diagnosticsEnabled = isMapDiagnosticsEnabled()
   let selectedBuildingId: string | number | undefined
   let destroyed = false
 
-  map.addControl(new AttributionControl({ compact: true, customAttribution: CAMPUS_ATTRIBUTION }), 'bottom-right')
+  const usesOsm = data.features.some((feature) => feature.properties.dataSource === 'OPENSTREETMAP')
+  const attribution = usesOsm
+    ? '<a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">© OpenStreetMap contributors</a> · MapLibre'
+    : CAMPUS_ATTRIBUTION
+  map.addControl(new AttributionControl({ compact: true, customAttribution: attribution }), 'bottom-right')
 
   map.once('load', () => {
     if (destroyed) return
@@ -38,21 +48,30 @@ export function createCampusMap(input: CampusMapInput): CampusMapController {
       data,
     })
     campusVisualLayers.forEach((layer) => map.addLayer(layer))
+    campusLabelLayers.forEach((layer) => map.addLayer(layer))
+    if (reviewData) addGisReviewLayers(map, reviewData, callbacks.onReviewSelect)
     addUserLocationLayer(map)
-    configureBuildingInteraction(map, (id, name, category) => {
+    fitCampus(map, initialBounds, campus, false)
+    configureBuildingInteraction(map, (id, name, officialName, category, dormitoryZone) => {
       if (selectedBuildingId !== undefined) {
         map.setFeatureState({ source: CAMPUS_SOURCE_ID, id: selectedBuildingId }, { selected: false })
       }
       selectedBuildingId = id
       map.setFeatureState({ source: CAMPUS_SOURCE_ID, id }, { selected: true })
-      callbacks.onBuildingSelect({ name, category })
+      callbacks.onBuildingSelect({ name, officialName, category, dormitoryZone })
     })
     const canvas = map.getCanvas()
     canvas.setAttribute('role', 'img')
     canvas.setAttribute('aria-label', `${campus.name} 2.5D 交互地图`)
-    map.once('idle', () => {
+    if (diagnosticsEnabled) installDevelopmentDiagnostics(map, data)
+    requestAnimationFrame(() => {
       if (destroyed) return
-      campusLabelLayers.forEach((layer) => map.addLayer(layer))
+      map.resize()
+      fitCampus(map, initialBounds, campus, false)
+      if (diagnosticsEnabled) {
+        applyRequestedDiagnosticZoom(map)
+        void runRequestedDiagnosticZoomSweep(map, data)
+      }
     })
     callbacks.onReady()
   })
@@ -75,13 +94,7 @@ export function createCampusMap(input: CampusMapInput): CampusMapController {
     },
     reset() {
       map.setMaxBounds(initialBounds)
-      map.flyTo({
-        center: [campus.camera.longitude, campus.camera.latitude],
-        zoom: campus.camera.zoom,
-        pitch: campus.camera.pitch,
-        bearing: campus.camera.bearing,
-        essential: true,
-      })
+      fitCampus(map, initialBounds, campus, true)
     },
     resetNorth() {
       map.easeTo({ bearing: 0, pitch: campus.camera.pitch, duration: 200 })
@@ -101,7 +114,25 @@ export function createCampusMap(input: CampusMapInput): CampusMapController {
       source?.setData(userLocationFeature(longitude, latitude))
       map.flyTo({ center: [longitude, latitude], zoom: 17.5, pitch: 42, essential: true })
     },
+    setReviewLayerVisibility(group, visible) {
+      setGisReviewLayerVisibility(map, group, visible)
+    },
   }
+}
+
+function fitCampus(
+  map: Map,
+  bounds: [[number, number], [number, number]],
+  campus: CampusMapInput['campus'],
+  animate: boolean,
+): void {
+  map.fitBounds(bounds, {
+    padding: campusFitPadding(map.getContainer().getBoundingClientRect().width),
+    pitch: campus.camera.pitch,
+    bearing: campus.camera.bearing,
+    duration: animate ? 600 : 0,
+    essential: true,
+  })
 }
 
 function addUserLocationLayer(map: Map): void {
@@ -134,7 +165,13 @@ function addUserLocationLayer(map: Map): void {
 
 function configureBuildingInteraction(
   map: Map,
-  onSelect: (id: string | number, name: string, category: string) => void,
+  onSelect: (
+    id: string | number,
+    name: string,
+    officialName: string | undefined,
+    category: string,
+    dormitoryZone: string | undefined,
+  ) => void,
 ): void {
   map.on('mouseenter', BUILDING_EXTRUSION_LAYER_ID, () => {
     map.getCanvas().style.cursor = 'pointer'
@@ -147,8 +184,10 @@ function configureBuildingInteraction(
     if (!feature || feature.id === undefined) return
     onSelect(
       feature.id,
-      String(feature.properties?.name ?? '未命名建筑'),
+      String(feature.properties?.displayName ?? feature.properties?.name ?? '未命名建筑'),
+      feature.properties?.officialName ? String(feature.properties.officialName) : undefined,
       String(feature.properties?.category ?? 'BUILDING'),
+      feature.properties?.dormitoryZone ? String(feature.properties.dormitoryZone) : undefined,
     )
   })
 }

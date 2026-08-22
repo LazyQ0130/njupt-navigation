@@ -42,6 +42,18 @@ public class Campus {
     @Column(nullable = false)
     private boolean enabled;
 
+    @Column(name = "data_source", nullable = false, length = 40)
+    private String dataSource;
+
+    @Column(name = "verification_status", nullable = false, length = 40)
+    private String verificationStatus;
+
+    @Column(name = "source_id", length = 128)
+    private String sourceId;
+
+    @Column(name = "source_updated_at")
+    private Instant sourceUpdatedAt;
+
     @Column(name = "created_at", nullable = false, insertable = false, updatable = false)
     private Instant createdAt;
 
@@ -49,6 +61,18 @@ public class Campus {
     private Instant updatedAt;
 
     protected Campus() {
+    }
+
+    public void updateBoundary(MultiPolygon boundary, String dataSource, String verificationStatus,
+                               String sourceId, Instant sourceUpdatedAt) {
+        this.boundary = boundary;
+        this.defaultLongitude = boundary.getCentroid().getX();
+        this.defaultLatitude = boundary.getCentroid().getY();
+        this.dataSource = dataSource;
+        this.verificationStatus = verificationStatus;
+        this.sourceId = sourceId;
+        this.sourceUpdatedAt = sourceUpdatedAt;
+        this.updatedAt = Instant.now();
     }
 
     public UUID getId() {

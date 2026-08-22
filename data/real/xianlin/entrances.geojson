@@ -1,0 +1,16 @@
+{
+  "type": "FeatureCollection",
+  "name": "njupt-xianlin-real-v1-entrances",
+  "metadata": {
+    "datasetId": "njupt-xianlin-real-v1",
+    "layer": "entrances",
+    "dataSource": "OPENSTREETMAP",
+    "sourceId": "osm-xianlin-2026-08-22",
+    "license": "ODbL-1.0",
+    "requiredAttribution": "© OpenStreetMap contributors",
+    "retrievedAt": "2026-08-22",
+    "coordinateSystem": "EPSG:4326",
+    "verificationStatus": "SOURCE_VERIFIED"
+  },
+  "features": []
+}
