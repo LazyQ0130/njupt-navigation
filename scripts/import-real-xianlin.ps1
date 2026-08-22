@@ -11,7 +11,7 @@ python "$repoRoot/scripts/gis/xianlin_pipeline.py" validate | Out-Null
 if ($LASTEXITCODE -ne 0) { throw "GIS validation failed; import stopped." }
 
 $summary = [ordered]@{ created = 0; updated = 0; failed = 0 }
-$files = @("campus", "surfaces", "buildings", "pois", "roads", "entrances")
+$files = @("campus", "surfaces", "buildings", "dormitory-zones", "pois", "roads", "entrances")
 & curl.exe --silent --show-error --fail-with-body -u "$Username`:$Password" `
     -X POST "$BaseUrl/admin/imports/dataset-mode/real/refresh" | Out-Null
 if ($LASTEXITCODE -ne 0) { throw "Unable to prepare authoritative real dataset refresh" }

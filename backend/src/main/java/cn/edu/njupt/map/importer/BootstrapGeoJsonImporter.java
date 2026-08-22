@@ -22,7 +22,7 @@ public class BootstrapGeoJsonImporter implements ApplicationRunner {
     private static final Logger LOGGER = LoggerFactory.getLogger(BootstrapGeoJsonImporter.class);
     private static final List<String> REAL_DATA_FILES = List.of(
             "campus.geojson", "surfaces.geojson", "buildings.geojson",
-            "pois.geojson", "roads.geojson", "entrances.geojson"
+            "dormitory-zones.geojson", "pois.geojson", "roads.geojson", "entrances.geojson"
     );
 
     private final GeoJsonImportService importService;

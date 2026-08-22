@@ -573,14 +573,16 @@
         "osmId": 223859786,
         "aliases": [
           "12号楼",
-          "12号宿舍"
+          "12号宿舍",
+          "12栋",
+          "兰苑12号楼"
         ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
         "heightSource": "ESTIMATED_FROM_LEVELS",
-        "officialName": null,
+        "officialName": "12号学生宿舍",
         "displayName": "12号楼",
         "labelVisible": true,
         "dormitoryCandidate": {
@@ -588,7 +590,9 @@
           "displayName": "12号楼",
           "confidence": "HIGH",
           "evidence": "OSM source name begins with the explicit number 12; no spatial-order inference used"
-        }
+        },
+        "buildingNumber": "12",
+        "dormitoryZone": "兰苑"
       },
       "geometry": {
         "type": "Polygon",
@@ -682,14 +686,16 @@
         "osmId": 223859792,
         "aliases": [
           "6号楼",
-          "6号宿舍"
+          "6号宿舍",
+          "6栋",
+          "梅苑6号楼"
         ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
         "heightSource": "ESTIMATED_FROM_LEVELS",
-        "officialName": null,
+        "officialName": "6号学生宿舍",
         "displayName": "6号楼",
         "labelVisible": true,
         "dormitoryCandidate": {
@@ -697,7 +703,9 @@
           "displayName": "6号楼",
           "confidence": "HIGH",
           "evidence": "OSM source name begins with the explicit number 6; no spatial-order inference used"
-        }
+        },
+        "buildingNumber": "6",
+        "dormitoryZone": "梅苑"
       },
       "geometry": {
         "type": "Polygon",
@@ -783,14 +791,16 @@
         "osmId": 223859794,
         "aliases": [
           "9号楼",
-          "9号宿舍"
+          "9号宿舍",
+          "9栋",
+          "兰苑9号楼"
         ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
         "heightSource": "ESTIMATED_FROM_LEVELS",
-        "officialName": null,
+        "officialName": "9号学生宿舍",
         "displayName": "9号楼",
         "labelVisible": true,
         "dormitoryCandidate": {
@@ -798,7 +808,9 @@
           "displayName": "9号楼",
           "confidence": "HIGH",
           "evidence": "OSM source name begins with the explicit number 9; no spatial-order inference used"
-        }
+        },
+        "buildingNumber": "9",
+        "dormitoryZone": "兰苑"
       },
       "geometry": {
         "type": "Polygon",
@@ -860,14 +872,16 @@
         "osmId": 223859797,
         "aliases": [
           "7号楼",
-          "7号宿舍"
+          "7号宿舍",
+          "7栋",
+          "兰苑7号楼"
         ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
         "heightSource": "ESTIMATED_FROM_LEVELS",
-        "officialName": null,
+        "officialName": "7号学生宿舍",
         "displayName": "7号楼",
         "labelVisible": true,
         "dormitoryCandidate": {
@@ -875,7 +889,9 @@
           "displayName": "7号楼",
           "confidence": "HIGH",
           "evidence": "OSM source name begins with the explicit number 7; no spatial-order inference used"
-        }
+        },
+        "buildingNumber": "7",
+        "dormitoryZone": "兰苑"
       },
       "geometry": {
         "type": "Polygon",
@@ -969,14 +985,16 @@
         "osmId": 223859798,
         "aliases": [
           "3号楼",
-          "3号宿舍"
+          "3号宿舍",
+          "3栋",
+          "梅苑3号楼"
         ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
         "heightSource": "ESTIMATED_FROM_LEVELS",
-        "officialName": null,
+        "officialName": "3号学生宿舍",
         "displayName": "3号楼",
         "labelVisible": true,
         "dormitoryCandidate": {
@@ -984,7 +1002,9 @@
           "displayName": "3号楼",
           "confidence": "HIGH",
           "evidence": "OSM source name begins with the explicit number 3; no spatial-order inference used"
-        }
+        },
+        "buildingNumber": "3",
+        "dormitoryZone": "梅苑"
       },
       "geometry": {
         "type": "Polygon",
@@ -1046,14 +1066,16 @@
         "osmId": 223859813,
         "aliases": [
           "11号楼",
-          "11号宿舍"
+          "11号宿舍",
+          "11栋",
+          "兰苑11号楼"
         ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
         "heightSource": "ESTIMATED_FROM_LEVELS",
-        "officialName": null,
+        "officialName": "11号学生宿舍",
         "displayName": "11号楼",
         "labelVisible": true,
         "dormitoryCandidate": {
@@ -1061,7 +1083,9 @@
           "displayName": "11号楼",
           "confidence": "HIGH",
           "evidence": "OSM source name begins with the explicit number 11; no spatial-order inference used"
-        }
+        },
+        "buildingNumber": "11",
+        "dormitoryZone": "兰苑"
       },
       "geometry": {
         "type": "Polygon",
@@ -1123,14 +1147,16 @@
         "osmId": 223859824,
         "aliases": [
           "5号楼",
-          "5号宿舍"
+          "5号宿舍",
+          "5栋",
+          "梅苑5号楼"
         ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
         "heightSource": "ESTIMATED_FROM_LEVELS",
-        "officialName": null,
+        "officialName": "5号学生宿舍",
         "displayName": "5号楼",
         "labelVisible": true,
         "dormitoryCandidate": {
@@ -1138,7 +1164,9 @@
           "displayName": "5号楼",
           "confidence": "HIGH",
           "evidence": "OSM source name begins with the explicit number 5; no spatial-order inference used"
-        }
+        },
+        "buildingNumber": "5",
+        "dormitoryZone": "梅苑"
       },
       "geometry": {
         "type": "Polygon",
@@ -1200,14 +1228,16 @@
         "osmId": 223859829,
         "aliases": [
           "1号楼",
-          "1号宿舍"
+          "1号宿舍",
+          "1栋",
+          "梅苑1号楼"
         ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
         "heightSource": "ESTIMATED_FROM_LEVELS",
-        "officialName": null,
+        "officialName": "1号学生宿舍",
         "displayName": "1号楼",
         "labelVisible": true,
         "dormitoryCandidate": {
@@ -1215,7 +1245,9 @@
           "displayName": "1号楼",
           "confidence": "HIGH",
           "evidence": "OSM source name begins with the explicit number 1; no spatial-order inference used"
-        }
+        },
+        "buildingNumber": "1",
+        "dormitoryZone": "梅苑"
       },
       "geometry": {
         "type": "Polygon",
@@ -1305,14 +1337,16 @@
         "osmId": 223859843,
         "aliases": [
           "16号楼",
-          "16号宿舍"
+          "16号宿舍",
+          "16栋",
+          "菊苑16号楼"
         ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
         "heightSource": "ESTIMATED_FROM_LEVELS",
-        "officialName": null,
+        "officialName": "16号学生宿舍",
         "displayName": "16号楼",
         "labelVisible": true,
         "dormitoryCandidate": {
@@ -1320,7 +1354,9 @@
           "displayName": "16号楼",
           "confidence": "HIGH",
           "evidence": "OSM source name begins with the explicit number 16; no spatial-order inference used"
-        }
+        },
+        "buildingNumber": "16",
+        "dormitoryZone": "菊苑"
       },
       "geometry": {
         "type": "Polygon",
@@ -2470,14 +2506,16 @@
         "osmId": 223859783,
         "aliases": [
           "19号楼",
-          "19号宿舍"
+          "19号宿舍",
+          "19栋",
+          "菊苑19号楼"
         ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
         "heightSource": "ESTIMATED_FROM_LEVELS",
-        "officialName": null,
+        "officialName": "19号学生宿舍",
         "displayName": "19号楼",
         "labelVisible": true,
         "dormitoryCandidate": {
@@ -2485,7 +2523,9 @@
           "displayName": "19号楼",
           "confidence": "HIGH",
           "evidence": "OSM source name begins with the explicit number 19; no spatial-order inference used"
-        }
+        },
+        "buildingNumber": "19",
+        "dormitoryZone": "菊苑"
       },
       "geometry": {
         "type": "Polygon",
@@ -2547,14 +2587,16 @@
         "osmId": 223859787,
         "aliases": [
           "10号楼",
-          "10号宿舍"
+          "10号宿舍",
+          "10栋",
+          "兰苑10号楼"
         ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
         "heightSource": "ESTIMATED_FROM_LEVELS",
-        "officialName": null,
+        "officialName": "10号学生宿舍",
         "displayName": "10号楼",
         "labelVisible": true,
         "dormitoryCandidate": {
@@ -2562,7 +2604,9 @@
           "displayName": "10号楼",
           "confidence": "HIGH",
           "evidence": "OSM source name begins with the explicit number 10; no spatial-order inference used"
-        }
+        },
+        "buildingNumber": "10",
+        "dormitoryZone": "兰苑"
       },
       "geometry": {
         "type": "Polygon",
@@ -2632,14 +2676,16 @@
         "osmId": 223859790,
         "aliases": [
           "20号楼",
-          "20号宿舍"
+          "20号宿舍",
+          "20栋",
+          "菊苑20号楼"
         ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
         "heightSource": "ESTIMATED_FROM_LEVELS",
-        "officialName": null,
+        "officialName": "20号学生宿舍",
         "displayName": "20号楼",
         "labelVisible": true,
         "dormitoryCandidate": {
@@ -2647,7 +2693,9 @@
           "displayName": "20号楼",
           "confidence": "HIGH",
           "evidence": "OSM source name begins with the explicit number 20; no spatial-order inference used"
-        }
+        },
+        "buildingNumber": "20",
+        "dormitoryZone": "菊苑"
       },
       "geometry": {
         "type": "Polygon",
@@ -2729,14 +2777,16 @@
         "osmId": 223859791,
         "aliases": [
           "17号楼",
-          "17号宿舍"
+          "17号宿舍",
+          "17栋",
+          "菊苑17号楼"
         ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
         "heightSource": "ESTIMATED_FROM_LEVELS",
-        "officialName": null,
+        "officialName": "17号学生宿舍",
         "displayName": "17号楼",
         "labelVisible": true,
         "dormitoryCandidate": {
@@ -2744,7 +2794,9 @@
           "displayName": "17号楼",
           "confidence": "HIGH",
           "evidence": "OSM source name begins with the explicit number 17; no spatial-order inference used"
-        }
+        },
+        "buildingNumber": "17",
+        "dormitoryZone": "菊苑"
       },
       "geometry": {
         "type": "Polygon",
@@ -2810,14 +2862,16 @@
         "osmId": 223859796,
         "aliases": [
           "15号楼",
-          "15号宿舍"
+          "15号宿舍",
+          "15栋",
+          "竹苑15号楼"
         ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
         "heightSource": "ESTIMATED_FROM_LEVELS",
-        "officialName": null,
+        "officialName": "15号学生宿舍",
         "displayName": "15号楼",
         "labelVisible": true,
         "dormitoryCandidate": {
@@ -2825,7 +2879,9 @@
           "displayName": "15号楼",
           "confidence": "HIGH",
           "evidence": "OSM source name begins with the explicit number 15; no spatial-order inference used"
-        }
+        },
+        "buildingNumber": "15",
+        "dormitoryZone": "竹苑"
       },
       "geometry": {
         "type": "Polygon",
@@ -2923,14 +2979,16 @@
         "osmId": 223859801,
         "aliases": [
           "4号楼",
-          "4号宿舍"
+          "4号宿舍",
+          "4栋",
+          "梅苑4号楼"
         ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
         "heightSource": "ESTIMATED_FROM_LEVELS",
-        "officialName": null,
+        "officialName": "4号学生宿舍",
         "displayName": "4号楼",
         "labelVisible": true,
         "dormitoryCandidate": {
@@ -2938,7 +2996,9 @@
           "displayName": "4号楼",
           "confidence": "HIGH",
           "evidence": "OSM source name begins with the explicit number 4; no spatial-order inference used"
-        }
+        },
+        "buildingNumber": "4",
+        "dormitoryZone": "梅苑"
       },
       "geometry": {
         "type": "Polygon",
@@ -3000,14 +3060,16 @@
         "osmId": 223859809,
         "aliases": [
           "8号楼",
-          "8号宿舍"
+          "8号宿舍",
+          "8栋",
+          "兰苑8号楼"
         ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
         "heightSource": "ESTIMATED_FROM_LEVELS",
-        "officialName": null,
+        "officialName": "8号学生宿舍",
         "displayName": "8号楼",
         "labelVisible": true,
         "dormitoryCandidate": {
@@ -3015,7 +3077,9 @@
           "displayName": "8号楼",
           "confidence": "HIGH",
           "evidence": "OSM source name begins with the explicit number 8; no spatial-order inference used"
-        }
+        },
+        "buildingNumber": "8",
+        "dormitoryZone": "兰苑"
       },
       "geometry": {
         "type": "Polygon",
@@ -3085,14 +3149,16 @@
         "osmId": 223859815,
         "aliases": [
           "13号楼",
-          "13号宿舍"
+          "13号宿舍",
+          "13栋",
+          "竹苑13号楼"
         ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
         "heightSource": "ESTIMATED_FROM_LEVELS",
-        "officialName": null,
+        "officialName": "13号学生宿舍",
         "displayName": "13号楼",
         "labelVisible": true,
         "dormitoryCandidate": {
@@ -3100,7 +3166,9 @@
           "displayName": "13号楼",
           "confidence": "HIGH",
           "evidence": "OSM source name begins with the explicit number 13; no spatial-order inference used"
-        }
+        },
+        "buildingNumber": "13",
+        "dormitoryZone": "竹苑"
       },
       "geometry": {
         "type": "Polygon",
@@ -3186,14 +3254,16 @@
         "osmId": 223859816,
         "aliases": [
           "14号楼",
-          "14号宿舍"
+          "14号宿舍",
+          "14栋",
+          "竹苑14号楼"
         ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
         "heightSource": "ESTIMATED_FROM_LEVELS",
-        "officialName": null,
+        "officialName": "14号学生宿舍",
         "displayName": "14号楼",
         "labelVisible": true,
         "dormitoryCandidate": {
@@ -3201,7 +3271,9 @@
           "displayName": "14号楼",
           "confidence": "HIGH",
           "evidence": "OSM source name begins with the explicit number 14; no spatial-order inference used"
-        }
+        },
+        "buildingNumber": "14",
+        "dormitoryZone": "竹苑"
       },
       "geometry": {
         "type": "Polygon",
@@ -3291,14 +3363,16 @@
         "osmId": 223859832,
         "aliases": [
           "2号楼",
-          "2号宿舍"
+          "2号宿舍",
+          "2栋",
+          "梅苑2号楼"
         ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
         "heightSource": "ESTIMATED_FROM_LEVELS",
-        "officialName": null,
+        "officialName": "2号学生宿舍",
         "displayName": "2号楼",
         "labelVisible": true,
         "dormitoryCandidate": {
@@ -3306,7 +3380,9 @@
           "displayName": "2号楼",
           "confidence": "HIGH",
           "evidence": "OSM source name begins with the explicit number 2; no spatial-order inference used"
-        }
+        },
+        "buildingNumber": "2",
+        "dormitoryZone": "梅苑"
       },
       "geometry": {
         "type": "Polygon",
@@ -3372,14 +3448,16 @@
         "osmId": 223859840,
         "aliases": [
           "18号楼",
-          "18号宿舍"
+          "18号宿舍",
+          "18栋",
+          "菊苑18号楼"
         ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
         "heightSource": "ESTIMATED_FROM_LEVELS",
-        "officialName": null,
+        "officialName": "18号学生宿舍",
         "displayName": "18号楼",
         "labelVisible": true,
         "dormitoryCandidate": {
@@ -3387,7 +3465,9 @@
           "displayName": "18号楼",
           "confidence": "HIGH",
           "evidence": "OSM source name begins with the explicit number 18; no spatial-order inference used"
-        }
+        },
+        "buildingNumber": "18",
+        "dormitoryZone": "菊苑"
       },
       "geometry": {
         "type": "Polygon",
@@ -3457,14 +3537,16 @@
         "osmId": 223859846,
         "aliases": [
           "21号楼",
-          "21号宿舍"
+          "21号宿舍",
+          "21栋",
+          "菊苑21号楼"
         ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
         "heightSource": "ESTIMATED_FROM_LEVELS",
-        "officialName": null,
+        "officialName": "21号学生宿舍",
         "displayName": "21号楼",
         "labelVisible": true,
         "dormitoryCandidate": {
@@ -3472,7 +3554,9 @@
           "displayName": "21号楼",
           "confidence": "HIGH",
           "evidence": "OSM source name begins with the explicit number 21; no spatial-order inference used"
-        }
+        },
+        "buildingNumber": "21",
+        "dormitoryZone": "菊苑"
       },
       "geometry": {
         "type": "Polygon",
@@ -4443,14 +4527,16 @@
         "osmId": 225253706,
         "aliases": [
           "46号楼",
-          "46号宿舍"
+          "46号宿舍",
+          "46栋",
+          "南荷46号楼"
         ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
         "heightSource": "ESTIMATED_FROM_LEVELS",
-        "officialName": null,
+        "officialName": "46号学生宿舍",
         "displayName": "46号楼",
         "labelVisible": true,
         "dormitoryCandidate": {
@@ -4458,7 +4544,9 @@
           "displayName": "46号楼",
           "confidence": "HIGH",
           "evidence": "OSM source name begins with the explicit number 46; no spatial-order inference used"
-        }
+        },
+        "buildingNumber": "46",
+        "dormitoryZone": "南荷"
       },
       "geometry": {
         "type": "Polygon",
@@ -4544,14 +4632,16 @@
         "osmId": 225253707,
         "aliases": [
           "47号楼",
-          "47号宿舍"
+          "47号宿舍",
+          "47栋",
+          "南荷47号楼"
         ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
         "heightSource": "ESTIMATED_FROM_LEVELS",
-        "officialName": null,
+        "officialName": "47号学生宿舍",
         "displayName": "47号楼",
         "labelVisible": true,
         "dormitoryCandidate": {
@@ -4559,7 +4649,9 @@
           "displayName": "47号楼",
           "confidence": "HIGH",
           "evidence": "OSM source name begins with the explicit number 47; no spatial-order inference used"
-        }
+        },
+        "buildingNumber": "47",
+        "dormitoryZone": "南荷"
       },
       "geometry": {
         "type": "Polygon",
@@ -4653,14 +4745,16 @@
         "osmId": 225253711,
         "aliases": [
           "48号楼",
-          "48号宿舍"
+          "48号宿舍",
+          "48栋",
+          "北荷48号楼"
         ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
         "heightSource": "ESTIMATED_FROM_LEVELS",
-        "officialName": null,
+        "officialName": "48号学生宿舍",
         "displayName": "48号楼",
         "labelVisible": true,
         "dormitoryCandidate": {
@@ -4668,7 +4762,9 @@
           "displayName": "48号楼",
           "confidence": "HIGH",
           "evidence": "OSM source name begins with the explicit number 48; no spatial-order inference used"
-        }
+        },
+        "buildingNumber": "48",
+        "dormitoryZone": "北荷"
       },
       "geometry": {
         "type": "Polygon",
@@ -4754,14 +4850,16 @@
         "osmId": 225253712,
         "aliases": [
           "49号楼",
-          "49号宿舍"
+          "49号宿舍",
+          "49栋",
+          "北荷49号楼"
         ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
         "heightSource": "ESTIMATED_FROM_LEVELS",
-        "officialName": null,
+        "officialName": "49号学生宿舍",
         "displayName": "49号楼",
         "labelVisible": true,
         "dormitoryCandidate": {
@@ -4769,7 +4867,9 @@
           "displayName": "49号楼",
           "confidence": "HIGH",
           "evidence": "OSM source name begins with the explicit number 49; no spatial-order inference used"
-        }
+        },
+        "buildingNumber": "49",
+        "dormitoryZone": "北荷"
       },
       "geometry": {
         "type": "Polygon",
@@ -5542,14 +5642,16 @@
         "osmId": 225198908,
         "aliases": [
           "22号楼",
-          "22号宿舍"
+          "22号宿舍",
+          "22栋",
+          "桃苑22号楼"
         ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
         "heightSource": "ESTIMATED_FROM_LEVELS",
-        "officialName": null,
+        "officialName": "22号学生宿舍",
         "displayName": "22号楼",
         "labelVisible": true,
         "dormitoryCandidate": {
@@ -5557,7 +5659,9 @@
           "displayName": "22号楼",
           "confidence": "HIGH",
           "evidence": "OSM source name begins with the explicit number 22; no spatial-order inference used"
-        }
+        },
+        "buildingNumber": "22",
+        "dormitoryZone": "桃苑"
       },
       "geometry": {
         "type": "Polygon",
@@ -5655,14 +5759,16 @@
         "osmId": 225198910,
         "aliases": [
           "24号楼",
-          "24号宿舍"
+          "24号宿舍",
+          "24栋",
+          "桃苑24号楼"
         ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
         "heightSource": "ESTIMATED_FROM_LEVELS",
-        "officialName": null,
+        "officialName": "24号学生宿舍",
         "displayName": "24号楼",
         "labelVisible": true,
         "dormitoryCandidate": {
@@ -5670,7 +5776,9 @@
           "displayName": "24号楼",
           "confidence": "HIGH",
           "evidence": "OSM source name begins with the explicit number 24; no spatial-order inference used"
-        }
+        },
+        "buildingNumber": "24",
+        "dormitoryZone": "桃苑"
       },
       "geometry": {
         "type": "Polygon",
@@ -5768,14 +5876,16 @@
         "osmId": 225198912,
         "aliases": [
           "26号楼",
-          "26号宿舍"
+          "26号宿舍",
+          "26栋",
+          "桃苑26号楼"
         ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
         "heightSource": "ESTIMATED_FROM_LEVELS",
-        "officialName": null,
+        "officialName": "26号学生宿舍",
         "displayName": "26号楼",
         "labelVisible": true,
         "dormitoryCandidate": {
@@ -5783,7 +5893,9 @@
           "displayName": "26号楼",
           "confidence": "HIGH",
           "evidence": "OSM source name begins with the explicit number 26; no spatial-order inference used"
-        }
+        },
+        "buildingNumber": "26",
+        "dormitoryZone": "桃苑"
       },
       "geometry": {
         "type": "Polygon",
@@ -5857,14 +5969,16 @@
         "osmId": 225242507,
         "aliases": [
           "28号楼",
-          "28号宿舍"
+          "28号宿舍",
+          "28栋",
+          "李苑28号楼"
         ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
         "heightSource": "ESTIMATED_FROM_LEVELS",
-        "officialName": null,
+        "officialName": "28号学生宿舍",
         "displayName": "28号楼",
         "labelVisible": true,
         "dormitoryCandidate": {
@@ -5872,7 +5986,9 @@
           "displayName": "28号楼",
           "confidence": "HIGH",
           "evidence": "OSM source name begins with the explicit number 28; no spatial-order inference used"
-        }
+        },
+        "buildingNumber": "28",
+        "dormitoryZone": "李苑"
       },
       "geometry": {
         "type": "Polygon",
@@ -5962,14 +6078,16 @@
         "osmId": 225242509,
         "aliases": [
           "29号楼",
-          "29号宿舍"
+          "29号宿舍",
+          "29栋",
+          "李苑29号楼"
         ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
         "heightSource": "ESTIMATED_FROM_LEVELS",
-        "officialName": null,
+        "officialName": "29号学生宿舍",
         "displayName": "29号楼",
         "labelVisible": true,
         "dormitoryCandidate": {
@@ -5977,7 +6095,9 @@
           "displayName": "29号楼",
           "confidence": "HIGH",
           "evidence": "OSM source name begins with the explicit number 29; no spatial-order inference used"
-        }
+        },
+        "buildingNumber": "29",
+        "dormitoryZone": "李苑"
       },
       "geometry": {
         "type": "Polygon",
@@ -6083,14 +6203,16 @@
         "osmId": 225242511,
         "aliases": [
           "30号楼",
-          "30号宿舍"
+          "30号宿舍",
+          "30栋",
+          "李苑30号楼"
         ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
         "heightSource": "ESTIMATED_FROM_LEVELS",
-        "officialName": null,
+        "officialName": "30号学生宿舍",
         "displayName": "30号楼",
         "labelVisible": true,
         "dormitoryCandidate": {
@@ -6098,7 +6220,9 @@
           "displayName": "30号楼",
           "confidence": "HIGH",
           "evidence": "OSM source name begins with the explicit number 30; no spatial-order inference used"
-        }
+        },
+        "buildingNumber": "30",
+        "dormitoryZone": "李苑"
       },
       "geometry": {
         "type": "Polygon",
@@ -6196,14 +6320,16 @@
         "osmId": 225242513,
         "aliases": [
           "31号楼",
-          "31号宿舍"
+          "31号宿舍",
+          "31栋",
+          "李苑31号楼"
         ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
         "heightSource": "ESTIMATED_FROM_LEVELS",
-        "officialName": null,
+        "officialName": "31号学生宿舍",
         "displayName": "31号楼",
         "labelVisible": true,
         "dormitoryCandidate": {
@@ -6211,7 +6337,9 @@
           "displayName": "31号楼",
           "confidence": "HIGH",
           "evidence": "OSM source name begins with the explicit number 31; no spatial-order inference used"
-        }
+        },
+        "buildingNumber": "31",
+        "dormitoryZone": "李苑"
       },
       "geometry": {
         "type": "Polygon",
@@ -6285,14 +6413,16 @@
         "osmId": 225242515,
         "aliases": [
           "32号楼",
-          "32号宿舍"
+          "32号宿舍",
+          "32栋",
+          "李苑32号楼"
         ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
         "heightSource": "ESTIMATED_FROM_LEVELS",
-        "officialName": null,
+        "officialName": "32号学生宿舍",
         "displayName": "32号楼",
         "labelVisible": true,
         "dormitoryCandidate": {
@@ -6300,7 +6430,9 @@
           "displayName": "32号楼",
           "confidence": "HIGH",
           "evidence": "OSM source name begins with the explicit number 32; no spatial-order inference used"
-        }
+        },
+        "buildingNumber": "32",
+        "dormitoryZone": "李苑"
       },
       "geometry": {
         "type": "Polygon",
@@ -6366,14 +6498,16 @@
         "osmId": 225242517,
         "aliases": [
           "33号楼",
-          "33号宿舍"
+          "33号宿舍",
+          "33栋",
+          "李苑33号楼"
         ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
         "heightSource": "ESTIMATED_FROM_LEVELS",
-        "officialName": null,
+        "officialName": "33号学生宿舍",
         "displayName": "33号楼",
         "labelVisible": true,
         "dormitoryCandidate": {
@@ -6381,7 +6515,9 @@
           "displayName": "33号楼",
           "confidence": "HIGH",
           "evidence": "OSM source name begins with the explicit number 33; no spatial-order inference used"
-        }
+        },
+        "buildingNumber": "33",
+        "dormitoryZone": "李苑"
       },
       "geometry": {
         "type": "Polygon",
@@ -6467,14 +6603,16 @@
         "osmId": 225250615,
         "aliases": [
           "34号楼",
-          "34号宿舍"
+          "34号宿舍",
+          "34栋",
+          "柳苑34号楼"
         ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
         "heightSource": "ESTIMATED_FROM_LEVELS",
-        "officialName": null,
+        "officialName": "34号学生宿舍",
         "displayName": "34号楼",
         "labelVisible": true,
         "dormitoryCandidate": {
@@ -6482,7 +6620,9 @@
           "displayName": "34号楼",
           "confidence": "HIGH",
           "evidence": "OSM source name begins with the explicit number 34; no spatial-order inference used"
-        }
+        },
+        "buildingNumber": "34",
+        "dormitoryZone": "柳苑"
       },
       "geometry": {
         "type": "Polygon",
@@ -6568,14 +6708,16 @@
         "osmId": 225250617,
         "aliases": [
           "36号楼",
-          "36号宿舍"
+          "36号宿舍",
+          "36栋",
+          "柳苑36号楼"
         ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
         "heightSource": "ESTIMATED_FROM_LEVELS",
-        "officialName": null,
+        "officialName": "36号学生宿舍",
         "displayName": "36号楼",
         "labelVisible": true,
         "dormitoryCandidate": {
@@ -6583,7 +6725,9 @@
           "displayName": "36号楼",
           "confidence": "HIGH",
           "evidence": "OSM source name begins with the explicit number 36; no spatial-order inference used"
-        }
+        },
+        "buildingNumber": "36",
+        "dormitoryZone": "柳苑"
       },
       "geometry": {
         "type": "Polygon",
@@ -6689,14 +6833,16 @@
         "osmId": 225250618,
         "aliases": [
           "37号楼",
-          "37号宿舍"
+          "37号宿舍",
+          "37栋",
+          "柳苑37号楼"
         ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
         "heightSource": "ESTIMATED_FROM_LEVELS",
-        "officialName": null,
+        "officialName": "37号学生宿舍",
         "displayName": "37号楼",
         "labelVisible": true,
         "dormitoryCandidate": {
@@ -6704,7 +6850,9 @@
           "displayName": "37号楼",
           "confidence": "HIGH",
           "evidence": "OSM source name begins with the explicit number 37; no spatial-order inference used"
-        }
+        },
+        "buildingNumber": "37",
+        "dormitoryZone": "柳苑"
       },
       "geometry": {
         "type": "Polygon",
@@ -6782,14 +6930,16 @@
         "osmId": 225250619,
         "aliases": [
           "38号楼",
-          "38号宿舍"
+          "38号宿舍",
+          "38栋",
+          "柳苑38号楼"
         ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
         "heightSource": "ESTIMATED_FROM_LEVELS",
-        "officialName": null,
+        "officialName": "38号学生宿舍",
         "displayName": "38号楼",
         "labelVisible": true,
         "dormitoryCandidate": {
@@ -6797,7 +6947,9 @@
           "displayName": "38号楼",
           "confidence": "HIGH",
           "evidence": "OSM source name begins with the explicit number 38; no spatial-order inference used"
-        }
+        },
+        "buildingNumber": "38",
+        "dormitoryZone": "柳苑"
       },
       "geometry": {
         "type": "Polygon",
@@ -6871,14 +7023,16 @@
         "osmId": 225250620,
         "aliases": [
           "39号楼",
-          "39号宿舍"
+          "39号宿舍",
+          "39栋",
+          "柳苑39号楼"
         ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
         "heightSource": "ESTIMATED_FROM_LEVELS",
-        "officialName": null,
+        "officialName": "39号学生宿舍",
         "displayName": "39号楼",
         "labelVisible": true,
         "dormitoryCandidate": {
@@ -6886,7 +7040,9 @@
           "displayName": "39号楼",
           "confidence": "HIGH",
           "evidence": "OSM source name begins with the explicit number 39; no spatial-order inference used"
-        }
+        },
+        "buildingNumber": "39",
+        "dormitoryZone": "柳苑"
       },
       "geometry": {
         "type": "Polygon",
@@ -6972,14 +7128,16 @@
         "osmId": 225251648,
         "aliases": [
           "35号楼",
-          "35号宿舍"
+          "35号宿舍",
+          "35栋",
+          "柳苑35号楼"
         ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
         "heightSource": "ESTIMATED_FROM_LEVELS",
-        "officialName": null,
+        "officialName": "35号学生宿舍",
         "displayName": "35号楼",
         "labelVisible": true,
         "dormitoryCandidate": {
@@ -6987,7 +7145,9 @@
           "displayName": "35号楼",
           "confidence": "HIGH",
           "evidence": "OSM source name begins with the explicit number 35; no spatial-order inference used"
-        }
+        },
+        "buildingNumber": "35",
+        "dormitoryZone": "柳苑"
       },
       "geometry": {
         "type": "Polygon",
@@ -7089,14 +7249,16 @@
         "osmId": 225255198,
         "aliases": [
           "40号楼",
-          "40号宿舍"
+          "40号宿舍",
+          "40栋",
+          "桂苑40号楼"
         ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
         "heightSource": "ESTIMATED_FROM_LEVELS",
-        "officialName": null,
+        "officialName": "40号学生宿舍",
         "displayName": "40号楼",
         "labelVisible": true,
         "dormitoryCandidate": {
@@ -7104,7 +7266,9 @@
           "displayName": "40号楼",
           "confidence": "HIGH",
           "evidence": "OSM source name begins with the explicit number 40; no spatial-order inference used"
-        }
+        },
+        "buildingNumber": "40",
+        "dormitoryZone": "桂苑"
       },
       "geometry": {
         "type": "Polygon",
@@ -7190,14 +7354,16 @@
         "osmId": 225255200,
         "aliases": [
           "44号楼",
-          "44号宿舍"
+          "44号宿舍",
+          "44栋",
+          "桂苑44号楼"
         ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
         "heightSource": "ESTIMATED_FROM_LEVELS",
-        "officialName": null,
+        "officialName": "44号学生宿舍",
         "displayName": "44号楼",
         "labelVisible": true,
         "dormitoryCandidate": {
@@ -7205,7 +7371,9 @@
           "displayName": "44号楼",
           "confidence": "HIGH",
           "evidence": "OSM source name begins with the explicit number 44; no spatial-order inference used"
-        }
+        },
+        "buildingNumber": "44",
+        "dormitoryZone": "桂苑"
       },
       "geometry": {
         "type": "Polygon",
@@ -7283,14 +7451,16 @@
         "osmId": 225255202,
         "aliases": [
           "42号楼",
-          "42号宿舍"
+          "42号宿舍",
+          "42栋",
+          "桂苑42号楼"
         ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
         "heightSource": "ESTIMATED_FROM_LEVELS",
-        "officialName": null,
+        "officialName": "42号学生宿舍",
         "displayName": "42号楼",
         "labelVisible": true,
         "dormitoryCandidate": {
@@ -7298,7 +7468,9 @@
           "displayName": "42号楼",
           "confidence": "HIGH",
           "evidence": "OSM source name begins with the explicit number 42; no spatial-order inference used"
-        }
+        },
+        "buildingNumber": "42",
+        "dormitoryZone": "桂苑"
       },
       "geometry": {
         "type": "Polygon",
@@ -7563,14 +7735,16 @@
         "osmId": 225198909,
         "aliases": [
           "23号楼",
-          "23号宿舍"
+          "23号宿舍",
+          "23栋",
+          "桃苑23号楼"
         ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
         "heightSource": "ESTIMATED_FROM_LEVELS",
-        "officialName": null,
+        "officialName": "23号学生宿舍",
         "displayName": "23号楼",
         "labelVisible": true,
         "dormitoryCandidate": {
@@ -7578,7 +7752,9 @@
           "displayName": "23号楼",
           "confidence": "HIGH",
           "evidence": "OSM source name begins with the explicit number 23; no spatial-order inference used"
-        }
+        },
+        "buildingNumber": "23",
+        "dormitoryZone": "桃苑"
       },
       "geometry": {
         "type": "Polygon",
@@ -7656,14 +7832,16 @@
         "osmId": 225198911,
         "aliases": [
           "25号楼",
-          "25号宿舍"
+          "25号宿舍",
+          "25栋",
+          "桃苑25号楼"
         ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
         "heightSource": "ESTIMATED_FROM_LEVELS",
-        "officialName": null,
+        "officialName": "25号学生宿舍",
         "displayName": "25号楼",
         "labelVisible": true,
         "dormitoryCandidate": {
@@ -7671,7 +7849,9 @@
           "displayName": "25号楼",
           "confidence": "HIGH",
           "evidence": "OSM source name begins with the explicit number 25; no spatial-order inference used"
-        }
+        },
+        "buildingNumber": "25",
+        "dormitoryZone": "桃苑"
       },
       "geometry": {
         "type": "Polygon",
@@ -7765,14 +7945,16 @@
         "osmId": 225198913,
         "aliases": [
           "27号楼",
-          "27号宿舍"
+          "27号宿舍",
+          "27栋",
+          "桃苑27号楼"
         ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
         "heightSource": "ESTIMATED_FROM_LEVELS",
-        "officialName": null,
+        "officialName": "27号学生宿舍",
         "displayName": "27号楼",
         "labelVisible": true,
         "dormitoryCandidate": {
@@ -7780,7 +7962,9 @@
           "displayName": "27号楼",
           "confidence": "HIGH",
           "evidence": "OSM source name begins with the explicit number 27; no spatial-order inference used"
-        }
+        },
+        "buildingNumber": "27",
+        "dormitoryZone": "桃苑"
       },
       "geometry": {
         "type": "Polygon",
@@ -7866,14 +8050,16 @@
         "osmId": 225255192,
         "aliases": [
           "45号楼",
-          "45号宿舍"
+          "45号宿舍",
+          "45栋",
+          "桂苑45号楼"
         ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
         "heightSource": "ESTIMATED_FROM_LEVELS",
-        "officialName": null,
+        "officialName": "45号学生宿舍",
         "displayName": "45号楼",
         "labelVisible": true,
         "dormitoryCandidate": {
@@ -7881,7 +8067,9 @@
           "displayName": "45号楼",
           "confidence": "HIGH",
           "evidence": "OSM source name begins with the explicit number 45; no spatial-order inference used"
-        }
+        },
+        "buildingNumber": "45",
+        "dormitoryZone": "桂苑"
       },
       "geometry": {
         "type": "Polygon",
@@ -7971,14 +8159,16 @@
         "osmId": 225255194,
         "aliases": [
           "43号楼",
-          "43号宿舍"
+          "43号宿舍",
+          "43栋",
+          "桂苑43号楼"
         ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
         "heightSource": "ESTIMATED_FROM_LEVELS",
-        "officialName": null,
+        "officialName": "43号学生宿舍",
         "displayName": "43号楼",
         "labelVisible": true,
         "dormitoryCandidate": {
@@ -7986,7 +8176,9 @@
           "displayName": "43号楼",
           "confidence": "HIGH",
           "evidence": "OSM source name begins with the explicit number 43; no spatial-order inference used"
-        }
+        },
+        "buildingNumber": "43",
+        "dormitoryZone": "桂苑"
       },
       "geometry": {
         "type": "Polygon",
@@ -8060,14 +8252,16 @@
         "osmId": 225255196,
         "aliases": [
           "41号楼",
-          "41号宿舍"
+          "41号宿舍",
+          "41栋",
+          "桂苑41号楼"
         ],
         "category": "DORMITORY",
         "minHeight": 0,
         "color": "#D8DDE1",
         "height": 19.8,
         "heightSource": "ESTIMATED_FROM_LEVELS",
-        "officialName": null,
+        "officialName": "41号学生宿舍",
         "displayName": "41号楼",
         "labelVisible": true,
         "dormitoryCandidate": {
@@ -8075,7 +8269,9 @@
           "displayName": "41号楼",
           "confidence": "HIGH",
           "evidence": "OSM source name begins with the explicit number 41; no spatial-order inference used"
-        }
+        },
+        "buildingNumber": "41",
+        "dormitoryZone": "桂苑"
       },
       "geometry": {
         "type": "Polygon",

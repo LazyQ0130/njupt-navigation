@@ -61,7 +61,7 @@
 
 ## Phase 1.7 Validation v3
 
-- Valid objects: 498/498; errors: 0; raw warnings: 338.
+- Valid objects: 508/508; errors: 0; raw warnings: 338.
 - MANUALLY_REVIEWED: 0; FIELD_VERIFIED: 0.
 - Confirmed dormitories: 0/50; formal entrances: 0; confirmed gates: 0/2.
 - P0 topology endpoints unresolved: 2; road/building P0 unresolved: 1.

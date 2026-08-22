@@ -6,14 +6,19 @@ import type { SelectedPlace } from '../types'
 const props = defineProps<{ place: SelectedPlace }>()
 defineEmits<{ close: [] }>()
 
-const categoryLabel = computed(() => ({
+const categoryLabel = computed(() => {
+  if (props.place.category === 'DORMITORY' && props.place.dormitoryZone) {
+    return `${props.place.dormitoryZone} · 学生宿舍`
+  }
+  return ({
   ADMINISTRATION: '行政服务',
   DINING: '餐饮服务',
   DORMITORY: '学生宿舍',
   LIBRARY: '图书馆',
   SERVICE: '校园服务',
   TEACHING: '教学建筑',
-}[props.place.category] ?? '校园建筑'))
+  }[props.place.category] ?? '校园建筑')
+})
 
 const secondaryName = computed(() => (
   props.place.officialName && props.place.officialName !== props.place.name

@@ -1,0 +1,488 @@
+{
+  "type": "FeatureCollection",
+  "name": "njupt-xianlin-real-v1-dormitory-zones",
+  "metadata": {
+    "datasetId": "njupt-xianlin-real-v1",
+    "layer": "dormitory-zones",
+    "dataSource": "OPENSTREETMAP",
+    "sourceId": "njupt-official-campus-map-2017-osm-spatial-match",
+    "license": "ODbL-1.0",
+    "requiredAttribution": "© OpenStreetMap contributors",
+    "retrievedAt": "2026-08-22",
+    "coordinateSystem": "EPSG:4326",
+    "verificationStatus": "SOURCE_VERIFIED",
+    "sourceUrl": "https://www.njupt.edu.cn/_upload/article/images/eb/1f/e323ae9b457181e6874b1fc47842/d70d14a3-62d5-450d-9ec4-ae0ca836dc8c.jpg",
+    "geometryRole": "LABEL_ONLY",
+    "derivation": "Mean of source building representative points; not an official boundary"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "njupt:xianlin:dormitory-zone:meiyuan",
+      "properties": {
+        "featureType": "DORMITORY_ZONE",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "njupt:xianlin:dormitory-zone:meiyuan",
+        "name": "梅苑",
+        "officialName": "梅苑",
+        "displayName": "梅苑",
+        "aliases": [
+          "梅苑"
+        ],
+        "category": "DORMITORY_ZONE",
+        "labelVisible": true,
+        "priority": 80,
+        "geometryRole": "LABEL_ONLY",
+        "labelPointMethod": "MEAN_OF_BUILDING_REPRESENTATIVE_POINTS",
+        "anchorBuildingIds": [
+          "osm:way:223859829",
+          "osm:way:223859832",
+          "osm:way:223859798",
+          "osm:way:223859801",
+          "osm:way:223859824",
+          "osm:way:223859792"
+        ],
+        "anchorBuildingNumbers": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6"
+        ],
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "source": "NJUPT_OFFICIAL_CAMPUS_MAP_AND_OSM_BUILDING_GEOMETRY",
+        "sourceId": "njupt-official-campus-map-2017-osm-spatial-match",
+        "sourceUrl": "https://www.njupt.edu.cn/_upload/article/images/eb/1f/e323ae9b457181e6874b1fc47842/d70d14a3-62d5-450d-9ec4-ae0ca836dc8c.jpg",
+        "sourceUpdatedAt": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.92860329188333,
+          32.111623533333336
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "njupt:xianlin:dormitory-zone:lanyuan",
+      "properties": {
+        "featureType": "DORMITORY_ZONE",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "njupt:xianlin:dormitory-zone:lanyuan",
+        "name": "兰苑",
+        "officialName": "兰苑",
+        "displayName": "兰苑",
+        "aliases": [
+          "兰苑"
+        ],
+        "category": "DORMITORY_ZONE",
+        "labelVisible": true,
+        "priority": 80,
+        "geometryRole": "LABEL_ONLY",
+        "labelPointMethod": "MEAN_OF_BUILDING_REPRESENTATIVE_POINTS",
+        "anchorBuildingIds": [
+          "osm:way:223859797",
+          "osm:way:223859809",
+          "osm:way:223859794",
+          "osm:way:223859787",
+          "osm:way:223859813",
+          "osm:way:223859786"
+        ],
+        "anchorBuildingNumbers": [
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12"
+        ],
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "source": "NJUPT_OFFICIAL_CAMPUS_MAP_AND_OSM_BUILDING_GEOMETRY",
+        "sourceId": "njupt-official-campus-map-2017-osm-spatial-match",
+        "sourceUrl": "https://www.njupt.edu.cn/_upload/article/images/eb/1f/e323ae9b457181e6874b1fc47842/d70d14a3-62d5-450d-9ec4-ae0ca836dc8c.jpg",
+        "sourceUpdatedAt": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.92850035225318,
+          32.11281093333333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "njupt:xianlin:dormitory-zone:zhuyuan",
+      "properties": {
+        "featureType": "DORMITORY_ZONE",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "njupt:xianlin:dormitory-zone:zhuyuan",
+        "name": "竹苑",
+        "officialName": "竹苑",
+        "displayName": "竹苑",
+        "aliases": [
+          "竹苑"
+        ],
+        "category": "DORMITORY_ZONE",
+        "labelVisible": true,
+        "priority": 80,
+        "geometryRole": "LABEL_ONLY",
+        "labelPointMethod": "MEAN_OF_BUILDING_REPRESENTATIVE_POINTS",
+        "anchorBuildingIds": [
+          "osm:way:223859815",
+          "osm:way:223859816",
+          "osm:way:223859796"
+        ],
+        "anchorBuildingNumbers": [
+          "13",
+          "14",
+          "15"
+        ],
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "source": "NJUPT_OFFICIAL_CAMPUS_MAP_AND_OSM_BUILDING_GEOMETRY",
+        "sourceId": "njupt-official-campus-map-2017-osm-spatial-match",
+        "sourceUrl": "https://www.njupt.edu.cn/_upload/article/images/eb/1f/e323ae9b457181e6874b1fc47842/d70d14a3-62d5-450d-9ec4-ae0ca836dc8c.jpg",
+        "sourceUpdatedAt": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.92886934598,
+          32.11395936666667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "njupt:xianlin:dormitory-zone:juyuan",
+      "properties": {
+        "featureType": "DORMITORY_ZONE",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "njupt:xianlin:dormitory-zone:juyuan",
+        "name": "菊苑",
+        "officialName": "菊苑",
+        "displayName": "菊苑",
+        "aliases": [
+          "菊苑"
+        ],
+        "category": "DORMITORY_ZONE",
+        "labelVisible": true,
+        "priority": 80,
+        "geometryRole": "LABEL_ONLY",
+        "labelPointMethod": "MEAN_OF_BUILDING_REPRESENTATIVE_POINTS",
+        "anchorBuildingIds": [
+          "osm:way:223859843",
+          "osm:way:223859791",
+          "osm:way:223859840",
+          "osm:way:223859783",
+          "osm:way:223859790",
+          "osm:way:223859846"
+        ],
+        "anchorBuildingNumbers": [
+          "16",
+          "17",
+          "18",
+          "19",
+          "20",
+          "21"
+        ],
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "source": "NJUPT_OFFICIAL_CAMPUS_MAP_AND_OSM_BUILDING_GEOMETRY",
+        "sourceId": "njupt-official-campus-map-2017-osm-spatial-match",
+        "sourceUrl": "https://www.njupt.edu.cn/_upload/article/images/eb/1f/e323ae9b457181e6874b1fc47842/d70d14a3-62d5-450d-9ec4-ae0ca836dc8c.jpg",
+        "sourceUpdatedAt": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.92886842703824,
+          32.11513093333333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "njupt:xianlin:dormitory-zone:taoyuan",
+      "properties": {
+        "featureType": "DORMITORY_ZONE",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "njupt:xianlin:dormitory-zone:taoyuan",
+        "name": "桃苑",
+        "officialName": "桃苑",
+        "displayName": "桃苑",
+        "aliases": [
+          "桃苑"
+        ],
+        "category": "DORMITORY_ZONE",
+        "labelVisible": true,
+        "priority": 80,
+        "geometryRole": "LABEL_ONLY",
+        "labelPointMethod": "MEAN_OF_BUILDING_REPRESENTATIVE_POINTS",
+        "anchorBuildingIds": [
+          "osm:way:225198908",
+          "osm:way:225198909",
+          "osm:way:225198910",
+          "osm:way:225198911",
+          "osm:way:225198912",
+          "osm:way:225198913"
+        ],
+        "anchorBuildingNumbers": [
+          "22",
+          "23",
+          "24",
+          "25",
+          "26",
+          "27"
+        ],
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "source": "NJUPT_OFFICIAL_CAMPUS_MAP_AND_OSM_BUILDING_GEOMETRY",
+        "sourceId": "njupt-official-campus-map-2017-osm-spatial-match",
+        "sourceUrl": "https://www.njupt.edu.cn/_upload/article/images/eb/1f/e323ae9b457181e6874b1fc47842/d70d14a3-62d5-450d-9ec4-ae0ca836dc8c.jpg",
+        "sourceUpdatedAt": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.92856579638216,
+          32.11867479166667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "njupt:xianlin:dormitory-zone:liyuan",
+      "properties": {
+        "featureType": "DORMITORY_ZONE",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "njupt:xianlin:dormitory-zone:liyuan",
+        "name": "李苑",
+        "officialName": "李苑",
+        "displayName": "李苑",
+        "aliases": [
+          "李苑"
+        ],
+        "category": "DORMITORY_ZONE",
+        "labelVisible": true,
+        "priority": 80,
+        "geometryRole": "LABEL_ONLY",
+        "labelPointMethod": "MEAN_OF_BUILDING_REPRESENTATIVE_POINTS",
+        "anchorBuildingIds": [
+          "osm:way:225242507",
+          "osm:way:225242509",
+          "osm:way:225242511",
+          "osm:way:225242513",
+          "osm:way:225242515",
+          "osm:way:225242517"
+        ],
+        "anchorBuildingNumbers": [
+          "28",
+          "29",
+          "30",
+          "31",
+          "32",
+          "33"
+        ],
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "source": "NJUPT_OFFICIAL_CAMPUS_MAP_AND_OSM_BUILDING_GEOMETRY",
+        "sourceId": "njupt-official-campus-map-2017-osm-spatial-match",
+        "sourceUrl": "https://www.njupt.edu.cn/_upload/article/images/eb/1f/e323ae9b457181e6874b1fc47842/d70d14a3-62d5-450d-9ec4-ae0ca836dc8c.jpg",
+        "sourceUpdatedAt": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.92976371599428,
+          32.11926231666667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "njupt:xianlin:dormitory-zone:liuyuan",
+      "properties": {
+        "featureType": "DORMITORY_ZONE",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "njupt:xianlin:dormitory-zone:liuyuan",
+        "name": "柳苑",
+        "officialName": "柳苑",
+        "displayName": "柳苑",
+        "aliases": [
+          "柳苑"
+        ],
+        "category": "DORMITORY_ZONE",
+        "labelVisible": true,
+        "priority": 80,
+        "geometryRole": "LABEL_ONLY",
+        "labelPointMethod": "MEAN_OF_BUILDING_REPRESENTATIVE_POINTS",
+        "anchorBuildingIds": [
+          "osm:way:225250615",
+          "osm:way:225251648",
+          "osm:way:225250617",
+          "osm:way:225250618",
+          "osm:way:225250619",
+          "osm:way:225250620"
+        ],
+        "anchorBuildingNumbers": [
+          "34",
+          "35",
+          "36",
+          "37",
+          "38",
+          "39"
+        ],
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "source": "NJUPT_OFFICIAL_CAMPUS_MAP_AND_OSM_BUILDING_GEOMETRY",
+        "sourceId": "njupt-official-campus-map-2017-osm-spatial-match",
+        "sourceUrl": "https://www.njupt.edu.cn/_upload/article/images/eb/1f/e323ae9b457181e6874b1fc47842/d70d14a3-62d5-450d-9ec4-ae0ca836dc8c.jpg",
+        "sourceUpdatedAt": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.92913582046101,
+          32.120317475
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "njupt:xianlin:dormitory-zone:guiyuan",
+      "properties": {
+        "featureType": "DORMITORY_ZONE",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "njupt:xianlin:dormitory-zone:guiyuan",
+        "name": "桂苑",
+        "officialName": "桂苑",
+        "displayName": "桂苑",
+        "aliases": [
+          "桂苑"
+        ],
+        "category": "DORMITORY_ZONE",
+        "labelVisible": true,
+        "priority": 80,
+        "geometryRole": "LABEL_ONLY",
+        "labelPointMethod": "MEAN_OF_BUILDING_REPRESENTATIVE_POINTS",
+        "anchorBuildingIds": [
+          "osm:way:225255198",
+          "osm:way:225255196",
+          "osm:way:225255202",
+          "osm:way:225255194",
+          "osm:way:225255200",
+          "osm:way:225255192"
+        ],
+        "anchorBuildingNumbers": [
+          "40",
+          "41",
+          "42",
+          "43",
+          "44",
+          "45"
+        ],
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "source": "NJUPT_OFFICIAL_CAMPUS_MAP_AND_OSM_BUILDING_GEOMETRY",
+        "sourceId": "njupt-official-campus-map-2017-osm-spatial-match",
+        "sourceUrl": "https://www.njupt.edu.cn/_upload/article/images/eb/1f/e323ae9b457181e6874b1fc47842/d70d14a3-62d5-450d-9ec4-ae0ca836dc8c.jpg",
+        "sourceUpdatedAt": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.92856900833232,
+          32.121338658333336
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "njupt:xianlin:dormitory-zone:nanhe",
+      "properties": {
+        "featureType": "DORMITORY_ZONE",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "njupt:xianlin:dormitory-zone:nanhe",
+        "name": "南荷",
+        "officialName": "南荷",
+        "displayName": "南荷",
+        "aliases": [
+          "南荷"
+        ],
+        "category": "DORMITORY_ZONE",
+        "labelVisible": true,
+        "priority": 80,
+        "geometryRole": "LABEL_ONLY",
+        "labelPointMethod": "MEAN_OF_BUILDING_REPRESENTATIVE_POINTS",
+        "anchorBuildingIds": [
+          "osm:way:225253706",
+          "osm:way:225253707"
+        ],
+        "anchorBuildingNumbers": [
+          "46",
+          "47"
+        ],
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "source": "NJUPT_OFFICIAL_CAMPUS_MAP_AND_OSM_BUILDING_GEOMETRY",
+        "sourceId": "njupt-official-campus-map-2017-osm-spatial-match",
+        "sourceUrl": "https://www.njupt.edu.cn/_upload/article/images/eb/1f/e323ae9b457181e6874b1fc47842/d70d14a3-62d5-450d-9ec4-ae0ca836dc8c.jpg",
+        "sourceUpdatedAt": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.92734187643248,
+          32.120422375
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "njupt:xianlin:dormitory-zone:beihe",
+      "properties": {
+        "featureType": "DORMITORY_ZONE",
+        "campusCode": "NJUPT_XIANLIN",
+        "externalId": "njupt:xianlin:dormitory-zone:beihe",
+        "name": "北荷",
+        "officialName": "北荷",
+        "displayName": "北荷",
+        "aliases": [
+          "北荷"
+        ],
+        "category": "DORMITORY_ZONE",
+        "labelVisible": true,
+        "priority": 80,
+        "geometryRole": "LABEL_ONLY",
+        "labelPointMethod": "MEAN_OF_BUILDING_REPRESENTATIVE_POINTS",
+        "anchorBuildingIds": [
+          "osm:way:225253711",
+          "osm:way:225253712"
+        ],
+        "anchorBuildingNumbers": [
+          "48",
+          "49"
+        ],
+        "dataSource": "OPENSTREETMAP",
+        "verificationStatus": "SOURCE_VERIFIED",
+        "source": "NJUPT_OFFICIAL_CAMPUS_MAP_AND_OSM_BUILDING_GEOMETRY",
+        "sourceId": "njupt-official-campus-map-2017-osm-spatial-match",
+        "sourceUrl": "https://www.njupt.edu.cn/_upload/article/images/eb/1f/e323ae9b457181e6874b1fc47842/d70d14a3-62d5-450d-9ec4-ae0ca836dc8c.jpg",
+        "sourceUpdatedAt": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.92697484459276,
+          32.120890875
+        ]
+      }
+    }
+  ]
+}

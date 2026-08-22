@@ -43,6 +43,12 @@ public class Building {
     @Column(name = "label_visible", nullable = false)
     private boolean labelVisible;
 
+    @Column(name = "dormitory_zone", length = 40)
+    private String dormitoryZone;
+
+    @Column(name = "building_number", length = 16)
+    private String buildingNumber;
+
     @JdbcTypeCode(SqlTypes.ARRAY)
     @Column(nullable = false, columnDefinition = "text[]")
     private List<String> aliases = new ArrayList<>();
@@ -91,6 +97,7 @@ public class Building {
 
     public void updateFromImport(Campus campus, String externalId, String name, String officialName,
                                  String displayName, boolean labelVisible, List<String> aliases,
+                                 String dormitoryZone, String buildingNumber,
                                  String category, MultiPolygon geometry, Double height, double minHeight,
                                  String color, String heightSource, String dataSource,
                                  String verificationStatus, String sourceId, Instant sourceUpdatedAt,
@@ -102,6 +109,8 @@ public class Building {
         this.displayName = displayName;
         this.labelVisible = labelVisible;
         this.aliases = new ArrayList<>(aliases);
+        this.dormitoryZone = dormitoryZone;
+        this.buildingNumber = buildingNumber;
         this.category = category;
         this.geometry = geometry;
         this.height = height;
@@ -138,6 +147,14 @@ public class Building {
 
     public List<String> getAliases() {
         return List.copyOf(aliases);
+    }
+
+    public String getDormitoryZone() {
+        return dormitoryZone;
+    }
+
+    public String getBuildingNumber() {
+        return buildingNumber;
     }
 
     public String getExternalId() {

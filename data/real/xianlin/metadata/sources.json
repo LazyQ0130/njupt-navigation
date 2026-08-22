@@ -20,9 +20,20 @@
       "license": "Copyright retained by NJUPT; reference only",
       "retrieved_at": "2026-08-22",
       "coordinate_system": "not applicable",
-      "precision": "visual reference only",
-      "verification_status": "RAW",
-      "notes": "No image or PDF from this page is redistributed in the repository."
+      "precision": "official schematic reference; not survey geometry",
+      "verification_status": "SOURCE_VERIFIED",
+      "notes": "The page and its campus-map image directly label the numbered dormitory zones. The image is reference-only and is not redistributed; its 2017 publication date means current field confirmation remains desirable."
+    },
+    {
+      "source_name": "NJUPT official Xianlin campus map image",
+      "source_url": "https://www.njupt.edu.cn/_upload/article/images/eb/1f/e323ae9b457181e6874b1fc47842/d70d14a3-62d5-450d-9ec4-ae0ca836dc8c.jpg",
+      "source_type": "official schematic campus map",
+      "license": "Copyright retained by NJUPT; factual reference only",
+      "retrieved_at": "2026-08-22",
+      "coordinate_system": "not applicable",
+      "precision": "zone names and numbered-building membership only; not boundary geometry",
+      "verification_status": "SOURCE_VERIFIED",
+      "notes": "Supports 梅苑1–6、兰苑7–12、竹苑13–15、菊苑16–21、桃苑22–27、李苑28–33、柳苑34–39、桂苑40–45、南荷46–47、北荷48–49. Label points remain derived from OSM building geometry and are explicitly LABEL_ONLY."
     },
     {
       "source_name": "NJUPT official contact and address page",

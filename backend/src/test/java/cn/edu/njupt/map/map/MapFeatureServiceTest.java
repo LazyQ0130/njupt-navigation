@@ -6,6 +6,7 @@ import static org.mockito.Mockito.when;
 
 import cn.edu.njupt.map.domain.Building;
 import cn.edu.njupt.map.domain.Campus;
+import cn.edu.njupt.map.domain.MapFeature;
 import cn.edu.njupt.map.repository.BuildingRepository;
 import cn.edu.njupt.map.repository.CampusRepository;
 import cn.edu.njupt.map.repository.MapFeatureRepository;
@@ -66,7 +67,7 @@ class MapFeatureServiceTest {
         Building building = new Building();
         building.updateFromImport(
                 mock(Campus.class), "demo-building", "演示楼", "教学演示楼", "演示楼", true,
-                List.of("演示教学楼"), "TEACHING",
+                List.of("演示教学楼"), "柳苑", "37", "TEACHING",
                 geometryFactory.createMultiPolygon(new Polygon[]{polygon}), 24.0, 0, "#8CA8C8",
                 "OSM_HEIGHT", "OPENSTREETMAP", "SOURCE_VERIFIED", "osm-test", null, true
         );
@@ -81,10 +82,35 @@ class MapFeatureServiceTest {
         assertThat(result.at("/features/0/properties/officialName").asText()).isEqualTo("教学演示楼");
         assertThat(result.at("/features/0/properties/aliases/0").asText()).isEqualTo("演示教学楼");
         assertThat(result.at("/features/0/properties/labelVisible").asBoolean()).isTrue();
+        assertThat(result.at("/features/0/properties/dormitoryZone").asText()).isEqualTo("柳苑");
+        assertThat(result.at("/features/0/properties/buildingNumber").asText()).isEqualTo("37");
         assertThat(result.at("/features/0/geometry/coordinates/0/0/0/0").asDouble())
                 .isEqualTo(118.9100);
         assertThat(result.at("/features/0/geometry/coordinates/0/0/0/1").asDouble())
                 .isEqualTo(32.1020);
         assertThat(result.at("/features/0/geometry").has("crs")).isFalse();
+    }
+
+    @Test
+    void serializesDormitoryZoneAsALabelOnlyMapFeature() {
+        GeometryFactory geometryFactory = new GeometryFactory();
+        var point = geometryFactory.createPoint(new Coordinate(118.9291, 32.1203));
+        point.setSRID(4326);
+        MapFeature zone = new MapFeature();
+        zone.updateFromImport(
+                mock(Campus.class), "zone-liu", "柳苑", "DORMITORY_ZONE", point,
+                null, 80, "OPENSTREETMAP", "SOURCE_VERIFIED", "official-map", null, true
+        );
+        when(mapFeatureRepository.findAllByCampusCodeAndEnabledTrueOrderByPriorityDescNameAsc(CAMPUS_CODE))
+                .thenReturn(List.of(zone));
+
+        ObjectNode result = service.load(CAMPUS_CODE);
+
+        assertThat(result.at("/schemaVersion").asText()).isEqualTo("2026-08-phase1.7.1");
+        assertThat(result.at("/features/0/properties/featureType").asText()).isEqualTo("DORMITORY_ZONE");
+        assertThat(result.at("/features/0/properties/displayName").asText()).isEqualTo("柳苑");
+        assertThat(result.at("/features/0/properties/geometryRole").asText()).isEqualTo("LABEL_ONLY");
+        assertThat(result.at("/features/0/properties/source").asText()).isEqualTo("official-map");
+        assertThat(result.at("/features/0/geometry/type").asText()).isEqualTo("Point");
     }
 }

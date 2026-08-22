@@ -45,7 +45,7 @@ public class GeoJsonImportService {
     private static final List<String> POI_CATEGORIES = BUILDING_CATEGORIES;
     private static final List<String> MAP_FEATURE_TYPES = List.of(
             "CAMPUS_BOUNDARY", "GREEN", "WATER", "SPORT", "PLAZA",
-            "ROAD_MAIN", "ROAD_PEDESTRIAN"
+            "ROAD_MAIN", "ROAD_PEDESTRIAN", "DORMITORY_ZONE"
     );
 
     private final ObjectMapper objectMapper;
@@ -127,7 +127,7 @@ public class GeoJsonImportService {
             case "POI" -> importPoi(campus, properties, geometry, metadata);
             case "ENTRANCE" -> importEntrance(properties, geometry, metadata);
             case "CAMPUS_BOUNDARY", "GREEN", "WATER", "SPORT", "PLAZA",
-                    "ROAD_MAIN", "ROAD_PEDESTRIAN" -> importMapFeature(
+                    "ROAD_MAIN", "ROAD_PEDESTRIAN", "DORMITORY_ZONE" -> importMapFeature(
                             campus, featureType, properties, geometry, metadata
                     );
             default -> throw new IllegalArgumentException("不支持的 featureType: " + featureType);
@@ -140,12 +140,17 @@ public class GeoJsonImportService {
             throw new IllegalArgumentException("不支持的地图要素类型: " + featureType);
         }
         boolean road = featureType.startsWith("ROAD_");
-        boolean validType = road
+        boolean zoneLabel = "DORMITORY_ZONE".equals(featureType);
+        boolean validType = zoneLabel
+                ? geometry instanceof Point
+                : road
                 ? "LineString".equals(geometry.getGeometryType())
                         || "MultiLineString".equals(geometry.getGeometryType())
                 : geometry instanceof Polygon || geometry instanceof MultiPolygon;
         if (!validType) {
-            throw new IllegalArgumentException(road
+            throw new IllegalArgumentException(zoneLabel
+                    ? "Dormitory Zone Geometry 必须是 Point"
+                    : road
                     ? "道路 Geometry 必须是 LineString 或 MultiLineString"
                     : "面状地图要素 Geometry 必须是 Polygon 或 MultiPolygon");
         }
@@ -246,6 +251,8 @@ public class GeoJsonImportService {
                 optionalText(properties, "displayName").orElse(name),
                 properties.path("labelVisible").asBoolean(true),
                 textArray(properties, "aliases"),
+                optionalText(properties, "dormitoryZone").orElse(null),
+                optionalText(properties, "buildingNumber").orElse(null),
                 category,
                 multiPolygon,
                 height,

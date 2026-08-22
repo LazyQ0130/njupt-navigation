@@ -15,6 +15,8 @@ from xianlin_pipeline import (  # noqa: E402
     feature,
     height_properties,
     dormitory_candidate,
+    dormitory_zone_for_number,
+    generate_dormitory_zones,
     stable_id,
     validate,
     way_polygon,
@@ -80,7 +82,7 @@ class XianlinPipelineTest(unittest.TestCase):
         self.assertEqual(report["error"], 2)
         self.assertEqual(report["coordinateErrors"][0]["id"], "osm:node:2")
 
-    def test_explicit_dormitory_number_becomes_candidate_not_official_name(self):
+    def test_explicit_dormitory_number_gets_separate_zone_and_building_semantics(self):
         candidate = dormitory_candidate("25", "DORMITORY")
 
         self.assertEqual(candidate["number"], "25")
@@ -93,8 +95,46 @@ class XianlinPipelineTest(unittest.TestCase):
         })
         apply_naming_semantics(item)
         self.assertEqual(item["properties"]["displayName"], "25号楼")
-        self.assertIsNone(item["properties"]["officialName"])
+        self.assertEqual(item["properties"]["officialName"], "25号学生宿舍")
+        self.assertEqual(item["properties"]["buildingNumber"], "25")
+        self.assertEqual(item["properties"]["dormitoryZone"], "桃苑")
+        self.assertIn("桃苑25号楼", item["properties"]["aliases"])
         self.assertTrue(item["properties"]["labelVisible"])
+
+    def test_zone_mapping_uses_the_source_transcription(self):
+        expected = {
+            "1": "梅苑", "6": "梅苑", "7": "兰苑", "12": "兰苑",
+            "13": "竹苑", "15": "竹苑", "16": "菊苑", "21": "菊苑",
+            "22": "桃苑", "27": "桃苑", "28": "李苑", "33": "李苑",
+            "34": "柳苑", "39": "柳苑", "40": "桂苑", "45": "桂苑",
+            "46": "南荷", "47": "南荷", "48": "北荷", "49": "北荷",
+        }
+        self.assertEqual({number: dormitory_zone_for_number(number) for number in expected}, expected)
+        self.assertIsNone(dormitory_zone_for_number("50"))
+
+    def test_dormitory_zone_label_points_are_deterministic_unique_and_traceable(self):
+        def dormitory(number, x):
+            item = feature(
+                Polygon([(x, 32.11), (x + 0.0001, 32.11), (x + 0.0001, 32.1101), (x, 32.11)]),
+                {
+                    "externalId": f"osm:way:{number}", "name": number,
+                    "featureType": "BUILDING", "category": "DORMITORY", "aliases": [],
+                },
+            )
+            return apply_naming_semantics(item)
+
+        buildings = [dormitory("34", 118.92), dormitory("35", 118.921)]
+
+        first = generate_dormitory_zones(buildings)
+        second = generate_dormitory_zones(buildings)
+
+        self.assertEqual(first, second)
+        self.assertEqual(len(first), 1)
+        self.assertEqual(first[0]["properties"]["name"], "柳苑")
+        self.assertEqual(first[0]["properties"]["geometryRole"], "LABEL_ONLY")
+        self.assertEqual(first[0]["properties"]["verificationStatus"], "SOURCE_VERIFIED")
+        self.assertTrue(first[0]["properties"]["sourceUrl"])
+        self.assertEqual(first[0]["geometry"]["type"], "Point")
 
     def test_generic_and_long_institution_building_labels_are_suppressed(self):
         generic = feature(Point(0, 0), {

@@ -8,6 +8,8 @@
 
 Phase 1.6 的 `review/`、`metadata/topology-report.json` 和 `manual/field-review-template.csv` 是上述同一批 OSM 派生 Geometry 的审核辅助物，不是新地图来源，也不会改变 `dataSource=OSM` 的血缘。人工确认状态单独写入 review manifest/manual override，并记录时间与备注；raw OSM 保持不变。候选入口只是道路端点与建筑边界的工程距离推断，不是入口事实。
 
+Phase 1.7.1 使用[南邮官网仙林校区示意图](https://www.njupt.edu.cn/17230/list.htm)核对宿舍苑区与 1—49 号楼的归属关系。`dormitory-zones.geojson` 中的 10 个苑区均为 `Point`，并明确标记 `geometryRole=LABEL_ONLY`；点位是对应 OSM 建筑内部代表点的算术平均值，仅用于地图文字，不是官网坐标、苑区边界、导航目的地或精确区域判断。未使用 convex hull、buffer 或其他方式推断正式 Polygon。官网图发布时间较早，因此这些对象只标为 `SOURCE_VERIFIED`，未升级为人工或现场核验。
+
 ## 当前仓库中的地图内容
 
 `data/sample-xianlin.geojson` 由本项目为 Phase 1 功能验收手工编写。所有坐标、边界、建筑轮廓、建筑名称、道路、绿地、水体、运动场和 POI 都是合成演示内容，不是测绘结果，也不是对南京邮电大学仙林校区真实设施的声明。

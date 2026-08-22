@@ -20,7 +20,7 @@ Generated from the normalized Xianlin dataset on 2026-08-22. `officialName` is s
 | Public buildings | 5 |
 | Building/POI duplicate groups | 17 |
 | POIs linked to a building | 23 |
-| Unique aliases | 124 |
+| Unique aliases | 222 |
 
 ## Issue classification
 
@@ -35,7 +35,7 @@ Generated from the normalized Xianlin dataset on 2026-08-22. `officialName` is s
 | MISSING_DISPLAY_NAME | 0 | — |
 | MISSING_ALIAS | 47 | `osm:way:224938858`, `osm:way:224938894`, `osm:way:1173057051`, `osm:way:224954737`, `osm:way:224990427` |
 | DORMITORY_UNKNOWN_NUMBER | 1 | `osm:way:225265337` |
-| BUILDING_POI_DUPLICATE | 36 | `osm:way:223859784`, `osm:way:223859784:poi`, `osm:way:1281082570`, `osm:way:1281082570:poi`, `osm:way:223859811` |
+| BUILDING_POI_DUPLICATE | 36 | `osm:way:223859852`, `osm:way:223859852:poi`, `osm:way:1173059720`, `osm:way:1173059720:poi`, `osm:way:1173057056` |
 
 `BUILDING_POI_DUPLICATE` is expected where a physical Building and user-facing POI represent the same place. It is audited, linked through `buildingId`, and should be deduplicated by future search—not deleted here.
 

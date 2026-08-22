@@ -24,4 +24,27 @@ describe('PlacePeek', () => {
     expect(wrapper.get('strong').text()).toBe('25号楼')
     expect(wrapper.get('.official-name').text()).toBe('25号学生宿舍')
   })
+
+  it('shows the dormitory zone in context without lengthening the map label', () => {
+    const wrapper = mount(PlacePeek, {
+      props: {
+        place: {
+          name: '37号楼', officialName: '37号学生宿舍',
+          dormitoryZone: '柳苑', category: 'DORMITORY',
+        },
+      },
+    })
+
+    expect(wrapper.get('strong').text()).toBe('37号楼')
+    expect(wrapper.get('small').text()).toBe('柳苑 · 学生宿舍')
+  })
+
+  it('falls back to the dormitory category when the zone is unconfirmed', () => {
+    const wrapper = mount(PlacePeek, {
+      props: { place: { name: '青教公寓', category: 'DORMITORY' } },
+    })
+
+    expect(wrapper.get('small').text()).toBe('学生宿舍')
+    expect(wrapper.text()).not.toContain('未知苑')
+  })
 })

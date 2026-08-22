@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+import csv
 import json
 import math
 import re
@@ -20,6 +21,23 @@ MANUAL_DIR = DATASET_DIR / "manual"
 CAMPUS_WAY_ID = 89910254
 DATASET_ID = "njupt-xianlin-real-v1"
 SOURCE_ID = "osm-xianlin-2026-08-22"
+DORMITORY_ZONE_SOURCE_URL = (
+    "https://www.njupt.edu.cn/_upload/article/images/eb/1f/"
+    "e323ae9b457181e6874b1fc47842/d70d14a3-62d5-450d-9ec4-ae0ca836dc8c.jpg"
+)
+DORMITORY_ZONE_SOURCE_ID = "njupt-official-campus-map-2017-osm-spatial-match"
+DORMITORY_ZONE_RANGES = (
+    ("梅苑", 1, 6, "meiyuan"),
+    ("兰苑", 7, 12, "lanyuan"),
+    ("竹苑", 13, 15, "zhuyuan"),
+    ("菊苑", 16, 21, "juyuan"),
+    ("桃苑", 22, 27, "taoyuan"),
+    ("李苑", 28, 33, "liyuan"),
+    ("柳苑", 34, 39, "liuyuan"),
+    ("桂苑", 40, 45, "guiyuan"),
+    ("南荷", 46, 47, "nanhe"),
+    ("北荷", 48, 49, "beihe"),
+)
 FLOOR_HEIGHT_M = 3.3
 LOCAL_LON = 118.9259566
 LOCAL_LAT = 32.1152716
@@ -136,7 +154,7 @@ def feature(geometry, properties: dict[str, Any]) -> dict[str, Any]:
 
 
 def root_metadata(layer: str) -> dict[str, Any]:
-    return {
+    metadata = {
         "datasetId": DATASET_ID,
         "layer": layer,
         "dataSource": "OPENSTREETMAP",
@@ -147,6 +165,14 @@ def root_metadata(layer: str) -> dict[str, Any]:
         "coordinateSystem": "EPSG:4326",
         "verificationStatus": "SOURCE_VERIFIED",
     }
+    if layer == "dormitory-zones":
+        metadata.update({
+            "sourceId": DORMITORY_ZONE_SOURCE_ID,
+            "sourceUrl": DORMITORY_ZONE_SOURCE_URL,
+            "geometryRole": "LABEL_ONLY",
+            "derivation": "Mean of source building representative points; not an official boundary",
+        })
+    return metadata
 
 
 def collection(layer: str, features: list[dict[str, Any]]) -> dict[str, Any]:
@@ -201,6 +227,15 @@ def load_review_manifest() -> dict[str, dict[str, Any]]:
         return {}
     manifest = json.loads(path.read_text(encoding="utf-8"))
     return {item["objectId"]: item for item in manifest.get("reviews", [])}
+
+
+def load_dormitory_zone_reviews() -> dict[str, dict[str, str]]:
+    path = MANUAL_DIR / "dormitory-zone-review.csv"
+    if not path.is_file():
+        return {}
+    with path.open(encoding="utf-8-sig", newline="") as stream:
+        rows = list(csv.DictReader(stream))
+    return {row.get("building_osm_id", ""): row for row in rows if row.get("building_osm_id")}
 
 
 def apply_review(item: dict[str, Any], reviews: dict[str, dict[str, Any]]) -> dict[str, Any]:
@@ -329,6 +364,37 @@ def dormitory_candidate(name: str, category: str) -> dict[str, str] | None:
     }
 
 
+def dormitory_zone_for_number(number: str) -> str | None:
+    if not number.isdigit():
+        return None
+    numeric = int(number)
+    return next((zone for zone, start, end, _ in DORMITORY_ZONE_RANGES if start <= numeric <= end), None)
+
+
+def apply_dormitory_zone_review(
+    item: dict[str, Any], reviews: dict[str, dict[str, str]],
+) -> dict[str, Any]:
+    props = item["properties"]
+    review = reviews.get(props.get("externalId", ""))
+    if not review or not review.get("confirmed_zone", "").strip():
+        return item
+    zone = review["confirmed_zone"].strip()
+    known_zones = {entry[0] for entry in DORMITORY_ZONE_RANGES}
+    if zone not in known_zones:
+        raise ValueError(f"Unsupported confirmed dormitory zone: {zone}")
+    status = review.get("verification_status", "").strip()
+    if status not in {"MANUALLY_REVIEWED", "FIELD_VERIFIED"}:
+        raise ValueError(
+            f"Dormitory zone review {props['externalId']} needs MANUALLY_REVIEWED or FIELD_VERIFIED"
+        )
+    props["dormitoryZone"] = zone
+    number = props.get("buildingNumber", "")
+    props["aliases"] = list(dict.fromkeys([*props.get("aliases", []), f"{zone}{number}号楼"]))
+    props["verificationStatus"] = status
+    props["zoneReviewNote"] = review.get("notes", "").strip()
+    return item
+
+
 def apply_naming_semantics(item: dict[str, Any]) -> dict[str, Any]:
     props = item["properties"]
     name = props.get("name", "")
@@ -342,10 +408,16 @@ def apply_naming_semantics(item: dict[str, Any]) -> dict[str, Any]:
     if candidate:
         props["dormitoryCandidate"] = candidate
         if candidate["number"]:
+            number = candidate["number"]
+            zone = dormitory_zone_for_number(number)
+            props["buildingNumber"] = number
+            props["dormitoryZone"] = zone
+            props["officialName"] = props.get("officialName") or f"{number}号学生宿舍"
             props["displayName"] = candidate["displayName"]
             props["aliases"] = list(dict.fromkeys([
                 *props.get("aliases", []), candidate["displayName"],
-                f"{candidate['number']}号宿舍",
+                f"{number}号宿舍", f"{number}栋",
+                *([f"{zone}{number}号楼"] if zone else []),
             ]))
         props["labelVisible"] = candidate["confidence"] == "HIGH"
 
@@ -354,6 +426,148 @@ def apply_naming_semantics(item: dict[str, Any]) -> dict[str, Any]:
             or (props.get("featureType") == "BUILDING" and any(token in name for token in ("学院", "教学部")))):
         props["labelVisible"] = False
     return item
+
+
+def generate_dormitory_zones(buildings: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    grouped: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    for item in buildings:
+        zone = item["properties"].get("dormitoryZone")
+        if zone:
+            grouped[zone].append(item)
+
+    result = []
+    for zone, _, _, slug in DORMITORY_ZONE_RANGES:
+        anchors = sorted(
+            grouped.get(zone, []),
+            key=lambda item: int(item["properties"]["buildingNumber"]),
+        )
+        if not anchors:
+            continue
+        points = [shape(item["geometry"]).representative_point() for item in anchors]
+        label_point = Point(
+            sum(point.x for point in points) / len(points),
+            sum(point.y for point in points) / len(points),
+        )
+        anchor_ids = [item["properties"]["externalId"] for item in anchors]
+        anchor_numbers = [item["properties"]["buildingNumber"] for item in anchors]
+        properties = {
+            "featureType": "DORMITORY_ZONE",
+            "campusCode": "NJUPT_XIANLIN",
+            "externalId": f"njupt:xianlin:dormitory-zone:{slug}",
+            "name": zone,
+            "officialName": zone,
+            "displayName": zone,
+            "aliases": [zone],
+            "category": "DORMITORY_ZONE",
+            "labelVisible": True,
+            "priority": 80,
+            "geometryRole": "LABEL_ONLY",
+            "labelPointMethod": "MEAN_OF_BUILDING_REPRESENTATIVE_POINTS",
+            "anchorBuildingIds": anchor_ids,
+            "anchorBuildingNumbers": anchor_numbers,
+            "dataSource": "OPENSTREETMAP",
+            "verificationStatus": "SOURCE_VERIFIED",
+            "source": "NJUPT_OFFICIAL_CAMPUS_MAP_AND_OSM_BUILDING_GEOMETRY",
+            "sourceId": DORMITORY_ZONE_SOURCE_ID,
+            "sourceUrl": DORMITORY_ZONE_SOURCE_URL,
+            "sourceUpdatedAt": None,
+        }
+        result.append(feature(label_point, properties))
+    return result
+
+
+def write_dormitory_zone_artifacts(layers: dict[str, list[dict[str, Any]]]) -> None:
+    MANUAL_DIR.mkdir(parents=True, exist_ok=True)
+    review_path = MANUAL_DIR / "dormitory-zone-review.csv"
+    existing = load_dormitory_zone_reviews()
+    fields = [
+        "zone_name", "building_osm_id", "building_number", "candidate_zone",
+        "candidate_confidence", "source", "confirmed_zone", "verification_status", "notes",
+    ]
+    dormitories = sorted(
+        (
+            item for item in layers["buildings"]
+            if item["properties"].get("category") == "DORMITORY"
+        ),
+        key=lambda item: (
+            int(item["properties"].get("buildingNumber", "999") or "999"),
+            item["properties"]["externalId"],
+        ),
+    )
+    rows = []
+    for item in dormitories:
+        props = item["properties"]
+        external_id = props["externalId"]
+        previous = existing.get(external_id, {})
+        zone = props.get("dormitoryZone", "") or ""
+        number = props.get("buildingNumber", "") or ""
+        rows.append({
+            "zone_name": zone,
+            "building_osm_id": external_id,
+            "building_number": number,
+            "candidate_zone": zone,
+            "candidate_confidence": "HIGH" if zone else "UNKNOWN",
+            "source": DORMITORY_ZONE_SOURCE_URL if zone else f"https://www.openstreetmap.org/{external_id.replace(':', '/')}",
+            "confirmed_zone": previous.get("confirmed_zone", ""),
+            "verification_status": previous.get(
+                "verification_status", "SOURCE_VERIFIED" if zone else "SOURCE_VERIFIED",
+            ),
+            "notes": previous.get("notes", "") or (
+                "Official campus map number/zone match; label semantics only, not a zone boundary."
+                if zone else
+                "青教公寓 is source-named but is not assigned to a numbered dormitory zone."
+            ),
+        })
+    with review_path.open("w", encoding="utf-8-sig", newline="") as stream:
+        writer = csv.DictWriter(stream, fieldnames=fields)
+        writer.writeheader()
+        writer.writerows(rows)
+
+    zones = layers["dormitory-zones"]
+    lines = [
+        "# Dormitory Zone Audit",
+        "",
+        "The zone-to-number mapping is transcribed from the official NJUPT Xianlin campus map and matched",
+        "to the existing OSM-numbered dormitory polygons. `SOURCE_VERIFIED` means source-backed; it does not",
+        "mean manual or field verification.",
+        "",
+        "No zone polygon is generated. Every zone geometry is a `Point` with",
+        "`geometryRole = LABEL_ONLY`; it is not valid for navigation or boundary decisions.",
+        "",
+        "| Zone | Confirmed Building Anchors | Candidate Buildings | Source | Verification Status | Label Point Method |",
+        "| --- | --- | --- | --- | --- | --- |",
+    ]
+    for item in zones:
+        props = item["properties"]
+        numbers = ", ".join(f"{number}号" for number in props["anchorBuildingNumbers"])
+        lines.append(
+            f"| {props['name']} | {numbers} | {numbers} | "
+            f"[NJUPT official campus map]({DORMITORY_ZONE_SOURCE_URL}) + OSM polygons | "
+            f"SOURCE_VERIFIED | Arithmetic mean of {len(props['anchorBuildingIds'])} building representative points |"
+        )
+    lines.extend([
+        "",
+        "## Minimum manual confirmation checklist",
+        "",
+        "Confirm only the two edge-number anchors below for each source-mapped zone, plus 青教公寓. This",
+        "covers the range boundaries without asking for a building-by-building review.",
+        "",
+    ])
+    for item in zones:
+        numbers = item["properties"]["anchorBuildingNumbers"]
+        anchors = numbers if len(numbers) <= 2 else [numbers[0], numbers[-1]]
+        lines.append(f"- {item['properties']['name']}: {' / '.join(f'{number}号楼' for number in anchors)}")
+    lines.append("- 青教公寓: confirm that it remains independent and is not assigned to a numbered dormitory zone")
+    lines.extend([
+        "",
+        "## Label-point limitations",
+        "",
+        "The arithmetic mean is deterministic and derived only from representative points inside the source",
+        "building polygons. It is a cartographic anchor. It is not an inferred polygon, campus address, route",
+        "destination, or authoritative zone center.",
+        "",
+    ])
+    (ROOT / "docs" / "DORMITORY_ZONE_AUDIT.md").write_text("\n".join(lines), encoding="utf-8")
 
 
 def normalize(raw: dict[str, Any]) -> tuple[dict[str, list[dict[str, Any]]], dict[str, int]]:
@@ -366,7 +580,10 @@ def normalize(raw: dict[str, Any]) -> tuple[dict[str, list[dict[str, Any]]], dic
     overrides = load_manual()
     aliases = load_aliases()
     reviews = load_review_manifest()
-    layers: dict[str, list[dict[str, Any]]] = {name: [] for name in ("campus", "buildings", "roads", "surfaces", "pois", "entrances")}
+    zone_reviews = load_dormitory_zone_reviews()
+    layers: dict[str, list[dict[str, Any]]] = {name: [] for name in (
+        "campus", "buildings", "dormitory-zones", "roads", "surfaces", "pois", "entrances",
+    )}
     excluded = Counter()
 
     campus_props = base_properties(campus_element, "CAMPUS_BOUNDARY", "南京邮电大学仙林校区")
@@ -389,7 +606,10 @@ def normalize(raw: dict[str, Any]) -> tuple[dict[str, list[dict[str, Any]]], dic
         properties.update({"aliases": [], "category": building_category(element), "minHeight": 0, "color": "#D8DDE1"})
         properties.update(height_properties(element))
         item = apply_naming_semantics(apply_aliases(apply_override(feature(polygon, properties), overrides), aliases))
+        item = apply_dormitory_zone_review(item, zone_reviews)
         layers["buildings"].append(item)
+
+    layers["dormitory-zones"] = generate_dormitory_zones(layers["buildings"])
 
     for element in elements:
         value = tags(element)
@@ -531,6 +751,13 @@ def validate(layers: dict[str, list[dict[str, Any]]], excluded: dict[str, int]) 
             height = props.get("height")
             if height is not None and height < 0:
                 errors.append({"id": item_id, "reason": "negative building height"})
+        if props["featureType"] == "DORMITORY_ZONE":
+            if geometry.geom_type != "Point":
+                errors.append({"id": item_id, "reason": "dormitory zone label geometry must be Point"})
+            if props.get("geometryRole") != "LABEL_ONLY":
+                errors.append({"id": item_id, "reason": "dormitory zone must be LABEL_ONLY"})
+            if not props.get("sourceUrl") or not props.get("anchorBuildingIds"):
+                errors.append({"id": item_id, "reason": "dormitory zone source traceability is incomplete"})
 
     road_features = layers["roads"]
     road_crossings = []
@@ -582,6 +809,7 @@ def write_outputs(raw_path: Path) -> dict[str, Any]:
     raw = json.loads(raw_path.read_text(encoding="utf-8"))
     layers, excluded = normalize(raw)
     DATASET_DIR.mkdir(parents=True, exist_ok=True)
+    write_dormitory_zone_artifacts(layers)
     for layer, items in layers.items():
         (DATASET_DIR / f"{layer}.geojson").write_text(json.dumps(collection(layer, items), ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     report = validate(layers, excluded)
@@ -620,7 +848,9 @@ def main() -> None:
     if args.command == "build":
         write_outputs(args.raw.resolve())
     else:
-        layers = {name: json.loads((DATASET_DIR / f"{name}.geojson").read_text(encoding="utf-8"))["features"] for name in ("campus", "buildings", "roads", "surfaces", "pois", "entrances")}
+        layers = {name: json.loads((DATASET_DIR / f"{name}.geojson").read_text(encoding="utf-8"))["features"] for name in (
+            "campus", "buildings", "dormitory-zones", "roads", "surfaces", "pois", "entrances",
+        )}
         report = validate(layers, {})
         print(json.dumps(report, ensure_ascii=False, indent=2))
         if report["error"]:

@@ -44,11 +44,19 @@ export interface CampusFeatureProperties {
   id: string
   featureType: string
   name: string
+  officialName?: string
+  displayName?: string
+  aliases?: string[]
   category?: string
   color?: string
   height?: number
   minHeight?: number
   priority?: number
+  labelVisible?: boolean
+  dormitoryZone?: string
+  buildingNumber?: string
+  geometryRole?: string
+  source?: string
   dataSource?: string
   verificationStatus?: string
   sourceId?: string

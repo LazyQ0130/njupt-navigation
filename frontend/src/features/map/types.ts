@@ -11,6 +11,7 @@ export const SUPPORTED_FEATURE_TYPES = [
   'ROAD_MAIN',
   'ROAD_PEDESTRIAN',
   'BUILDING',
+  'DORMITORY_ZONE',
   'POI',
 ] as const
 
@@ -23,6 +24,7 @@ export type CampusBoundaryFeature = Feature<Polygon | MultiPolygon, CampusFeatur
 export interface SelectedPlace {
   name: string
   officialName?: string
+  dormitoryZone?: string
   category: string
 }
 

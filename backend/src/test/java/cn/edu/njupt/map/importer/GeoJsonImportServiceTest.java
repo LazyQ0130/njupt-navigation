@@ -178,6 +178,27 @@ class GeoJsonImportServiceTest {
     }
 
     @Test
+    void importsDormitoryZonePointAndRejectsAnInferredPolygon() throws Exception {
+        String geoJson = """
+                {"type":"FeatureCollection","features":[
+                {"type":"Feature","properties":{"featureType":"DORMITORY_ZONE",
+                "externalId":"zone-liu","name":"柳苑","priority":80},
+                "geometry":{"type":"Point","coordinates":[118.9291,32.1203]}},
+                {"type":"Feature","properties":{"featureType":"DORMITORY_ZONE",
+                "externalId":"zone-fake-polygon","name":"伪边界"},
+                "geometry":{"type":"Polygon","coordinates":[[[118.92,32.11],[118.93,32.11],
+                [118.93,32.12],[118.92,32.11]]]}}]}
+                """;
+
+        GeoJsonImportResult result = service.importFeatureCollection(stream(geoJson));
+
+        assertThat(result.succeeded()).isEqualTo(1);
+        assertThat(result.failed()).isEqualTo(1);
+        assertThat(result.errors().getFirst().reason()).contains("必须是 Point");
+        verify(mapFeatureRepository).save(any(MapFeature.class));
+    }
+
+    @Test
     void authoritativeRefreshDisablesExistingRowsBeforeUpsert() {
         service.prepareDatasetRefresh("real");
 

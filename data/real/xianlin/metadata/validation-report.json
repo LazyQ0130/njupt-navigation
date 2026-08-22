@@ -1,13 +1,14 @@
 {
   "datasetId": "njupt-xianlin-real-v1",
   "generatedAt": "2026-08-22",
-  "total": 498,
-  "valid": 498,
+  "total": 508,
+  "valid": 508,
   "warning": 338,
   "error": 0,
   "byFeatureType": {
     "BUILDING": 87,
     "CAMPUS_BOUNDARY": 1,
+    "DORMITORY_ZONE": 10,
     "GREEN": 176,
     "POI": 36,
     "ROAD_MAIN": 120,
@@ -2869,7 +2870,7 @@
     "publicBuildings": 5,
     "buildingPoiDuplicateGroups": 17,
     "linkedPois": 23,
-    "uniqueAliases": 124,
+    "uniqueAliases": 222,
     "issueCounts": {
       "UNNAMED": 0,
       "GENERIC_NAME": 8,

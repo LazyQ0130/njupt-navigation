@@ -20,7 +20,7 @@ import org.springframework.transaction.annotation.Transactional;
 @Service
 public class MapFeatureService {
 
-    private static final String SCHEMA_VERSION = "2026-08-phase1.6.2";
+    private static final String SCHEMA_VERSION = "2026-08-phase1.7.1";
 
     private final ObjectMapper objectMapper;
     private final CampusRepository campusRepository;
@@ -64,6 +64,15 @@ public class MapFeatureService {
                 properties -> {
                     putIfPresent(properties, "color", item.getColor());
                     properties.put("priority", item.getPriority());
+                    if ("DORMITORY_ZONE".equals(item.getFeatureType())) {
+                        properties.put("officialName", item.getName());
+                        properties.put("displayName", item.getName());
+                        properties.putArray("aliases").add(item.getName());
+                        properties.put("category", "DORMITORY_ZONE");
+                        properties.put("labelVisible", true);
+                        properties.put("geometryRole", "LABEL_ONLY");
+                        putIfPresent(properties, "source", item.getSourceId());
+                    }
                     sourceMetadata(properties, item.getDataSource(), item.getVerificationStatus(),
                             item.getSourceId(), item.getSourceUpdatedAt());
                 }
@@ -76,6 +85,8 @@ public class MapFeatureService {
                 properties -> {
                     namingProperties(properties, item.getOfficialName(), item.getDisplayName(),
                             item.getAliases(), item.isLabelVisible());
+                    putIfPresent(properties, "dormitoryZone", item.getDormitoryZone());
+                    putIfPresent(properties, "buildingNumber", item.getBuildingNumber());
                     properties.put("category", item.getCategory());
                     if (item.getHeight() != null) {
                         properties.put("height", item.getHeight());
