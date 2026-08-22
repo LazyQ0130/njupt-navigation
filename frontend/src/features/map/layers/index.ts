@@ -1,15 +1,33 @@
 import type { LayerSpecification } from 'maplibre-gl'
-import { buildingLayers } from './buildingLayers'
+import {
+  buildingVisualLayers,
+  coreCampusLabelLayers,
+  dormitoryBuildingLabelLayers,
+  dormitoryZoneLabelLayers,
+  ordinaryBuildingLabelLayers,
+} from './buildingLayers'
 import { groundLayers } from './groundLayers'
-import { poiLayers } from './poiLayers'
+import { poiLabelLayers, poiVisualLayers } from './poiLayers'
 import { roadLayers } from './roadLayers'
 
-export const campusLayers: LayerSpecification[] = [
+export const campusVisualLayers: LayerSpecification[] = [
   ...groundLayers,
   ...roadLayers,
-  ...buildingLayers,
-  ...poiLayers,
+  ...buildingVisualLayers,
+  ...poiVisualLayers,
 ]
 
-export const campusVisualLayers = campusLayers.filter((layer) => layer.type !== 'symbol')
-export const campusLabelLayers = campusLayers.filter((layer) => layer.type === 'symbol')
+// MapLibre places symbol layers from the end of the style stack to the beginning.
+// Keep this list explicitly ordered from lowest to highest collision priority.
+export const campusLabelLayers: LayerSpecification[] = [
+  ...poiLabelLayers,
+  ...ordinaryBuildingLabelLayers,
+  ...dormitoryBuildingLabelLayers,
+  ...dormitoryZoneLabelLayers,
+  ...coreCampusLabelLayers,
+]
+
+export const campusLayers: LayerSpecification[] = [
+  ...campusVisualLayers,
+  ...campusLabelLayers,
+]

@@ -18,7 +18,12 @@ import {
 } from './mapConfig'
 import type { CampusBoundaryFeature, CampusMapController, CampusMapInput } from './types'
 import { addGisReviewLayers, setReviewLayerVisibility as setGisReviewLayerVisibility } from './reviewLayers'
-import { installDevelopmentDiagnostics } from './renderDiagnostics'
+import {
+  applyRequestedDiagnosticZoom,
+  installDevelopmentDiagnostics,
+  isMapDiagnosticsEnabled,
+  runRequestedDiagnosticZoomSweep,
+} from './renderDiagnostics'
 import { campusFitPadding, deriveCampusViewport } from './campusViewport'
 
 export function createCampusMap(input: CampusMapInput): CampusMapController {
@@ -26,6 +31,7 @@ export function createCampusMap(input: CampusMapInput): CampusMapController {
   const viewport = deriveCampusViewport(data, campus)
   const initialBounds = viewport.bounds
   const map = new Map(createMapOptions(container, campus, viewport))
+  const diagnosticsEnabled = isMapDiagnosticsEnabled()
   let selectedBuildingId: string | number | undefined
   let destroyed = false
 
@@ -42,6 +48,7 @@ export function createCampusMap(input: CampusMapInput): CampusMapController {
       data,
     })
     campusVisualLayers.forEach((layer) => map.addLayer(layer))
+    campusLabelLayers.forEach((layer) => map.addLayer(layer))
     if (reviewData) addGisReviewLayers(map, reviewData, callbacks.onReviewSelect)
     addUserLocationLayer(map)
     fitCampus(map, initialBounds, campus, false)
@@ -56,15 +63,15 @@ export function createCampusMap(input: CampusMapInput): CampusMapController {
     const canvas = map.getCanvas()
     canvas.setAttribute('role', 'img')
     canvas.setAttribute('aria-label', `${campus.name} 2.5D 交互地图`)
-    map.once('idle', () => {
-      if (destroyed) return
-      campusLabelLayers.forEach((layer) => map.addLayer(layer))
-    })
-    if (import.meta.env.DEV) installDevelopmentDiagnostics(map, data)
+    if (diagnosticsEnabled) installDevelopmentDiagnostics(map, data)
     requestAnimationFrame(() => {
       if (destroyed) return
       map.resize()
       fitCampus(map, initialBounds, campus, false)
+      if (diagnosticsEnabled) {
+        applyRequestedDiagnosticZoom(map)
+        void runRequestedDiagnosticZoomSweep(map, data)
+      }
     })
     callbacks.onReady()
   })

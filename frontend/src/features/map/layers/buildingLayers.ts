@@ -25,7 +25,7 @@ const buildingColor: ExpressionSpecification = [
   MAP_PALETTE.building,
 ]
 
-export const buildingLayers: LayerSpecification[] = [
+export const buildingVisualLayers: LayerSpecification[] = [
   {
     id: 'building-footprint',
     type: 'fill',
@@ -58,6 +58,9 @@ export const buildingLayers: LayerSpecification[] = [
     filter: ['==', ['get', 'featureType'], 'BUILDING'],
     paint: { 'line-color': MAP_PALETTE.buildingOutline, 'line-width': 0.8, 'line-opacity': 0.64 },
   },
+]
+
+export const ordinaryBuildingLabelLayers: LayerSpecification[] = [
   {
     id: 'building-labels',
     type: 'symbol',
@@ -84,6 +87,9 @@ export const buildingLayers: LayerSpecification[] = [
       'text-halo-width': 1.35,
     },
   },
+]
+
+export const dormitoryBuildingLabelLayers: LayerSpecification[] = [
   {
     id: 'dormitory-building-labels',
     type: 'symbol',
@@ -110,12 +116,15 @@ export const buildingLayers: LayerSpecification[] = [
       'text-opacity': ['interpolate', ['linear'], ['zoom'], 16.5, 0, 17, 1],
     },
   },
+]
+
+export const dormitoryZoneLabelLayers: LayerSpecification[] = [
   {
     id: 'dormitory-zone-labels',
     type: 'symbol',
     source: 'campus-features',
-    minzoom: 15.5,
-    maxzoom: 17.3,
+    minzoom: 14.8,
+    maxzoom: 17.2,
     filter: ['all',
       ['==', ['get', 'featureType'], 'DORMITORY_ZONE'],
       ['==', ['get', 'geometryRole'], 'LABEL_ONLY'],
@@ -123,7 +132,7 @@ export const buildingLayers: LayerSpecification[] = [
     ],
     layout: {
       'text-field': displayNameExpression,
-      'text-size': ['interpolate', ['linear'], ['zoom'], 15.5, 13, 16.8, 15],
+      'text-size': ['interpolate', ['linear'], ['zoom'], 14.8, 14, 16.5, 16],
       'text-font': ['Noto Sans Regular'],
       'text-letter-spacing': 0.08,
       'text-max-width': 5,
@@ -137,13 +146,16 @@ export const buildingLayers: LayerSpecification[] = [
       'text-halo-width': 1.7,
       'text-opacity': [
         'interpolate', ['linear'], ['zoom'],
-        15.5, 0,
-        15.7, 1,
-        16.8, 1,
-        17.3, 0,
+        14.8, 0,
+        15, 1,
+        16.5, 1,
+        17.2, 0,
       ],
     },
   },
+]
+
+export const coreCampusLabelLayers: LayerSpecification[] = [
   {
     id: 'core-campus-labels',
     type: 'symbol',
@@ -171,4 +183,12 @@ export const buildingLayers: LayerSpecification[] = [
       'text-halo-width': 1.6,
     },
   },
+]
+
+export const buildingLayers: LayerSpecification[] = [
+  ...buildingVisualLayers,
+  ...ordinaryBuildingLabelLayers,
+  ...dormitoryBuildingLabelLayers,
+  ...dormitoryZoneLabelLayers,
+  ...coreCampusLabelLayers,
 ]

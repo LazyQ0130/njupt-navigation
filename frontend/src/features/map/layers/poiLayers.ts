@@ -1,7 +1,7 @@
 import type { LayerSpecification } from 'maplibre-gl'
 import { MAP_PALETTE } from '../mapPalette'
 
-export const poiLayers: LayerSpecification[] = [
+export const poiVisualLayers: LayerSpecification[] = [
   {
     id: 'poi-dots',
     type: 'circle',
@@ -15,6 +15,9 @@ export const poiLayers: LayerSpecification[] = [
       'circle-stroke-width': 2,
     },
   },
+]
+
+export const poiLabelLayers: LayerSpecification[] = [
   {
     id: 'poi-labels',
     type: 'symbol',
@@ -43,4 +46,9 @@ export const poiLayers: LayerSpecification[] = [
       'text-halo-width': 1.4,
     },
   },
+]
+
+export const poiLayers: LayerSpecification[] = [
+  ...poiVisualLayers,
+  ...poiLabelLayers,
 ]
